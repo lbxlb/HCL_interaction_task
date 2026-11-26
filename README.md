@@ -6,9 +6,9 @@
 
 ## 方法
 
-![面板按压实验方法框图：左侧为单按钮肩肘控制与策略观测反馈，右侧为四按钮候选姿态的几何与动力学复核](docs/figures/experimental-method.png)
+![上肢面板按压研究技术路线：从同一上肢模型出发，上方为单按钮闭环控制，下方为四按钮候选筛选与动力学验证](docs/figures/experimental-method.png)
 
-**图 1　面板按压实验的技术路线。** 两组实验共用上肢与面板几何。左侧检验肩肘控制能否依次触发按下与释放。右侧从几何和动力学两方面检验各按钮位置的候选姿态。[可编辑的 Visio 源图](docs/figures/experimental-method.vsdx)
+**图 1　上肢面板按压研究技术路线。** 上方用滑块行程和指尖受载判定按下与释放。下方按食指网格到按钮的距离给姿态评分，对穿透姿态加罚。每个按钮保留评分最低的候选，再检验其正面对齐、受载与复位情况。[可编辑的 Visio 源图](docs/figures/experimental-method.vsdx)
 
 ![肩肘双轴运动的全景和局部同步回放](artifacts/trajectory_check_2026-10-21/shoulder_elbow_dual_motion.gif)
 
