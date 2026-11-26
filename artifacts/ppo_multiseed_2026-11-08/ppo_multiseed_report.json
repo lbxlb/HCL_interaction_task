@@ -1,0 +1,3668 @@
+{
+  "purpose": "Three-seed PPO diagnostic on valid reset test seeds; not final performance or safety evaluation.",
+  "training_seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "test_seed_range": [
+    5200,
+    5249
+  ],
+  "initial_pose_jitter_deg": 0.5,
+  "timesteps_per_seed": 32768,
+  "quality_costs": {
+    "saturation_penalty": 0.03,
+    "action_rate_penalty": 0.01
+  },
+  "arms": {
+    "2026": {
+      "model_file": "artifacts/ppo_multiseed_2026-11-08/ppo_seed_2026.zip",
+      "actual_timesteps": 32768,
+      "evaluation": [
+        {
+          "seed": 5200,
+          "steps": 12,
+          "return_sum": 10.618812766311041,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07600000000000005
+            },
+            {
+              "event": "released",
+              "time_s": 0.11800000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.24841021528854196,
+          "initial_pose_offset_rad": [
+            -0.0037624222093182013,
+            -0.005224395118023295
+          ]
+        },
+        {
+          "seed": 5201,
+          "steps": 13,
+          "return_sum": 10.712251182833642,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1300000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.29020010877741775,
+          "initial_pose_offset_rad": [
+            -0.000759655850169392,
+            -0.0012786278568542085
+          ]
+        },
+        {
+          "seed": 5202,
+          "steps": 13,
+          "return_sum": 10.656958140597343,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07800000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.12600000000000008
+            }
+          ],
+          "saturation_channels": 8,
+          "peak_force_N": 0.5395508629177875,
+          "initial_pose_offset_rad": [
+            0.004981385407844835,
+            0.008515094356057925
+          ]
+        },
+        {
+          "seed": 5203,
+          "steps": 13,
+          "return_sum": 10.688388613356333,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1300000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.2555484313671159,
+          "initial_pose_offset_rad": [
+            0.000589900592508092,
+            -0.0032093863279928723
+          ]
+        },
+        {
+          "seed": 5204,
+          "steps": 12,
+          "return_sum": 10.659843269749603,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07600000000000005
+            },
+            {
+              "event": "released",
+              "time_s": 0.12000000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.2587598958348153,
+          "initial_pose_offset_rad": [
+            0.006800603937534817,
+            -0.0030026093037508143
+          ]
+        },
+        {
+          "seed": 5205,
+          "steps": 11,
+          "return_sum": 10.606202877446142,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.06600000000000004
+            },
+            {
+              "event": "released",
+              "time_s": 0.10800000000000008
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.23351322249554524,
+          "initial_pose_offset_rad": [
+            0.007613427027530454,
+            -0.005948400417002232
+          ]
+        },
+        {
+          "seed": 5206,
+          "steps": 12,
+          "return_sum": 10.683882849646508,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07800000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.12000000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.26183602103525144,
+          "initial_pose_offset_rad": [
+            0.005436300841638936,
+            -0.002521339672148774
+          ]
+        },
+        {
+          "seed": 5207,
+          "steps": 14,
+          "return_sum": 10.686591747032335,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 7,
+          "peak_force_N": 0.41740655063029775,
+          "initial_pose_offset_rad": [
+            0.005379567931877889,
+            0.005939388374366464
+          ]
+        },
+        {
+          "seed": 5208,
+          "steps": 13,
+          "return_sum": 10.588418184475927,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07800000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.12600000000000008
+            }
+          ],
+          "saturation_channels": 9,
+          "peak_force_N": 0.5377746760354167,
+          "initial_pose_offset_rad": [
+            0.00807684106494321,
+            0.008540757680644035
+          ]
+        },
+        {
+          "seed": 5209,
+          "steps": 12,
+          "return_sum": 10.666371269102097,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07800000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.11800000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.23356672839895753,
+          "initial_pose_offset_rad": [
+            0.004536248276819102,
+            -0.004298408463617489
+          ]
+        },
+        {
+          "seed": 5210,
+          "steps": 14,
+          "return_sum": 10.64137680061973,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.39530912043024924,
+          "initial_pose_offset_rad": [
+            -0.007466442464397207,
+            0.0037467035593465687
+          ]
+        },
+        {
+          "seed": 5211,
+          "steps": 14,
+          "return_sum": 10.751342166181798,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.353866444797857,
+          "initial_pose_offset_rad": [
+            -0.0014197240577688325,
+            0.0024790996642291715
+          ]
+        },
+        {
+          "seed": 5212,
+          "steps": 13,
+          "return_sum": 10.663364210690858,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07800000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1240000000000001
+            }
+          ],
+          "saturation_channels": 8,
+          "peak_force_N": 0.5084269959840763,
+          "initial_pose_offset_rad": [
+            -0.0002054513706478967,
+            0.007781484589880537
+          ]
+        },
+        {
+          "seed": 5213,
+          "steps": 13,
+          "return_sum": 10.549405859512609,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07800000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.12600000000000008
+            }
+          ],
+          "saturation_channels": 9,
+          "peak_force_N": 0.575456024787956,
+          "initial_pose_offset_rad": [
+            -0.005949786687102171,
+            0.00851864145735572
+          ]
+        },
+        {
+          "seed": 5214,
+          "steps": 12,
+          "return_sum": 10.657839152455967,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08000000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.12000000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.29370455159121983,
+          "initial_pose_offset_rad": [
+            -0.004605553903894468,
+            -0.0021759528181747342
+          ]
+        },
+        {
+          "seed": 5215,
+          "steps": 14,
+          "return_sum": 10.718830826337971,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.3402321192216484,
+          "initial_pose_offset_rad": [
+            -0.0031419253981113024,
+            0.0013035185472369218
+          ]
+        },
+        {
+          "seed": 5216,
+          "steps": 13,
+          "return_sum": 10.571336412374404,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07800000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.12600000000000008
+            }
+          ],
+          "saturation_channels": 8,
+          "peak_force_N": 0.5407967355417654,
+          "initial_pose_offset_rad": [
+            -0.006388973632407084,
+            0.007893622148087812
+          ]
+        },
+        {
+          "seed": 5217,
+          "steps": 14,
+          "return_sum": 10.74781048539623,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08400000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.3648017338083596,
+          "initial_pose_offset_rad": [
+            0.005859028887708231,
+            0.004013257074986642
+          ]
+        },
+        {
+          "seed": 5218,
+          "steps": 12,
+          "return_sum": 10.630288242414979,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07200000000000005
+            },
+            {
+              "event": "released",
+              "time_s": 0.11800000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.20703910082541277,
+          "initial_pose_offset_rad": [
+            -0.0003635053243086148,
+            -0.006811057628181829
+          ]
+        },
+        {
+          "seed": 5219,
+          "steps": 14,
+          "return_sum": 10.7570320226927,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08400000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.3538717214346331,
+          "initial_pose_offset_rad": [
+            0.00458569065363479,
+            0.003307982594816322
+          ]
+        },
+        {
+          "seed": 5220,
+          "steps": 12,
+          "return_sum": 10.673607135973752,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07800000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.12000000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.2924337581254151,
+          "initial_pose_offset_rad": [
+            0.007729244742988696,
+            -0.0007499615754055272
+          ]
+        },
+        {
+          "seed": 5221,
+          "steps": 13,
+          "return_sum": 10.616616036405704,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08000000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1220000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.3296560039800893,
+          "initial_pose_offset_rad": [
+            -0.007415827298954466,
+            -0.0006414712904524568
+          ]
+        },
+        {
+          "seed": 5222,
+          "steps": 13,
+          "return_sum": 10.70666228969056,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1300000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.28938207377768554,
+          "initial_pose_offset_rad": [
+            -0.0012466179424919011,
+            -0.0014326415978508655
+          ]
+        },
+        {
+          "seed": 5223,
+          "steps": 11,
+          "return_sum": 10.626028371999267,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07000000000000005
+            },
+            {
+              "event": "released",
+              "time_s": 0.10800000000000008
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.18134286864878055,
+          "initial_pose_offset_rad": [
+            0.0014467301068865968,
+            -0.007764612927336693
+          ]
+        },
+        {
+          "seed": 5224,
+          "steps": 12,
+          "return_sum": 10.611104290347644,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07600000000000005
+            },
+            {
+              "event": "released",
+              "time_s": 0.12000000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.26001139987646527,
+          "initial_pose_offset_rad": [
+            -0.004755299648525868,
+            -0.004715720790698533
+          ]
+        },
+        {
+          "seed": 5225,
+          "steps": 13,
+          "return_sum": 10.735796884052943,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1300000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.3336808792712581,
+          "initial_pose_offset_rad": [
+            0.005826161411999604,
+            0.002063830683590017
+          ]
+        },
+        {
+          "seed": 5226,
+          "steps": 12,
+          "return_sum": 10.65184262248453,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07800000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.12000000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.25462496125457607,
+          "initial_pose_offset_rad": [
+            -0.002651863862529217,
+            -0.004231589652345706
+          ]
+        },
+        {
+          "seed": 5227,
+          "steps": 13,
+          "return_sum": 10.580861925903854,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07800000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.12600000000000008
+            }
+          ],
+          "saturation_channels": 9,
+          "peak_force_N": 0.5623087040467389,
+          "initial_pose_offset_rad": [
+            -0.004410433878679929,
+            0.008417849758024515
+          ]
+        },
+        {
+          "seed": 5228,
+          "steps": 11,
+          "return_sum": 10.623183743263953,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.06800000000000005
+            },
+            {
+              "event": "released",
+              "time_s": 0.10800000000000008
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.2167550262729942,
+          "initial_pose_offset_rad": [
+            0.006228200025926381,
+            -0.00616835189320679
+          ]
+        },
+        {
+          "seed": 5229,
+          "steps": 13,
+          "return_sum": 10.679078039433803,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1300000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.2961005107158631,
+          "initial_pose_offset_rad": [
+            -0.0035891315415186144,
+            -0.0015911378086990926
+          ]
+        },
+        {
+          "seed": 5230,
+          "steps": 14,
+          "return_sum": 10.700648792782088,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08400000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 7,
+          "peak_force_N": 0.3963768685525938,
+          "initial_pose_offset_rad": [
+            0.0003213977432795964,
+            0.004956850271532072
+          ]
+        },
+        {
+          "seed": 5231,
+          "steps": 13,
+          "return_sum": 10.722055615144926,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1300000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.29396499523497566,
+          "initial_pose_offset_rad": [
+            9.676744799459294e-05,
+            -0.0008839367842403243
+          ]
+        },
+        {
+          "seed": 5232,
+          "steps": 14,
+          "return_sum": 10.649631238719499,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.3860635621055767,
+          "initial_pose_offset_rad": [
+            -0.007199819525506895,
+            0.003252415658746717
+          ]
+        },
+        {
+          "seed": 5233,
+          "steps": 14,
+          "return_sum": 10.648872936319092,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 6,
+          "peak_force_N": 0.39744885440031874,
+          "initial_pose_offset_rad": [
+            -0.005891575384942317,
+            0.004136263154105678
+          ]
+        },
+        {
+          "seed": 5234,
+          "steps": 14,
+          "return_sum": 10.6612534983979,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 6,
+          "peak_force_N": 0.40215212303089454,
+          "initial_pose_offset_rad": [
+            -0.005274654335257257,
+            0.004433927224569437
+          ]
+        },
+        {
+          "seed": 5235,
+          "steps": 14,
+          "return_sum": 10.740383137489959,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08400000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.3787604130115825,
+          "initial_pose_offset_rad": [
+            -0.0024107918510816537,
+            0.003858729138557568
+          ]
+        },
+        {
+          "seed": 5236,
+          "steps": 14,
+          "return_sum": 10.659363847756408,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 8,
+          "peak_force_N": 0.43977634907143154,
+          "initial_pose_offset_rad": [
+            -0.0008474628053004301,
+            0.006153838523452328
+          ]
+        },
+        {
+          "seed": 5237,
+          "steps": 12,
+          "return_sum": 10.643279693022704,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07400000000000005
+            },
+            {
+              "event": "released",
+              "time_s": 0.11800000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.21631193116415703,
+          "initial_pose_offset_rad": [
+            0.00497953143669175,
+            -0.005512810963549383
+          ]
+        },
+        {
+          "seed": 5238,
+          "steps": 12,
+          "return_sum": 10.67604954080564,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08000000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.12000000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.2834355538744838,
+          "initial_pose_offset_rad": [
+            -0.0031826797189036396,
+            -0.0023792980903495626
+          ]
+        },
+        {
+          "seed": 5239,
+          "steps": 14,
+          "return_sum": 10.755181024952586,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.3386821227103428,
+          "initial_pose_offset_rad": [
+            0.0018830943415349302,
+            0.0021104406856449856
+          ]
+        },
+        {
+          "seed": 5240,
+          "steps": 10,
+          "return_sum": 10.595725258109935,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.05800000000000004
+            },
+            {
+              "event": "released",
+              "time_s": 0.09800000000000007
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.24167602746135608,
+          "initial_pose_offset_rad": [
+            0.007656330088558565,
+            -0.006767395006659509
+          ]
+        },
+        {
+          "seed": 5241,
+          "steps": 14,
+          "return_sum": 10.768067555232971,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08400000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.3653358243214123,
+          "initial_pose_offset_rad": [
+            0.002210300972362664,
+            0.0037832849515626126
+          ]
+        },
+        {
+          "seed": 5242,
+          "steps": 14,
+          "return_sum": 10.619591602151761,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 6,
+          "peak_force_N": 0.406604806278963,
+          "initial_pose_offset_rad": [
+            -0.007095035327423124,
+            0.004317759034586491
+          ]
+        },
+        {
+          "seed": 5243,
+          "steps": 13,
+          "return_sum": 10.732125058972509,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1300000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.30085672918411155,
+          "initial_pose_offset_rad": [
+            0.0010891165493124547,
+            -0.00030356961419542906
+          ]
+        },
+        {
+          "seed": 5244,
+          "steps": 12,
+          "return_sum": 10.63474698402984,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07400000000000005
+            },
+            {
+              "event": "released",
+              "time_s": 0.11800000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.22495165954730806,
+          "initial_pose_offset_rad": [
+            -0.0014842227952377826,
+            -0.005999081950415421
+          ]
+        },
+        {
+          "seed": 5245,
+          "steps": 13,
+          "return_sum": 10.681812900062592,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08000000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1220000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.3182136628589305,
+          "initial_pose_offset_rad": [
+            -0.004322101666033639,
+            -0.00044547330637767615
+          ]
+        },
+        {
+          "seed": 5246,
+          "steps": 14,
+          "return_sum": 10.701332659067983,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 7,
+          "peak_force_N": 0.40819011728369897,
+          "initial_pose_offset_rad": [
+            0.0031227759779473238,
+            0.005536020007298328
+          ]
+        },
+        {
+          "seed": 5247,
+          "steps": 12,
+          "return_sum": 10.644814102520886,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08000000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.12000000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.2621715016174317,
+          "initial_pose_offset_rad": [
+            -0.0035793340304585176,
+            -0.003933357569491261
+          ]
+        },
+        {
+          "seed": 5248,
+          "steps": 14,
+          "return_sum": 10.61501923609054,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1340000000000001
+            }
+          ],
+          "saturation_channels": 9,
+          "peak_force_N": 0.48875985480970574,
+          "initial_pose_offset_rad": [
+            -0.002041332131165614,
+            0.007191918988694521
+          ]
+        },
+        {
+          "seed": 5249,
+          "steps": 11,
+          "return_sum": 10.594093515167696,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.06200000000000004
+            },
+            {
+              "event": "released",
+              "time_s": 0.10800000000000008
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.24463012991083993,
+          "initial_pose_offset_rad": [
+            0.008131960639600193,
+            -0.006093501673489632
+          ]
+        }
+      ],
+      "invalid_resets": [],
+      "summary": {
+        "valid_episodes": 50,
+        "invalid_resets": 0,
+        "successes": 50,
+        "success_rate": 1.0,
+        "mean_return": 10.664103532311636,
+        "mean_saturation_channels": 5.74,
+        "mean_peak_force_N": 0.34041461067208617
+      }
+    },
+    "2027": {
+      "model_file": "artifacts/ppo_multiseed_2026-11-08/ppo_seed_2027.zip",
+      "actual_timesteps": 32768,
+      "evaluation": [
+        {
+          "seed": 5200,
+          "steps": 12,
+          "return_sum": 10.616854347313941,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07600000000000005
+            },
+            {
+              "event": "released",
+              "time_s": 0.11800000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.2485196420465704,
+          "initial_pose_offset_rad": [
+            -0.0037624222093182013,
+            -0.005224395118023295
+          ]
+        },
+        {
+          "seed": 5201,
+          "steps": 13,
+          "return_sum": 10.709551491954779,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1300000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.2901794696174608,
+          "initial_pose_offset_rad": [
+            -0.000759655850169392,
+            -0.0012786278568542085
+          ]
+        },
+        {
+          "seed": 5202,
+          "steps": 13,
+          "return_sum": 10.595186152290891,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07800000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.12600000000000008
+            }
+          ],
+          "saturation_channels": 10,
+          "peak_force_N": 0.5395073107793118,
+          "initial_pose_offset_rad": [
+            0.004981385407844835,
+            0.008515094356057925
+          ]
+        },
+        {
+          "seed": 5203,
+          "steps": 13,
+          "return_sum": 10.685863925056982,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1300000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.2555677523911536,
+          "initial_pose_offset_rad": [
+            0.000589900592508092,
+            -0.0032093863279928723
+          ]
+        },
+        {
+          "seed": 5204,
+          "steps": 12,
+          "return_sum": 10.655978920684362,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07600000000000005
+            },
+            {
+              "event": "released",
+              "time_s": 0.12000000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.25852008499754825,
+          "initial_pose_offset_rad": [
+            0.006800603937534817,
+            -0.0030026093037508143
+          ]
+        },
+        {
+          "seed": 5205,
+          "steps": 11,
+          "return_sum": 10.603384740036862,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.06600000000000004
+            },
+            {
+              "event": "released",
+              "time_s": 0.10800000000000008
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.23351322249554524,
+          "initial_pose_offset_rad": [
+            0.007613427027530454,
+            -0.005948400417002232
+          ]
+        },
+        {
+          "seed": 5206,
+          "steps": 12,
+          "return_sum": 10.680592000887177,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07800000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.12000000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.2616851175609815,
+          "initial_pose_offset_rad": [
+            0.005436300841638936,
+            -0.002521339672148774
+          ]
+        },
+        {
+          "seed": 5207,
+          "steps": 14,
+          "return_sum": 10.683854303018544,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 7,
+          "peak_force_N": 0.41737268448417986,
+          "initial_pose_offset_rad": [
+            0.005379567931877889,
+            0.005939388374366464
+          ]
+        },
+        {
+          "seed": 5208,
+          "steps": 13,
+          "return_sum": 10.55625961306945,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07800000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.12600000000000008
+            }
+          ],
+          "saturation_channels": 10,
+          "peak_force_N": 0.537725705875499,
+          "initial_pose_offset_rad": [
+            0.00807684106494321,
+            0.008540757680644035
+          ]
+        },
+        {
+          "seed": 5209,
+          "steps": 12,
+          "return_sum": 10.663386951659238,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07800000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.11800000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.2334514336367709,
+          "initial_pose_offset_rad": [
+            0.004536248276819102,
+            -0.004298408463617489
+          ]
+        },
+        {
+          "seed": 5210,
+          "steps": 14,
+          "return_sum": 10.637551150718028,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.39524379331688425,
+          "initial_pose_offset_rad": [
+            -0.007466442464397207,
+            0.0037467035593465687
+          ]
+        },
+        {
+          "seed": 5211,
+          "steps": 14,
+          "return_sum": 10.748404931651127,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.3538279430785409,
+          "initial_pose_offset_rad": [
+            -0.0014197240577688325,
+            0.0024790996642291715
+          ]
+        },
+        {
+          "seed": 5212,
+          "steps": 13,
+          "return_sum": 10.601644623556153,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07800000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1240000000000001
+            }
+          ],
+          "saturation_channels": 10,
+          "peak_force_N": 0.5084323339591885,
+          "initial_pose_offset_rad": [
+            -0.0002054513706478967,
+            0.007781484589880537
+          ]
+        },
+        {
+          "seed": 5213,
+          "steps": 13,
+          "return_sum": 10.516944641705658,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07800000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.12600000000000008
+            }
+          ],
+          "saturation_channels": 10,
+          "peak_force_N": 0.5754327312948144,
+          "initial_pose_offset_rad": [
+            -0.005949786687102171,
+            0.00851864145735572
+          ]
+        },
+        {
+          "seed": 5214,
+          "steps": 12,
+          "return_sum": 10.655476109145813,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08000000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.12000000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.29369422708272536,
+          "initial_pose_offset_rad": [
+            -0.004605553903894468,
+            -0.0021759528181747342
+          ]
+        },
+        {
+          "seed": 5215,
+          "steps": 14,
+          "return_sum": 10.715579865129566,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.34017692519556797,
+          "initial_pose_offset_rad": [
+            -0.0031419253981113024,
+            0.0013035185472369218
+          ]
+        },
+        {
+          "seed": 5216,
+          "steps": 13,
+          "return_sum": 10.508666822035632,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07800000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.12600000000000008
+            }
+          ],
+          "saturation_channels": 10,
+          "peak_force_N": 0.5407605550968793,
+          "initial_pose_offset_rad": [
+            -0.006388973632407084,
+            0.007893622148087812
+          ]
+        },
+        {
+          "seed": 5217,
+          "steps": 14,
+          "return_sum": 10.744967599815187,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08400000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.3647750029016586,
+          "initial_pose_offset_rad": [
+            0.005859028887708231,
+            0.004013257074986642
+          ]
+        },
+        {
+          "seed": 5218,
+          "steps": 12,
+          "return_sum": 10.62754163670234,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07200000000000005
+            },
+            {
+              "event": "released",
+              "time_s": 0.11800000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.20703910082541277,
+          "initial_pose_offset_rad": [
+            -0.0003635053243086148,
+            -0.006811057628181829
+          ]
+        },
+        {
+          "seed": 5219,
+          "steps": 14,
+          "return_sum": 10.754359391822296,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08400000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.35385516804436357,
+          "initial_pose_offset_rad": [
+            0.00458569065363479,
+            0.003307982594816322
+          ]
+        },
+        {
+          "seed": 5220,
+          "steps": 12,
+          "return_sum": 10.670279352827622,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07800000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.12000000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.29231595176137787,
+          "initial_pose_offset_rad": [
+            0.007729244742988696,
+            -0.0007499615754055272
+          ]
+        },
+        {
+          "seed": 5221,
+          "steps": 13,
+          "return_sum": 10.613404066318198,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08000000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1220000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.3295869103792612,
+          "initial_pose_offset_rad": [
+            -0.007415827298954466,
+            -0.0006414712904524568
+          ]
+        },
+        {
+          "seed": 5222,
+          "steps": 13,
+          "return_sum": 10.703946269260909,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1300000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.2893608322825606,
+          "initial_pose_offset_rad": [
+            -0.0012466179424919011,
+            -0.0014326415978508655
+          ]
+        },
+        {
+          "seed": 5223,
+          "steps": 11,
+          "return_sum": 10.62329551723725,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07000000000000005
+            },
+            {
+              "event": "released",
+              "time_s": 0.10800000000000008
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.18134286864878055,
+          "initial_pose_offset_rad": [
+            0.0014467301068865968,
+            -0.007764612927336693
+          ]
+        },
+        {
+          "seed": 5224,
+          "steps": 12,
+          "return_sum": 10.6092154509347,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07600000000000005
+            },
+            {
+              "event": "released",
+              "time_s": 0.12000000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.2600996509654149,
+          "initial_pose_offset_rad": [
+            -0.004755299648525868,
+            -0.004715720790698533
+          ]
+        },
+        {
+          "seed": 5225,
+          "steps": 13,
+          "return_sum": 10.73289128925185,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1300000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.3336457334772247,
+          "initial_pose_offset_rad": [
+            0.005826161411999604,
+            0.002063830683590017
+          ]
+        },
+        {
+          "seed": 5226,
+          "steps": 12,
+          "return_sum": 10.649748118780517,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07800000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.12000000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.2546775213678878,
+          "initial_pose_offset_rad": [
+            -0.002651863862529217,
+            -0.004231589652345706
+          ]
+        },
+        {
+          "seed": 5227,
+          "steps": 13,
+          "return_sum": 10.54861127780744,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07800000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.12600000000000008
+            }
+          ],
+          "saturation_channels": 10,
+          "peak_force_N": 0.5622924539459404,
+          "initial_pose_offset_rad": [
+            -0.004410433878679929,
+            0.008417849758024515
+          ]
+        },
+        {
+          "seed": 5228,
+          "steps": 11,
+          "return_sum": 10.620469912622575,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.06800000000000005
+            },
+            {
+              "event": "released",
+              "time_s": 0.10800000000000008
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.2167550262729942,
+          "initial_pose_offset_rad": [
+            0.006228200025926381,
+            -0.00616835189320679
+          ]
+        },
+        {
+          "seed": 5229,
+          "steps": 13,
+          "return_sum": 10.676217138706104,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1300000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.2960767952623291,
+          "initial_pose_offset_rad": [
+            -0.0035891315415186144,
+            -0.0015911378086990926
+          ]
+        },
+        {
+          "seed": 5230,
+          "steps": 14,
+          "return_sum": 10.698248602850642,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08400000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 7,
+          "peak_force_N": 0.3963758451907567,
+          "initial_pose_offset_rad": [
+            0.0003213977432795964,
+            0.004956850271532072
+          ]
+        },
+        {
+          "seed": 5231,
+          "steps": 13,
+          "return_sum": 10.719417426083698,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1300000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.2939468652892769,
+          "initial_pose_offset_rad": [
+            9.676744799459294e-05,
+            -0.0008839367842403243
+          ]
+        },
+        {
+          "seed": 5232,
+          "steps": 14,
+          "return_sum": 10.64584314603476,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.38599771820902384,
+          "initial_pose_offset_rad": [
+            -0.007199819525506895,
+            0.003252415658746717
+          ]
+        },
+        {
+          "seed": 5233,
+          "steps": 14,
+          "return_sum": 10.645336976438495,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 6,
+          "peak_force_N": 0.3974037036204116,
+          "initial_pose_offset_rad": [
+            -0.005891575384942317,
+            0.004136263154105678
+          ]
+        },
+        {
+          "seed": 5234,
+          "steps": 14,
+          "return_sum": 10.657834662871759,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 6,
+          "peak_force_N": 0.40211239935893117,
+          "initial_pose_offset_rad": [
+            -0.005274654335257257,
+            0.004433927224569437
+          ]
+        },
+        {
+          "seed": 5235,
+          "steps": 14,
+          "return_sum": 10.737448922849055,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08400000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.3787257065543413,
+          "initial_pose_offset_rad": [
+            -0.0024107918510816537,
+            0.003858729138557568
+          ]
+        },
+        {
+          "seed": 5236,
+          "steps": 14,
+          "return_sum": 10.656768984274787,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 8,
+          "peak_force_N": 0.4397744915234748,
+          "initial_pose_offset_rad": [
+            -0.0008474628053004301,
+            0.006153838523452328
+          ]
+        },
+        {
+          "seed": 5237,
+          "steps": 12,
+          "return_sum": 10.6405430969371,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07400000000000005
+            },
+            {
+              "event": "released",
+              "time_s": 0.11800000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.21631193116415703,
+          "initial_pose_offset_rad": [
+            0.00497953143669175,
+            -0.005512810963549383
+          ]
+        },
+        {
+          "seed": 5238,
+          "steps": 12,
+          "return_sum": 10.673775297199263,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08000000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.12000000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.28343229373541723,
+          "initial_pose_offset_rad": [
+            -0.0031826797189036396,
+            -0.0023792980903495626
+          ]
+        },
+        {
+          "seed": 5239,
+          "steps": 14,
+          "return_sum": 10.752701203929986,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.3386801222949336,
+          "initial_pose_offset_rad": [
+            0.0018830943415349302,
+            0.0021104406856449856
+          ]
+        },
+        {
+          "seed": 5240,
+          "steps": 10,
+          "return_sum": 10.592970691626101,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.05800000000000004
+            },
+            {
+              "event": "released",
+              "time_s": 0.09800000000000007
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.24167602746135608,
+          "initial_pose_offset_rad": [
+            0.007656330088558565,
+            -0.006767395006659509
+          ]
+        },
+        {
+          "seed": 5241,
+          "steps": 14,
+          "return_sum": 10.765709975651985,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08400000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.36533365774835996,
+          "initial_pose_offset_rad": [
+            0.002210300972362664,
+            0.0037832849515626126
+          ]
+        },
+        {
+          "seed": 5242,
+          "steps": 14,
+          "return_sum": 10.615848116589033,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 6,
+          "peak_force_N": 0.4065541266137751,
+          "initial_pose_offset_rad": [
+            -0.007095035327423124,
+            0.004317759034586491
+          ]
+        },
+        {
+          "seed": 5243,
+          "steps": 13,
+          "return_sum": 10.729625576457376,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1300000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.30085675881803686,
+          "initial_pose_offset_rad": [
+            0.0010891165493124547,
+            -0.00030356961419542906
+          ]
+        },
+        {
+          "seed": 5244,
+          "steps": 12,
+          "return_sum": 10.632036926828293,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07400000000000005
+            },
+            {
+              "event": "released",
+              "time_s": 0.11800000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.22495165954730806,
+          "initial_pose_offset_rad": [
+            -0.0014842227952377826,
+            -0.005999081950415421
+          ]
+        },
+        {
+          "seed": 5245,
+          "steps": 13,
+          "return_sum": 10.678909695611747,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08000000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1220000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.3181491732496829,
+          "initial_pose_offset_rad": [
+            -0.004322101666033639,
+            -0.00044547330637767615
+          ]
+        },
+        {
+          "seed": 5246,
+          "steps": 14,
+          "return_sum": 10.698880141064981,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 7,
+          "peak_force_N": 0.40817079306010806,
+          "initial_pose_offset_rad": [
+            0.0031227759779473238,
+            0.005536020007298328
+          ]
+        },
+        {
+          "seed": 5247,
+          "steps": 12,
+          "return_sum": 10.642803810286312,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08000000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.12000000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.26221712496349303,
+          "initial_pose_offset_rad": [
+            -0.0035793340304585176,
+            -0.003933357569491261
+          ]
+        },
+        {
+          "seed": 5248,
+          "steps": 14,
+          "return_sum": 10.612280593516628,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1340000000000001
+            }
+          ],
+          "saturation_channels": 9,
+          "peak_force_N": 0.4887560019803189,
+          "initial_pose_offset_rad": [
+            -0.002041332131165614,
+            0.007191918988694521
+          ]
+        },
+        {
+          "seed": 5249,
+          "steps": 11,
+          "return_sum": 10.591127207681357,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.06200000000000004
+            },
+            {
+              "event": "released",
+              "time_s": 0.10800000000000008
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.24463012991083993,
+          "initial_pose_offset_rad": [
+            0.008131960639600193,
+            -0.006093501673489632
+          ]
+        }
+      ],
+      "invalid_resets": [],
+      "summary": {
+        "valid_episodes": 50,
+        "invalid_resets": 0,
+        "successes": 50,
+        "success_rate": 1.0,
+        "mean_return": 10.65596477333569,
+        "mean_saturation_channels": 5.92,
+        "mean_peak_force_N": 0.3403898095867766
+      }
+    },
+    "2028": {
+      "model_file": "artifacts/ppo_multiseed_2026-11-08/ppo_seed_2028.zip",
+      "actual_timesteps": 32768,
+      "evaluation": [
+        {
+          "seed": 5200,
+          "steps": 12,
+          "return_sum": 10.628672608876649,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07600000000000005
+            },
+            {
+              "event": "released",
+              "time_s": 0.11800000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.2409101266685807,
+          "initial_pose_offset_rad": [
+            -0.0037624222093182013,
+            -0.005224395118023295
+          ]
+        },
+        {
+          "seed": 5201,
+          "steps": 13,
+          "return_sum": 10.715962074541363,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08400000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1300000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.2815184149530384,
+          "initial_pose_offset_rad": [
+            -0.000759655850169392,
+            -0.0012786278568542085
+          ]
+        },
+        {
+          "seed": 5202,
+          "steps": 13,
+          "return_sum": 10.597116153827722,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07800000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.12600000000000008
+            }
+          ],
+          "saturation_channels": 10,
+          "peak_force_N": 0.5297587122622279,
+          "initial_pose_offset_rad": [
+            0.004981385407844835,
+            0.008515094356057925
+          ]
+        },
+        {
+          "seed": 5203,
+          "steps": 13,
+          "return_sum": 10.69088360611056,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.12800000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.24656328423097973,
+          "initial_pose_offset_rad": [
+            0.000589900592508092,
+            -0.0032093863279928723
+          ]
+        },
+        {
+          "seed": 5204,
+          "steps": 12,
+          "return_sum": 10.655797595418328,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07800000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.12000000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.24677394207983946,
+          "initial_pose_offset_rad": [
+            0.006800603937534817,
+            -0.0030026093037508143
+          ]
+        },
+        {
+          "seed": 5205,
+          "steps": 11,
+          "return_sum": 10.600509032342325,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.06600000000000004
+            },
+            {
+              "event": "released",
+              "time_s": 0.10800000000000008
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.23008493010590633,
+          "initial_pose_offset_rad": [
+            0.007613427027530454,
+            -0.005948400417002232
+          ]
+        },
+        {
+          "seed": 5206,
+          "steps": 12,
+          "return_sum": 10.681862929019037,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08000000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.12000000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.25312731519903875,
+          "initial_pose_offset_rad": [
+            0.005436300841638936,
+            -0.002521339672148774
+          ]
+        },
+        {
+          "seed": 5207,
+          "steps": 14,
+          "return_sum": 10.685895923264143,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 7,
+          "peak_force_N": 0.40798622215687635,
+          "initial_pose_offset_rad": [
+            0.005379567931877889,
+            0.005939388374366464
+          ]
+        },
+        {
+          "seed": 5208,
+          "steps": 13,
+          "return_sum": 10.556665843829204,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07800000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.12600000000000008
+            }
+          ],
+          "saturation_channels": 10,
+          "peak_force_N": 0.527530440098623,
+          "initial_pose_offset_rad": [
+            0.00807684106494321,
+            0.008540757680644035
+          ]
+        },
+        {
+          "seed": 5209,
+          "steps": 12,
+          "return_sum": 10.664411430988977,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07800000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.11800000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.22493352798819444,
+          "initial_pose_offset_rad": [
+            0.004536248276819102,
+            -0.004298408463617489
+          ]
+        },
+        {
+          "seed": 5210,
+          "steps": 14,
+          "return_sum": 10.6460949557675,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.38710121961854965,
+          "initial_pose_offset_rad": [
+            -0.007466442464397207,
+            0.0037467035593465687
+          ]
+        },
+        {
+          "seed": 5211,
+          "steps": 14,
+          "return_sum": 10.75470493999999,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08400000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.3433979760968758,
+          "initial_pose_offset_rad": [
+            -0.0014197240577688325,
+            0.0024790996642291715
+          ]
+        },
+        {
+          "seed": 5212,
+          "steps": 14,
+          "return_sum": 10.601612130357482,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1340000000000001
+            }
+          ],
+          "saturation_channels": 10,
+          "peak_force_N": 0.5018993943250538,
+          "initial_pose_offset_rad": [
+            -0.0002054513706478967,
+            0.007781484589880537
+          ]
+        },
+        {
+          "seed": 5213,
+          "steps": 13,
+          "return_sum": 10.524274103325311,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07800000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.12600000000000008
+            }
+          ],
+          "saturation_channels": 10,
+          "peak_force_N": 0.5663194928555655,
+          "initial_pose_offset_rad": [
+            -0.005949786687102171,
+            0.00851864145735572
+          ]
+        },
+        {
+          "seed": 5214,
+          "steps": 13,
+          "return_sum": 10.660573214024172,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1300000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.2829627896834236,
+          "initial_pose_offset_rad": [
+            -0.004605553903894468,
+            -0.0021759528181747342
+          ]
+        },
+        {
+          "seed": 5215,
+          "steps": 14,
+          "return_sum": 10.722008131420203,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.3317021259116749,
+          "initial_pose_offset_rad": [
+            -0.0031419253981113024,
+            0.0013035185472369218
+          ]
+        },
+        {
+          "seed": 5216,
+          "steps": 13,
+          "return_sum": 10.517020187003233,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08000000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.12600000000000008
+            }
+          ],
+          "saturation_channels": 10,
+          "peak_force_N": 0.5274168578266424,
+          "initial_pose_offset_rad": [
+            -0.006388973632407084,
+            0.007893622148087812
+          ]
+        },
+        {
+          "seed": 5217,
+          "steps": 14,
+          "return_sum": 10.74680900730981,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08400000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.3556837274480168,
+          "initial_pose_offset_rad": [
+            0.005859028887708231,
+            0.004013257074986642
+          ]
+        },
+        {
+          "seed": 5218,
+          "steps": 12,
+          "return_sum": 10.635939430577245,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07600000000000005
+            },
+            {
+              "event": "released",
+              "time_s": 0.11800000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.19650119924893852,
+          "initial_pose_offset_rad": [
+            -0.0003635053243086148,
+            -0.006811057628181829
+          ]
+        },
+        {
+          "seed": 5219,
+          "steps": 14,
+          "return_sum": 10.756870267790976,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08400000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.344683848705601,
+          "initial_pose_offset_rad": [
+            0.00458569065363479,
+            0.003307982594816322
+          ]
+        },
+        {
+          "seed": 5220,
+          "steps": 13,
+          "return_sum": 10.666457386561792,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1300000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.2797593782705379,
+          "initial_pose_offset_rad": [
+            0.007729244742988696,
+            -0.0007499615754055272
+          ]
+        },
+        {
+          "seed": 5221,
+          "steps": 13,
+          "return_sum": 10.627849079900317,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1300000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.31853227145586205,
+          "initial_pose_offset_rad": [
+            -0.007415827298954466,
+            -0.0006414712904524568
+          ]
+        },
+        {
+          "seed": 5222,
+          "steps": 13,
+          "return_sum": 10.71079525417612,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08400000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1300000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.280838228057668,
+          "initial_pose_offset_rad": [
+            -0.0012466179424919011,
+            -0.0014326415978508655
+          ]
+        },
+        {
+          "seed": 5223,
+          "steps": 12,
+          "return_sum": 10.623280013415794,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07200000000000005
+            },
+            {
+              "event": "released",
+              "time_s": 0.11600000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.17321274290113192,
+          "initial_pose_offset_rad": [
+            0.0014467301068865968,
+            -0.007764612927336693
+          ]
+        },
+        {
+          "seed": 5224,
+          "steps": 12,
+          "return_sum": 10.621889271482633,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07600000000000005
+            },
+            {
+              "event": "released",
+              "time_s": 0.12000000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.2527351887870821,
+          "initial_pose_offset_rad": [
+            -0.004755299648525868,
+            -0.004715720790698533
+          ]
+        },
+        {
+          "seed": 5225,
+          "steps": 13,
+          "return_sum": 10.734855759128356,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1300000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.32480225437168553,
+          "initial_pose_offset_rad": [
+            0.005826161411999604,
+            0.002063830683590017
+          ]
+        },
+        {
+          "seed": 5226,
+          "steps": 12,
+          "return_sum": 10.660115628103767,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08000000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.12000000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.24441296255151101,
+          "initial_pose_offset_rad": [
+            -0.002651863862529217,
+            -0.004231589652345706
+          ]
+        },
+        {
+          "seed": 5227,
+          "steps": 13,
+          "return_sum": 10.555201316515888,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07800000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.12600000000000008
+            }
+          ],
+          "saturation_channels": 10,
+          "peak_force_N": 0.5529639910285392,
+          "initial_pose_offset_rad": [
+            -0.004410433878679929,
+            0.008417849758024515
+          ]
+        },
+        {
+          "seed": 5228,
+          "steps": 11,
+          "return_sum": 10.619476263625083,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.06800000000000005
+            },
+            {
+              "event": "released",
+              "time_s": 0.10800000000000008
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.2112760906010313,
+          "initial_pose_offset_rad": [
+            0.006228200025926381,
+            -0.00616835189320679
+          ]
+        },
+        {
+          "seed": 5229,
+          "steps": 13,
+          "return_sum": 10.684459976022593,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1300000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.2880051734074269,
+          "initial_pose_offset_rad": [
+            -0.0035891315415186144,
+            -0.0015911378086990926
+          ]
+        },
+        {
+          "seed": 5230,
+          "steps": 14,
+          "return_sum": 10.702930522190998,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08400000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 7,
+          "peak_force_N": 0.3870463429465557,
+          "initial_pose_offset_rad": [
+            0.0003213977432795964,
+            0.004956850271532072
+          ]
+        },
+        {
+          "seed": 5231,
+          "steps": 13,
+          "return_sum": 10.725102515736747,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08400000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1300000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.28506377673280103,
+          "initial_pose_offset_rad": [
+            9.676744799459294e-05,
+            -0.0008839367842403243
+          ]
+        },
+        {
+          "seed": 5232,
+          "steps": 14,
+          "return_sum": 10.654265043494416,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.3778519912992355,
+          "initial_pose_offset_rad": [
+            -0.007199819525506895,
+            0.003252415658746717
+          ]
+        },
+        {
+          "seed": 5233,
+          "steps": 14,
+          "return_sum": 10.653095244104449,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 6,
+          "peak_force_N": 0.3889937229028086,
+          "initial_pose_offset_rad": [
+            -0.005891575384942317,
+            0.004136263154105678
+          ]
+        },
+        {
+          "seed": 5234,
+          "steps": 14,
+          "return_sum": 10.66528136218516,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 6,
+          "peak_force_N": 0.39344416267651194,
+          "initial_pose_offset_rad": [
+            -0.005274654335257257,
+            0.004433927224569437
+          ]
+        },
+        {
+          "seed": 5235,
+          "steps": 14,
+          "return_sum": 10.743486629085758,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08400000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.36974764213597666,
+          "initial_pose_offset_rad": [
+            -0.0024107918510816537,
+            0.003858729138557568
+          ]
+        },
+        {
+          "seed": 5236,
+          "steps": 14,
+          "return_sum": 10.661980956979686,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 8,
+          "peak_force_N": 0.4302075716839751,
+          "initial_pose_offset_rad": [
+            -0.0008474628053004301,
+            0.006153838523452328
+          ]
+        },
+        {
+          "seed": 5237,
+          "steps": 12,
+          "return_sum": 10.640860032591974,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07400000000000005
+            },
+            {
+              "event": "released",
+              "time_s": 0.11800000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.2078376618651359,
+          "initial_pose_offset_rad": [
+            0.00497953143669175,
+            -0.005512810963549383
+          ]
+        },
+        {
+          "seed": 5238,
+          "steps": 12,
+          "return_sum": 10.682525636379701,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08000000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.12000000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.2753936819327558,
+          "initial_pose_offset_rad": [
+            -0.0031826797189036396,
+            -0.0023792980903495626
+          ]
+        },
+        {
+          "seed": 5239,
+          "steps": 14,
+          "return_sum": 10.7570685052384,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08400000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.32994855045145627,
+          "initial_pose_offset_rad": [
+            0.0018830943415349302,
+            0.0021104406856449856
+          ]
+        },
+        {
+          "seed": 5240,
+          "steps": 10,
+          "return_sum": 10.59054031838195,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.05800000000000004
+            },
+            {
+              "event": "released",
+              "time_s": 0.09800000000000007
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.2407812682966633,
+          "initial_pose_offset_rad": [
+            0.007656330088558565,
+            -0.006767395006659509
+          ]
+        },
+        {
+          "seed": 5241,
+          "steps": 14,
+          "return_sum": 10.769389979349413,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08400000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.3562871530517923,
+          "initial_pose_offset_rad": [
+            0.002210300972362664,
+            0.0037832849515626126
+          ]
+        },
+        {
+          "seed": 5242,
+          "steps": 14,
+          "return_sum": 10.624196456183123,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 6,
+          "peak_force_N": 0.3982690138031202,
+          "initial_pose_offset_rad": [
+            -0.007095035327423124,
+            0.004317759034586491
+          ]
+        },
+        {
+          "seed": 5243,
+          "steps": 13,
+          "return_sum": 10.734617359495811,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08400000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1300000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.2920077599526705,
+          "initial_pose_offset_rad": [
+            0.0010891165493124547,
+            -0.00030356961419542906
+          ]
+        },
+        {
+          "seed": 5244,
+          "steps": 12,
+          "return_sum": 10.64220876692382,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.07800000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.11800000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.21468661539489384,
+          "initial_pose_offset_rad": [
+            -0.0014842227952377826,
+            -0.005999081950415421
+          ]
+        },
+        {
+          "seed": 5245,
+          "steps": 13,
+          "return_sum": 10.691860781786298,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08400000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1300000000000001
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.3076995280039837,
+          "initial_pose_offset_rad": [
+            -0.004322101666033639,
+            -0.00044547330637767615
+          ]
+        },
+        {
+          "seed": 5246,
+          "steps": 14,
+          "return_sum": 10.702081427873365,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1320000000000001
+            }
+          ],
+          "saturation_channels": 7,
+          "peak_force_N": 0.3987965801319233,
+          "initial_pose_offset_rad": [
+            0.0031227759779473238,
+            0.005536020007298328
+          ]
+        },
+        {
+          "seed": 5247,
+          "steps": 12,
+          "return_sum": 10.653352749920064,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08000000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.12000000000000009
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.25435661514275115,
+          "initial_pose_offset_rad": [
+            -0.0035793340304585176,
+            -0.003933357569491261
+          ]
+        },
+        {
+          "seed": 5248,
+          "steps": 14,
+          "return_sum": 10.618074571040225,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.08200000000000006
+            },
+            {
+              "event": "released",
+              "time_s": 0.1340000000000001
+            }
+          ],
+          "saturation_channels": 9,
+          "peak_force_N": 0.47890919474922294,
+          "initial_pose_offset_rad": [
+            -0.002041332131165614,
+            0.007191918988694521
+          ]
+        },
+        {
+          "seed": 5249,
+          "steps": 11,
+          "return_sum": 10.587563235660282,
+          "success": true,
+          "terminated": true,
+          "truncated": false,
+          "events": [
+            {
+              "event": "pressed",
+              "time_s": 0.06200000000000004
+            },
+            {
+              "event": "released",
+              "time_s": 0.10800000000000008
+            }
+          ],
+          "saturation_channels": 5,
+          "peak_force_N": 0.24163626633631938,
+          "initial_pose_offset_rad": [
+            0.008131960639600193,
+            -0.006093501673489632
+          ]
+        }
+      ],
+      "invalid_resets": [],
+      "summary": {
+        "valid_episodes": 50,
+        "invalid_resets": 0,
+        "successes": 50,
+        "success_rate": 1.0,
+        "mean_return": 10.660970912186563,
+        "mean_saturation_channels": 5.92,
+        "mean_peak_force_N": 0.3316471785677335
+      }
+    }
+  }
+}

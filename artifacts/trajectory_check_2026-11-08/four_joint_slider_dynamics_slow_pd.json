@@ -1,0 +1,229 @@
+{
+  "purpose": "Slower/lower-gain smooth-profile comparison; diagnostic only.",
+  "joint_order": [
+    "elv_angle",
+    "shoulder_elv",
+    "shoulder_rot",
+    "elbow_flexion"
+  ],
+  "controller": {
+    "kp": 20,
+    "kd": 6,
+    "approach_steps": 300,
+    "press_steps": 300,
+    "outward_m": 0.002,
+    "inward_m": -0.0004,
+    "smooth_profile": true
+  },
+  "results": [
+    {
+      "button": 0,
+      "finite": true,
+      "min_distance_m": 0.15722610890825023,
+      "max_slider_position_m": 0.0,
+      "peak_force_N": 0.0,
+      "loaded_samples": 0,
+      "saturation_samples": 0,
+      "final_slider_position_m": 0.0,
+      "phases": {
+        "approach": {
+          "min_distance_m": 0.15722610890825023,
+          "max_position_m": 0.0,
+          "loaded_samples": 0,
+          "peak_force_N": 0.0,
+          "max_joint_error_rad": 0.08583883883000526,
+          "max_joint_speed_rad_s": 0.21199857841441838
+        },
+        "press": {
+          "min_distance_m": 0.30706795390797603,
+          "max_position_m": 0.0,
+          "loaded_samples": 0,
+          "peak_force_N": 0.0,
+          "max_joint_error_rad": 0.08911680713009575,
+          "max_joint_speed_rad_s": 0.24905365795053014
+        },
+        "hold": {
+          "min_distance_m": 0.4138463291687542,
+          "max_position_m": 0.0,
+          "loaded_samples": 0,
+          "peak_force_N": 0.0,
+          "max_joint_error_rad": 0.0802284955708064,
+          "max_joint_speed_rad_s": 0.23797571110913424
+        },
+        "release": {
+          "min_distance_m": 0.4407224355562333,
+          "max_position_m": 0.0,
+          "loaded_samples": 0,
+          "peak_force_N": 0.0,
+          "max_joint_error_rad": 0.09710078214248584,
+          "max_joint_speed_rad_s": 0.13648840451496502
+        },
+        "outside": {
+          "min_distance_m": 0.27808658756517657,
+          "max_position_m": 0.0,
+          "loaded_samples": 0,
+          "peak_force_N": 0.0,
+          "max_joint_error_rad": 0.06012580280481812,
+          "max_joint_speed_rad_s": 0.17170759100346436
+        }
+      }
+    },
+    {
+      "button": 1,
+      "finite": true,
+      "min_distance_m": 0.0,
+      "max_slider_position_m": 0.0060746990904631,
+      "peak_force_N": 41.93998810841544,
+      "loaded_samples": 0,
+      "saturation_samples": 318,
+      "final_slider_position_m": -6.843011600957959e-21,
+      "phases": {
+        "approach": {
+          "min_distance_m": 0.0,
+          "max_position_m": 0.0,
+          "loaded_samples": 0,
+          "peak_force_N": 0.0,
+          "max_joint_error_rad": 0.04104339918866559,
+          "max_joint_speed_rad_s": 0.22000492842769978
+        },
+        "press": {
+          "min_distance_m": 0.0,
+          "max_position_m": 0.0060746990904631,
+          "loaded_samples": 0,
+          "peak_force_N": 41.93998810841544,
+          "max_joint_error_rad": 0.14611517053748152,
+          "max_joint_speed_rad_s": 0.44038703163987064
+        },
+        "hold": {
+          "min_distance_m": 0.028559478539042928,
+          "max_position_m": 0.005504939239054592,
+          "loaded_samples": 0,
+          "peak_force_N": 17.30721363327566,
+          "max_joint_error_rad": 0.16434606033392407,
+          "max_joint_speed_rad_s": 0.4326400025378135
+        },
+        "release": {
+          "min_distance_m": 0.3284122692225385,
+          "max_position_m": 5.289107103376247e-20,
+          "loaded_samples": 0,
+          "peak_force_N": 0.0,
+          "max_joint_error_rad": 0.083064103892248,
+          "max_joint_speed_rad_s": 0.3536701396969661
+        },
+        "outside": {
+          "min_distance_m": 0.6767335193957689,
+          "max_position_m": 4.9784544225294287e-20,
+          "loaded_samples": 0,
+          "peak_force_N": 0.0,
+          "max_joint_error_rad": 0.15405082954814436,
+          "max_joint_speed_rad_s": 0.3562610382605011
+        }
+      }
+    },
+    {
+      "button": 2,
+      "finite": true,
+      "min_distance_m": 0.0,
+      "max_slider_position_m": 0.0,
+      "peak_force_N": 0.0,
+      "loaded_samples": 0,
+      "saturation_samples": 118,
+      "final_slider_position_m": 0.0,
+      "phases": {
+        "approach": {
+          "min_distance_m": 0.0,
+          "max_position_m": 0.0,
+          "loaded_samples": 0,
+          "peak_force_N": 0.0,
+          "max_joint_error_rad": 0.17759104197833753,
+          "max_joint_speed_rad_s": 0.4759036507523457
+        },
+        "press": {
+          "min_distance_m": 0.3915884123993748,
+          "max_position_m": 0.0,
+          "loaded_samples": 0,
+          "peak_force_N": 0.0,
+          "max_joint_error_rad": 0.27169130664090674,
+          "max_joint_speed_rad_s": 0.6198242069228624
+        },
+        "hold": {
+          "min_distance_m": 0.9179192597855684,
+          "max_position_m": 0.0,
+          "loaded_samples": 0,
+          "peak_force_N": 0.0,
+          "max_joint_error_rad": 0.24418920083525622,
+          "max_joint_speed_rad_s": 0.9550466463415321
+        },
+        "release": {
+          "min_distance_m": 0.8923853405608961,
+          "max_position_m": 0.0,
+          "loaded_samples": 0,
+          "peak_force_N": 0.0,
+          "max_joint_error_rad": 0.28656154269764733,
+          "max_joint_speed_rad_s": 1.111988613365456
+        },
+        "outside": {
+          "min_distance_m": 0.4675312910649078,
+          "max_position_m": 0.0,
+          "loaded_samples": 0,
+          "peak_force_N": 0.0,
+          "max_joint_error_rad": 0.2386781566554363,
+          "max_joint_speed_rad_s": 0.9312105759820725
+        }
+      }
+    },
+    {
+      "button": 3,
+      "finite": true,
+      "min_distance_m": 0.0,
+      "max_slider_position_m": 0.0,
+      "peak_force_N": 0.0,
+      "loaded_samples": 0,
+      "saturation_samples": 81,
+      "final_slider_position_m": 0.0,
+      "phases": {
+        "approach": {
+          "min_distance_m": 0.0,
+          "max_position_m": 0.0,
+          "loaded_samples": 0,
+          "peak_force_N": 0.0,
+          "max_joint_error_rad": 0.1057934755331007,
+          "max_joint_speed_rad_s": 0.23628257097944017
+        },
+        "press": {
+          "min_distance_m": 0.0,
+          "max_position_m": 0.0,
+          "loaded_samples": 0,
+          "peak_force_N": 0.0,
+          "max_joint_error_rad": 0.15075111634415128,
+          "max_joint_speed_rad_s": 0.23656275704492782
+        },
+        "hold": {
+          "min_distance_m": 0.25392850308021003,
+          "max_position_m": 0.0,
+          "loaded_samples": 0,
+          "peak_force_N": 0.0,
+          "max_joint_error_rad": 0.12231974268062107,
+          "max_joint_speed_rad_s": 0.32142792215788063
+        },
+        "release": {
+          "min_distance_m": 0.3621762596083035,
+          "max_position_m": 0.0,
+          "loaded_samples": 0,
+          "peak_force_N": 0.0,
+          "max_joint_error_rad": 0.1578315626576896,
+          "max_joint_speed_rad_s": 0.4990325539887626
+        },
+        "outside": {
+          "min_distance_m": 0.6303042577444269,
+          "max_position_m": 0.0,
+          "loaded_samples": 0,
+          "peak_force_N": 0.0,
+          "max_joint_error_rad": 0.2656337947028542,
+          "max_joint_speed_rad_s": 0.42447612040047145
+        }
+      }
+    }
+  ],
+  "limitations": "Temporary slider and approximate PD; no hardware safety interpretation."
+}

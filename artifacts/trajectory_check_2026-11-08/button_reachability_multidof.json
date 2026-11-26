@@ -1,0 +1,69 @@
+{
+  "purpose": "Coarse geometry scan only; no dynamics, trajectory, or task-success claim.",
+  "joints": [
+    "elv_angle",
+    "shoulder_elv",
+    "shoulder_rot",
+    "elbow_flexion"
+  ],
+  "grid_points_per_joint": 9,
+  "random_samples": 100000,
+  "samples": 106561,
+  "joint_ranges_rad": {
+    "elv_angle": [
+      -1.5708,
+      2.26893
+    ],
+    "shoulder_elv": [
+      0.0,
+      3.14159
+    ],
+    "shoulder_rot": [
+      -1.57,
+      0.349066
+    ],
+    "elbow_flexion": [
+      0.0,
+      2.26893
+    ]
+  },
+  "min_geom_distances_m": {
+    "0": -0.014019984226571133,
+    "1": -0.01367642116172027,
+    "2": -0.015267625880844318,
+    "3": -0.013329071189488109
+  },
+  "argmin_joint_values_rad": {
+    "0": [
+      -0.03463437950646764,
+      0.7964403162799989,
+      0.21124887305309414,
+      1.7798651390088502
+    ],
+    "1": [
+      0.2574501539689589,
+      0.6393045326858757,
+      0.11562621271044038,
+      1.7531248111844695
+    ],
+    "2": [
+      0.46232994695878715,
+      0.9659105226395469,
+      -0.2706886852709982,
+      1.4725474462173502
+    ],
+    "3": [
+      1.232688090595478,
+      0.5274009255932814,
+      -0.9559592849504241,
+      1.486069356129656
+    ]
+  },
+  "nonpositive_distance_sample_counts": {
+    "0": 38,
+    "1": 32,
+    "2": 33,
+    "3": 20
+  },
+  "limitations": "Grid resolution is coarse; positive/negative geom distance is a geometric diagnostic, not a valid press trajectory."
+}

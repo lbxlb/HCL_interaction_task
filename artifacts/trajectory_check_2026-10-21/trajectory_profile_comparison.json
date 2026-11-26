@@ -1,0 +1,16 @@
+{
+  "cosine": {
+    "tip_peak_mm": 8.980891144542031,
+    "tip_rms_mm": 3.7241887411827896,
+    "tip_worst_tail_mm": 0.08824811900547648,
+    "elbow_peak_torque_Nm": 6.3395045535716585,
+    "shoulder_peak_torque_Nm": 1.618438333488357
+  },
+  "quintic": {
+    "tip_peak_mm": 11.173992291595642,
+    "tip_rms_mm": 4.240477596912757,
+    "tip_worst_tail_mm": 0.05974998454216967,
+    "elbow_peak_torque_Nm": 6.723828489530431,
+    "shoulder_peak_torque_Nm": 1.7995729294783382
+  }
+}

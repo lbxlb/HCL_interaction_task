@@ -1,0 +1,58 @@
+{
+  "initial_control_note": "step 0 has zero motor controls before the first PD command",
+  "initial_contacts": [
+    {
+      "geoms": [
+        "thorax",
+        "scapula"
+      ],
+      "distance_m": -0.02131550539112084,
+      "normal_force_N": 16141.955506833227
+    },
+    {
+      "geoms": [
+        "thorax",
+        "humerus"
+      ],
+      "distance_m": -0.0023445997785908196,
+      "normal_force_N": 2641.1832101342334
+    },
+    {
+      "geoms": [
+        "clavicle",
+        "scapula"
+      ],
+      "distance_m": -0.013008815547789952,
+      "normal_force_N": 9737.750867037077
+    },
+    {
+      "geoms": [
+        "scapula",
+        "humerus"
+      ],
+      "distance_m": -0.0068732253619928204,
+      "normal_force_N": 3296.1541696897402
+    },
+    {
+      "geoms": [
+        "humerus",
+        "radius"
+      ],
+      "distance_m": -0.0017688740943141534,
+      "normal_force_N": 578.0222509570117
+    }
+  ],
+  "first_button_contact_step": 13,
+  "pre_button_contact_torques_Nm": {
+    "shoulder_rot": {
+      "min": -2.1251947928310297,
+      "max": -1.3574873001771142
+    },
+    "elbow_flexion": {
+      "min": -5.3613148933747325,
+      "max": -5.030092180489968
+    }
+  },
+  "max_abs_equality_residual_rad": 0.00027324041502511313,
+  "interpretation": "Internal contacts and contact torques precede button contact; causal contribution still requires a collision-filter control experiment."
+}

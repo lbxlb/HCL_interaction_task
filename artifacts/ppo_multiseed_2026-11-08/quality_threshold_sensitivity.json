@@ -1,0 +1,80 @@
+{
+  "purpose": "Sensitivity audit only; thresholds are hypothetical analysis values, not hardware limits.",
+  "arms": {
+    "2026": {
+      "episodes": 50,
+      "force_thresholds_N": {
+        "0.25": 40,
+        "0.3": 27,
+        "0.4": 12,
+        "0.5": 6,
+        "0.75": 0,
+        "1.0": 0
+      },
+      "saturation_thresholds_channels": {
+        "0": 50,
+        "5": 14,
+        "10": 0,
+        "15": 0
+      },
+      "observed_peak_force_range_N": [
+        0.18134286864878055,
+        0.575456024787956
+      ],
+      "observed_saturation_range_channels": [
+        5,
+        9
+      ]
+    },
+    "2027": {
+      "episodes": 50,
+      "force_thresholds_N": {
+        "0.25": 40,
+        "0.3": 27,
+        "0.4": 12,
+        "0.5": 6,
+        "0.75": 0,
+        "1.0": 0
+      },
+      "saturation_thresholds_channels": {
+        "0": 50,
+        "5": 14,
+        "10": 0,
+        "15": 0
+      },
+      "observed_peak_force_range_N": [
+        0.18134286864878055,
+        0.5754327312948144
+      ],
+      "observed_saturation_range_channels": [
+        5,
+        10
+      ]
+    },
+    "2028": {
+      "episodes": 50,
+      "force_thresholds_N": {
+        "0.25": 37,
+        "0.3": 26,
+        "0.4": 9,
+        "0.5": 6,
+        "0.75": 0,
+        "1.0": 0
+      },
+      "saturation_thresholds_channels": {
+        "0": 50,
+        "5": 14,
+        "10": 0,
+        "15": 0
+      },
+      "observed_peak_force_range_N": [
+        0.17321274290113192,
+        0.5663194928555655
+      ],
+      "observed_saturation_range_channels": [
+        5,
+        10
+      ]
+    }
+  }
+}

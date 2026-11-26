@@ -1,0 +1,4511 @@
+{
+  "experiment": "full temporary arm; outside-pose hold only; no press input",
+  "press_mode": false,
+  "mujoco_version": "3.3.7",
+  "timestep_s": 0.002,
+  "duration_s": 0.4000000000000003,
+  "source_integrator": "mjINT_EULER",
+  "integrator": "mjINT_IMPLICITFAST",
+  "controller": {
+    "kp": 50,
+    "kd": 8,
+    "torque_limit_Nm": 10,
+    "feedforward": "bias - passive, evaluated on copied current state"
+  },
+  "target_button": "button-0",
+  "internal_exclusions": [
+    [
+      "thorax",
+      "scapula"
+    ],
+    [
+      "thorax",
+      "humerus"
+    ],
+    [
+      "clavicle",
+      "scapula"
+    ],
+    [
+      "scapula",
+      "humerus"
+    ],
+    [
+      "humerus",
+      "radius"
+    ]
+  ],
+  "copied_source_state_by_joint_name": true,
+  "finger_margin_original_m": 0.001,
+  "finger_margin_probe_m": 0,
+  "slider": {
+    "axis_local": [
+      0,
+      0,
+      -1
+    ],
+    "range_m": [
+      0.0,
+      0.005
+    ],
+    "stiffness_N_m": 1000.0,
+    "damping_Ns_m": 10.0,
+    "solreflimit": [
+      0.004,
+      1.0
+    ],
+    "mass_kg": 0.05000000000000001,
+    "gravity_force_N": 0.3452363655867027,
+    "spring_reference_m": -0.0003452363655867027
+  },
+  "summary": {
+    "max_abs_slider_position_m": 0.0,
+    "max_abs_slider_velocity_m_s": 0.0,
+    "min_finger_button_distance_m": 0.0,
+    "min_positive_distance_query_m": 0.0033359408051994045,
+    "zero_distance_without_matching_contact_samples": 10,
+    "button_contact_sample_count": 0,
+    "max_slider_position_m": 0.0,
+    "peak_button_normal_force_N": 0,
+    "first_matching_geometric_contact_time_s": null,
+    "all_contact_sample_count": 0,
+    "max_abs_hinge_velocity_rad_s": 0.0005231654603538894,
+    "max_abs_arm_error_rad": 2.562368482283972e-06,
+    "motor_saturation_count": 0,
+    "warnings": []
+  },
+  "diagnostic_checks": {
+    "no_button_contact": true,
+    "zero_position_within_1nm": true,
+    "no_warning": true,
+    "no_motor_saturation": true
+  },
+  "samples": [
+    {
+      "step": 0,
+      "time_s": 0.0,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033413195716494558,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.0,
+      "arm_error_rad": [
+        0.0,
+        0.0
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "step": 1,
+      "time_s": 0.002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003341305873853003,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.00010779271712569482,
+      "arm_error_rad": [
+        -2.522887854183864e-08,
+        -6.641491578918135e-08
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500645087773184,
+        6.77140416187015
+      ]
+    },
+    {
+      "step": 2,
+      "time_s": 0.004,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033412786706831397,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.00019899471354917862,
+      "arm_error_rad": [
+        -7.03278735247892e-08,
+        -1.8289377190505718e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35016050156618017,
+        6.771152080934784
+      ]
+    },
+    {
+      "step": 3,
+      "time_s": 0.006,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003341238357629079,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.0002753958999368709,
+      "arm_error_rad": [
+        -1.303880265701718e-07,
+        -3.357325943920131e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3502375041967367,
+        6.770959056822603
+      ]
+    },
+    {
+      "step": 4,
+      "time_s": 0.008,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033411855032342884,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.0003386312721700336,
+      "arm_error_rad": [
+        -2.0118306712224587e-07,
+        -5.134451308563825e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35029694527750144,
+        6.770815802230555
+      ]
+    },
+    {
+      "step": 5,
+      "time_s": 0.01,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033411208082896487,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.00039018964223924306,
+      "arm_error_rad": [
+        -2.7910226144123307e-07,
+        -7.064771074816178e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3503411615846258,
+        6.770714534868498
+      ]
+    },
+    {
+      "step": 6,
+      "time_s": 0.012,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033410450710489687,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.00043142425846951946,
+      "arm_error_rad": [
+        -3.610870350778672e-07,
+        -9.069529571803514e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3503722695939647,
+        6.770648452782536
+      ]
+    },
+    {
+      "step": 7,
+      "time_s": 0.014,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033409591578091283,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.00046356290024567856,
+      "arm_error_rad": [
+        -4.44572001767618e-07,
+        -1.1084514206505247e-06
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3503921764702001,
+        6.770611624638191
+      ]
+    },
+    {
+      "step": 8,
+      "time_s": 0.016,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033408639781819173,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.0004877174361593323,
+      "arm_error_rad": [
+        -5.274303515323542e-07,
+        -1.3058070085225637e-06
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3504025936386326,
+        6.770598892105312
+      ]
+    },
+    {
+      "step": 9,
+      "time_s": 0.018000000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003340760464452883,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.000504892845824206,
+      "arm_error_rad": [
+        -6.079235080336254e-07,
+        -1.4949346045511902e-06
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3504050503921401,
+        6.770605782316336
+      ]
+    },
+    {
+      "step": 10,
+      "time_s": 0.020000000000000004,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033406495545097864,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.000515995710957538,
+      "arm_error_rad": [
+        -6.846549211736441e-07,
+        -1.6726747602557879e-06
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3504009073654033,
+        6.770628429417125
+      ]
+    },
+    {
+      "step": 11,
+      "time_s": 0.022000000000000006,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033405321778458936,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.0005218421857819026,
+      "arm_error_rad": [
+        -7.565278303811596e-07,
+        -1.836657478326842e-06
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3503913697106581,
+        6.7706635043126955
+      ]
+    },
+    {
+      "step": 12,
+      "time_s": 0.024000000000000007,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033404092442535717,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.0005231654603538894,
+      "arm_error_rad": [
+        -8.227068112598435e-07,
+        -1.9851824990535505e-06
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3503774998495809,
+        6.770708151797935
+      ]
+    },
+    {
+      "step": 13,
+      "time_s": 0.02600000000000001,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033402816348153466,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.0005206227331795378,
+      "arm_error_rad": [
+        -8.82582902816953e-07,
+        -2.117114306532386e-06
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3503602297090386,
+        6.770759934341179
+      ]
+    },
+    {
+      "step": 14,
+      "time_s": 0.02800000000000001,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.000514801711538971,
+      "arm_error_rad": [
+        -9.357421033306945e-07,
+        -2.2317902481638896e-06
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35034037237363447,
+        6.7708167818593195
+      ]
+    },
+    {
+      "step": 15,
+      "time_s": 0.030000000000000013,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033400157287678074,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.000506226659414876,
+      "arm_error_rad": [
+        -9.81937018335044e-07,
+        -2.328940326368212e-06
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3503186331104428,
+        6.770876946886331
+      ]
+    },
+    {
+      "step": 16,
+      "time_s": 0.032000000000000015,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033398789958442626,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.0004953640138945573,
+      "arm_error_rad": [
+        -1.0210614438677101e-06,
+        -2.408617365112775e-06
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35029561973869083,
+        6.770938964594875
+      ]
+    },
+    {
+      "step": 17,
+      "time_s": 0.034000000000000016,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003339740707931656,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.0004826275914772378,
+      "arm_error_rad": [
+        -1.0531276703473758e-06,
+        -2.4711363892926386e-06
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3502718523321883,
+        6.771001617182542
+      ]
+    },
+    {
+      "step": 18,
+      "time_s": 0.03600000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.00333960152767616,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.0004683834059413626,
+      "arm_error_rad": [
+        -1.078246297858687e-06,
+        -2.5170221731318776e-06
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35024777225376913,
+        6.771063902181739
+      ]
+    },
+    {
+      "step": 19,
+      "time_s": 0.03800000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003339462067814422,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.0004529541193752587,
+      "arm_error_rad": [
+        -1.0966083602292898e-06,
+        -2.5469640216879696e-06
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35022375053058236,
+        6.771125004294451
+      ]
+    },
+    {
+      "step": 20,
+      "time_s": 0.04000000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.0004366231477040185,
+      "arm_error_rad": [
+        -1.1084695638319264e-06,
+        -2.5617769459085338e-06
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3502000955862278,
+        6.7711842703922684
+      ]
+    },
+    {
+      "step": 21,
+      "time_s": 0.04200000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003339184511134973,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.0004196384416028145,
+      "arm_error_rad": [
+        -1.1141364561206846e-06,
+        -2.562368482283972e-06
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35017706035134705,
+        6.771241187356786
+      ]
+    },
+    {
+      "step": 22,
+      "time_s": 0.044000000000000025,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003339047392913479,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.00040221596311144166,
+      "arm_error_rad": [
+        -1.1139543490412684e-06,
+        -2.549710485411083e-06
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35015484877849523,
+        6.771295362466894
+      ]
+    },
+    {
+      "step": 23,
+      "time_s": 0.04600000000000003,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003338911954764003,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.00038454287758968943,
+      "arm_error_rad": [
+        -1.1082968323639086e-06,
+        -2.524815290838589e-06
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3501336217898387,
+        6.7713465060685145
+      ]
+    },
+    {
+      "step": 24,
+      "time_s": 0.04800000000000003,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033387785698393547,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.0003667804799054079,
+      "arm_error_rad": [
+        -1.0975567233395545e-06,
+        -2.488715715287526e-06
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35011350268824126,
+        6.771394416288261
+      ]
+    },
+    {
+      "step": 25,
+      "time_s": 0.05000000000000003,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003338647568126096,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.00034906687294915847,
+      "arm_error_rad": [
+        -1.0821383083503555e-06,
+        -2.4424484141860603e-06
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009458206354943,
+        6.771438965575284
+      ]
+    },
+    {
+      "step": 26,
+      "time_s": 0.05200000000000003,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003338519238588653,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.0003315194157395806,
+      "arm_error_rad": [
+        -1.0624507437162478e-06,
+        -2.3870401704151334e-06
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35007692222599446,
+        6.7714800888778175
+      ]
+    },
+    {
+      "step": 27,
+      "time_s": 0.054000000000000034,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033383938314145408,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.000314236957536726,
+      "arm_error_rad": [
+        -1.038902492062066e-06,
+        -2.3234967365670656e-06
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35006056119901313,
+        6.771517773278997
+      ]
+    },
+    {
+      "step": 28,
+      "time_s": 0.056000000000000036,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033382715603380146,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.00029730187352876097,
+      "arm_error_rad": [
+        -1.011896680697122e-06,
+        -2.252793890322735e-06
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35004551630282615,
+        6.77155204893486
+      ]
+    },
+    {
+      "step": 29,
+      "time_s": 0.05800000000000004,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003338152604996334,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.0002807819168098936,
+      "arm_error_rad": [
+        -9.818272779515969e-07,
+        -2.175870408294145e-06
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500317873596773,
+        6.771582981172522
+      ]
+    },
+    {
+      "step": 30,
+      "time_s": 0.06000000000000004,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033380371132905036,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.00026473190053207175,
+      "arm_error_rad": [
+        -9.490759917962777e-07,
+        -2.093622687437957e-06
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.350019359550398,
+        6.7716106636207964
+      ]
+    },
+    {
+      "step": 31,
+      "time_s": 0.06200000000000004,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033379252037217524,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.0002491952232953496,
+      "arm_error_rad": [
+        -9.140098039539524e-07,
+        -2.006900784001786e-06
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35000820595072124,
+        6.771635212258687
+      ]
+    },
+    {
+      "step": 32,
+      "time_s": 0.06400000000000004,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003337816967685858,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.00023420525004688047,
+      "arm_error_rad": [
+        -8.76979060371319e-07,
+        -1.916505659727008e-06
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3499982897745325,
+        6.771656760278362
+      ]
+    },
+    {
+      "step": 33,
+      "time_s": 0.06600000000000004,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003337712471707555,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.00021978655998927498,
+      "arm_error_rad": [
+        -8.383160464142669e-07,
+        -1.8231874530094672e-06
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.34998956634962586,
+        6.7716754536699995
+      ]
+    },
+    {
+      "step": 34,
+      "time_s": 0.06800000000000005,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003337611759597576,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.00020595607225831216,
+      "arm_error_rad": [
+        -7.983339819772617e-07,
+        -1.7276446138136947e-06
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3499819848502208,
+        6.771691447445273
+      ]
+    },
+    {
+      "step": 35,
+      "time_s": 0.07000000000000005,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003337514854530691,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.000192724059419386,
+      "arm_error_rad": [
+        -7.573263782478801e-07,
+        -1.630523761564362e-06
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.34997548980880644,
+        6.771704902424878
+      ]
+    },
+    {
+      "step": 36,
+      "time_s": 0.07200000000000005,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003337421761027982,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.00018009505815274555,
+      "arm_error_rad": [
+        -7.155667038349911e-07,
+        -1.5324201403377202e-06
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.349970022428567,
+        6.771715982523087
+      ]
+    },
+    {
+      "step": 37,
+      "time_s": 0.07400000000000005,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003337332466843961,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.0001680686858502232,
+      "arm_error_rad": [
+        -6.733083132981488e-07,
+        -1.4338785661038855e-06
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.34996552171601325,
+        6.771724852469569
+      ]
+    },
+    {
+      "step": 38,
+      "time_s": 0.07600000000000005,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033372469447503664,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.00015664037123087315,
+      "arm_error_rad": [
+        -6.307845964725889e-07,
+        -1.3353947683203415e-06
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3499619254520261,
+        6.7717316759147455
+      ]
+    },
+    {
+      "step": 39,
+      "time_s": 0.07800000000000006,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033371651542174335,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.00014580200649984284,
+      "arm_error_rad": [
+        -5.882093112585807e-07,
+        -1.2374170463846923e-06
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3499591710182166,
+        6.771736613870992
+      ]
+    },
+    {
+      "step": 40,
+      "time_s": 0.08000000000000006,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033370870429923903,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.00013554252802327555,
+      "arm_error_rad": [
+        -5.457770671790652e-07,
+        -1.1403481690042128e-06
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3499571960940581,
+        6.771739823446724
+      ]
+    },
+    {
+      "step": 41,
+      "time_s": 0.08200000000000006,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033370125485767304,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.0001258484319717304,
+      "arm_error_rad": [
+        -5.036639305899815e-07,
+        -1.0445474556419754e-06
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.349955939239067,
+        6.771741456835447
+      ]
+    },
+    {
+      "step": 42,
+      "time_s": 0.08400000000000006,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033369415995941295,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.00011670423089457427,
+      "arm_error_rad": [
+        -4.620281260081516e-07,
+        -9.503329880811151e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3499553403730379,
+        6.771741660525724
+      ]
+    },
+    {
+      "step": 43,
+      "time_s": 0.08600000000000006,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033368741170686886,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 0.00010809285672733553,
+      "arm_error_rad": [
+        -4.210108115465516e-07,
+        -8.579839070321782e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3499553411661561,
+        6.771740574702065
+      ]
+    },
+    {
+      "step": 44,
+      "time_s": 0.08800000000000006,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033368100155981412,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 9.999601530197224e-05,
+      "arm_error_rad": [
+        -3.807369086394896e-07,
+        -7.677427562580164e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3499558853499457,
+        6.771738332809783
+      ]
+    },
+    {
+      "step": 45,
+      "time_s": 0.09000000000000007,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033367492044396267,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 9.239449702548308e-05,
+      "arm_error_rad": [
+        -3.4131596968189903e-07,
+        -6.798178415756695e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3499569189587247,
+        6.771735061260241
+      ]
+    },
+    {
+      "step": 46,
+      "time_s": 0.09200000000000007,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033366915885024435,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 8.526844801404867e-05,
+      "arm_error_rad": [
+        -3.0284306876127154e-07,
+        -5.94385579422152e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.34995839051056976,
+        6.771730879255503
+      ]
+    },
+    {
+      "step": 47,
+      "time_s": 0.09400000000000007,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336637069254661,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 7.859760561689482e-05,
+      "arm_error_rad": [
+        -2.653997035195754e-07,
+        -5.11592811669459e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3499602511356754,
+        6.771725898713822
+      ]
+    },
+    {
+      "step": 48,
+      "time_s": 0.09600000000000007,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033365855455494476,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 7.236150193508142e-05,
+      "arm_error_rad": [
+        -2.2905469723721872e-07,
+        -4.315590695913585e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.34996245465948794,
+        6.771720224279745
+      ]
+    },
+    {
+      "step": 49,
+      "time_s": 0.09800000000000007,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033365369143759684,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 6.653963863427266e-05,
+      "arm_error_rad": [
+        -1.9386509275687303e-07,
+        -3.543787727711134e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.34996495764693814,
+        6.771713953404428
+      ]
+    },
+    {
+      "step": 50,
+      "time_s": 0.10000000000000007,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033364910715300553,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 6.111163606616524e-05,
+      "arm_error_rad": [
+        -1.5987703069764159e-07,
+        -2.801233498495037e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.34996771941365423,
+        6.77170717648364
+      ]
+    },
+    {
+      "step": 51,
+      "time_s": 0.10200000000000008,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336447912226798,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 5.6057359449326487e-05,
+      "arm_error_rad": [
+        -1.2712660588110047e-07,
+        -2.0884327489589793e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3499707020092916,
+        6.771699977042573
+      ]
+    },
+    {
+      "step": 52,
+      "time_s": 0.10400000000000008,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336407331638528,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 5.135702461574949e-05,
+      "arm_error_rad": [
+        -9.56406974450541e-08,
+        -1.4057001096468014e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.34997387017759973,
+        6.7716924319577245
+      ]
+    },
+    {
+      "step": 53,
+      "time_s": 0.10600000000000008,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336369225378793,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 4.6991285603224384e-05,
+      "arm_error_rad": [
+        -6.543776845391314e-08,
+        -7.531785750636288e-08
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3499771912972629,
+        6.771684611707737
+      ]
+    },
+    {
+      "step": 54,
+      "time_s": 0.10800000000000008,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033363334899284276,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 4.29413061647132e-05,
+      "arm_error_rad": [
+        -3.652863234115955e-08,
+        -1.3085697636583404e-08
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.34998063530712464,
+        6.771676580645956
+      ]
+    },
+    {
+      "step": 55,
+      "time_s": 0.11000000000000008,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336300023008545,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.918881707307542e-05,
+      "arm_error_rad": [
+        -8.917183907941606e-09,
+        4.614135407088327e-08
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3499841746189856,
+        6.771668397288506
+      ]
+    },
+    {
+      "step": 56,
+      "time_s": 0.11200000000000009,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033362687239082475,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.5716160921935284e-05,
+      "arm_error_rad": [
+        1.7398906676513448e-08,
+        1.0239040637571861e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.34998778402070785,
+        6.771660114612644
+      ]
+    },
+    {
+      "step": 57,
+      "time_s": 0.11400000000000009,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336239493763602,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.250632596000274e-05,
+      "arm_error_rad": [
+        4.242753762206952e-08,
+        1.5569934497250415e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3499914405720903,
+        6.771651780360896
+      ]
+    },
+    {
+      "step": 58,
+      "time_s": 0.11600000000000009,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.00333621223580068,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.9542970346047914e-05,
+      "arm_error_rad": [
+        6.618155745652388e-08,
+        2.0611548534610336e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3499951234955053,
+        6.771643437347171
+      ]
+    },
+    {
+      "step": 59,
+      "time_s": 0.11800000000000009,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.681043807393417e-05,
+      "arm_error_rad": [
+        8.867818546143269e-08,
+        2.536943217723575e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.34999881406330846,
+        6.7716351237616
+      ]
+    },
+    {
+      "step": 60,
+      "time_s": 0.12000000000000009,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033361632609496365,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.429376769085174e-05,
+      "arm_error_rad": [
+        1.0993846977225274e-07,
+        2.984983691334264e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500024954833485,
+        6.7716268734715435
+      ]
+    },
+    {
+      "step": 61,
+      "time_s": 0.1220000000000001,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336141362616664,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.197869481641923e-05,
+      "arm_error_rad": [
+        1.2998678278197673e-07,
+        3.4059609621550635e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500061527840237,
+        6.771618716316525
+      ]
+    },
+    {
+      "step": 62,
+      "time_s": 0.1240000000000001,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336121073822315,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.9851649364720145e-05,
+      "arm_error_rad": [
+        1.4885035309886163e-07,
+        3.8006094382758704e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35000977270002376,
+        6.7716106783953585
+      ]
+    },
+    {
+      "step": 63,
+      "time_s": 0.12600000000000008,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033361023106426853,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.845474181092306e-05,
+      "arm_error_rad": [
+        1.6655883255944914e-07,
+        4.169704275192032e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35001334355961644,
+        6.77160278234399
+      ]
+    },
+    {
+      "step": 64,
+      "time_s": 0.12800000000000009,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033360849920055845,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.721744468882927e-05,
+      "arm_error_rad": [
+        1.831438974364552e-07,
+        4.5140531690357477e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35001685517427916,
+        6.771595047603148
+      ]
+    },
+    {
+      "step": 65,
+      "time_s": 0.1300000000000001,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336069039732026,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.6021787346031767e-05,
+      "arm_error_rad": [
+        1.986388823982388e-07,
+        4.834488915861357e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35002029873131424,
+        6.771587490674701
+      ]
+    },
+    {
+      "step": 66,
+      "time_s": 0.1320000000000001,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033360543785556566,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.4868687424907639e-05,
+      "arm_error_rad": [
+        2.1307844555451538e-07,
+        5.131862663709796e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500236666899602,
+        6.771580125366386
+      ]
+    },
+    {
+      "step": 67,
+      "time_s": 0.1340000000000001,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033360409361303483,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.3758758530710202e-05,
+      "arm_error_rad": [
+        2.2649826350584767e-07,
+        5.407037835247763e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500269526813927,
+        6.771572963024448
+      ]
+    },
+    {
+      "step": 68,
+      "time_s": 0.1360000000000001,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033360286430182177,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.2692341354403136e-05,
+      "arm_error_rad": [
+        2.3893475445402323e-07,
+        5.660884663249988e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35003015141285765,
+        6.771566012753889
+      ]
+    },
+    {
+      "step": 69,
+      "time_s": 0.1380000000000001,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033360174326689863,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.1669532777493384e-05,
+      "arm_error_rad": [
+        2.504248280410515e-07,
+        5.8942753189406e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500332585762197,
+        6.771559281626388
+      ]
+    },
+    {
+      "step": 70,
+      "time_s": 0.1400000000000001,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336007241386321,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.069021300497777e-05,
+      "arm_error_rad": [
+        2.6100566025144545e-07,
+        6.108079579902892e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35003627076105165,
+        6.771552774875865
+      ]
+    },
+    {
+      "step": 71,
+      "time_s": 0.1420000000000001,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003335998008282841,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 9.754070783993316e-06,
+      "arm_error_rad": [
+        2.7071449193449837e-07,
+        6.303160995368984e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500391853723114,
+        6.7715464960819105
+      ]
+    },
+    {
+      "step": 72,
+      "time_s": 0.1440000000000001,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003335989675231901,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 8.860626773956856e-06,
+      "arm_error_rad": [
+        2.795884493089762e-07,
+        6.480373531125849e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35004200055265994,
+        6.771540447341227
+      ]
+    },
+    {
+      "step": 73,
+      "time_s": 0.1460000000000001,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003335982186806091,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 8.00925513900353e-06,
+      "arm_error_rad": [
+        2.8766438509020276e-07,
+        6.640558634085636e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500447151094085,
+        6.771534629427496
+      ]
+    },
+    {
+      "step": 74,
+      "time_s": 0.1480000000000001,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033359754902152184,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 7.199203439813148e-06,
+      "arm_error_rad": [
+        2.949787385742031e-07,
+        6.784542703197616e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.350047328446021,
+        6.771529041939965
+      ]
+    },
+    {
+      "step": 75,
+      "time_s": 0.1500000000000001,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003335969535235831,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 6.429610903675733e-06,
+      "arm_error_rad": [
+        3.015674135686819e-07,
+        6.913134922292841e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35004984049809423,
+        6.771523683441144
+      ]
+    },
+    {
+      "step": 76,
+      "time_s": 0.1520000000000001,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 5.699525154471127e-06,
+      "arm_error_rad": [
+        3.0746567253325807e-07,
+        7.027125425995706e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35005225167370013,
+        6.771518551584148
+      ]
+    },
+    {
+      "step": 77,
+      "time_s": 0.1540000000000001,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003335959661601978,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 5.007917484849633e-06,
+      "arm_error_rad": [
+        3.127080458742437e-07,
+        7.127283776497961e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500545627979308,
+        6.7715136432300636
+      ]
+    },
+    {
+      "step": 78,
+      "time_s": 0.1560000000000001,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 4.353696752708347e-06,
+      "arm_error_rad": [
+        3.1732825500618844e-07,
+        7.214357711227137e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35005677506158517,
+        6.771508954555783
+      ]
+    },
+    {
+      "step": 79,
+      "time_s": 0.1580000000000001,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003335952212587491,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.7357219841567043e-06,
+      "arm_error_rad": [
+        3.2135914804221066e-07,
+        7.289072150307163e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500588899737195,
+        6.771504481152897
+      ]
+    },
+    {
+      "step": 80,
+      "time_s": 0.16000000000000011,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003335949296844091,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.1528137628676996e-06,
+      "arm_error_rad": [
+        3.248326471694263e-07,
+        7.352128426063587e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35006090931795586,
+        6.771500218118069
+      ]
+    },
+    {
+      "step": 81,
+      "time_s": 0.16200000000000012,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033359468709796996,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.603764484657628e-06,
+      "arm_error_rad": [
+        3.277797062661847e-07,
+        7.404203716809832e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500628351123715,
+        6.771496160135367
+      ]
+    },
+    {
+      "step": 82,
+      "time_s": 0.16400000000000012,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033359449005553182,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.0873475540698216e-06,
+      "arm_error_rad": [
+        3.302302782337563e-07,
+        7.445950667150925e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500646695727921,
+        6.771492301551023
+      ]
+    },
+    {
+      "step": 83,
+      "time_s": 0.16600000000000012,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033359433530622236,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.6023255962959522e-06,
+      "arm_error_rad": [
+        3.322132908212261e-07,
+        7.477997179261564e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500664150792472,
+        6.771488636441164
+      ]
+    },
+    {
+      "step": 84,
+      "time_s": 0.16800000000000012,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003335942197837012,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.147457755705754e-06,
+      "arm_error_rad": [
+        3.3375663013868184e-07,
+        7.500946335170511e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.350068074145515,
+        6.771485158672927
+      ]
+    },
+    {
+      "step": 85,
+      "time_s": 0.17000000000000012,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 7.231761907062278e-07,
+      "arm_error_rad": [
+        3.3488713119256275e-07,
+        7.515376458933076e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35006964939144125,
+        6.771481861959394
+      ]
+    },
+    {
+      "step": 86,
+      "time_s": 0.17200000000000013,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003335940950305958,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 5.479972398228278e-07,
+      "arm_error_rad": [
+        3.356305743884569e-07,
+        7.521841289825915e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35007114351799895,
+        6.771478739908725
+      ]
+    },
+    {
+      "step": 87,
+      "time_s": 0.17400000000000013,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033359408051994045,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.947669452497975e-07,
+      "arm_error_rad": [
+        3.360116876682806e-07,
+        7.520870255461887e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500725592847958,
+        6.771475786068057
+      ]
+    },
+    {
+      "step": 88,
+      "time_s": 0.17600000000000013,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033359409466083836,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.9507130603308397e-07,
+      "arm_error_rad": [
+        3.360541532548833e-07,
+        7.512968829281874e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500738994899067,
+        6.771472993962491
+      ]
+    },
+    {
+      "step": 89,
+      "time_s": 0.17800000000000013,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.00333594135193494,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 7.174934198390928e-07,
+      "arm_error_rad": [
+        3.357806188653001e-07,
+        7.498618961321313e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.350075166951921,
+        6.771470357129378
+      ]
+    },
+    {
+      "step": 90,
+      "time_s": 0.18000000000000013,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033359419999716465,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.0169694430320597e-06,
+      "arm_error_rad": [
+        3.3521271231018446e-07,
+        7.478279573369662e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35007636449393675,
+        6.771467869148601
+      ]
+    },
+    {
+      "step": 91,
+      "time_s": 0.18200000000000013,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033359428708308507,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.2946234017127316e-06,
+      "arm_error_rad": [
+        3.3437105947942136e-07,
+        7.452387105200131e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500774949294666,
+        6.771465523668841
+      ]
+    },
+    {
+      "step": 92,
+      "time_s": 0.18400000000000014,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003335943945876893,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.5515497591910018e-06,
+      "arm_error_rad": [
+        3.3327530485349754e-07,
+        7.421356109649224e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500785610500076,
+        6.771463314430451
+      ]
+    },
+    {
+      "step": 93,
+      "time_s": 0.18600000000000014,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033359452076632927,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.7888116426938352e-06,
+      "arm_error_rad": [
+        3.3194413440185144e-07,
+        7.385579876562076e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35007956561423814,
+        6.77146123528502
+      ]
+    },
+    {
+      "step": 94,
+      "time_s": 0.18800000000000014,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003335946639867158,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.0074394417919045e-06,
+      "arm_error_rad": [
+        3.3039530031309106e-07,
+        7.345431087824039e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500805113386425,
+        6.771459280212015
+      ]
+    },
+    {
+      "step": 95,
+      "time_s": 0.19000000000000014,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003335948227229032,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.2084297410842913e-06,
+      "arm_error_rad": [
+        3.286456472517685e-07,
+        7.301262492376281e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35008140088945966,
+        6.7714574433327686
+      ]
+    },
+    {
+      "step": 96,
+      "time_s": 0.19200000000000014,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003335949955497433,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.3927445522499508e-06,
+      "arm_error_rad": [
+        3.2671113997517764e-07,
+        7.2534076012154e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500822368758386,
+        6.771455718922047
+      ]
+    },
+    {
+      "step": 97,
+      "time_s": 0.19400000000000014,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033359518113686435,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.561310813371324e-06,
+      "arm_error_rad": [
+        3.246068916995526e-07,
+        7.202181384613482e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.350083021844123,
+        6.771454101417382
+      ]
+    },
+    {
+      "step": 98,
+      "time_s": 0.19600000000000015,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003335953782438273,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.7150201252892934e-06,
+      "arm_error_rad": [
+        3.2234719327117745e-07,
+        7.147880982660837e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35008375827310934,
+        6.771452585426522
+      ]
+    },
+    {
+      "step": 99,
+      "time_s": 0.19800000000000015,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003335955857144742,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.854728697930394e-06,
+      "arm_error_rad": [
+        3.199455428093412e-07,
+        7.090786409147398e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35008444857023835,
+        6.771451165732987
+      ]
+    },
+    {
+      "step": 100,
+      "time_s": 0.20000000000000015,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033359580247262614,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.981257480775561e-06,
+      "arm_error_rad": [
+        3.1741467559909253e-07,
+        7.03116125988501e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500850950685671,
+        6.771449837300184
+      ]
+    },
+    {
+      "step": 101,
+      "time_s": 0.20200000000000015,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033359602751680075,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.095392454767574e-06,
+      "arm_error_rad": [
+        3.1476659401175056e-07,
+        6.969253409927489e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500857000245241,
+        6.771448595273974
+      ]
+    },
+    {
+      "step": 102,
+      "time_s": 0.20400000000000015,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033359625991624072,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.1978850639421785e-06,
+      "arm_error_rad": [
+        3.1201259736990394e-07,
+        6.905295708570236e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35008626561627076,
+        6.771447434984109
+      ]
+    },
+    {
+      "step": 103,
+      "time_s": 0.20600000000000016,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003335964988066139,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.289452767820519e-06,
+      "arm_error_rad": [
+        3.091633117013881e-07,
+        6.839506652145388e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35008679394268627,
+        6.771446351944498
+      ]
+    },
+    {
+      "step": 104,
+      "time_s": 0.20800000000000016,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033359674338565323,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.3707796962759528e-06,
+      "arm_error_rad": [
+        3.062287189659063e-07,
+        6.772091059037422e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35008728702288244,
+        6.771445341852477
+      ]
+    },
+    {
+      "step": 105,
+      "time_s": 0.21000000000000016,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003335969929096731,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.4425173915322956e-06,
+      "arm_error_rad": [
+        3.03218186004095e-07,
+        6.703240711392056e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35008774679612353,
+        6.77144440058737
+      ]
+    },
+    {
+      "step": 106,
+      "time_s": 0.21200000000000016,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033359724668995997,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.5052856218995045e-06,
+      "arm_error_rad": [
+        3.0014049287596656e-07,
+        6.633134999045609e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500881751222026,
+        6.771443524208098
+      ]
+    },
+    {
+      "step": 107,
+      "time_s": 0.21400000000000016,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003335975040890125,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.5596732549420228e-06,
+      "arm_error_rad": [
+        2.9700386053321814e-07,
+        6.561941534588556e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500885737821669,
+        6.771442708950371
+      ]
+    },
+    {
+      "step": 108,
+      "time_s": 0.21600000000000016,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.00333597764517635,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.6062391777358404e-06,
+      "arm_error_rad": [
+        2.9381597801969583e-07,
+        6.489816750665511e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500889444793284,
+        6.771441951223222
+      ]
+    },
+    {
+      "step": 109,
+      "time_s": 0.21800000000000017,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033359802743160006,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.6455132535941476e-06,
+      "arm_error_rad": [
+        2.905840287559247e-07,
+        6.416906486172991e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35008928884053725,
+        6.771441247605113
+      ]
+    },
+    {
+      "step": 110,
+      "time_s": 0.22000000000000017,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003335982923289978,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.67799730614592e-06,
+      "arm_error_rad": [
+        2.873147160742384e-07,
+        6.343346539150474e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500896084176986,
+        6.771440594839714
+      ]
+    },
+    {
+      "step": 111,
+      "time_s": 0.22200000000000017,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.704166121675832e-06,
+      "arm_error_rad": [
+        2.8401428808777496e-07,
+        6.269263217451027e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35008990468948464,
+        6.771439989831256
+      ]
+    },
+    {
+      "step": 112,
+      "time_s": 0.22400000000000017,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003335988262603255,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.72446846307168e-06,
+      "arm_error_rad": [
+        2.806885616435384e-07,
+        6.194773847223445e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500901790631685,
+        6.771439429639818
+      ]
+    },
+    {
+      "step": 113,
+      "time_s": 0.22600000000000017,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033359909447700084,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.739328087546219e-06,
+      "arm_error_rad": [
+        2.7734294535952664e-07,
+        6.119987285835293e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500904328766141,
+        6.771438911476246
+      ]
+    },
+    {
+      "step": 114,
+      "time_s": 0.22800000000000017,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033359936303799364,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.7491447637975286e-06,
+      "arm_error_rad": [
+        2.739824619679698e-07,
+        6.045004390387021e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500906674003617,
+        6.771438432697077
+      ]
+    },
+    {
+      "step": 115,
+      "time_s": 0.23000000000000018,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033359963161373116,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.754295282085399e-06,
+      "arm_error_rad": [
+        2.706117697148791e-07,
+        5.969918484005632e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500908838398046,
+        6.771437990799233
+      ]
+    },
+    {
+      "step": 116,
+      "time_s": 0.23200000000000018,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033359989990262504,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.7551344537941885e-06,
+      "arm_error_rad": [
+        2.67235182871417e-07,
+        5.894815795493002e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009108333738304,
+        6.771437583414818
+      ]
+    },
+    {
+      "step": 117,
+      "time_s": 0.23400000000000018,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336001676289828,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.7519960963241206e-06,
+      "arm_error_rad": [
+        2.6385669146811175e-07,
+        5.819775874549293e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009126697487214,
+        6.771437208305766
+      ]
+    },
+    {
+      "step": 118,
+      "time_s": 0.23600000000000018,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336004345413231,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.7451939998166614e-06,
+      "arm_error_rad": [
+        2.60479980140893e-07,
+        5.744871993673684e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500914357756465,
+        6.7714368633585345
+      ]
+    },
+    {
+      "step": 119,
+      "time_s": 0.23800000000000018,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033360070041041595,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.7350228733733765e-06,
+      "arm_error_rad": [
+        2.5710844608894945e-07,
+        5.67017153674243e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500915907069878,
+        6.771436546578846
+      ]
+    },
+    {
+      "step": 120,
+      "time_s": 0.24000000000000019,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033360096502799514,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.721759268553554e-06,
+      "arm_error_rad": [
+        2.537452163664522e-07,
+        5.595736352059788e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500917326823435,
+        6.771436256086536
+      ]
+    },
+    {
+      "step": 121,
+      "time_s": 0.2420000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033360122820523413,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.7056624776431467e-06,
+      "arm_error_rad": [
+        2.5039316417507784e-07,
+        5.521623103188489e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500918625636339,
+        6.771435990110371
+      ]
+    },
+    {
+      "step": 122,
+      "time_s": 0.2440000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336014897710956,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.6869754057662786e-06,
+      "arm_error_rad": [
+        2.470549245459086e-07,
+        5.447883595355307e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.350091981163473,
+        6.77143574698303
+      ]
+    },
+    {
+      "step": 123,
+      "time_s": 0.2460000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336017495712978,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.665925415536449e-06,
+      "arm_error_rad": [
+        2.43732909077643e-07,
+        5.37456508631351e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009208924737706,
+        6.7714355251362175
+      ]
+    },
+    {
+      "step": 124,
+      "time_s": 0.2480000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336020074669919,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.6427251431894285e-06,
+      "arm_error_rad": [
+        2.4042932014745055e-07,
+        5.301710583882624e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009218753594185,
+        6.771435323095844
+      ]
+    },
+    {
+      "step": 125,
+      "time_s": 0.25000000000000017,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336022633335669,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.61757328597719e-06,
+      "arm_error_rad": [
+        2.3714616417813694e-07,
+        5.229359119063304e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500922767069612,
+        6.771435139477375
+      ]
+    },
+    {
+      "step": 126,
+      "time_s": 0.25200000000000017,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336025170596954,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.590655359780647e-06,
+      "arm_error_rad": [
+        2.338852643779532e-07,
+        5.157546012490855e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009235739749345,
+        6.771434972981299
+      ]
+    },
+    {
+      "step": 127,
+      "time_s": 0.25400000000000017,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033360276854631334,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.562144427327465e-06,
+      "arm_error_rad": [
+        2.306482727310044e-07,
+        5.086303123125191e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500924302058886,
+        6.771434822388738
+      ]
+    },
+    {
+      "step": 128,
+      "time_s": 0.25600000000000017,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033360301770558,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.5322017968131978e-06,
+      "arm_error_rad": [
+        2.2743668137703565e-07,
+        5.01565908805901e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500924956937228,
+        6.771434686557207
+      ]
+    },
+    {
+      "step": 129,
+      "time_s": 0.2580000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336032644601783,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.5009776913143103e-06,
+      "arm_error_rad": [
+        2.2425183324181752e-07,
+        4.945639533460167e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009255438768583,
+        6.771434564416596
+      ]
+    },
+    {
+      "step": 130,
+      "time_s": 0.2600000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336035087422741,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.4686118885654293e-06,
+      "arm_error_rad": [
+        2.210949322789535e-07,
+        4.876267296616277e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009260678144005,
+        6.771434454965151
+      ]
+    },
+    {
+      "step": 131,
+      "time_s": 0.2620000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033360375049311026,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.4352343326559603e-06,
+      "arm_error_rad": [
+        2.1796705301779795e-07,
+        4.807562610231741e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500926533373374,
+        6.7714343572657985
+      ]
+    },
+    {
+      "step": 132,
+      "time_s": 0.2640000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336039896619617,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.400965716893723e-06,
+      "arm_error_rad": [
+        2.1486914947299596e-07,
+        4.739543295606552e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.350092694488152,
+        6.771434270442439
+      ]
+    },
+    {
+      "step": 133,
+      "time_s": 0.2660000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033360422620559633,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.3659180394538565e-06,
+      "arm_error_rad": [
+        2.1180206377646726e-07,
+        4.672224935831082e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500927306386841,
+        6.7714341936765585
+      ]
+    },
+    {
+      "step": 134,
+      "time_s": 0.2680000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336044600879071,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.330195132087697e-06,
+      "arm_error_rad": [
+        2.0876653403223422e-07,
+        4.605621033437757e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500927621673421,
+        6.7714341262038795
+      ]
+    },
+    {
+      "step": 135,
+      "time_s": 0.2700000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.00333604691278953,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.2938931622651187e-06,
+      "arm_error_rad": [
+        2.057632018936939e-07,
+        4.5397431702731694e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009278942762456,
+        6.771434067311185
+      ]
+    },
+    {
+      "step": 136,
+      "time_s": 0.2720000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033360491975461984,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.257101110219197e-06,
+      "arm_error_rad": [
+        2.0279261958577877e-07,
+        4.4746011473861813e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500928127495482,
+        6.771434016333365
+      ]
+    },
+    {
+      "step": 137,
+      "time_s": 0.2740000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336051454962087,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.219901221138856e-06,
+      "arm_error_rad": [
+        1.9985525656629477e-07,
+        4.4102031226955773e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009283244102335,
+        6.771433972650485
+      ]
+    },
+    {
+      "step": 138,
+      "time_s": 0.2760000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336053684899353,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.1823694337013816e-06,
+      "arm_error_rad": [
+        1.9695150568765918e-07,
+        4.346555733114599e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009284878915303,
+        6.771433935685087
+      ]
+    },
+    {
+      "step": 139,
+      "time_s": 0.2780000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033360558872643276,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.1445757853853954e-06,
+      "arm_error_rad": [
+        1.9408168902557144e-07,
+        4.2836642166754757e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009286206147355,
+        6.771433904899581
+      ]
+    },
+    {
+      "step": 140,
+      "time_s": 0.2800000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336058062004079,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.1065847959502397e-06,
+      "arm_error_rad": [
+        1.9124606334686156e-07,
+        4.221532521331284e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500928725071452,
+        6.771433879793808
+      ]
+    },
+    {
+      "step": 141,
+      "time_s": 0.2820000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033360602091031563,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.06845582954699e-06,
+      "arm_error_rad": [
+        1.884448251887605e-07,
+        4.160163404876016e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009288035804376,
+        6.771433859902677
+      ]
+    },
+    {
+      "step": 142,
+      "time_s": 0.2840000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336062328580744,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 3.030243436331404e-06,
+      "arm_error_rad": [
+        1.8567811566061465e-07,
+        4.099558537085102e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500928858298641,
+        6.77143384479397
+      ]
+    },
+    {
+      "step": 143,
+      "time_s": 0.2860000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336064420486538,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.9919976748477094e-06,
+      "arm_error_rad": [
+        1.829460248570225e-07,
+        4.0397185840923555e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009288912310726,
+        6.771433834066237
+      ]
+    },
+    {
+      "step": 144,
+      "time_s": 0.2880000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336066484897153,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.953764415458579e-06,
+      "arm_error_rad": [
+        1.8024859610443755e-07,
+        3.980643294987374e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009289042403985,
+        6.771433827346838
+      ]
+    },
+    {
+      "step": 145,
+      "time_s": 0.2900000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033360685219162786,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.915585626205858e-06,
+      "arm_error_rad": [
+        1.7758582970817116e-07,
+        3.9223315817515925e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500928899055957,
+        6.771433824290076
+      ]
+    },
+    {
+      "step": 146,
+      "time_s": 0.2920000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033360705316697837,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.877499641716249e-06,
+      "arm_error_rad": [
+        1.7495768672715073e-07,
+        3.8647815880921144e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009288772824654,
+        6.771433824575418
+      ]
+    },
+    {
+      "step": 147,
+      "time_s": 0.2940000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.8395414157286564e-06,
+      "arm_error_rad": [
+        1.7236409224907767e-07,
+        3.807990760495983e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500928840407893,
+        6.771433827905852
+      ]
+    },
+    {
+      "step": 148,
+      "time_s": 0.2960000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033360744699844434,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.8017427585272857e-06,
+      "arm_error_rad": [
+        1.6980493855456302e-07,
+        3.751955905961779e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500928789811221,
+        6.771433834006334
+      ]
+    },
+    {
+      "step": 149,
+      "time_s": 0.2980000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033360763988934377,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.764132559340835e-06,
+      "arm_error_rad": [
+        1.6728008805921846e-07,
+        3.6966732541721115e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009287267696676,
+        6.77143384262226
+      ]
+    },
+    {
+      "step": 150,
+      "time_s": 0.3000000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336078301227714,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.7267369952356375e-06,
+      "arm_error_rad": [
+        1.647893760337027e-07,
+        3.642138515225213e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500928652465285,
+        6.77143385351814
+      ]
+    },
+    {
+      "step": 151,
+      "time_s": 0.3020000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033360801771985522,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.6895797269763363e-06,
+      "arm_error_rad": [
+        1.623326131017233e-07,
+        3.5883469196029694e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009285679915036,
+        6.771433866476291
+      ]
+    },
+    {
+      "step": 152,
+      "time_s": 0.3040000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033360820270280185,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.652682081925824e-06,
+      "arm_error_rad": [
+        1.5990958762701624e-07,
+        3.535293278122964e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.350092847435903,
+        6.771433881295572
+      ]
+    },
+    {
+      "step": 153,
+      "time_s": 0.3060000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033360838509491966,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.6160632258614805e-06,
+      "arm_error_rad": [
+        1.5752006787828066e-07,
+        3.482972013024721e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009283725016793,
+        6.771433897790301
+      ]
+    },
+    {
+      "step": 154,
+      "time_s": 0.3080000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033360856492041196,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.5797403230414664e-06,
+      "arm_error_rad": [
+        1.5516380399982488e-07,
+        3.431377206819519e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500928263281239,
+        6.771433915789125
+      ]
+    },
+    {
+      "step": 155,
+      "time_s": 0.3100000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033360874220439963,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.543728686282221e-06,
+      "arm_error_rad": [
+        1.5284052995445663e-07,
+        3.3805026333766364e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009281474928855,
+        6.7714339351340485
+      ]
+    },
+    {
+      "step": 156,
+      "time_s": 0.3120000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336089169725531,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.5080419167231387e-06,
+      "arm_error_rad": [
+        1.5054996521657316e-07,
+        3.3303417956709325e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500928025869731,
+        6.771433955679454
+      ]
+    },
+    {
+      "step": 157,
+      "time_s": 0.3140000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336090892513278,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.4726920345488555e-06,
+      "arm_error_rad": [
+        1.4829181638198463e-07,
+        3.280887954648648e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500927899086944,
+        6.7714339772912755
+      ]
+    },
+    {
+      "step": 158,
+      "time_s": 0.3160000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336092590674856,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.4376896007299314e-06,
+      "arm_error_rad": [
+        1.4606577861120407e-07,
+        3.232134162534095e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009277677661466,
+        6.771433999846105
+      ]
+    },
+    {
+      "step": 159,
+      "time_s": 0.3180000000000002,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033360942644844057,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.4030438307097764e-06,
+      "arm_error_rad": [
+        1.4387153707273725e-07,
+        3.184073285034117e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009276324790295,
+        6.771434023230492
+      ]
+    },
+    {
+      "step": 160,
+      "time_s": 0.32000000000000023,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336095914218969,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.3687627000942073e-06,
+      "arm_error_rad": [
+        1.4170876813657252e-07,
+        3.1366980302038883e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500927493751102,
+        6.771434047340149
+      ]
+    },
+    {
+      "step": 161,
+      "time_s": 0.32200000000000023,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336097540158388,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.334853043257467e-06,
+      "arm_error_rad": [
+        1.3957714056767045e-07,
+        3.090000968430928e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009273520648976,
+        6.771434072079348
+      ]
+    },
+    {
+      "step": 162,
+      "time_s": 0.32400000000000023,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336099142584392,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.301320644883895e-06,
+      "arm_error_rad": [
+        1.3747631658067583e-07,
+        3.0439745546395613e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500927207863205,
+        6.77143409736024
+      ]
+    },
+    {
+      "step": 163,
+      "time_s": 0.32600000000000023,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033361007217815077,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.268170325237887e-06,
+      "arm_error_rad": [
+        1.3540595283911827e-07,
+        2.998611148274932e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009270615517596,
+        6.771434123102315
+      ]
+    },
+    {
+      "step": 164,
+      "time_s": 0.32800000000000024,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033361022780352446,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.2354060194034017e-06,
+      "arm_error_rad": [
+        1.333657013713463e-07,
+        2.9539030288461277e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500926913502386,
+        6.771434149231812
+      ]
+    },
+    {
+      "step": 165,
+      "time_s": 0.33000000000000024,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033361038116314036,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.2030308507125337e-06,
+      "arm_error_rad": [
+        1.3135521034768338e-07,
+        2.909842411469299e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009267640551495,
+        6.771434175681249
+      ]
+    },
+    {
+      "step": 166,
+      "time_s": 0.33200000000000024,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033361053228571223,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.171047198961917e-06,
+      "arm_error_rad": [
+        1.2937412494085088e-07,
+        2.8664214668516763e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500926613520799,
+        6.771434202388912
+      ]
+    },
+    {
+      "step": 167,
+      "time_s": 0.33400000000000024,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336106811998104,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.1394567638892575e-06,
+      "arm_error_rad": [
+        1.274220879365906e-07,
+        2.8236323323937995e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500926462183175,
+        6.771434229298455
+      ]
+    },
+    {
+      "step": 168,
+      "time_s": 0.33600000000000024,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336108279340881,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.1082606239027052e-06,
+      "arm_error_rad": [
+        1.254987403997987e-07,
+        2.7814671188508555e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009263103009575,
+        6.771434256358481
+      ]
+    },
+    {
+      "step": 169,
+      "time_s": 0.33800000000000024,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033361097251711686,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.0774592902108324e-06,
+      "arm_error_rad": [
+        1.2360372228514827e-07,
+        2.739917932537139e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009261581098655,
+        6.7714342835221295
+      ]
+    },
+    {
+      "step": 170,
+      "time_s": 0.34000000000000025,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033361111497734832,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.047052757508398e-06,
+      "arm_error_rad": [
+        1.2173667293668977e-07,
+        2.6989768775464995e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009260058242175,
+        6.771434310746773
+      ]
+    },
+    {
+      "step": 171,
+      "time_s": 0.34200000000000025,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336112553431409,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 2.0170405504205597e-06,
+      "arm_error_rad": [
+        1.1989723158745136e-07,
+        2.6586360668545694e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500925853638654,
+        6.771434337993661
+      ]
+    },
+    {
+      "step": 172,
+      "time_s": 0.34400000000000025,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033361139364265283,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.987421766625304e-06,
+      "arm_error_rad": [
+        1.1808503783128366e-07,
+        2.6188876312005505e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009257017297357,
+        6.771434365227604
+      ]
+    },
+    {
+      "step": 173,
+      "time_s": 0.34600000000000025,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336115299038883,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.9581951166532816e-06,
+      "arm_error_rad": [
+        1.1629973198368226e-07,
+        2.5797237279689966e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500925550257185,
+        6.77143439241673
+      ]
+    },
+    {
+      "step": 174,
+      "time_s": 0.34800000000000025,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033361166415479203,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.929358960719996e-06,
+      "arm_error_rad": [
+        1.1454095544261023e-07,
+        2.5411365478511527e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009253993653977,
+        6.771434419532188
+      ]
+    },
+    {
+      "step": 175,
+      "time_s": 0.35000000000000026,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336117964228796,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.9009113427427752e-06,
+      "arm_error_rad": [
+        1.1280835110483167e-07,
+        2.5031183215062924e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009252491845516,
+        6.771434446547923
+      ]
+    },
+    {
+      "step": 176,
+      "time_s": 0.35200000000000026,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033361192673563083,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.8728500217498128e-06,
+      "arm_error_rad": [
+        1.1110156353244527e-07,
+        2.4656613217821644e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500925099831764,
+        6.771434473440463
+      ]
+    },
+    {
+      "step": 177,
+      "time_s": 0.35400000000000026,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033361205512027286,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.845172500561807e-06,
+      "arm_error_rad": [
+        1.0942023934146228e-07,
+        2.428757872596776e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500924951412189,
+        6.771434500188679
+      ]
+    },
+    {
+      "step": 178,
+      "time_s": 0.35600000000000026,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.8178760525476394e-06,
+      "arm_error_rad": [
+        1.0776402736834001e-07,
+        2.392400351158841e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500924804019935,
+        6.771434526773605
+      ]
+    },
+    {
+      "step": 179,
+      "time_s": 0.35800000000000026,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033361230621269645,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.7909577460336074e-06,
+      "arm_error_rad": [
+        1.06132578919782e-07,
+        2.356581196849561e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500924657738903,
+        6.77143455317829
+      ]
+    },
+    {
+      "step": 180,
+      "time_s": 0.36000000000000026,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033361242897369235,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.764414467071099e-06,
+      "arm_error_rad": [
+        1.0452554796702707e-07,
+        2.3212929067817356e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009245126437905,
+        6.771434579387594
+      ]
+    },
+    {
+      "step": 181,
+      "time_s": 0.36200000000000027,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336125499128672,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.7382429398744884e-06,
+      "arm_error_rad": [
+        1.0294259128462713e-07,
+        2.2865280469019922e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009243688007347,
+        6.771434605388054
+      ]
+    },
+    {
+      "step": 182,
+      "time_s": 0.36400000000000027,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336126690560707,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.712439746125885e-06,
+      "arm_error_rad": [
+        1.0138336870024744e-07,
+        2.2522792519907853e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500924226268056,
+        6.7714346311677485
+      ]
+    },
+    {
+      "step": 183,
+      "time_s": 0.36600000000000027,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033361278642906086,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.6870013424394846e-06,
+      "arm_error_rad": [
+        9.984754309466659e-08,
+        2.218539225662397e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009240850968537,
+        6.771434656716177
+      ]
+    },
+    {
+      "step": 184,
+      "time_s": 0.36800000000000027,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336129020570464,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.6619240763022398e-06,
+      "arm_error_rad": [
+        9.833478062382106e-08,
+        2.1853007448058293e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500923945331754,
+        6.7714346820241
+      ]
+    },
+    {
+      "step": 185,
+      "time_s": 0.3700000000000003,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033361301596514722,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.6372042008131696e-06,
+      "arm_error_rad": [
+        9.684475077431642e-08,
+        2.1525566618052494e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500923807011299,
+        6.771434707083477
+      ]
+    },
+    {
+      "step": 186,
+      "time_s": 0.3720000000000003,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033361312817818596,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.6128378881504763e-06,
+      "arm_error_rad": [
+        9.537712647444962e-08,
+        2.1202999045399906e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500923670168591,
+        6.771434731887336
+      ]
+    },
+    {
+      "step": 187,
+      "time_s": 0.3740000000000003,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336132387205855,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.5888212419097073e-06,
+      "arm_error_rad": [
+        9.393158417747571e-08,
+        2.0885234786049978e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500923534831757,
+        6.771434756429677
+      ]
+    },
+    {
+      "step": 188,
+      "time_s": 0.3760000000000003,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033361334761651948,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.5651503082889102e-06,
+      "arm_error_rad": [
+        9.250780388936342e-08,
+        2.0572204717517195e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009234010243084,
+        6.771434780705418
+      ]
+    },
+    {
+      "step": 189,
+      "time_s": 0.3780000000000003,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033361345488993367,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.5418210866059755e-06,
+      "arm_error_rad": [
+        9.110546925206187e-08,
+        2.0263840494472163e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500923268765581,
+        6.771434804710291
+      ]
+    },
+    {
+      "step": 190,
+      "time_s": 0.3800000000000003,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033361356056433263,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.5188295385398846e-06,
+      "arm_error_rad": [
+        8.972426759901175e-08,
+        1.9960074593150523e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500923138071149,
+        6.771434828440777
+      ]
+    },
+    {
+      "step": 191,
+      "time_s": 0.3820000000000003,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336136646629934,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.4961715967626122e-06,
+      "arm_error_rad": [
+        8.836388995514532e-08,
+        1.9660840266944035e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009230089531074,
+        6.771434851894027
+      ]
+    },
+    {
+      "step": 192,
+      "time_s": 0.3840000000000003,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336137672090292,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.473843172580712e-06,
+      "arm_error_rad": [
+        8.702403112015311e-08,
+        1.9366071635218418e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009228814204296,
+        6.77143487506782
+      ]
+    },
+    {
+      "step": 193,
+      "time_s": 0.3860000000000003,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336138682250289,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.4518401632057012e-06,
+      "arm_error_rad": [
+        8.570438966848393e-08,
+        1.9075703594495508e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500922755479263,
+        6.771434897960482
+      ]
+    },
+    {
+      "step": 194,
+      "time_s": 0.3880000000000003,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336139677334399,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.430158458050748e-06,
+      "arm_error_rad": [
+        8.440466789383372e-08,
+        1.87896719072711e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009226311331065,
+        6.771434920570856
+      ]
+    },
+    {
+      "step": 195,
+      "time_s": 0.3900000000000003,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033361406575639794,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.4087939447441197e-06,
+      "arm_error_rad": [
+        8.312457192016787e-08,
+        1.8507913113197105e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.350092250838316,
+        6.771434942898267
+      ]
+    },
+    {
+      "step": 196,
+      "time_s": 0.3920000000000003,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033361416231562266,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.3877425142093e-06,
+      "arm_error_rad": [
+        8.186381167396561e-08,
+        1.8230364617899397e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009223872284956,
+        6.7714349649424115
+      ]
+    },
+    {
+      "step": 197,
+      "time_s": 0.3940000000000003,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.3670000656453941e-06,
+      "arm_error_rad": [
+        8.062210082870891e-08,
+        1.7956964604159964e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009222676662943,
+        6.771434986703419
+      ]
+    },
+    {
+      "step": 198,
+      "time_s": 0.3960000000000003,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.0033361435112877883,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.3465625106678149e-06,
+      "arm_error_rad": [
+        7.939915683263798e-08,
+        1.7687652098530293e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.3500922149691977,
+        6.771435008181719
+      ]
+    },
+    {
+      "step": 199,
+      "time_s": 0.3980000000000003,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336144434248988,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.3264257772868665e-06,
+      "arm_error_rad": [
+        7.819470096426251e-08,
+        1.742236694912691e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009220332994545,
+        6.771435029378068
+      ]
+    },
+    {
+      "step": 200,
+      "time_s": 0.4000000000000003,
+      "slider_position_m": 0.0,
+      "slider_velocity_m_s": 0.0,
+      "finger_button_distance_m": 0.003336145343415915,
+      "button_contacts": [],
+      "all_contact_pairs": [],
+      "max_abs_hinge_velocity_rad_s": 1.3065858134541456e-06,
+      "arm_error_rad": [
+        7.70084581935837e-08,
+        1.716104978122246e-07
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "motor_torque_Nm": [
+        -0.35009219184812335,
+        6.771435050293492
+      ]
+    }
+  ],
+  "sampling": "Includes t=0 and every post-step state; contacts refreshed on separate MjData.",
+  "distance_caveat": "Some mj_geomDistance queries may return zero without a matching contact. Preserve raw values; do not interpret as proven touching or claim continuous positive clearance from this query alone.",
+  "limitations": "Temporary fixtures/exclusions, zero finger margin and implicitfast; 1 nm is a numerical zero diagnostic, not hardware tolerance. No release, upper-limit loading, or task success validated. Press-mode bounds [-0.1,5.1]mm are diagnostic guards, not hardware tolerances.",
+  "formal_xml_unchanged": true
+}

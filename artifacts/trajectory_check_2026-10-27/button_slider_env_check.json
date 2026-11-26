@@ -1,0 +1,133 @@
+{
+  "checks": {
+    "gymnasium_checker": true,
+    "finite_observation_bounds": true,
+    "reset_repeatable": true,
+    "invalid_action_rejected_before_physics": true,
+    "scripted_press_and_release_success": true,
+    "events_once_and_in_order": true,
+    "finite_reward": true,
+    "no_warning": true,
+    "step_after_done_rejected": true,
+    "outside_hold_times_out": true
+  },
+  "events": [
+    {
+      "event": "pressed",
+      "time_s": 0.2620000000000002
+    },
+    {
+      "event": "released",
+      "time_s": 1.0620000000000007
+    }
+  ],
+  "scripted_final_info": {
+    "time_s": 1.0620000000000007,
+    "phase": "ready",
+    "events": [
+      {
+        "event": "released",
+        "time_s": 1.0620000000000007
+      }
+    ],
+    "press_count": 1,
+    "release_count": 1,
+    "slider_position_m": -5.83766646894076e-07,
+    "joint_position_rad": [
+      -0.244612947948719,
+      1.809413355645117
+    ],
+    "joint_velocity_rad_s": [
+      -0.010719511974350069,
+      0.036327698694766396
+    ],
+    "slider_velocity_m_s": 8.195938424253305e-05,
+    "last_valid_observation_time_s": 1.0620000000000007,
+    "peak_normal_force_N_this_step": 0.0,
+    "saturated_motor_channels_this_step": 0,
+    "peak_normal_force_N_episode": 0.27903410308088783,
+    "max_slider_position_m_episode": 0.0002854341827826462,
+    "saturated_physics_samples_episode": 0,
+    "saturated_motor_channels_episode": 0,
+    "failure_reason": null,
+    "failure_details": null,
+    "reset_seed": 42,
+    "initial_pose_offset_rad": [
+      0.0019125740212220068,
+      -0.0004267089881131077
+    ],
+    "reset_attempts": 1,
+    "reward_components": {
+      "press": 0.0,
+      "release": 10.0,
+      "effort": -9.76766134707665e-07,
+      "saturation": 0.0,
+      "action_rate": 0.0,
+      "fault": 0.0
+    },
+    "is_success": true
+  },
+  "scripted_return": 10.9995162379945,
+  "sampled_peak_position_m": 0.0002854341827826462,
+  "action_shape": [
+    2
+  ],
+  "observation_shape": [
+    15
+  ],
+  "observation_fields": [
+    "shoulder_position_normalized",
+    "elbow_position_normalized",
+    "shoulder_velocity_tanh_per_1_rad_s",
+    "elbow_velocity_tanh_per_1_rad_s",
+    "slider_position_normalized",
+    "slider_velocity_tanh_per_0.05_m_s",
+    "finger_button_loaded",
+    "phase_ready",
+    "phase_press_pending",
+    "phase_pressed",
+    "phase_release_pending",
+    "pending_time_fraction",
+    "episode_progress",
+    "previous_shoulder_target_normalized",
+    "previous_elbow_target_normalized"
+  ],
+  "observation_low": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0
+  ],
+  "observation_high": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "physics_dt_s": 0.002,
+  "policy_dt_s": 0.01,
+  "initial_pose_jitter_deg": 0.2,
+  "limitations": "Seeded shoulder/elbow jitter within +/-0.2 degrees on the temporary model; scripted demonstration only, no trained-policy performance claim."
+}

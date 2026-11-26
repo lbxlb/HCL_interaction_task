@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "nonfinite_fault_terminated": true,
+    "nonfinite_fault_reason": true,
+    "nonfinite_returns_last_valid_observation": true,
+    "nonfinite_penalty_reported": true,
+    "nonfinite_raw_info_finite": true,
+    "nonfinite_raw_info_is_last_valid": true,
+    "post_fault_step_rejected": true,
+    "warning_fault_terminated": true,
+    "warning_fault_reason": true,
+    "warning_details_reported": true,
+    "warning_penalty_reported": true,
+    "warning_returns_last_valid_observation": true,
+    "warning_raw_info_is_last_valid": true,
+    "warning_info_time_is_last_valid": true
+  },
+  "fault_penalty": -11.0,
+  "penalty_basis": "Magnitude equals the +1 press and +10 release bonuses combined; fault still terminates separately. This is task reward design, not a physical safety limit.",
+  "limitations": "Faults are injected at the environment boundary; no real MuJoCo warning or unstable physical state was induced."
+}

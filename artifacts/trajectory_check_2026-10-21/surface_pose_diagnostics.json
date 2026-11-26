@@ -1,0 +1,206 @@
+{
+  "pose": {
+    "shoulder_rot_deg": -13.985476739821403,
+    "elbow_flexion_deg": 103.40619658858215
+  },
+  "formal_panel": {
+    "fingertip_world_m": [
+      0.37507739389114036,
+      -0.2584346873785095,
+      0.8396481332775927
+    ],
+    "button_front_normal_world": [
+      -0.7103527911197255,
+      -0.0,
+      0.7038458014000054
+    ],
+    "fingertip_button_local_m": [
+      -0.01460512452181327,
+      -0.018434687378509507,
+      0.009977930155077665
+    ],
+    "button_half_size_m": [
+      0.025,
+      0.025,
+      0.01
+    ],
+    "finger_button_nearest_segment_world_m": [
+      [
+        0.3738289317030259,
+        -0.2587981990064619,
+        0.8384194852508629
+      ],
+      [
+        0.3749537429516015,
+        -0.2587981990064619,
+        0.8373049775237522
+      ]
+    ],
+    "finger_button_signed_distance_m": -0.0015834543942631553,
+    "formal_model_equality_count": 0,
+    "finger_to_button_distances": [
+      {
+        "hand_geom": "hand_2distph",
+        "distance_m": -0.0015834543942631553
+      },
+      {
+        "hand_geom": "hand_2midph",
+        "distance_m": 0.006360849426629473
+      },
+      {
+        "hand_geom": "hand_2proxph",
+        "distance_m": 0.02937448175633084
+      },
+      {
+        "hand_geom": "hand_3proxph",
+        "distance_m": 0.041164906117201056
+      },
+      {
+        "hand_geom": "hand_3midph",
+        "distance_m": 0.04132280688802999
+      },
+      {
+        "hand_geom": "hand_thumbdist",
+        "distance_m": 0.050051173386184956
+      },
+      {
+        "hand_geom": "hand_4midph",
+        "distance_m": 0.051222944617394704
+      },
+      {
+        "hand_geom": "hand_4proxph",
+        "distance_m": 0.05131561963119505
+      },
+      {
+        "hand_geom": "hand_3distph",
+        "distance_m": 0.052425988157856956
+      },
+      {
+        "hand_geom": "hand_4distph",
+        "distance_m": 0.05540771252408612
+      },
+      {
+        "hand_geom": "hand_5midph",
+        "distance_m": 0.059880865280537904
+      },
+      {
+        "hand_geom": "hand_5distph",
+        "distance_m": 0.06036622436656931
+      },
+      {
+        "hand_geom": "hand_5proxph",
+        "distance_m": 0.06277115299907422
+      },
+      {
+        "hand_geom": "hand_thumbprox",
+        "distance_m": 0.06630622093970731
+      },
+      {
+        "hand_geom": "hand_1mc",
+        "distance_m": 0.09357385048288061
+      }
+    ],
+    "overlapping_hand_geoms": [
+      {
+        "hand_geom": "hand_2distph",
+        "distance_m": -0.0015834543942631553
+      }
+    ],
+    "button_contacts": [
+      {
+        "other_geom": "hand_2distph",
+        "distance_m": -0.00158342487845329
+      }
+    ],
+    "button_contact_geometry": [
+      {
+        "other_geom": "hand_2distph",
+        "contact_point_world_m": [
+          0.37439309849276514,
+          -0.25879628239573116,
+          0.8378640088345717
+        ],
+        "contact_point_button_local_m": [
+          -0.016354120742681912,
+          -0.018796282395731168,
+          0.009208272802868431
+        ],
+        "contact_normal_world": [
+          -0.7103533158513486,
+          -2.1293607394914133e-07,
+          0.7038452718168595
+        ],
+        "normal_dot_button_front": 0.9999999999996996,
+        "abs_normal_alignment_with_button_front": 0.9999999999996996
+      }
+    ],
+    "total_contact_count": 6,
+    "note": "所有 hand_ 前缀几何体均计算距离；距离为负代表几何重叠，实际接触还受碰撞过滤影响。"
+  },
+  "candidate_equalities_source": "mobl_arms_index_pointing/simulation.xml",
+  "candidate_equalities_count": 12,
+  "candidate_equality_residuals": [
+    {
+      "name": "sternoclavicular_r2_con",
+      "active_rows": 1,
+      "residual_rad": 0.0
+    },
+    {
+      "name": "sternoclavicular_r3_con",
+      "active_rows": 1,
+      "residual_rad": 0.0
+    },
+    {
+      "name": "unrotscap_r2_con",
+      "active_rows": 1,
+      "residual_rad": 0.0
+    },
+    {
+      "name": "unrotscap_r3_con",
+      "active_rows": 1,
+      "residual_rad": 0.0
+    },
+    {
+      "name": "acromioclavicular_r1_con",
+      "active_rows": 1,
+      "residual_rad": 0.0
+    },
+    {
+      "name": "acromioclavicular_r2_con",
+      "active_rows": 1,
+      "residual_rad": 0.0
+    },
+    {
+      "name": "acromioclavicular_r3_con",
+      "active_rows": 1,
+      "residual_rad": 0.0
+    },
+    {
+      "name": "unrothum_r1_con",
+      "active_rows": 1,
+      "residual_rad": 0.0
+    },
+    {
+      "name": "unrothum_r2_con",
+      "active_rows": 1,
+      "residual_rad": 0.0
+    },
+    {
+      "name": "unrothum_r3_con",
+      "active_rows": 1,
+      "residual_rad": 0.0
+    },
+    {
+      "name": "shoulder1_r2_con",
+      "active_rows": 1,
+      "residual_rad": 0.0
+    },
+    {
+      "name": "r_z_constraint",
+      "active_rows": 1,
+      "residual_rad": 0.0
+    }
+  ],
+  "max_abs_candidate_residual_rad": 0.0,
+  "interpretation": "等式残差来自仅用于诊断的临时模型；这些约束不在面板正式 XML 中。"
+}

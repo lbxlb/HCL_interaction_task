@@ -1,0 +1,58 @@
+{
+  "purpose": "Temporary per-button dynamics check; not a final four-button task or hardware validation.",
+  "buttons": [
+    {
+      "button": 0,
+      "status": "completed",
+      "events": [],
+      "press_count": 0,
+      "release_count": 0,
+      "max_slider_position_m": 0.013213727875856314,
+      "min_slider_position_m": -0.00011904886880470068,
+      "peak_normal_force_N": 834.3191011199835,
+      "final_slider_position_m": -1.7513171673235743e-20,
+      "final_slider_velocity_m_s": 4.2862625025838495e-21,
+      "saturation_count": 107
+    },
+    {
+      "button": 1,
+      "status": "completed",
+      "events": [],
+      "press_count": 0,
+      "release_count": 0,
+      "max_slider_position_m": 0.012783346339426519,
+      "min_slider_position_m": -0.0004174805233355319,
+      "peak_normal_force_N": 649.7954007709297,
+      "final_slider_position_m": -6.939868225722716e-05,
+      "final_slider_velocity_m_s": 1.91938051982324e-06,
+      "saturation_count": 16
+    },
+    {
+      "button": 2,
+      "status": "completed",
+      "events": [],
+      "press_count": 0,
+      "release_count": 0,
+      "max_slider_position_m": 0.04820951924600302,
+      "min_slider_position_m": -0.0010055462443343413,
+      "peak_normal_force_N": 0,
+      "final_slider_position_m": -2.0560767235900667e-20,
+      "final_slider_velocity_m_s": 3.5446131221801305e-21,
+      "saturation_count": 141
+    },
+    {
+      "button": 3,
+      "status": "completed",
+      "events": [],
+      "press_count": 0,
+      "release_count": 0,
+      "max_slider_position_m": 0.05571178145233794,
+      "min_slider_position_m": -0.0013348545346395502,
+      "peak_normal_force_N": 0,
+      "final_slider_position_m": -2.0419835734583492e-20,
+      "final_slider_velocity_m_s": 4.641851284610101e-21,
+      "saturation_count": 72
+    }
+  ],
+  "limitations": "Uses candidate-derived temporary sliders and two-joint PD control while other joints remain fixed."
+}

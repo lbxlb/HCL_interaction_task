@@ -1,0 +1,162 @@
+{
+  "pointing_model_audit": {
+    "nexclude": 0,
+    "pairs": [
+      [
+        {
+          "geom": "thorax",
+          "body": "thorax",
+          "parent_body": "world",
+          "contype": 1,
+          "conaffinity": 1,
+          "body_geoms": [
+            "thorax"
+          ]
+        },
+        {
+          "geom": "scapula",
+          "body": "scapula",
+          "parent_body": "clavphant",
+          "contype": 1,
+          "conaffinity": 1,
+          "body_geoms": [
+            "scapula"
+          ]
+        }
+      ],
+      [
+        {
+          "geom": "thorax",
+          "body": "thorax",
+          "parent_body": "world",
+          "contype": 1,
+          "conaffinity": 1,
+          "body_geoms": [
+            "thorax"
+          ]
+        },
+        {
+          "geom": "humerus",
+          "body": "humerus",
+          "parent_body": "humphant1",
+          "contype": 1,
+          "conaffinity": 1,
+          "body_geoms": [
+            "humerus"
+          ]
+        }
+      ],
+      [
+        {
+          "geom": "clavicle",
+          "body": "clavicle",
+          "parent_body": "thorax",
+          "contype": 1,
+          "conaffinity": 1,
+          "body_geoms": [
+            "clavicle"
+          ]
+        },
+        {
+          "geom": "scapula",
+          "body": "scapula",
+          "parent_body": "clavphant",
+          "contype": 1,
+          "conaffinity": 1,
+          "body_geoms": [
+            "scapula"
+          ]
+        }
+      ],
+      [
+        {
+          "geom": "scapula",
+          "body": "scapula",
+          "parent_body": "clavphant",
+          "contype": 1,
+          "conaffinity": 1,
+          "body_geoms": [
+            "scapula"
+          ]
+        },
+        {
+          "geom": "humerus",
+          "body": "humerus",
+          "parent_body": "humphant1",
+          "contype": 1,
+          "conaffinity": 1,
+          "body_geoms": [
+            "humerus"
+          ]
+        }
+      ],
+      [
+        {
+          "geom": "humerus",
+          "body": "humerus",
+          "parent_body": "humphant1",
+          "contype": 1,
+          "conaffinity": 1,
+          "body_geoms": [
+            "humerus"
+          ]
+        },
+        {
+          "geom": "radius",
+          "body": "radius",
+          "parent_body": "ulna",
+          "contype": 1,
+          "conaffinity": 1,
+          "body_geoms": [
+            "radius"
+          ]
+        }
+      ]
+    ]
+  },
+  "excluded_body_pairs": [
+    [
+      "thorax",
+      "scapula"
+    ],
+    [
+      "thorax",
+      "humerus"
+    ],
+    [
+      "clavicle",
+      "scapula"
+    ],
+    [
+      "scapula",
+      "humerus"
+    ],
+    [
+      "humerus",
+      "radius"
+    ]
+  ],
+  "press_pose_contact_check_passed": true,
+  "cases": {
+    "original collisions": {
+      "first_task_contact_time_s": 0.026000000000000002,
+      "max_abs_joint_drift_deg": [
+        0.30617202882032124,
+        0.5490213797415506
+      ],
+      "peak_button_force_N": 27.400516013534062,
+      "saturation_count": 3,
+      "final_geom_distance_mm": 0.864788571539182
+    },
+    "five pairs excluded": {
+      "first_task_contact_time_s": null,
+      "max_abs_joint_drift_deg": [
+        6.383531673737766e-05,
+        0.00014681289959221386
+      ],
+      "peak_button_force_N": 0.0,
+      "saturation_count": 0,
+      "final_geom_distance_mm": 3.3359580247262612
+    }
+  }
+}

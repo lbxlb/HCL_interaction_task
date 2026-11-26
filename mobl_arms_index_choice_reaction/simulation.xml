@@ -440,6 +440,23 @@
                             <site name="EIP-P4" pos="0.00388 -0.02234 0.01184"/>
                             <site name="EIP-P5" pos="0.01693 -0.0564 0.01377"/>
                             <site name="EIP-P6" pos="0.01735 -0.07692 0.00594"/>
+                            <body name="index0">
+                              <inertial pos="0 0 0" mass="0.001" diaginertia="0.001 0.001 0.001"/>
+                              <geom name="sdfast_1seg_hand_fr_c_2mc" type="mesh" mesh="sdfast_1seg_hand_fr_c_2mc"/>
+                              <body name="index1">
+                                <inertial pos="0 0 0" mass="0.001" diaginertia="0.001 0.001 0.001"/>
+                                <geom name="hand_2proxph" type="mesh" mesh="hand_2proxph"/>
+                                <body name="index2">
+                                  <inertial pos="0 0 0" mass="0.001" diaginertia="0.001 0.001 0.001"/>
+                                  <geom name="hand_2midph" type="mesh" mesh="hand_2midph"/>
+                                  <body name="index3">
+                                    <inertial pos="0 0 0" mass="0.001" diaginertia="0.001 0.001 0.001"/>
+                                    <geom name="hand_2distph" type="mesh" mesh="hand_2distph"/>
+                                    <site name="fingertip" pos="0.024 -0.149 -0.0065" size="0.004" rgba="0.1 0.8 0.1 0"/>
+                                  </body>
+                                </body>
+                              </body>
+                            </body>
                           </body>
                         </body>
                       </body>

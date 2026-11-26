@@ -1,0 +1,44 @@
+[
+  {
+    "step": 396,
+    "time_seconds": 0.7920000000000006,
+    "states": {
+      "ACTUAL (dynamics)": {
+        "finger_button0_distance_m": 0.6913180585143376,
+        "finger_contacts": []
+      },
+      "REFERENCE (kinematics)": {
+        "finger_button0_distance_m": 0.0008306743952046665,
+        "finger_contacts": [
+          {
+            "geom1": "button-0",
+            "geom2": "hand_2distph",
+            "distance_m": 0.0008308551981730931
+          }
+        ]
+      }
+    },
+    "image": "step_0396.png"
+  },
+  {
+    "step": 424,
+    "time_seconds": 0.8480000000000006,
+    "states": {
+      "ACTUAL (dynamics)": {
+        "finger_button0_distance_m": 0.692668339687232,
+        "finger_contacts": []
+      },
+      "REFERENCE (kinematics)": {
+        "finger_button0_distance_m": -0.012402967136455395,
+        "finger_contacts": [
+          {
+            "geom1": "button-0",
+            "geom2": "hand_2distph",
+            "distance_m": -0.012402942262852112
+          }
+        ]
+      }
+    },
+    "image": "step_0424.png"
+  }
+]

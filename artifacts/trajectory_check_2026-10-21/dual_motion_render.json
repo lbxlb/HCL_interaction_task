@@ -1,0 +1,14 @@
+{
+  "description": "Replay of actual integrated qpos, no target-pose substitution",
+  "frames": 81,
+  "sample_interval_seconds": 0.05,
+  "frame_duration_ms": 50,
+  "first_time_seconds": 0.0,
+  "last_time_seconds": 3.999999999999781,
+  "size_pixels": [
+    960,
+    360
+  ],
+  "overview_camera_fixed": true,
+  "detail_camera_fixed": true
+}

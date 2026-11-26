@@ -1,0 +1,6 @@
+# 面板任务的直接依赖；以下版本已在 mjoco_py310 中验证。
+# Python 3.10.18 由 Conda 管理，不写成 pip 依赖。
+# 摄像头/手势与 ROS 功能的依赖另见项目根目录 requirements.txt。
+mujoco==3.3.7
+numpy==1.26.4
+PyYAML==6.0.3

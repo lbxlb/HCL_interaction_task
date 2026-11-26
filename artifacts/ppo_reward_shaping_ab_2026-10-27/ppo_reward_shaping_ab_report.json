@@ -1,0 +1,333 @@
+{
+  "purpose": "Budget-limited paired PPO diagnostic for reward plumbing and early policy behavior; not evidence of convergence, generalization, or physical safety.",
+  "algorithm": "Stable-Baselines3 PPO with an MLP policy",
+  "versions": {
+    "gymnasium": "1.2.0",
+    "mujoco": "3.3.7",
+    "pytorch": "2.8.0+cpu",
+    "stable_baselines3": "2.9.2"
+  },
+  "shared_training_seed": 2026,
+  "evaluation_seeds": [
+    2700,
+    2701,
+    2702
+  ],
+  "initial_pose_jitter_deg_per_joint": 0.2,
+  "gamma": 0.99,
+  "total_timesteps_per_arm": 2048,
+  "rollout_steps": 64,
+  "batch_size": 32,
+  "epochs_per_rollout": 2,
+  "device": "cpu",
+  "shaping": {
+    "weight": 0.25,
+    "reach_scale_m": 0.006,
+    "formula": "weight * (gamma * Phi(next_state) - Phi(current_state))"
+  },
+  "paired_evaluation_initial_states_match": true,
+  "arms": {
+    "base": {
+      "requested_training_timesteps": 2048,
+      "actual_training_timesteps": 2048,
+      "rollout_steps": 64,
+      "ppo_updates": 32,
+      "model_file": "artifacts/ppo_reward_shaping_ab_2026-10-27/ppo_base_reward.zip",
+      "evaluation": [
+        {
+          "seed": 2700,
+          "initial_pose_offset_rad": [
+            0.00323468619323185,
+            -0.0007210833496665463
+          ],
+          "steps": 150,
+          "training_objective_return": -0.0006895985516053194,
+          "base_task_return": -0.0006895985516053194,
+          "shaping_return": 0.0,
+          "success": false,
+          "terminated": false,
+          "truncated": true,
+          "failure_reason": null,
+          "events": [],
+          "phase_step_counts": {
+            "ready": 150
+          },
+          "reward_component_sums": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -0.0006895985516053194,
+            "fault": 0.0
+          },
+          "peak_normal_force_N": 0.0,
+          "max_slider_position_m": 0.0,
+          "saturated_physics_samples": 0,
+          "saturated_motor_channels": 0,
+          "clipped_policy_actions": 0,
+          "mean_action": [
+            -0.01664409175515175,
+            0.041067423472801845
+          ],
+          "min_action": [
+            -0.017737481743097305,
+            0.0395892970263958
+          ],
+          "max_action": [
+            -0.015397297218441963,
+            0.042447615414857864
+          ]
+        },
+        {
+          "seed": 2701,
+          "initial_pose_offset_rad": [
+            0.00021356831653960478,
+            0.0034655683036103916
+          ],
+          "steps": 150,
+          "training_objective_return": -0.0006923385015670162,
+          "base_task_return": -0.0006923385015670162,
+          "shaping_return": 0.0,
+          "success": false,
+          "terminated": false,
+          "truncated": true,
+          "failure_reason": null,
+          "events": [],
+          "phase_step_counts": {
+            "ready": 150
+          },
+          "reward_component_sums": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -0.0006923385015670162,
+            "fault": 0.0
+          },
+          "peak_normal_force_N": 0.0,
+          "max_slider_position_m": 0.0,
+          "saturated_physics_samples": 0,
+          "saturated_motor_channels": 0,
+          "clipped_policy_actions": 0,
+          "mean_action": [
+            -0.016649707580606143,
+            0.04116540610790253
+          ],
+          "min_action": [
+            -0.019063957035541534,
+            0.039589300751686096
+          ],
+          "max_action": [
+            -0.012583315372467041,
+            0.05391189455986023
+          ]
+        },
+        {
+          "seed": 2702,
+          "initial_pose_offset_rad": [
+            -0.0014474666054672492,
+            -0.0016182582662660286
+          ],
+          "steps": 150,
+          "training_objective_return": -0.0006894877568299077,
+          "base_task_return": -0.0006894877568299077,
+          "shaping_return": 0.0,
+          "success": false,
+          "terminated": false,
+          "truncated": true,
+          "failure_reason": null,
+          "events": [],
+          "phase_step_counts": {
+            "ready": 150
+          },
+          "reward_component_sums": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -0.0006894877568299077,
+            "fault": 0.0
+          },
+          "peak_normal_force_N": 0.0,
+          "max_slider_position_m": 0.0,
+          "saturated_physics_samples": 0,
+          "saturated_motor_channels": 0,
+          "clipped_policy_actions": 0,
+          "mean_action": [
+            -0.0166377596060435,
+            0.04113125254710515
+          ],
+          "min_action": [
+            -0.01823693886399269,
+            0.0395892970263958
+          ],
+          "max_action": [
+            -0.013113018125295639,
+            0.05168408900499344
+          ]
+        }
+      ],
+      "summary": {
+        "episodes": 3,
+        "successes": 0,
+        "success_rate": 0.0,
+        "mean_base_task_return": -0.0006904749366674145,
+        "mean_training_objective_return": -0.0006904749366674145,
+        "mean_shaping_return": 0.0,
+        "mean_steps": 150.0,
+        "mean_peak_normal_force_N": 0.0,
+        "mean_max_slider_position_m": 0.0,
+        "total_saturated_physics_samples": 0,
+        "total_saturated_motor_channels": 0,
+        "episodes_with_failure": 0
+      }
+    },
+    "shaped": {
+      "requested_training_timesteps": 2048,
+      "actual_training_timesteps": 2048,
+      "rollout_steps": 64,
+      "ppo_updates": 32,
+      "model_file": "artifacts/ppo_reward_shaping_ab_2026-10-27/ppo_shaped_reward.zip",
+      "evaluation": [
+        {
+          "seed": 2700,
+          "initial_pose_offset_rad": [
+            0.00323468619323185,
+            -0.0007210833496665463
+          ],
+          "steps": 150,
+          "training_objective_return": -0.1261628236765774,
+          "base_task_return": -0.0006895314961806783,
+          "shaping_return": -0.12547329218039674,
+          "success": false,
+          "terminated": false,
+          "truncated": true,
+          "failure_reason": null,
+          "events": [],
+          "phase_step_counts": {
+            "ready": 150
+          },
+          "reward_component_sums": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -0.0006895314961806783,
+            "fault": 0.0,
+            "potential_shaping": -0.12547329218039674
+          },
+          "peak_normal_force_N": 0.0,
+          "max_slider_position_m": 0.0,
+          "saturated_physics_samples": 0,
+          "saturated_motor_channels": 0,
+          "clipped_policy_actions": 0,
+          "mean_action": [
+            0.0010240424210981776,
+            0.0004423655856711169
+          ],
+          "min_action": [
+            -0.0017034788616001606,
+            -0.005315767601132393
+          ],
+          "max_action": [
+            0.00258499919436872,
+            0.0062590427696704865
+          ]
+        },
+        {
+          "seed": 2701,
+          "initial_pose_offset_rad": [
+            0.00021356831653960478,
+            0.0034655683036103916
+          ],
+          "steps": 150,
+          "training_objective_return": -0.06264222373564261,
+          "base_task_return": -0.0006921465712936796,
+          "shaping_return": -0.06195007716434894,
+          "success": false,
+          "terminated": false,
+          "truncated": true,
+          "failure_reason": null,
+          "events": [],
+          "phase_step_counts": {
+            "ready": 150
+          },
+          "reward_component_sums": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -0.0006921465712936796,
+            "fault": 0.0,
+            "potential_shaping": -0.06195007716434894
+          },
+          "peak_normal_force_N": 0.0,
+          "max_slider_position_m": 0.0,
+          "saturated_physics_samples": 0,
+          "saturated_motor_channels": 0,
+          "clipped_policy_actions": 0,
+          "mean_action": [
+            0.0010372198753369351,
+            0.0005327976665770014
+          ],
+          "min_action": [
+            -0.003006469225510955,
+            -0.0039557176642119884
+          ],
+          "max_action": [
+            0.006320657208561897,
+            0.007995694875717163
+          ]
+        },
+        {
+          "seed": 2702,
+          "initial_pose_offset_rad": [
+            -0.0014474666054672492,
+            -0.0016182582662660286
+          ],
+          "steps": 150,
+          "training_objective_return": -0.1292483733616707,
+          "base_task_return": -0.0006894600196461615,
+          "shaping_return": -0.12855891334202457,
+          "success": false,
+          "terminated": false,
+          "truncated": true,
+          "failure_reason": null,
+          "events": [],
+          "phase_step_counts": {
+            "ready": 150
+          },
+          "reward_component_sums": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -0.0006894600196461615,
+            "fault": 0.0,
+            "potential_shaping": -0.12855891334202457
+          },
+          "peak_normal_force_N": 0.0,
+          "max_slider_position_m": 0.0,
+          "saturated_physics_samples": 0,
+          "saturated_motor_channels": 0,
+          "clipped_policy_actions": 0,
+          "mean_action": [
+            0.0010527414479292929,
+            0.0005118206003680826
+          ],
+          "min_action": [
+            -0.0018620605114847422,
+            -0.003955717198550701
+          ],
+          "max_action": [
+            0.005452961195260286,
+            0.006240926217287779
+          ]
+        }
+      ],
+      "summary": {
+        "episodes": 3,
+        "successes": 0,
+        "success_rate": 0.0,
+        "mean_base_task_return": -0.0006903793623735064,
+        "mean_training_objective_return": -0.10601780692463025,
+        "mean_shaping_return": -0.10532742756225676,
+        "mean_steps": 150.0,
+        "mean_peak_normal_force_N": 0.0,
+        "mean_max_slider_position_m": 0.0,
+        "total_saturated_physics_samples": 0,
+        "total_saturated_motor_channels": 0,
+        "episodes_with_failure": 0
+      }
+    }
+  },
+  "limitations": "Only 2,048 training transitions and three paired evaluation episodes per arm. This is a short diagnostic pilot, not a statistically reliable performance estimate. The shaping coefficient and reach scale are experimental settings, not safety limits."
+}

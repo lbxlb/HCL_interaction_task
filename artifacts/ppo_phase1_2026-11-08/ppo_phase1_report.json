@@ -1,0 +1,295 @@
+{
+  "purpose": "Longer PPO diagnostic after smoke test; not a final performance or safety evaluation.",
+  "algorithm": "Stable-Baselines3 PPO with potential-shaped reward",
+  "training_seed": 2026,
+  "requested_timesteps": 32768,
+  "actual_timesteps": 32768,
+  "evaluation_seeds": [
+    2700,
+    2701,
+    2702,
+    2703,
+    2704,
+    2705,
+    2706,
+    2707,
+    2708,
+    2709
+  ],
+  "reward_shaping": {
+    "weight": 0.25,
+    "gamma": 0.99,
+    "reach_scale_m": 0.006
+  },
+  "model_file": "artifacts/ppo_phase1_2026-11-08/ppo_phase1_shaped.zip",
+  "evaluation": [
+    {
+      "seed": 2700,
+      "steps": 13,
+      "return": 10.89266743510597,
+      "success": true,
+      "terminated": true,
+      "truncated": false,
+      "events": [
+        {
+          "event": "pressed",
+          "time_s": 0.08400000000000006
+        },
+        {
+          "event": "released",
+          "time_s": 0.1300000000000001
+        }
+      ],
+      "failure_reason": null,
+      "peak_normal_force_N": 0.27702019542740003,
+      "max_slider_position_m": 0.00028314115845513355,
+      "saturated_motor_channels": 5,
+      "initial_pose_offset_rad": [
+        0.00323468619323185,
+        -0.0007210833496665463
+      ]
+    },
+    {
+      "seed": 2701,
+      "steps": 14,
+      "return": 10.94812598421793,
+      "success": true,
+      "terminated": true,
+      "truncated": false,
+      "events": [
+        {
+          "event": "pressed",
+          "time_s": 0.08400000000000006
+        },
+        {
+          "event": "released",
+          "time_s": 0.1320000000000001
+        }
+      ],
+      "failure_reason": null,
+      "peak_normal_force_N": 0.3500887727586186,
+      "max_slider_position_m": 0.0003528082900777343,
+      "saturated_motor_channels": 5,
+      "initial_pose_offset_rad": [
+        0.00021356831653960478,
+        0.0034655683036103916
+      ]
+    },
+    {
+      "seed": 2702,
+      "steps": 13,
+      "return": 10.889484041259385,
+      "success": true,
+      "terminated": true,
+      "truncated": false,
+      "events": [
+        {
+          "event": "pressed",
+          "time_s": 0.08400000000000006
+        },
+        {
+          "event": "released",
+          "time_s": 0.1300000000000001
+        }
+      ],
+      "failure_reason": null,
+      "peak_normal_force_N": 0.2736490047044917,
+      "max_slider_position_m": 0.00027956053169096023,
+      "saturated_motor_channels": 5,
+      "initial_pose_offset_rad": [
+        -0.0014474666054672492,
+        -0.0016182582662660286
+      ]
+    },
+    {
+      "seed": 2703,
+      "steps": 13,
+      "return": 10.91471686429431,
+      "success": true,
+      "terminated": true,
+      "truncated": false,
+      "events": [
+        {
+          "event": "pressed",
+          "time_s": 0.08400000000000006
+        },
+        {
+          "event": "released",
+          "time_s": 0.1300000000000001
+        }
+      ],
+      "failure_reason": null,
+      "peak_normal_force_N": 0.29699715361147194,
+      "max_slider_position_m": 0.0003016500982019403,
+      "saturated_motor_channels": 5,
+      "initial_pose_offset_rad": [
+        0.0013266881821372171,
+        0.0003842435227865672
+      ]
+    },
+    {
+      "seed": 2704,
+      "steps": 13,
+      "return": 10.876739814940029,
+      "success": true,
+      "terminated": true,
+      "truncated": false,
+      "events": [
+        {
+          "event": "pressed",
+          "time_s": 0.08200000000000006
+        },
+        {
+          "event": "released",
+          "time_s": 0.1300000000000001
+        }
+      ],
+      "failure_reason": null,
+      "peak_normal_force_N": 0.2609431514153296,
+      "max_slider_position_m": 0.0002674170015363736,
+      "saturated_motor_channels": 5,
+      "initial_pose_offset_rad": [
+        -0.0007221969281858993,
+        -0.002266986447930804
+      ]
+    },
+    {
+      "seed": 2705,
+      "steps": 13,
+      "return": 10.904146274751138,
+      "success": true,
+      "terminated": true,
+      "truncated": false,
+      "events": [
+        {
+          "event": "pressed",
+          "time_s": 0.08200000000000006
+        },
+        {
+          "event": "released",
+          "time_s": 0.1300000000000001
+        }
+      ],
+      "failure_reason": null,
+      "peak_normal_force_N": 0.288444011325744,
+      "max_slider_position_m": 0.00029471647849253134,
+      "saturated_motor_channels": 5,
+      "initial_pose_offset_rad": [
+        0.0022148310307118593,
+        -0.00011843954083325433
+      ]
+    },
+    {
+      "seed": 2706,
+      "steps": 13,
+      "return": 10.931765886456635,
+      "success": true,
+      "terminated": true,
+      "truncated": false,
+      "events": [
+        {
+          "event": "pressed",
+          "time_s": 0.08400000000000006
+        },
+        {
+          "event": "released",
+          "time_s": 0.1300000000000001
+        }
+      ],
+      "failure_reason": null,
+      "peak_normal_force_N": 0.3149557262820723,
+      "max_slider_position_m": 0.0003201166056852423,
+      "saturated_motor_channels": 5,
+      "initial_pose_offset_rad": [
+        0.0007996714255334126,
+        0.0013773687386625108
+      ]
+    },
+    {
+      "seed": 2707,
+      "steps": 13,
+      "return": 10.93314885669587,
+      "success": true,
+      "terminated": true,
+      "truncated": false,
+      "events": [
+        {
+          "event": "pressed",
+          "time_s": 0.08400000000000006
+        },
+        {
+          "event": "released",
+          "time_s": 0.1300000000000001
+        }
+      ],
+      "failure_reason": null,
+      "peak_normal_force_N": 0.3173444983003658,
+      "max_slider_position_m": 0.0003230482271999723,
+      "saturated_motor_channels": 5,
+      "initial_pose_offset_rad": [
+        -0.0014409044764267748,
+        0.0011288065806930026
+      ]
+    },
+    {
+      "seed": 2708,
+      "steps": 13,
+      "return": 10.918223067660971,
+      "success": true,
+      "terminated": true,
+      "truncated": false,
+      "events": [
+        {
+          "event": "pressed",
+          "time_s": 0.08400000000000006
+        },
+        {
+          "event": "released",
+          "time_s": 0.1300000000000001
+        }
+      ],
+      "failure_reason": null,
+      "peak_normal_force_N": 0.3022102154129154,
+      "max_slider_position_m": 0.00030776226664160696,
+      "saturated_motor_channels": 5,
+      "initial_pose_offset_rad": [
+        0.0031089576537346904,
+        0.0008678034458599585
+      ]
+    },
+    {
+      "seed": 2709,
+      "steps": 14,
+      "return": 10.946500088688468,
+      "success": true,
+      "terminated": true,
+      "truncated": false,
+      "events": [
+        {
+          "event": "pressed",
+          "time_s": 0.08400000000000006
+        },
+        {
+          "event": "released",
+          "time_s": 0.1320000000000001
+        }
+      ],
+      "failure_reason": null,
+      "peak_normal_force_N": 0.33993384283562894,
+      "max_slider_position_m": 0.0003432303758481448,
+      "saturated_motor_channels": 5,
+      "initial_pose_offset_rad": [
+        -0.0021516774738575316,
+        0.0024552691365696817
+      ]
+    }
+  ],
+  "summary": {
+    "successes": 10,
+    "episodes": 10,
+    "success_rate": 1.0,
+    "mean_return": 10.91555183140707,
+    "episodes_with_events": 10,
+    "episodes_with_failure": 0
+  }
+}

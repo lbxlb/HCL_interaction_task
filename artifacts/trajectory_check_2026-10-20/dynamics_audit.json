@@ -1,0 +1,259 @@
+{
+  "description": "固定 qpos、qvel=0、无演示位置增量；对比同一姿态下开启/关闭重力的前向计算",
+  "njnt": 18,
+  "nv": 18,
+  "nu": 0,
+  "ntendon": 0,
+  "neq": 0,
+  "gravity_m_s2": [
+    0.0,
+    0.0,
+    -9.81
+  ],
+  "reference_steps": 396,
+  "joints": {
+    "shoulder_rot": {
+      "joint_id": 15,
+      "qpos_adr": 15,
+      "dof_adr": 15,
+      "range_rad": [
+        -1.57,
+        0.349066
+      ],
+      "stiffness_Nm_per_rad": 2.0,
+      "spring_reference_rad": 0.0,
+      "damping_Nm_s_per_rad": 0.5,
+      "armature_kg_m2": 0.1,
+      "body_name": "humerus",
+      "body_mass_kg": 1.99757,
+      "body_principal_inertia_kg_m2": [
+        0.0128576,
+        0.0121576,
+        0.00239265
+      ]
+    },
+    "elbow_flexion": {
+      "joint_id": 16,
+      "qpos_adr": 16,
+      "dof_adr": 16,
+      "range_rad": [
+        0.0,
+        2.26893
+      ],
+      "stiffness_Nm_per_rad": 2.0,
+      "spring_reference_rad": 0.0,
+      "damping_Nm_s_per_rad": 0.5,
+      "armature_kg_m2": 0.1,
+      "body_name": "ulna",
+      "body_mass_kg": 1.1053,
+      "body_principal_inertia_kg_m2": [
+        0.00543663,
+        0.00523521,
+        0.001
+      ]
+    },
+    "pro_sup": {
+      "joint_id": 17,
+      "qpos_adr": 17,
+      "dof_adr": 17,
+      "range_rad": [
+        -1.5708,
+        1.5708
+      ],
+      "stiffness_Nm_per_rad": 2.0,
+      "spring_reference_rad": 0.0,
+      "damping_Nm_s_per_rad": 0.5,
+      "armature_kg_m2": 0.1,
+      "body_name": "radius",
+      "body_mass_kg": 0.23359,
+      "body_principal_inertia_kg_m2": [
+        0.001,
+        0.001,
+        0.001
+      ]
+    }
+  },
+  "poses": {
+    "reset": {
+      "contact_count": 5,
+      "max_dynamics_residual_Nm": 7.105427357601002e-13,
+      "contacts": [
+        {
+          "geom1": "thorax",
+          "geom2": "scapula",
+          "distance_m": -0.02131550539112084
+        },
+        {
+          "geom1": "thorax",
+          "geom2": "humerus",
+          "distance_m": -0.00027188775145383314
+        },
+        {
+          "geom1": "clavicle",
+          "geom2": "scapula",
+          "distance_m": -0.013008815547789952
+        },
+        {
+          "geom1": "scapula",
+          "geom2": "humerus",
+          "distance_m": -0.00749172975722816
+        },
+        {
+          "geom1": "humerus",
+          "geom2": "radius",
+          "distance_m": 0.00019980265817980678
+        }
+      ],
+      "joints": {
+        "shoulder_rot": {
+          "position_rad": -0.6104670000000001,
+          "bias_with_gravity_Nm": 0.1075344420418948,
+          "bias_without_gravity_Nm": 0.0,
+          "gravity_bias_difference_Nm": 0.1075344420418948,
+          "passive_at_zero_velocity_Nm": 1.2209340000000002,
+          "actuator_Nm": 0.0,
+          "constraint_Nm": 6.973071694965961,
+          "acceleration_with_gravity_rad_s2": 98.93395223614893,
+          "acceleration_without_gravity_rad_s2": 100.02934628750265,
+          "generalized_mass_diagonal_kg_m2": 0.18953369213754861
+        },
+        "elbow_flexion": {
+          "position_rad": 1.134465,
+          "bias_with_gravity_Nm": 3.063783409090878,
+          "bias_without_gravity_Nm": 0.0,
+          "gravity_bias_difference_Nm": 3.063783409090878,
+          "passive_at_zero_velocity_Nm": -2.26893,
+          "actuator_Nm": 0.0,
+          "constraint_Nm": 0.4795366266630864,
+          "acceleration_with_gravity_rad_s2": -65.41920377636659,
+          "acceleration_without_gravity_rad_s2": -51.29730022630953,
+          "generalized_mass_diagonal_kg_m2": 0.18889809499158122
+        },
+        "pro_sup": {
+          "position_rad": 0.0,
+          "bias_with_gravity_Nm": -0.06955150197821314,
+          "bias_without_gravity_Nm": 0.0,
+          "gravity_bias_difference_Nm": -0.06955150197821314,
+          "passive_at_zero_velocity_Nm": -0.0,
+          "actuator_Nm": 0.0,
+          "constraint_Nm": -0.2246326391934702,
+          "acceleration_with_gravity_rad_s2": -4.528529574689593,
+          "acceleration_without_gravity_rad_s2": -4.400454166279363,
+          "generalized_mass_diagonal_kg_m2": 0.10739535407114355
+        }
+      }
+    },
+    "reference": {
+      "contact_count": 6,
+      "max_dynamics_residual_Nm": 4.263256414560601e-13,
+      "contacts": [
+        {
+          "geom1": "button-0",
+          "geom2": "hand_2distph",
+          "distance_m": 0.0008308551981730931
+        },
+        {
+          "geom1": "thorax",
+          "geom2": "scapula",
+          "distance_m": -0.02131550539112084
+        },
+        {
+          "geom1": "thorax",
+          "geom2": "humerus",
+          "distance_m": -0.00229862918788114
+        },
+        {
+          "geom1": "clavicle",
+          "geom2": "scapula",
+          "distance_m": -0.013008815547789952
+        },
+        {
+          "geom1": "scapula",
+          "geom2": "humerus",
+          "distance_m": -0.0069153733758528695
+        },
+        {
+          "geom1": "humerus",
+          "geom2": "radius",
+          "distance_m": -0.0014348204138195635
+        }
+      ],
+      "joints": {
+        "shoulder_rot": {
+          "position_rad": -0.21446699999999974,
+          "bias_with_gravity_Nm": 0.14845440849259872,
+          "bias_without_gravity_Nm": 0.0,
+          "gravity_bias_difference_Nm": 0.14845440849259872,
+          "passive_at_zero_velocity_Nm": 0.4289339999999995,
+          "actuator_Nm": 0.0,
+          "constraint_Nm": 2.7897976050422386,
+          "acceleration_with_gravity_rad_s2": 64.34693832595664,
+          "acceleration_without_gravity_rad_s2": 66.19484417490004,
+          "generalized_mass_diagonal_kg_m2": 0.19316715250629118
+        },
+        "elbow_flexion": {
+          "position_rad": 1.7680650000000182,
+          "bias_with_gravity_Nm": 3.191234355413262,
+          "bias_without_gravity_Nm": 0.0,
+          "gravity_bias_difference_Nm": 3.191234355413262,
+          "passive_at_zero_velocity_Nm": -3.5361300000000364,
+          "actuator_Nm": 0.0,
+          "constraint_Nm": -4.0894740072682225,
+          "acceleration_with_gravity_rad_s2": -95.18672052074456,
+          "acceleration_without_gravity_rad_s2": -80.65981486510005,
+          "generalized_mass_diagonal_kg_m2": 0.1890035277593627
+        },
+        "pro_sup": {
+          "position_rad": 0.31680000000000086,
+          "bias_with_gravity_Nm": -0.10827689961355547,
+          "bias_without_gravity_Nm": 0.0,
+          "gravity_bias_difference_Nm": -0.10827689961355547,
+          "passive_at_zero_velocity_Nm": -0.6336000000000017,
+          "actuator_Nm": 0.0,
+          "constraint_Nm": -0.033081025360528565,
+          "acceleration_with_gravity_rad_s2": -6.49469494838116,
+          "acceleration_without_gravity_rad_s2": -6.954349381556285,
+          "generalized_mass_diagonal_kg_m2": 0.10739535407114355
+        }
+      }
+    }
+  },
+  "inertia_review_candidates": [
+    {
+      "body_name": "clavphant",
+      "mass_kg": 0.001,
+      "principal_inertia_kg_m2": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "body_name": "scapphant",
+      "mass_kg": 0.001,
+      "principal_inertia_kg_m2": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "body_name": "humphant",
+      "mass_kg": 0.001,
+      "principal_inertia_kg_m2": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "body_name": "humphant1",
+      "mass_kg": 0.001,
+      "principal_inertia_kg_m2": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "initial_state_and_parameters_identical": true,
+  "first_20_steps_identical": true,
+  "hold_target_constant": true,
+  "cases": {
+    "press": {
+      "first_task_contact_time_s": 0.026000000000000002,
+      "peak_normal_force_N": 27.400516013534062,
+      "final_normal_force_N": 15.051280364196746,
+      "first_geometric_touch": {
+        "step": 18,
+        "time_s": 0.036000000000000004,
+        "geom_distance_m": -2.7563568477588884e-06
+      },
+      "min_contact_pair_distance_m": -7.37378651173579e-05,
+      "final_tracking_error_deg": [
+        -0.4909308871215635,
+        0.4033122485818285
+      ],
+      "final_joint_drift_deg": [
+        -0.3054871052622668,
+        -0.4269305172878275
+      ],
+      "max_abs_joint_drift_deg": [
+        0.3061389498995672,
+        0.5490213797415506
+      ]
+    },
+    "hold-only": {
+      "first_task_contact_time_s": 0.026000000000000002,
+      "peak_normal_force_N": 27.400516013534062,
+      "final_normal_force_N": 13.020195354313525,
+      "first_geometric_touch": {
+        "step": 18,
+        "time_s": 0.036000000000000004,
+        "geom_distance_m": -2.7563568477588884e-06
+      },
+      "min_contact_pair_distance_m": -7.37378651173579e-05,
+      "final_tracking_error_deg": [
+        -0.30509409847658975,
+        -0.4223594218830487
+      ],
+      "final_joint_drift_deg": [
+        -0.30509409847658975,
+        -0.4223594218830487
+      ],
+      "max_abs_joint_drift_deg": [
+        0.30617202882032124,
+        0.5490213797415506
+      ]
+    }
+  }
+}

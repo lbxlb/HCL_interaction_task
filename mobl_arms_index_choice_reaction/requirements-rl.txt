@@ -1,0 +1,6 @@
+# Install into the existing mjoco_py310 environment after requirements.txt.
+# This project run is CPU-only; the extra index selects the matching official CPU wheel.
+--extra-index-url https://download.pytorch.org/whl/cpu
+gymnasium==1.2.0
+stable-baselines3==2.9.2
+torch==2.8.0+cpu

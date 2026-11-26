@@ -1,0 +1,40 @@
+{
+  "first_100_physical_samples_identical_to_short_run": true,
+  "run": {
+    "steps": 270,
+    "duration_s": 0.5400000000000004,
+    "filtered_internal_pairs": 5,
+    "kp": 50.0,
+    "kd": 8.0,
+    "torque_limit_Nm": 10.0,
+    "saturation_count": 0
+  },
+  "first_task_contact_time_s": 0.10200000000000001,
+  "task_contact_persists_to_end": true,
+  "contact_pair_distance_min_mm": 0.5326999521065513,
+  "contact_pair_distance_final_mm": 0.987896933062223,
+  "summed_geom_margin_mm": 1.0,
+  "final_position_error_target_minus_actual_deg": [
+    0.10477674940131912,
+    -0.48174286833506597
+  ],
+  "late_50ms": {
+    "position_error_mean_deg": [
+      0.10488638979746667,
+      -0.4817256520752808
+    ],
+    "position_error_range_deg": [
+      0.0002194263729814877,
+      3.4725540304259006e-05
+    ],
+    "max_abs_joint_velocity_deg_s": [
+      0.004579614853869337,
+      0.0007476255612924276
+    ],
+    "normal_force_mean_N": 1.1444754196029074,
+    "normal_force_range_N": 0.00022960535664284798,
+    "contact_distance_mean_mm": 0.9878918883830514,
+    "contact_distance_range_mm": 1.231988846905896e-05
+  },
+  "interpretation": "Late-window signals are nearly stationary in this run, but no acceptance tolerance is defined. Contact distance remains positive, so surface pressing is not demonstrated."
+}

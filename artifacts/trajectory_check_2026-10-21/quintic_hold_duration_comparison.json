@@ -1,0 +1,20 @@
+{
+  "0.6 s move + 0.4 s hold": {
+    "total_seconds": 3.999999999999781,
+    "tip_max_mm": 6.285805803417388,
+    "tip_rms_mm": 2.887155895349353,
+    "tip_worst_segment_tail_mm": 1.1184027478720358,
+    "elbow_peak_torque_Nm": 5.949328876499546,
+    "shoulder_peak_torque_Nm": 1.4332343766485982,
+    "peak_elbow_error_deg": 0.8090532687866624
+  },
+  "0.6 s move + 0.6 s hold": {
+    "total_seconds": 4.799999999999693,
+    "tip_max_mm": 6.289278850146637,
+    "tip_rms_mm": 2.637795339618213,
+    "tip_worst_segment_tail_mm": 0.03420937697479759,
+    "elbow_peak_torque_Nm": 5.949064312052062,
+    "shoulder_peak_torque_Nm": 1.4333406652080682,
+    "peak_elbow_error_deg": 0.8095438259568204
+  }
+}

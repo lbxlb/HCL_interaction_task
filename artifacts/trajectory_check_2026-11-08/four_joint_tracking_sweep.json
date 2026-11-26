@@ -1,0 +1,89 @@
+{
+  "purpose": "No-contact four-joint tracking sweep; not task or safety validation.",
+  "controller_sweep": [
+    "20/6",
+    "50/8",
+    "100/15"
+  ],
+  "results": {
+    "20/6": {
+      "0": {
+        "final_error_rad": 0.12367653052968208,
+        "max_error_rad": 1.779728036030889,
+        "saturation_samples": 19,
+        "finite": true
+      },
+      "1": {
+        "final_error_rad": 0.11185393162037016,
+        "max_error_rad": 1.75298828088096,
+        "saturation_samples": 11,
+        "finite": true
+      },
+      "2": {
+        "final_error_rad": 0.13965555752240033,
+        "max_error_rad": 1.4724207388813273,
+        "saturation_samples": 12,
+        "finite": true
+      },
+      "3": {
+        "final_error_rad": 0.08549073488764147,
+        "max_error_rad": 1.4859376055443436,
+        "saturation_samples": 19,
+        "finite": true
+      }
+    },
+    "50/8": {
+      "0": {
+        "final_error_rad": 0.06869501604159978,
+        "max_error_rad": 1.7797015167442052,
+        "saturation_samples": 560,
+        "finite": true
+      },
+      "1": {
+        "final_error_rad": 0.06148237671807455,
+        "max_error_rad": 1.7529619569103971,
+        "saturation_samples": 53,
+        "finite": true
+      },
+      "2": {
+        "final_error_rad": 0.0599773279888598,
+        "max_error_rad": 1.4723977651281523,
+        "saturation_samples": 20,
+        "finite": true
+      },
+      "3": {
+        "final_error_rad": 0.034855252605449305,
+        "max_error_rad": 1.48591291174257,
+        "saturation_samples": 32,
+        "finite": true
+      }
+    },
+    "100/15": {
+      "0": {
+        "final_error_rad": 0.0674979512453655,
+        "max_error_rad": 1.7796101153192272,
+        "saturation_samples": 1604,
+        "finite": true
+      },
+      "1": {
+        "final_error_rad": 0.04201857562673039,
+        "max_error_rad": 1.752871228662341,
+        "saturation_samples": 1566,
+        "finite": true
+      },
+      "2": {
+        "final_error_rad": 0.03083748888903859,
+        "max_error_rad": 1.4723185837458503,
+        "saturation_samples": 34,
+        "finite": true
+      },
+      "3": {
+        "final_error_rad": 0.017724919174016307,
+        "max_error_rad": 1.4858278020374276,
+        "saturation_samples": 52,
+        "finite": true
+      }
+    }
+  },
+  "limitations": "Temporary motors on formal panel copy; torque limit is an experiment setting."
+}

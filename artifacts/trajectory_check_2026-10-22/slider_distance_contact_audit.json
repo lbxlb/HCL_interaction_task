@@ -1,0 +1,472 @@
+{
+  "experiment": "固定三个最小姿态，用显式接触对交叉核验距离查询。",
+  "mujoco_version": "3.3.7",
+  "samples": [
+    {
+      "step": 13,
+      "pair_margin_m": 0.0,
+      "pair_gap_m": 0.0,
+      "distance_query": {
+        "distmax_m": 0.01,
+        "distance_m": 0.0033402816348153466,
+        "segment_world_m": [
+          0.37538010397845684,
+          -0.2593861903193336,
+          0.8399849979713596,
+          0.37300732559603983,
+          -0.2593861903193336,
+          0.842336041175518
+        ],
+        "segment_length_m": 0.003340281634815341
+      },
+      "contacts": [],
+      "separating_plane_gap_m": 0.003340281634815376,
+      "query_unchanged_after_collision": true,
+      "nefc_after_forward": 0,
+      "warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "step": 13,
+      "pair_margin_m": 0.005,
+      "pair_gap_m": 0.005,
+      "distance_query": {
+        "distmax_m": 0.01,
+        "distance_m": 0.0033402816348153466,
+        "segment_world_m": [
+          0.37538010397845684,
+          -0.2593861903193336,
+          0.8399849979713596,
+          0.37300732559603983,
+          -0.2593861903193336,
+          0.842336041175518
+        ],
+        "segment_length_m": 0.003340281634815341
+      },
+      "contacts": [
+        {
+          "distance_m": 0.0033402820057880853,
+          "position_m": [
+            0.3741934863887053,
+            -0.2593861053842388,
+            0.8411602890633723
+          ],
+          "normal": [
+            -0.710352770779141,
+            9.498568407435193e-09,
+            0.703845821928636
+          ],
+          "includemargin_m": 0.0,
+          "efc_address": -1
+        }
+      ],
+      "separating_plane_gap_m": 0.003340281634815376,
+      "query_unchanged_after_collision": true,
+      "nefc_after_forward": 0,
+      "warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "step": 13,
+      "pair_margin_m": 0.01,
+      "pair_gap_m": 0.01,
+      "distance_query": {
+        "distmax_m": 0.01,
+        "distance_m": 0.0033402816348153466,
+        "segment_world_m": [
+          0.37538010397845684,
+          -0.2593861903193336,
+          0.8399849979713596,
+          0.37300732559603983,
+          -0.2593861903193336,
+          0.842336041175518
+        ],
+        "segment_length_m": 0.003340281634815341
+      },
+      "contacts": [
+        {
+          "distance_m": 0.003340282766349576,
+          "position_m": [
+            0.37419431655331215,
+            -0.2593844003286513,
+            0.8411611269027744
+          ],
+          "normal": [
+            -0.710352803270432,
+            -4.34020610931711e-09,
+            0.7038457891369664
+          ],
+          "includemargin_m": 0.0,
+          "efc_address": -1
+        }
+      ],
+      "separating_plane_gap_m": 0.003340281634815376,
+      "query_unchanged_after_collision": true,
+      "nefc_after_forward": 0,
+      "warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "step": 14,
+      "pair_margin_m": 0.0,
+      "pair_gap_m": 0.0,
+      "distance_query": {
+        "distmax_m": 0.01,
+        "distance_m": 0.0,
+        "segment_world_m": [
+          0.41755123784627857,
+          -0.28712102406426815,
+          0.9308082905706718,
+          0.41204603298523085,
+          -0.28653347945530644,
+          0.9304944324937561
+        ],
+        "segment_length_m": 0.005545358069779503
+      },
+      "contacts": [],
+      "separating_plane_gap_m": 0.0033401501948858246,
+      "query_unchanged_after_collision": true,
+      "nefc_after_forward": 0,
+      "warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "step": 14,
+      "pair_margin_m": 0.005,
+      "pair_gap_m": 0.005,
+      "distance_query": {
+        "distmax_m": 0.01,
+        "distance_m": 0.0,
+        "segment_world_m": [
+          0.41755123784627857,
+          -0.28712102406426815,
+          0.9308082905706718,
+          0.41204603298523085,
+          -0.28653347945530644,
+          0.9304944324937561
+        ],
+        "segment_length_m": 0.005545358069779503
+      },
+      "contacts": [
+        {
+          "distance_m": 0.0033401505658363223,
+          "position_m": [
+            0.3741932600051463,
+            -0.25938606812228815,
+            0.8411599672142438
+          ],
+          "normal": [
+            -0.7103527707800159,
+            9.49885298403879e-09,
+            0.703845821927753
+          ],
+          "includemargin_m": 0.0,
+          "efc_address": -1
+        }
+      ],
+      "separating_plane_gap_m": 0.0033401501948858246,
+      "query_unchanged_after_collision": true,
+      "nefc_after_forward": 0,
+      "warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "step": 14,
+      "pair_margin_m": 0.01,
+      "pair_gap_m": 0.01,
+      "distance_query": {
+        "distmax_m": 0.01,
+        "distance_m": 0.0,
+        "segment_world_m": [
+          0.41755123784627857,
+          -0.28712102406426815,
+          0.9308082905706718,
+          0.41204603298523085,
+          -0.28653347945530644,
+          0.9304944324937561
+        ],
+        "segment_length_m": 0.005545358069779503
+      },
+      "contacts": [
+        {
+          "distance_m": 0.003340151326422838,
+          "position_m": [
+            0.37419409018939326,
+            -0.25938436305834034,
+            0.8411608050734676
+          ],
+          "normal": [
+            -0.7103528032708962,
+            -4.339895399936438e-09,
+            0.7038457891364979
+          ],
+          "includemargin_m": 0.0,
+          "efc_address": -1
+        }
+      ],
+      "separating_plane_gap_m": 0.0033401501948858246,
+      "query_unchanged_after_collision": true,
+      "nefc_after_forward": 0,
+      "warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "step": 15,
+      "pair_margin_m": 0.0,
+      "pair_gap_m": 0.0,
+      "distance_query": {
+        "distmax_m": 0.01,
+        "distance_m": 0.0033400157287678074,
+        "segment_world_m": [
+          0.37537956026333874,
+          -0.25938611963029623,
+          0.8399844492296451,
+          0.37300697076802475,
+          -0.25938611963029623,
+          0.8423353052769483
+        ],
+        "segment_length_m": 0.0033400157287678256
+      },
+      "contacts": [],
+      "separating_plane_gap_m": 0.003340015728767862,
+      "query_unchanged_after_collision": true,
+      "nefc_after_forward": 0,
+      "warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "step": 15,
+      "pair_margin_m": 0.005,
+      "pair_gap_m": 0.005,
+      "distance_query": {
+        "distmax_m": 0.01,
+        "distance_m": 0.0033400157287678074,
+        "segment_world_m": [
+          0.37537956026333874,
+          -0.25938611963029623,
+          0.8399844492296451,
+          0.37300697076802475,
+          -0.25938611963029623,
+          0.8423353052769483
+        ],
+        "segment_length_m": 0.0033400157287678256
+      },
+      "contacts": [
+        {
+          "distance_m": 0.0033400160996971077,
+          "position_m": [
+            0.37419303714424323,
+            -0.25938603472844773,
+            0.8411596467705853
+          ],
+          "normal": [
+            -0.7103527707807579,
+            9.499120198437401e-09,
+            0.7038458219270041
+          ],
+          "includemargin_m": 0.0,
+          "efc_address": -1
+        }
+      ],
+      "separating_plane_gap_m": 0.003340015728767862,
+      "query_unchanged_after_collision": true,
+      "nefc_after_forward": 0,
+      "warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "step": 15,
+      "pair_margin_m": 0.01,
+      "pair_gap_m": 0.01,
+      "distance_query": {
+        "distmax_m": 0.01,
+        "distance_m": 0.0033400157287678074,
+        "segment_world_m": [
+          0.37537956026333874,
+          -0.25938611963029623,
+          0.8399844492296451,
+          0.37300697076802475,
+          -0.25938611963029623,
+          0.8423353052769483
+        ],
+        "segment_length_m": 0.0033400157287678256
+      },
+      "contacts": [
+        {
+          "distance_m": 0.003340016860307401,
+          "position_m": [
+            0.37419386734761817,
+            -0.2593843296566392,
+            0.8411604846491141
+          ],
+          "normal": [
+            -0.7103528032713038,
+            -4.33958273098282e-09,
+            0.7038457891360865
+          ],
+          "includemargin_m": 0.0,
+          "efc_address": -1
+        }
+      ],
+      "separating_plane_gap_m": 0.003340015728767862,
+      "query_unchanged_after_collision": true,
+      "nefc_after_forward": 0,
+      "warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "step": 13,
+      "margin_mm": 0.0,
+      "query_mm": 3.3402816348153466,
+      "contact_distances_mm": [],
+      "plane_gap_mm": 3.3402816348153763
+    },
+    {
+      "step": 13,
+      "margin_mm": 5.0,
+      "query_mm": 3.3402816348153466,
+      "contact_distances_mm": [
+        3.3402820057880853
+      ],
+      "plane_gap_mm": 3.3402816348153763
+    },
+    {
+      "step": 13,
+      "margin_mm": 10.0,
+      "query_mm": 3.3402816348153466,
+      "contact_distances_mm": [
+        3.340282766349576
+      ],
+      "plane_gap_mm": 3.3402816348153763
+    },
+    {
+      "step": 14,
+      "margin_mm": 0.0,
+      "query_mm": 0.0,
+      "contact_distances_mm": [],
+      "plane_gap_mm": 3.3401501948858248
+    },
+    {
+      "step": 14,
+      "margin_mm": 5.0,
+      "query_mm": 0.0,
+      "contact_distances_mm": [
+        3.340150565836322
+      ],
+      "plane_gap_mm": 3.3401501948858248
+    },
+    {
+      "step": 14,
+      "margin_mm": 10.0,
+      "query_mm": 0.0,
+      "contact_distances_mm": [
+        3.3401513264228377
+      ],
+      "plane_gap_mm": 3.3401501948858248
+    },
+    {
+      "step": 15,
+      "margin_mm": 0.0,
+      "query_mm": 3.340015728767807,
+      "contact_distances_mm": [],
+      "plane_gap_mm": 3.3400157287678622
+    },
+    {
+      "step": 15,
+      "margin_mm": 5.0,
+      "query_mm": 3.340015728767807,
+      "contact_distances_mm": [
+        3.3400160996971078
+      ],
+      "plane_gap_mm": 3.3400157287678622
+    },
+    {
+      "step": 15,
+      "margin_mm": 10.0,
+      "query_mm": 3.340015728767807,
+      "contact_distances_mm": [
+        3.340016860307401
+      ],
+      "plane_gap_mm": 3.3400157287678622
+    }
+  ],
+  "formal_xml_unchanged": true,
+  "diagnostic_checks_passed": true,
+  "comparison_tolerance_m": 1e-08,
+  "max_contact_vs_plane_difference_m": 1.1315395391509053e-09,
+  "limitations": "Three separated poses, explicit pairs and diagnostic margin/gap only. Proximity contacts are not physical touch or button success. No mj_step or force-control test; not a formal-model repair."
+}

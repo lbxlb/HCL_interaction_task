@@ -1,0 +1,99 @@
+{
+  "measurement": "reset_pose_static_geometry_only",
+  "sim_steps": 0,
+  "timestep_seconds": 0.002,
+  "target_button": 0,
+  "fingertip_site": "fingertip",
+  "finger_collision_geom": "hand_2distph",
+  "button_shape": "oriented boxes; reported point-to-surface distance is unsigned",
+  "buttons": [
+    {
+      "button": 0,
+      "is_configured_target": true,
+      "geom_surface_distance_m": 0.29995172732244,
+      "fingertip_to_geom_center_m": 0.33949244218614105,
+      "fingertip_to_button_surface_m": 0.3042073513394071,
+      "button_geom_size_m": [
+        0.025,
+        0.025,
+        0.01
+      ],
+      "fingertip_world_m": [
+        0.3036266169967785,
+        -0.400796688273295,
+        0.5574989699098369
+      ],
+      "button_center_world_m": [
+        0.392445,
+        -0.24,
+        0.843
+      ]
+    },
+    {
+      "button": 1,
+      "is_configured_target": false,
+      "geom_surface_distance_m": 0.3832198125435607,
+      "fingertip_to_geom_center_m": 0.42412049115555933,
+      "fingertip_to_button_surface_m": 0.38751152928069127,
+      "button_geom_size_m": [
+        0.025,
+        0.025,
+        0.01
+      ],
+      "fingertip_world_m": [
+        0.3036266169967785,
+        -0.400796688273295,
+        0.5574989699098369
+      ],
+      "button_center_world_m": [
+        0.392445,
+        -0.1,
+        0.843
+      ]
+    },
+    {
+      "button": 2,
+      "is_configured_target": false,
+      "geom_surface_distance_m": 0.4179084894408144,
+      "fingertip_to_geom_center_m": 0.45435958585697606,
+      "fingertip_to_button_surface_m": 0.42057282476031044,
+      "button_geom_size_m": [
+        0.025,
+        0.025,
+        0.01
+      ],
+      "fingertip_world_m": [
+        0.3036266169967785,
+        -0.400796688273295,
+        0.5574989699098369
+      ],
+      "button_center_world_m": [
+        0.482445,
+        -0.24,
+        0.943
+      ]
+    },
+    {
+      "button": 3,
+      "is_configured_target": false,
+      "geom_surface_distance_m": 0.4814334064002102,
+      "fingertip_to_geom_center_m": 0.5206397084132609,
+      "fingertip_to_button_surface_m": 0.48425672286855176,
+      "button_geom_size_m": [
+        0.025,
+        0.025,
+        0.01
+      ],
+      "fingertip_world_m": [
+        0.3036266169967785,
+        -0.400796688273295,
+        0.5574989699098369
+      ],
+      "button_center_world_m": [
+        0.482445,
+        -0.1,
+        0.943
+      ]
+    }
+  ]
+}

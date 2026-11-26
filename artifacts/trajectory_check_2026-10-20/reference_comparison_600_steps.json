@@ -1,0 +1,81 @@
+{
+  "steps": 600,
+  "dt_seconds": 0.002,
+  "auto_reset": false,
+  "reference_description": "只按参考关节位置重算几何，其余关节固定在重置位置；不积分动力学",
+  "buttons": [
+    {
+      "button": 0,
+      "initial_geom_distance_m": 0.29995172732244,
+      "min_geom_distance_m": 0.27713020262650145,
+      "min_distance_step": 40,
+      "first_contact_step": null,
+      "reference_min_geom_distance_m": -0.012402967136455395,
+      "reference_min_distance_step": 424,
+      "reference_first_contact_step": 396,
+      "final_geom_distance_m": 0.6907888127739209,
+      "final_tip_to_button_center_m": 0.7317146436842799,
+      "reference_final_geom_distance_m": 0.11288236032476748
+    },
+    {
+      "button": 1,
+      "initial_geom_distance_m": 0.3832198125435607,
+      "min_geom_distance_m": 0.3486567886371169,
+      "min_distance_step": 52,
+      "first_contact_step": null,
+      "reference_min_geom_distance_m": 0.0,
+      "reference_min_distance_step": 421,
+      "reference_first_contact_step": null,
+      "final_geom_distance_m": 0.7149432709899517,
+      "final_tip_to_button_center_m": 0.7588673683371541,
+      "reference_final_geom_distance_m": 0.09562523961651108
+    },
+    {
+      "button": 2,
+      "initial_geom_distance_m": 0.4179084894408144,
+      "min_geom_distance_m": 0.3958532359842458,
+      "min_distance_step": 37,
+      "first_contact_step": null,
+      "reference_min_geom_distance_m": 0.0,
+      "reference_min_distance_step": 420,
+      "reference_first_contact_step": null,
+      "final_geom_distance_m": 0.8238056378019059,
+      "final_tip_to_button_center_m": 0.8641816976486606,
+      "reference_final_geom_distance_m": 0.13560819879403993
+    },
+    {
+      "button": 3,
+      "initial_geom_distance_m": 0.4814334064002102,
+      "min_geom_distance_m": 0.44982809757173164,
+      "min_distance_step": 50,
+      "first_contact_step": null,
+      "reference_min_geom_distance_m": 0.11204465551076295,
+      "reference_min_distance_step": 549,
+      "reference_first_contact_step": null,
+      "final_geom_distance_m": 0.8441803151669125,
+      "final_tip_to_button_center_m": 0.8872899016081871,
+      "reference_final_geom_distance_m": 0.12032923238092216
+    }
+  ],
+  "joints": {
+    "shoulder_rot": {
+      "max_post_integration_change_rad": 0.004137264296576348,
+      "max_reference_error_rad": 0.4095651211250315,
+      "final_actual_rad": -0.1405961129621164,
+      "final_reference_rad": -0.01046699999999956
+    },
+    "elbow_flexion": {
+      "max_post_integration_change_rad": 0.007404956292862308,
+      "max_reference_error_rad": 1.877164234760428,
+      "final_actual_rad": 0.2173007652395861,
+      "final_reference_rad": 2.0944650000000142
+    },
+    "pro_sup": {
+      "max_post_integration_change_rad": 0.001255991147036284,
+      "max_reference_error_rad": 0.3087646746827267,
+      "final_actual_rad": 0.17123532531727884,
+      "final_reference_rad": 0.48000000000000553
+    }
+  },
+  "elapsed_sim_seconds": 1.2000000000000008
+}

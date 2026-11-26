@@ -1,0 +1,98 @@
+{
+  "steps": 600,
+  "dt_seconds": 0.002,
+  "auto_reset": false,
+  "reference_description": "只按参考关节位置重算几何，其余关节固定在重置位置；不积分动力学",
+  "buttons": [
+    {
+      "button": 0,
+      "initial_geom_distance_m": 0.29995172732244,
+      "min_geom_distance_m": 0.27713020262650145,
+      "min_distance_step": 40,
+      "first_contact_step": null,
+      "reference_min_geom_distance_m": 0.0,
+      "reference_min_distance_step": 364,
+      "reference_first_contact_step": 396,
+      "final_geom_distance_m": 0.6907888127739209,
+      "final_tip_to_button_center_m": 0.7317146436842799,
+      "reference_final_geom_distance_m": 0.0008306743952046665
+    },
+    {
+      "button": 1,
+      "initial_geom_distance_m": 0.3832198125435607,
+      "min_geom_distance_m": 0.3486567886371169,
+      "min_distance_step": 52,
+      "first_contact_step": null,
+      "reference_min_geom_distance_m": 0.11185529901657422,
+      "reference_min_distance_step": 396,
+      "reference_first_contact_step": null,
+      "final_geom_distance_m": 0.7149432709899517,
+      "final_tip_to_button_center_m": 0.7588673683371541,
+      "reference_final_geom_distance_m": 0.11185529901657422
+    },
+    {
+      "button": 2,
+      "initial_geom_distance_m": 0.4179084894408144,
+      "min_geom_distance_m": 0.3958532359842458,
+      "min_distance_step": 37,
+      "first_contact_step": null,
+      "reference_min_geom_distance_m": 0.13270939173934942,
+      "reference_min_distance_step": 396,
+      "reference_first_contact_step": null,
+      "final_geom_distance_m": 0.8238056378019059,
+      "final_tip_to_button_center_m": 0.8641816976486606,
+      "reference_final_geom_distance_m": 0.13270939173934942
+    },
+    {
+      "button": 3,
+      "initial_geom_distance_m": 0.4814334064002102,
+      "min_geom_distance_m": 0.44982809757173164,
+      "min_distance_step": 50,
+      "first_contact_step": null,
+      "reference_min_geom_distance_m": 0.17389205606329108,
+      "reference_min_distance_step": 396,
+      "reference_first_contact_step": null,
+      "final_geom_distance_m": 0.8441803151669125,
+      "final_tip_to_button_center_m": 0.8872899016081871,
+      "reference_final_geom_distance_m": 0.17389205606329108
+    }
+  ],
+  "joints": {
+    "shoulder_rot": {
+      "max_post_integration_change_rad": 0.004137264296576348,
+      "max_reference_error_rad": 0.4095651211250315,
+      "final_actual_rad": -0.1405961129621164,
+      "final_reference_rad": -0.21446699999999974
+    },
+    "elbow_flexion": {
+      "max_post_integration_change_rad": 0.007404956292862308,
+      "max_reference_error_rad": 1.7565256262903521,
+      "final_actual_rad": 0.2173007652395861,
+      "final_reference_rad": 1.7680650000000182
+    },
+    "pro_sup": {
+      "max_post_integration_change_rad": 0.001255991147036284,
+      "max_reference_error_rad": 0.14556467468272202,
+      "final_actual_rad": 0.17123532531727884,
+      "final_reference_rad": 0.31680000000000086
+    }
+  },
+  "reference_stop": {
+    "mode": "hold_on_first_target_contact",
+    "target_button": 0,
+    "stopped": true,
+    "stop_step": 396,
+    "stop_time_seconds": 0.7920000000000006,
+    "held_steps": 204,
+    "held_target_contact_steps": 204,
+    "max_hold_position_drift_rad": 0.0,
+    "description": "仅冻结诊断用参考姿态；不控制实际模型，不验证接触力",
+    "stop_geom_distance_m": 0.0008306743952046665,
+    "joint_positions_rad": {
+      "shoulder_rot": -0.21446699999999974,
+      "elbow_flexion": 1.7680650000000182,
+      "pro_sup": 0.31680000000000086
+    }
+  },
+  "elapsed_sim_seconds": 1.2000000000000008
+}

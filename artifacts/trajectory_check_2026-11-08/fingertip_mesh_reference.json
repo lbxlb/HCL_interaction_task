@@ -1,0 +1,45 @@
+{
+  "purpose": "Reference-point audit; no dynamics or task-success claim.",
+  "geom": "hand_2distph",
+  "mesh_vertex_count": 383,
+  "mesh_local_bbox": {
+    "min": [
+      -0.003908832091838121,
+      -0.0025774568784981966,
+      -0.006218333262950182
+    ],
+    "max": [
+      0.0036101413425058126,
+      0.002253097016364336,
+      0.00942261889576912
+    ],
+    "center": [
+      2.7143105398863554e-05,
+      -4.998075746698305e-05,
+      0.000277556391665712
+    ]
+  },
+  "geom_local_pos": [
+    0.023205828216709516,
+    -0.14108888467856034,
+    -0.0030337000705660915
+  ],
+  "geom_body": "index3",
+  "site_body": "index3",
+  "site_pos_in_body_local": [
+    0.024,
+    -0.149,
+    -0.0065
+  ],
+  "site_world_m": [
+    0.03493699999999999,
+    -0.19852599999999992,
+    0.28504300000000016
+  ],
+  "geom_world_m": [
+    0.03414282821670951,
+    -0.20199229992943385,
+    0.2929541153214398
+  ],
+  "limitations": "Mesh vertices and site use different local frames if attached to different bodies; closest mesh point requires contact data."
+}

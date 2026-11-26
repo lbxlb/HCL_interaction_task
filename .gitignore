@@ -1,0 +1,12 @@
+.local/
+.vscode/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+MUJOCO_LOG.TXT
+**/ros2_ws/build/
+**/ros2_ws/install/
+**/ros2_ws/log/
+artifacts/choice_reaction_logs/

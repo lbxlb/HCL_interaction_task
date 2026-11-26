@@ -5,15 +5,12 @@ from geometry_msgs.msg import PointStamped, PoseStamped
 from std_msgs.msg import Float64MultiArray, Float64
 import sys
 import os
+from pathlib import Path
 import threading
 
-# ========== 关键：添加simulator.py所在目录到Python路径 ==========
-# 使用绝对路径（已验证存在）
-simulator_dir = '/home/lbxlb/HCL_interaction_task/mobl_arms_index_pointing'
-sys.path.append(simulator_dir)
-print(f"Added path: {simulator_dir}")
-print(f"Path exists: {os.path.exists(simulator_dir)}")
-print(f"simulator.py exists: {os.path.exists(os.path.join(simulator_dir, 'simulator.py'))}")
+# A symlink install resolves back to the checkout. Copied installs may specify the model directory.
+simulator_dir = Path(os.environ.get('HCL_POINTING_DIR', Path(__file__).resolve().parents[4]))
+sys.path.insert(0, str(simulator_dir))
 
 try:
     from simulator import Simulator  # 导入你的仿真器

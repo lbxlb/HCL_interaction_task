@@ -1,0 +1,439 @@
+{
+  "checks": {
+    "same_seed_same_observation": true,
+    "same_seed_same_initial_state": true,
+    "different_seed_changes_initial_pose": true,
+    "same_seed_same_action_same_trajectory": true,
+    "all_offsets_within_configured_envelope": true,
+    "no_initial_fingertip_button_contact": true,
+    "no_initial_mujoco_warnings": true,
+    "zero_initial_shoulder_elbow_velocity": true,
+    "positive_distance_diagnostic_above_1mm": true,
+    "scripted_press_release_succeeds_for_all_seeds": true
+  },
+  "configured_jitter_deg_per_joint": 0.2,
+  "velocity_initialization": "zero velocity; only shoulder_rot and elbow_flexion qpos vary",
+  "positive_geom_distance_min_m": 0.0023693820883086917,
+  "geom_distance_caveat": "A zero geom-distance query without a matching contact is ambiguous and is not interpreted as contact or as a proven clearance.",
+  "reset_samples": [
+    {
+      "seed": 4200,
+      "initial_joint_position_rad": [
+        -0.24652677071496745,
+        1.8149963354899716
+      ],
+      "initial_joint_velocity_rad_s": [
+        0.0,
+        0.0
+      ],
+      "initial_pose_offset_rad": [
+        0.0004216734184644343,
+        -0.002567970641159029
+      ],
+      "finger_button_distance_query_m": 0.0,
+      "distance_query_zero_without_contact": true,
+      "matching_contact": false,
+      "warning_count": 0
+    },
+    {
+      "seed": 4201,
+      "initial_joint_position_rad": [
+        -0.24981757480430905,
+        1.8204700103650722
+      ],
+      "initial_joint_velocity_rad_s": [
+        0.0,
+        0.0
+      ],
+      "initial_pose_offset_rad": [
+        -0.002869130670877162,
+        0.0029057042339414845
+      ],
+      "finger_button_distance_query_m": 0.004591152650688001,
+      "distance_query_zero_without_contact": false,
+      "matching_contact": false,
+      "warning_count": 0
+    },
+    {
+      "seed": 4202,
+      "initial_joint_position_rad": [
+        -0.2447444045005558,
+        1.8156868389438372
+      ],
+      "initial_joint_velocity_rad_s": [
+        0.0,
+        0.0
+      ],
+      "initial_pose_offset_rad": [
+        0.00220403963287611,
+        -0.0018774671872933762
+      ],
+      "finger_button_distance_query_m": 0.002515811821915308,
+      "distance_query_zero_without_contact": false,
+      "matching_contact": false,
+      "warning_count": 0
+    },
+    {
+      "seed": 4203,
+      "initial_joint_position_rad": [
+        -0.24830851057230063,
+        1.8189674425151403
+      ],
+      "initial_joint_velocity_rad_s": [
+        0.0,
+        0.0
+      ],
+      "initial_pose_offset_rad": [
+        -0.001360066438868745,
+        0.0014031363840097772
+      ],
+      "finger_button_distance_query_m": 0.003943005879798224,
+      "distance_query_zero_without_contact": false,
+      "matching_contact": false,
+      "warning_count": 0
+    },
+    {
+      "seed": 4204,
+      "initial_joint_position_rad": [
+        -0.24978070585787093,
+        1.818549282208232
+      ],
+      "initial_joint_velocity_rad_s": [
+        0.0,
+        0.0
+      ],
+      "initial_pose_offset_rad": [
+        -0.0028322617244390404,
+        0.0009849760771014685
+      ],
+      "finger_button_distance_query_m": 0.003870857799111598,
+      "distance_query_zero_without_contact": false,
+      "matching_contact": false,
+      "warning_count": 0
+    },
+    {
+      "seed": 4205,
+      "initial_joint_position_rad": [
+        -0.2459892807075742,
+        1.8168459110842072
+      ],
+      "initial_joint_velocity_rad_s": [
+        0.0,
+        0.0
+      ],
+      "initial_pose_offset_rad": [
+        0.0009591634258576976,
+        -0.0007183950469233692
+      ],
+      "finger_button_distance_query_m": 0.003018715992969192,
+      "distance_query_zero_without_contact": false,
+      "matching_contact": false,
+      "warning_count": 0
+    },
+    {
+      "seed": 4206,
+      "initial_joint_position_rad": [
+        -0.24585732047088382,
+        1.8179614943819715
+      ],
+      "initial_joint_velocity_rad_s": [
+        0.0,
+        0.0
+      ],
+      "initial_pose_offset_rad": [
+        0.0010911236625480755,
+        0.00039718825084100577
+      ],
+      "finger_button_distance_query_m": 0.003428153837441681,
+      "distance_query_zero_without_contact": false,
+      "matching_contact": false,
+      "warning_count": 0
+    },
+    {
+      "seed": 4207,
+      "initial_joint_position_rad": [
+        -0.2434582700827375,
+        1.8172393033120786
+      ],
+      "initial_joint_velocity_rad_s": [
+        0.0,
+        0.0
+      ],
+      "initial_pose_offset_rad": [
+        0.003490174050694394,
+        -0.0003250028190519365
+      ],
+      "finger_button_distance_query_m": 0.0030239385964941534,
+      "distance_query_zero_without_contact": false,
+      "matching_contact": false,
+      "warning_count": 0
+    },
+    {
+      "seed": 4208,
+      "initial_joint_position_rad": [
+        -0.24946675808476482,
+        1.816395948603557
+      ],
+      "initial_joint_velocity_rad_s": [
+        0.0,
+        0.0
+      ],
+      "initial_pose_offset_rad": [
+        -0.002518313951332935,
+        -0.0011683575275736949
+      ],
+      "finger_button_distance_query_m": 0.003048460419821295,
+      "distance_query_zero_without_contact": false,
+      "matching_contact": false,
+      "warning_count": 0
+    },
+    {
+      "seed": 4209,
+      "initial_joint_position_rad": [
+        -0.25033355310463196,
+        1.819620487318588
+      ],
+      "initial_joint_velocity_rad_s": [
+        0.0,
+        0.0
+      ],
+      "initial_pose_offset_rad": [
+        -0.0033851089712000583,
+        0.0020561811874572466
+      ],
+      "finger_button_distance_query_m": 0.004303056658600389,
+      "distance_query_zero_without_contact": false,
+      "matching_contact": false,
+      "warning_count": 0
+    },
+    {
+      "seed": 4210,
+      "initial_joint_position_rad": [
+        -0.24485329538062153,
+        1.8165209368566109
+      ],
+      "initial_joint_velocity_rad_s": [
+        0.0,
+        0.0
+      ],
+      "initial_pose_offset_rad": [
+        0.002095148752810365,
+        -0.0010433692745198454
+      ],
+      "finger_button_distance_query_m": 0.002833444551406606,
+      "distance_query_zero_without_contact": false,
+      "matching_contact": false,
+      "warning_count": 0
+    },
+    {
+      "seed": 4211,
+      "initial_joint_position_rad": [
+        -0.2481233460875901,
+        1.8161817632227448
+      ],
+      "initial_joint_velocity_rad_s": [
+        0.0,
+        0.0
+      ],
+      "initial_pose_offset_rad": [
+        -0.0011749019541581935,
+        -0.0013825429083857324
+      ],
+      "finger_button_distance_query_m": 0.0028916573743416776,
+      "distance_query_zero_without_contact": false,
+      "matching_contact": false,
+      "warning_count": 0
+    },
+    {
+      "seed": 4212,
+      "initial_joint_position_rad": [
+        -0.24652440303737927,
+        1.817168120813009
+      ],
+      "initial_joint_velocity_rad_s": [
+        0.0,
+        0.0
+      ],
+      "initial_pose_offset_rad": [
+        0.00042404109605262197,
+        -0.0003961853181216735
+      ],
+      "finger_button_distance_query_m": 0.0031692994501184403,
+      "distance_query_zero_without_contact": false,
+      "matching_contact": false,
+      "warning_count": 0
+    },
+    {
+      "seed": 4213,
+      "initial_joint_position_rad": [
+        -0.2438869013692041,
+        1.8178409393360433
+      ],
+      "initial_joint_velocity_rad_s": [
+        0.0,
+        0.0
+      ],
+      "initial_pose_offset_rad": [
+        0.0030615427642278043,
+        0.00027663320491264656
+      ],
+      "finger_button_distance_query_m": 0.0032726988321858685,
+      "distance_query_zero_without_contact": false,
+      "matching_contact": false,
+      "warning_count": 0
+    },
+    {
+      "seed": 4214,
+      "initial_joint_position_rad": [
+        -0.24983272261139772,
+        1.8145199335204603
+      ],
+      "initial_joint_velocity_rad_s": [
+        0.0,
+        0.0
+      ],
+      "initial_pose_offset_rad": [
+        -0.002884278477965823,
+        -0.003044372610670338
+      ],
+      "finger_button_distance_query_m": 0.0023693820883086917,
+      "distance_query_zero_without_contact": false,
+      "matching_contact": false,
+      "warning_count": 0
+    },
+    {
+      "seed": 4215,
+      "initial_joint_position_rad": [
+        -0.2501988889792792,
+        1.815818024898338
+      ],
+      "initial_joint_velocity_rad_s": [
+        0.0,
+        0.0
+      ],
+      "initial_pose_offset_rad": [
+        -0.003250444845847351,
+        -0.0017462812327927373
+      ],
+      "finger_button_distance_query_m": 0.002874813474830253,
+      "distance_query_zero_without_contact": false,
+      "matching_contact": false,
+      "warning_count": 0
+    },
+    {
+      "seed": 4216,
+      "initial_joint_position_rad": [
+        -0.24882956645020288,
+        1.817289873814889
+      ],
+      "initial_joint_velocity_rad_s": [
+        0.0,
+        0.0
+      ],
+      "initial_pose_offset_rad": [
+        -0.0018811223167709854,
+        -0.00027443231624152127
+      ],
+      "finger_button_distance_query_m": 0.0033458113343175903,
+      "distance_query_zero_without_contact": false,
+      "matching_contact": false,
+      "warning_count": 0
+    },
+    {
+      "seed": 4217,
+      "initial_joint_position_rad": [
+        -0.24390313539225214,
+        1.8200759927774912
+      ],
+      "initial_joint_velocity_rad_s": [
+        0.0,
+        0.0
+      ],
+      "initial_pose_offset_rad": [
+        0.0030453087411797457,
+        0.0025116866463606147
+      ],
+      "finger_button_distance_query_m": 0.004109595145806867,
+      "distance_query_zero_without_contact": false,
+      "matching_contact": false,
+      "warning_count": 0
+    },
+    {
+      "seed": 4218,
+      "initial_joint_position_rad": [
+        -0.24566492533653372,
+        1.8180280997136642
+      ],
+      "initial_joint_velocity_rad_s": [
+        0.0,
+        0.0
+      ],
+      "initial_pose_offset_rad": [
+        0.0012835187968981746,
+        0.00046379358253353833
+      ],
+      "finger_button_distance_query_m": 0.0034422241874142168,
+      "distance_query_zero_without_contact": false,
+      "matching_contact": false,
+      "warning_count": 0
+    },
+    {
+      "seed": 4219,
+      "initial_joint_position_rad": [
+        -0.249882249577004,
+        1.8167924280752583
+      ],
+      "initial_joint_velocity_rad_s": [
+        0.0,
+        0.0
+      ],
+      "initial_pose_offset_rad": [
+        -0.002933805443572111,
+        -0.0007718780558723575
+      ],
+      "finger_button_distance_query_m": 0.0032203639734907927,
+      "distance_query_zero_without_contact": false,
+      "matching_contact": false,
+      "warning_count": 0
+    }
+  ],
+  "scripted_episodes": [
+    {
+      "seed": 4301,
+      "success": true,
+      "events": [
+        "pressed",
+        "released"
+      ],
+      "return": 10.99951579440428,
+      "max_slider_position_m": 0.00030342022747525336,
+      "peak_normal_force_N": 0.2966572945405199,
+      "failure_reason": null
+    },
+    {
+      "seed": 4302,
+      "success": true,
+      "events": [
+        "pressed",
+        "released"
+      ],
+      "return": 10.999515926356574,
+      "max_slider_position_m": 0.00028452267971030323,
+      "peak_normal_force_N": 0.27813515612821055,
+      "failure_reason": null
+    },
+    {
+      "seed": 4303,
+      "success": true,
+      "events": [
+        "pressed",
+        "released"
+      ],
+      "return": 10.999515455712423,
+      "max_slider_position_m": 0.00027390671392949476,
+      "peak_normal_force_N": 0.2678821774669824,
+      "failure_reason": null
+    }
+  ],
+  "limitations": "Small jitter about one validated temporary-model pose; not anatomical, hardware, or workspace safety validation."
+}

@@ -1,0 +1,24 @@
+{
+  "purpose": "Face-aligned geometric candidate selection; no dynamics or task-success claim.",
+  "samples": 500000,
+  "joint_order": [
+    "elv_angle",
+    "shoulder_elv",
+    "shoulder_rot",
+    "elbow_flexion"
+  ],
+  "accepted_counts": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 0
+  },
+  "candidates": {
+    "0": null,
+    "1": null,
+    "2": null,
+    "3": null
+  },
+  "criteria": "|geom distance|<1 mm, fingertip projection inside front face, local front depth 0..3 mm",
+  "limitations": "Random search and local box test do not establish force direction or dynamic reachability."
+}

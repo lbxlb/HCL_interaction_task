@@ -1,0 +1,371 @@
+{
+  "purpose": "Diagnostic PPO with explicit saturation/action-change costs; not final safety validation.",
+  "requested_timesteps": 32768,
+  "actual_timesteps": 32768,
+  "evaluation_jitter_deg": 0.2,
+  "evaluation_seeds": [
+    3700,
+    3701,
+    3702,
+    3703,
+    3704,
+    3705,
+    3706,
+    3707,
+    3708,
+    3709
+  ],
+  "saturation_penalty": 0.03,
+  "action_rate_penalty": 0.01,
+  "model_file": "artifacts/ppo_safety_2026-11-08/ppo_safety_shaped.zip",
+  "evaluation": [
+    {
+      "seed": 3700,
+      "steps": 14,
+      "return_sum": 10.77254995982698,
+      "success": true,
+      "terminated": true,
+      "truncated": false,
+      "events": [
+        {
+          "event": "pressed",
+          "time_s": 0.08400000000000006
+        },
+        {
+          "event": "released",
+          "time_s": 0.1320000000000001
+        }
+      ],
+      "reward_components": {
+        "press": 1.0,
+        "release": 10.0,
+        "effort": -7.36526564374283e-05,
+        "saturation": -0.15,
+        "action_rate": -0.02514333924409118,
+        "fault": 0.0,
+        "potential_shaping": -0.052233048272491645
+      },
+      "peak_normal_force_N": 0.3382825326975921,
+      "max_slider_position_m": 0.00034311042722643293,
+      "saturated_motor_channels": 5,
+      "initial_pose_offset_rad": [
+        0.001441961989675514,
+        0.003063914158737408
+      ]
+    },
+    {
+      "seed": 3701,
+      "steps": 14,
+      "return_sum": 10.737722915428778,
+      "success": true,
+      "terminated": true,
+      "truncated": false,
+      "events": [
+        {
+          "event": "pressed",
+          "time_s": 0.08400000000000006
+        },
+        {
+          "event": "released",
+          "time_s": 0.1320000000000001
+        }
+      ],
+      "reward_components": {
+        "press": 1.0,
+        "release": 10.0,
+        "effort": -7.558430273956645e-05,
+        "saturation": -0.15,
+        "action_rate": -0.06060032234277763,
+        "fault": 0.0,
+        "potential_shaping": -0.0516011779257064
+      },
+      "peak_normal_force_N": 0.35752168084476943,
+      "max_slider_position_m": 0.0003632691279787026,
+      "saturated_motor_channels": 5,
+      "initial_pose_offset_rad": [
+        -0.0029412222560165012,
+        0.003476138953289282
+      ]
+    },
+    {
+      "seed": 3702,
+      "steps": 13,
+      "return_sum": 10.719031015969238,
+      "success": true,
+      "terminated": true,
+      "truncated": false,
+      "events": [
+        {
+          "event": "pressed",
+          "time_s": 0.08200000000000006
+        },
+        {
+          "event": "released",
+          "time_s": 0.1300000000000001
+        }
+      ],
+      "reward_components": {
+        "press": 1.0,
+        "release": 10.0,
+        "effort": -6.763836799286665e-05,
+        "saturation": -0.15,
+        "action_rate": -0.017890210637492958,
+        "fault": 0.0,
+        "potential_shaping": -0.1130111350252756
+      },
+      "peak_normal_force_N": 0.2711835531082978,
+      "max_slider_position_m": 0.0002775202280599091,
+      "saturated_motor_channels": 5,
+      "initial_pose_offset_rad": [
+        0.000563506677927789,
+        -0.001444598935728812
+      ]
+    },
+    {
+      "seed": 3703,
+      "steps": 14,
+      "return_sum": 10.744963428335485,
+      "success": true,
+      "terminated": true,
+      "truncated": false,
+      "events": [
+        {
+          "event": "pressed",
+          "time_s": 0.08200000000000006
+        },
+        {
+          "event": "released",
+          "time_s": 0.1320000000000001
+        }
+      ],
+      "reward_components": {
+        "press": 1.0,
+        "release": 10.0,
+        "effort": -7.251926928158344e-05,
+        "saturation": -0.15,
+        "action_rate": -0.03927106514309969,
+        "fault": 0.0,
+        "potential_shaping": -0.0656929872521339
+      },
+      "peak_normal_force_N": 0.32668540543859753,
+      "max_slider_position_m": 0.0003340656836219506,
+      "saturated_motor_channels": 5,
+      "initial_pose_offset_rad": [
+        -0.001538113328965216,
+        0.0018098100893155918
+      ]
+    },
+    {
+      "seed": 3704,
+      "steps": 13,
+      "return_sum": 10.685398584008054,
+      "success": true,
+      "terminated": true,
+      "truncated": false,
+      "events": [
+        {
+          "event": "pressed",
+          "time_s": 0.08200000000000006
+        },
+        {
+          "event": "released",
+          "time_s": 0.1300000000000001
+        }
+      ],
+      "reward_components": {
+        "press": 1.0,
+        "release": 10.0,
+        "effort": -6.72210361414695e-05,
+        "saturation": -0.15,
+        "action_rate": -0.0331626839872396,
+        "fault": 0.0,
+        "potential_shaping": -0.1313715109685658
+      },
+      "peak_normal_force_N": 0.25421822482589607,
+      "max_slider_position_m": 0.0002604375142410004,
+      "saturated_motor_channels": 5,
+      "initial_pose_offset_rad": [
+        -0.001649047636339947,
+        -0.002916985285750457
+      ]
+    },
+    {
+      "seed": 3705,
+      "steps": 13,
+      "return_sum": 10.727235288898544,
+      "success": true,
+      "terminated": true,
+      "truncated": false,
+      "events": [
+        {
+          "event": "pressed",
+          "time_s": 0.08200000000000006
+        },
+        {
+          "event": "released",
+          "time_s": 0.1300000000000001
+        }
+      ],
+      "reward_components": {
+        "press": 1.0,
+        "release": 10.0,
+        "effort": -6.952527355173732e-05,
+        "saturation": -0.15,
+        "action_rate": -0.035726650877017783,
+        "fault": 0.0,
+        "potential_shaping": -0.08696853495088719
+      },
+      "peak_normal_force_N": 0.2967506313394845,
+      "max_slider_position_m": 0.0003045551664402213,
+      "saturated_motor_channels": 5,
+      "initial_pose_offset_rad": [
+        -0.0016171495262573008,
+        -0.00013600720824855406
+      ]
+    },
+    {
+      "seed": 3706,
+      "steps": 13,
+      "return_sum": 10.688400384764053,
+      "success": true,
+      "terminated": true,
+      "truncated": false,
+      "events": [
+        {
+          "event": "pressed",
+          "time_s": 0.08200000000000006
+        },
+        {
+          "event": "released",
+          "time_s": 0.12800000000000009
+        }
+      ],
+      "reward_components": {
+        "press": 1.0,
+        "release": 10.0,
+        "effort": -6.571702739472609e-05,
+        "saturation": -0.15,
+        "action_rate": -0.020399845959841123,
+        "fault": 0.0,
+        "potential_shaping": -0.14113405224871123
+      },
+      "peak_normal_force_N": 0.24521036525121973,
+      "max_slider_position_m": 0.0002511340691234686,
+      "saturated_motor_channels": 5,
+      "initial_pose_offset_rad": [
+        -0.00027871346489598785,
+        -0.0032840099144841217
+      ]
+    },
+    {
+      "seed": 3707,
+      "steps": 13,
+      "return_sum": 10.73628628678441,
+      "success": true,
+      "terminated": true,
+      "truncated": false,
+      "events": [
+        {
+          "event": "pressed",
+          "time_s": 0.08200000000000006
+        },
+        {
+          "event": "released",
+          "time_s": 0.1300000000000001
+        }
+      ],
+      "reward_components": {
+        "press": 1.0,
+        "release": 10.0,
+        "effort": -6.869419338059106e-05,
+        "saturation": -0.15,
+        "action_rate": -0.016974093840960436,
+        "fault": 0.0,
+        "potential_shaping": -0.09667092518124987
+      },
+      "peak_normal_force_N": 0.28624193918171326,
+      "max_slider_position_m": 0.0002925847407328874,
+      "saturated_motor_channels": 5,
+      "initial_pose_offset_rad": [
+        0.0015199129634900998,
+        -0.0002760189793189891
+      ]
+    },
+    {
+      "seed": 3708,
+      "steps": 13,
+      "return_sum": 10.691113094051428,
+      "success": true,
+      "terminated": true,
+      "truncated": false,
+      "events": [
+        {
+          "event": "pressed",
+          "time_s": 0.08200000000000006
+        },
+        {
+          "event": "released",
+          "time_s": 0.12800000000000009
+        }
+      ],
+      "reward_components": {
+        "press": 1.0,
+        "release": 10.0,
+        "effort": -6.550556511981888e-05,
+        "saturation": -0.15,
+        "action_rate": -0.015022593796930456,
+        "fault": 0.0,
+        "potential_shaping": -0.14379880658652255
+      },
+      "peak_normal_force_N": 0.2421446268245298,
+      "max_slider_position_m": 0.00024752462885204227,
+      "saturated_motor_channels": 5,
+      "initial_pose_offset_rad": [
+        0.0006529969950546587,
+        -0.0033097538384484807
+      ]
+    },
+    {
+      "seed": 3709,
+      "steps": 13,
+      "return_sum": 10.726788602767792,
+      "success": true,
+      "terminated": true,
+      "truncated": false,
+      "events": [
+        {
+          "event": "pressed",
+          "time_s": 0.08200000000000006
+        },
+        {
+          "event": "released",
+          "time_s": 0.1300000000000001
+        }
+      ],
+      "reward_components": {
+        "press": 1.0,
+        "release": 10.0,
+        "effort": -6.908269887728323e-05,
+        "saturation": -0.15,
+        "action_rate": -0.030614709122683794,
+        "fault": 0.0,
+        "potential_shaping": -0.09252760541064653
+      },
+      "peak_normal_force_N": 0.2906759919212013,
+      "max_slider_position_m": 0.0002979737080701925,
+      "saturated_motor_channels": 5,
+      "initial_pose_offset_rad": [
+        -0.001126200188609948,
+        -0.0004115002758141947
+      ]
+    }
+  ],
+  "summary": {
+    "successes": 10,
+    "episodes": 10,
+    "success_rate": 1.0,
+    "mean_return": 10.722948956083476,
+    "mean_saturated_channels": 5.0,
+    "episodes_with_events": 10
+  }
+}

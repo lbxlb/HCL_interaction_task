@@ -1,0 +1,5203 @@
+{
+  "purpose": "Offline proximity metric audit only; no reward, observation, or physics changes.",
+  "seed": 2700,
+  "metrics": [
+    "MuJoCo geom distance",
+    "fingertip site to button-box signed distance",
+    "button slider position",
+    "loaded contact flag"
+  ],
+  "distance_limitations": "geom distance can report zero without a matching loaded contact. The site-to-box signed distance treats the fingertip site as a point and the button geom as a box; it is a shaping candidate diagnostic, not an exact fingertip-mesh contact gap.",
+  "summaries": {
+    "manual_alternating": {
+      "samples": 106,
+      "success": true,
+      "events": [
+        [
+          0.276,
+          "pressed"
+        ],
+        [
+          1.048,
+          "released"
+        ]
+      ],
+      "loaded_contact_samples": 79,
+      "minimum_site_box_signed_distance_m": 0.0013807318031080137,
+      "minimum_site_box_distance_during_loaded_contact_m": 0.0013807318031080137,
+      "geom_distance_zero_without_loaded_contact_samples": 0,
+      "maximum_slider_position_m": 0.00027524661246518397
+    },
+    "ppo_smoke": {
+      "samples": 151,
+      "success": false,
+      "events": [],
+      "loaded_contact_samples": 0,
+      "minimum_site_box_signed_distance_m": 0.0029013217968733053,
+      "minimum_site_box_distance_during_loaded_contact_m": null,
+      "geom_distance_zero_without_loaded_contact_samples": 3,
+      "maximum_slider_position_m": 0.0
+    }
+  },
+  "episodes": {
+    "manual_alternating": {
+      "policy": "manual_alternating",
+      "seed": 2700,
+      "rows": [
+        {
+          "time_s": 0.0,
+          "fingertip_button_center_distance_m": 0.02601771552083623,
+          "fingertip_local_button_xyz_m": [
+            -0.012298891479264088,
+            -0.017782747219988904,
+            0.014471789475197065
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.004471789475197064,
+          "geom_distance_m": 0.002890150529356851,
+          "contact_loaded": false,
+          "slider_position_m": 0.0
+        },
+        {
+          "time_s": 0.01,
+          "fingertip_button_center_distance_m": 0.026200679645134825,
+          "fingertip_local_button_xyz_m": [
+            -0.012316127162813198,
+            -0.017977548340000205,
+            0.014546352850778549
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.004546352850778548,
+          "geom_distance_m": 0.002999202115193701,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -5.990493113031295e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -5.990493113031295e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.020000000000000004,
+          "fingertip_button_center_distance_m": 0.026569019502803295,
+          "fingertip_local_button_xyz_m": [
+            -0.012352394185729603,
+            -0.018368795719948428,
+            0.014694165475436154
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.004694165475436154,
+          "geom_distance_m": 0.0031354373369631046,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.380958264806165e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.380958264806165e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.030000000000000013,
+          "fingertip_button_center_distance_m": 0.026820625840783995,
+          "fingertip_local_button_xyz_m": [
+            -0.01237942008504731,
+            -0.018635553705635466,
+            0.01479229755425551
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0047922975542555105,
+          "geom_distance_m": 0.00322573468443029,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.442612840761203e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.442612840761203e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.04000000000000002,
+          "fingertip_button_center_distance_m": 0.026991004764530094,
+          "fingertip_local_button_xyz_m": [
+            -0.012399228978612205,
+            -0.01881618923044015,
+            0.014856799176777537
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.004856799176777537,
+          "geom_distance_m": 0.003284955862648038,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.489427510233295e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.489427510233295e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.05000000000000003,
+          "fingertip_button_center_distance_m": 0.027105080271947527,
+          "fingertip_local_button_xyz_m": [
+            -0.012413505045179182,
+            -0.018937295127415765,
+            0.014898628201924675
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.004898628201924675,
+          "geom_distance_m": 0.003323241290245591,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.523435687374728e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.523435687374728e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.06000000000000004,
+          "fingertip_button_center_distance_m": 0.027165760820220056,
+          "fingertip_local_button_xyz_m": [
+            -0.012435962230093212,
+            -0.0190118528006592,
+            0.014895464324389655
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0048954643243896544,
+          "geom_distance_m": 0.0033040553225349026,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.101607223682124e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.101607223682124e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.07000000000000005,
+          "fingertip_button_center_distance_m": 0.02717103119650763,
+          "fingertip_local_button_xyz_m": [
+            -0.012480175589042871,
+            -0.019047391748139908,
+            0.01482251736855589
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.004822517368555889,
+          "geom_distance_m": 0.00322053381164209,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.245251804108872e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.245251804108872e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.08000000000000006,
+          "fingertip_button_center_distance_m": 0.027139279002317582,
+          "fingertip_local_button_xyz_m": [
+            -0.01253912137633389,
+            -0.019056496157738356,
+            0.01470240980469888
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.00470240980469888,
+          "geom_distance_m": 0.0030935916409721475,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.345863786359652e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.345863786359652e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.09000000000000007,
+          "fingertip_button_center_distance_m": 0.027083233027459897,
+          "fingertip_local_button_xyz_m": [
+            -0.012607979466437937,
+            -0.019047788448499026,
+            0.014550674218564619
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.004550674218564619,
+          "geom_distance_m": 0.002937584323576592,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.4157116771081464e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.4157116771081464e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.10000000000000007,
+          "fingertip_button_center_distance_m": 0.02701163886048745,
+          "fingertip_local_button_xyz_m": [
+            -0.012683443596736512,
+            -0.019027171657125697,
+            0.014377956432959166
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.004377956432959166,
+          "geom_distance_m": 0.0027623469453403153,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.463844787716722e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.463844787716722e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.11000000000000008,
+          "fingertip_button_center_distance_m": 0.02693046861209032,
+          "fingertip_local_button_xyz_m": [
+            -0.012763249375688278,
+            -0.018998681368206982,
+            0.014191536608490277
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0041915366084902764,
+          "geom_distance_m": 0.002574601693617852,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.496779694109251e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.496779694109251e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.12000000000000009,
+          "fingertip_button_center_distance_m": 0.026843777344217633,
+          "fingertip_local_button_xyz_m": [
+            -0.012845850073449749,
+            -0.018965070642816162,
+            0.013996378585526168
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0039963785855261676,
+          "geom_distance_m": 0.002378928722572814,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.519139061766407e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.519139061766407e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.1300000000000001,
+          "fingertip_button_center_distance_m": 0.026754302032774534,
+          "fingertip_local_button_xyz_m": [
+            -0.012930193385384835,
+            -0.01892821192938543,
+            0.013795853341991748
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0037958533419917475,
+          "geom_distance_m": 0.002178435440119942,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.53417026461826e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.53417026461826e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.1400000000000001,
+          "fingertip_button_center_distance_m": 0.026663877129068408,
+          "fingertip_local_button_xyz_m": [
+            -0.013015567486755829,
+            -0.018889373335767567,
+            0.013592237546988175
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003592237546988175,
+          "geom_distance_m": 0.001975217693454319,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.544139834515113e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.544139834515113e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.1500000000000001,
+          "fingertip_button_center_distance_m": 0.026573721303500164,
+          "fingertip_local_button_xyz_m": [
+            -0.013101494781211013,
+            -0.01884940856937145,
+            0.013387056995430522
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003387056995430522,
+          "geom_distance_m": 0.0017706774378369267,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.550622782500849e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.550622782500849e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.16000000000000011,
+          "fingertip_button_center_distance_m": 0.02648463453069254,
+          "fingertip_local_button_xyz_m": [
+            -0.013187658543293351,
+            -0.018808887520109285,
+            0.013181323098449967
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0031813230984499667,
+          "geom_distance_m": 0.0015657414664058543,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.5547102314002825e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5547102314002825e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.17000000000000012,
+          "fingertip_button_center_distance_m": 0.026397133151925798,
+          "fingertip_local_button_xyz_m": [
+            -0.013273852276217097,
+            -0.01876818601922403,
+            0.012975695662948861
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.002975695662948861,
+          "geom_distance_m": 0.0013610119499219773,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.557156393363548e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.557156393363548e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.18000000000000013,
+          "fingertip_button_center_distance_m": 0.02631154221346132,
+          "fingertip_local_button_xyz_m": [
+            -0.013359944766820557,
+            -0.018727547516403487,
+            0.012770594876477394
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0027705948764773936,
+          "geom_distance_m": 0.0011568699881385801,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.558481692529324e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.558481692529324e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.19000000000000014,
+          "fingertip_button_center_distance_m": 0.026228058462881218,
+          "fingertip_local_button_xyz_m": [
+            -0.013445855990990527,
+            -0.01868712543998552,
+            0.012566278295187694
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0025662782951876937,
+          "geom_distance_m": 0.0009535467880037857,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.5590446973664905e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5590446973664905e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.20000000000000015,
+          "fingertip_button_center_distance_m": 0.026146793238479207,
+          "fingertip_local_button_xyz_m": [
+            -0.013531540519104964,
+            -0.01864701227040011,
+            0.01236289372368583
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0023628937236858296,
+          "geom_distance_m": 0.0007511725421790077,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.559092102326754e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.559092102326754e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.21000000000000016,
+          "fingertip_button_center_distance_m": 0.026067801603500574,
+          "fingertip_local_button_xyz_m": [
+            -0.013616976104110114,
+            -0.01860725947594072,
+            0.012160515491317615
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.002160515491317615,
+          "geom_distance_m": 0.0005498099503306645,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.558793367076844e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.558793367076844e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.22000000000000017,
+          "fingertip_button_center_distance_m": 0.025991102083620685,
+          "fingertip_local_button_xyz_m": [
+            -0.01370215584915571,
+            -0.018567891165691186,
+            0.011959169296639576
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.001959169296639576,
+          "geom_distance_m": 0.000349477167518352,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.558264680628732e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.558264680628732e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.23000000000000018,
+          "fingertip_button_center_distance_m": 0.025916689993048584,
+          "fingertip_local_button_xyz_m": [
+            -0.01378708284588488,
+            -0.018528913423767335,
+            0.01175884918395615
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0017588491839561505,
+          "geom_distance_m": 0.00015016347648308043,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.557585520166019e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.557585520166019e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.24000000000000019,
+          "fingertip_button_center_distance_m": 0.025844546391547457,
+          "fingertip_local_button_xyz_m": [
+            -0.0138717665165454,
+            -0.01849032067613654,
+            0.0115595291075777
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.001559529107577699,
+          "geom_distance_m": -4.164606066346927e-05,
+          "contact_loaded": true,
+          "slider_position_m": 6.078840591832052e-06,
+          "reward": -4.556810083132097e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.556810083132097e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.25000000000000017,
+          "fingertip_button_center_distance_m": 0.025808718158282593,
+          "fingertip_local_button_xyz_m": [
+            -0.013953047803559522,
+            -0.018453287927671536,
+            0.01144021654618918
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.00144021654618918,
+          "geom_distance_m": -0.00014062871973080703,
+          "contact_loaded": true,
+          "slider_position_m": 9.460216238552203e-05,
+          "reward": -4.53646137747139e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.53646137747139e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.2600000000000002,
+          "fingertip_button_center_distance_m": 0.02580261541631395,
+          "fingertip_local_button_xyz_m": [
+            -0.014015961335850449,
+            -0.018424492873566678,
+            0.011395869975830641
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0013958699758306412,
+          "geom_distance_m": -0.0001744967336560845,
+          "contact_loaded": true,
+          "slider_position_m": 0.00019205278671185266,
+          "reward": -4.970116834450382e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.970116834450382e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.2700000000000002,
+          "fingertip_button_center_distance_m": 0.025803800567537533,
+          "fingertip_local_button_xyz_m": [
+            -0.014049062918492748,
+            -0.01840761509450589,
+            0.011385063081687394
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0013850630816873936,
+          "geom_distance_m": -0.00018199706619271693,
+          "contact_loaded": true,
+          "slider_position_m": 0.0002519450677721566,
+          "reward": -4.7993233170477885e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.7993233170477885e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.2800000000000002,
+          "fingertip_button_center_distance_m": 0.025803292665505833,
+          "fingertip_local_button_xyz_m": [
+            -0.014061879034463974,
+            -0.018398306388636265,
+            0.01138313631789217
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0013831363178921693,
+          "geom_distance_m": -0.00018335247162932984,
+          "contact_loaded": true,
+          "slider_position_m": 0.00027524661246518397,
+          "reward": 0.9999953178514703,
+          "reward_components": {
+            "press": 1.0,
+            "release": 0.0,
+            "effort": -4.682148529707879e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.2900000000000002,
+          "fingertip_button_center_distance_m": 0.025799362399235873,
+          "fingertip_local_button_xyz_m": [
+            -0.014061600613669834,
+            -0.018393696460428932,
+            0.01138202174090131
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0013820217409013097,
+          "geom_distance_m": -0.00018454885698736997,
+          "contact_loaded": true,
+          "slider_position_m": 0.000271609870316049,
+          "reward": -4.604428201459322e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.604428201459322e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.3000000000000002,
+          "fingertip_button_center_distance_m": 0.025793136807613172,
+          "fingertip_local_button_xyz_m": [
+            -0.014053510896854833,
+            -0.018391897858327733,
+            0.011380809769830604
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.001380809769830604,
+          "geom_distance_m": -0.00018573016759368014,
+          "contact_loaded": true,
+          "slider_position_m": 0.00025214835161248126,
+          "reward": -4.555447792124812e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.555447792124812e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.3100000000000002,
+          "fingertip_button_center_distance_m": 0.02578631710980088,
+          "fingertip_local_button_xyz_m": [
+            -0.014041329990655944,
+            -0.018391686866800483,
+            0.011380731803108014
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0013807318031080137,
+          "geom_distance_m": -0.0001855370361920008,
+          "contact_loaded": true,
+          "slider_position_m": 0.0002260038218060967,
+          "reward": -4.5268115449729215e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5268115449729215e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.32000000000000023,
+          "fingertip_button_center_distance_m": 0.02578021125332477,
+          "fingertip_local_button_xyz_m": [
+            -0.014027536971128539,
+            -0.01839228979631441,
+            0.011382933490013196
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.001382933490013196,
+          "geom_distance_m": -0.00018293257726486163,
+          "contact_loaded": true,
+          "slider_position_m": 0.00019931065465900579,
+          "reward": -4.511983649782387e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.511983649782387e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.33000000000000024,
+          "fingertip_button_center_distance_m": 0.025775498408752748,
+          "fingertip_local_button_xyz_m": [
+            -0.014013672348569116,
+            -0.01839323540877985,
+            0.01138780912747364
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0013878091274736395,
+          "geom_distance_m": -0.00017766538580677924,
+          "contact_loaded": true,
+          "slider_position_m": 0.00017543206631766493,
+          "reward": -4.506035185836931e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.506035185836931e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.34000000000000025,
+          "fingertip_button_center_distance_m": 0.025772327897774398,
+          "fingertip_local_button_xyz_m": [
+            -0.0140006060243567,
+            -0.018394251616996038,
+            0.01139506137200612
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0013950613720061199,
+          "geom_distance_m": -0.00017013080153090897,
+          "contact_loaded": true,
+          "slider_position_m": 0.00015569224729449854,
+          "reward": -4.505414009884896e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.505414009884896e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.35000000000000026,
+          "fingertip_button_center_distance_m": 0.025770517833772492,
+          "fingertip_local_button_xyz_m": [
+            -0.013988757895907273,
+            -0.01839519348303814,
+            0.01140399485584193
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.001403994855841929,
+          "geom_distance_m": -0.0001610636607229348,
+          "contact_loaded": true,
+          "slider_position_m": 0.00014015728003651513,
+          "reward": -4.507693996448636e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.507693996448636e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.36000000000000026,
+          "fingertip_button_center_distance_m": 0.02576973871322323,
+          "fingertip_local_button_xyz_m": [
+            -0.013978266642692753,
+            -0.018395993968585156,
+            0.011413803087549643
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014138030875496428,
+          "geom_distance_m": -0.00015126506978318412,
+          "contact_loaded": true,
+          "slider_position_m": 0.00012826241618737254,
+          "reward": -4.5113165889588e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5113165889588e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.3700000000000003,
+          "fingertip_button_center_distance_m": 0.025769641475048687,
+          "fingertip_local_button_xyz_m": [
+            -0.013969110012831786,
+            -0.018396631243392914,
+            0.011423762344191691
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.001423762344191691,
+          "geom_distance_m": -0.00014142843658908853,
+          "contact_loaded": true,
+          "slider_position_m": 0.00011923362525708885,
+          "reward": -4.515350459640757e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.515350459640757e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.3800000000000003,
+          "fingertip_button_center_distance_m": 0.02576992806044288,
+          "fingertip_local_button_xyz_m": [
+            -0.013961184660717193,
+            -0.018397107819002334,
+            0.011433325806857754
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014333258068577534,
+          "geom_distance_m": -0.0001320620597491204,
+          "contact_loaded": true,
+          "slider_position_m": 0.00011232658546368222,
+          "reward": -4.519288819636132e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.519288819636132e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.3900000000000003,
+          "fingertip_button_center_distance_m": 0.025770378056317732,
+          "fingertip_local_button_xyz_m": [
+            -0.013954355240672265,
+            -0.018397437858079346,
+            0.01144214294792605
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014421429479260506,
+          "geom_distance_m": -0.0001234804938136777,
+          "contact_loaded": true,
+          "slider_position_m": 0.00010693303082734139,
+          "reward": -4.522892694933457e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.522892694933457e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.4000000000000003,
+          "fingertip_button_center_distance_m": 0.02577084800428091,
+          "fingertip_local_button_xyz_m": [
+            -0.013948481967557404,
+            -0.01839763990431137,
+            0.011450035092163049
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014500350921630486,
+          "geom_distance_m": -0.00011583421048610599,
+          "contact_loaded": true,
+          "slider_position_m": 0.000102604908017883,
+          "reward": -4.526078992331926e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.526078992331926e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.4100000000000003,
+          "fingertip_button_center_distance_m": 0.02577125727472764,
+          "fingertip_local_button_xyz_m": [
+            -0.013943434239070173,
+            -0.01839773303181541,
+            0.011456952580462922
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014569525804629217,
+          "geom_distance_m": -0.00010915372076740365,
+          "contact_loaded": true,
+          "slider_position_m": 9.903615587063986e-05,
+          "reward": -4.528846492037771e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.528846492037771e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.4200000000000003,
+          "fingertip_button_center_distance_m": 0.02577157002269194,
+          "fingertip_local_button_xyz_m": [
+            -0.013939095999755995,
+            -0.018397735027670004,
+            0.011462930253462438
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.001462930253462438,
+          "geom_distance_m": -0.00010339311556079981,
+          "contact_loaded": true,
+          "slider_position_m": 9.60287691678744e-05,
+          "reward": -4.531230685649048e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.531230685649048e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.4300000000000003,
+          "fingertip_button_center_distance_m": 0.02577177856006351,
+          "fingertip_local_button_xyz_m": [
+            -0.013935366585575842,
+            -0.01839766171506424,
+            0.011468050038808918
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014680500388089181,
+          "geom_distance_m": -9.846554975538767e-05,
+          "contact_loaded": true,
+          "slider_position_m": 9.345835511427312e-05,
+          "reward": -4.533278919270029e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.533278919270029e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.44000000000000034,
+          "fingertip_button_center_distance_m": 0.025771890524194138,
+          "fingertip_local_button_xyz_m": [
+            -0.013932159636647058,
+            -0.018397526833182853,
+            0.011472413672473071
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014724136724730708,
+          "geom_distance_m": -9.42684764543224e-05,
+          "contact_loaded": true,
+          "slider_position_m": 9.124614707219581e-05,
+          "reward": -4.535037862630869e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.535037862630869e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.45000000000000034,
+          "fingertip_button_center_distance_m": 0.025771920123229472,
+          "fingertip_local_button_xyz_m": [
+            -0.013929401222223973,
+            -0.01839734217142619,
+            0.011476125193456593
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014761251934565928,
+          "geom_distance_m": -9.069942462186886e-05,
+          "contact_loaded": true,
+          "slider_position_m": 8.933926020102024e-05,
+          "reward": -4.536548973662842e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.536548973662842e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.46000000000000035,
+          "fingertip_button_center_distance_m": 0.025771882915349008,
+          "fingertip_local_button_xyz_m": [
+            -0.013927027967204736,
+            -0.018397117792862183,
+            0.011479281245736122
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014792812457361214,
+          "geom_distance_m": -8.766443666944322e-05,
+          "contact_loaded": true,
+          "slider_position_m": 8.769834883568211e-05,
+          "reward": -4.5378473934956535e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5378473934956535e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.47000000000000036,
+          "fingertip_button_center_distance_m": 0.025771793152332363,
+          "fingertip_local_button_xyz_m": [
+            -0.013924985415039785,
+            -0.018396862262060887,
+            0.011481966834488528
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014819668344885281,
+          "geom_distance_m": -8.508150188451109e-05,
+          "contact_loaded": true,
+          "slider_position_m": 8.629080337880891e-05,
+          "reward": -4.538962586417119e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.538962586417119e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.48000000000000037,
+          "fingertip_button_center_distance_m": 0.02577166276948275,
+          "fingertip_local_button_xyz_m": [
+            -0.013923226684626804,
+            -0.018396582849403653,
+            0.01148425444064467
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014842544406446691,
+          "geom_distance_m": -8.288098974139447e-05,
+          "contact_loaded": true,
+          "slider_position_m": 8.508755928114094e-05,
+          "reward": -4.539919432112722e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.539919432112722e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.4900000000000004,
+          "fingertip_button_center_distance_m": 0.025771501294491697,
+          "fingertip_local_button_xyz_m": [
+            -0.01392171138689886,
+            -0.018396285706366255,
+            0.011486204910309689
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014862049103096884,
+          "geom_distance_m": -8.100455683048406e-05,
+          "contact_loaded": true,
+          "slider_position_m": 8.406195664610708e-05,
+          "reward": -4.540739238285376e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.540739238285376e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.5000000000000003,
+          "fingertip_button_center_distance_m": 0.025771316176002423,
+          "fingertip_local_button_xyz_m": [
+            -0.013920404740952387,
+            -0.018395976015082194,
+            0.01148786906889503
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014878690688950296,
+          "geom_distance_m": -7.940348062637398e-05,
+          "contact_loaded": true,
+          "slider_position_m": 8.318957002161971e-05,
+          "reward": -4.54144050175032e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.54144050175032e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.5100000000000003,
+          "fingertip_button_center_distance_m": 0.025771113232344902,
+          "fingertip_local_button_xyz_m": [
+            -0.0139192768343218,
+            -0.018395658117465907,
+            0.011489289450142937
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014892894501429364,
+          "geom_distance_m": -7.803695742295396e-05,
+          "contact_loaded": true,
+          "slider_position_m": 8.244835995100899e-05,
+          "reward": -4.542039420688678e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.542039420688678e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.5200000000000004,
+          "fingertip_button_center_distance_m": 0.025770897068094593,
+          "fingertip_local_button_xyz_m": [
+            -0.013918301986901027,
+            -0.018395335628374032,
+            0.011490501843489102
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014905018434891015,
+          "geom_distance_m": -7.68706135875972e-05,
+          "contact_loaded": true,
+          "slider_position_m": 8.181881863020652e-05,
+          "reward": -4.54255022438955e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.54255022438955e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.5300000000000004,
+          "fingertip_button_center_distance_m": 0.025770671400515626,
+          "fingertip_local_button_xyz_m": [
+            -0.013917458192976935,
+            -0.01839501153581924,
+            0.011491536558579554
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.001491536558579554,
+          "geom_distance_m": -7.587530426324916e-05,
+          "contact_loaded": true,
+          "slider_position_m": 8.128398736464886e-05,
+          "reward": -4.542985393140311e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.542985393140311e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.5400000000000004,
+          "fingertip_button_center_distance_m": 0.0257704392901424,
+          "fingertip_local_button_xyz_m": [
+            -0.01391672662688058,
+            -0.018394688290017835,
+            0.011492419410753725
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014924194107537245,
+          "geom_distance_m": -7.50261829844364e-05,
+          "contact_loaded": true,
+          "slider_position_m": 8.082933571719435e-05,
+          "reward": -4.543355823879147e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.543355823879147e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.5500000000000004,
+          "fingertip_button_center_distance_m": 0.02577020329299558,
+          "fingertip_local_button_xyz_m": [
+            -0.013916091204494014,
+            -0.018394367882292983,
+            0.011493172475926433
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014931724759264329,
+          "geom_distance_m": -7.430198980375664e-05,
+          "contact_loaded": true,
+          "slider_position_m": 8.044254055951062e-05,
+          "reward": -4.543670975503229e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.543670975503229e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.5600000000000004,
+          "fingertip_button_center_distance_m": 0.025769965557918963,
+          "fingertip_local_button_xyz_m": [
+            -0.013915538196110005,
+            -0.018394051914516873,
+            0.011493814672900874
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014938146729008735,
+          "geom_distance_m": -7.368450048682028e-05,
+          "contact_loaded": true,
+          "slider_position_m": 8.011321389400256e-05,
+          "reward": -4.543939009783175e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.543939009783175e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.5700000000000004,
+          "fingertip_button_center_distance_m": 0.025769727889917396,
+          "fingertip_local_button_xyz_m": [
+            -0.013915055887195892,
+            -0.018393741659698315,
+            0.011494362223841747
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014943622238417463,
+          "geom_distance_m": -7.315808847323683e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.98326206594215e-05,
+          "reward": -4.544166932093566e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.544166932093566e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.5800000000000004,
+          "fingertip_button_center_distance_m": 0.0257694917947298,
+          "fingertip_local_button_xyz_m": [
+            -0.013914634283608132,
+            -0.018393438114379324,
+            0.011494829030680793
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014948290306807926,
+          "geom_distance_m": -7.270936453762116e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.959341405001134e-05,
+          "reward": -4.544360730073395e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.544360730073395e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.5900000000000004,
+          "fingertip_button_center_distance_m": 0.025769258514153674,
+          "fingertip_local_button_xyz_m": [
+            -0.013914264857366595,
+            -0.0183931420435956,
+            0.011495226992645713
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014952269926457127,
+          "geom_distance_m": -7.232687119449748e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.938940275735807e-05,
+          "reward": -4.544525506241538e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.544525506241538e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.6000000000000004,
+          "fingertip_button_center_distance_m": 0.025769029057178674,
+          "fingertip_local_button_xyz_m": [
+            -0.013913940328784314,
+            -0.018392854019198268,
+            0.011495566280319138
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.001495566280319138,
+          "geom_distance_m": -7.200081805626524e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.921535469615135e-05,
+          "reward": -4.5446656008238205e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5446656008238205e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.6100000000000004,
+          "fingertip_button_center_distance_m": 0.02576880422904202,
+          "fingertip_local_button_xyz_m": [
+            -0.013913654480594576,
+            -0.018392574452359034,
+            0.011495855575108549
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014958555751085484,
+          "geom_distance_m": -7.17228502422462e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.90668356484863e-05,
+          "reward": -4.544784702294392e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.544784702294392e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.6200000000000004,
+          "fingertip_button_center_distance_m": 0.02576858465868346,
+          "fingertip_local_button_xyz_m": [
+            -0.01391340199983318,
+            -0.018392303621048267,
+            0.011496102279205308
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014961022792053073,
+          "geom_distance_m": -7.148584531002658e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.894007822134047e-05,
+          "reward": -4.544885944564785e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.544885944564785e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.6300000000000004,
+          "fingertip_button_center_distance_m": 0.02576837082435842,
+          "fingertip_local_button_xyz_m": [
+            -0.013913178343533545,
+            -0.018392041693211902,
+            0.011496312699201889
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014963126992018887,
+          "geom_distance_m": -7.128373580136464e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.883187559523285e-05,
+          "reward": -4.5449719909435845e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5449719909435845e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.6400000000000005,
+          "fingertip_button_center_distance_m": 0.025768163077008136,
+          "fingertip_local_button_xyz_m": [
+            -0.01391297962469524,
+            -0.018391788746292825,
+            0.011496492205792044
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014964922057920434,
+          "geom_distance_m": -7.111135507202054e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.873949484942132e-05,
+          "reward": -4.545045105791529e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.545045105791529e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.6500000000000005,
+          "fingertip_button_center_distance_m": 0.025767961661083843,
+          "fingertip_local_button_xyz_m": [
+            -0.013912802515428134,
+            -0.01839154478366639,
+            0.011496645371767238
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.001496645371767238,
+          "geom_distance_m": -7.096430423174835e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.866060550694533e-05,
+          "reward": -4.545107215224543e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.545107215224543e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.6600000000000005,
+          "fingertip_button_center_distance_m": 0.025767766732726308,
+          "fingertip_local_button_xyz_m": [
+            -0.013912644164638626,
+            -0.018391309748467977,
+            0.011496776090550357
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014967760905503572,
+          "geom_distance_m": -7.083883796230931e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.859321992357224e-05,
+          "reward": -4.545159958356687e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.545159958356687e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.6700000000000005,
+          "fingertip_button_center_distance_m": 0.025767578375366213,
+          "fingertip_local_button_xyz_m": [
+            -0.01391250212800835,
+            -0.018391083535218344,
+            0.011496887677516224
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014968876775162242,
+          "geom_distance_m": -7.073176699749797e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.853564302270447e-05,
+          "reward": -4.545204730526751e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.545204730526751e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.6800000000000005,
+          "fingertip_button_center_distance_m": 0.02576739661295488,
+          "fingertip_local_button_xyz_m": [
+            -0.01391237430838825,
+            -0.01839086599959644,
+            0.011496982956302268
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014969829563022674,
+          "geom_distance_m": -7.064037508816624e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.848642956737159e-05,
+          "reward": -4.54524271980301e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.54524271980301e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.6900000000000005,
+          "fingertip_button_center_distance_m": 0.025767221421087384,
+          "fingertip_local_button_xyz_m": [
+            -0.013912258905021624,
+            -0.018390656966639274,
+            0.011497064332184692
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014970643321846923,
+          "geom_distance_m": -7.056234843323469e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.844434765520523e-05,
+          "reward": -4.54527493787434e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.54527493787434e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.7000000000000005,
+          "fingertip_button_center_distance_m": 0.025767052736315174,
+          "fingertip_local_button_xyz_m": [
+            -0.013912154370276306,
+            -0.01839045623761487,
+            0.011497133854401348
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014971338544013477,
+          "geom_distance_m": -7.04957157454206e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.840834745622698e-05,
+          "reward": -4.5453022462491795e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5453022462491795e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.7100000000000005,
+          "fingertip_button_center_distance_m": 0.02576689046391856,
+          "fingertip_local_button_xyz_m": [
+            -0.013912059372752009,
+            -0.018390263595770673,
+            0.011497193269084077
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.001497193269084077,
+          "geom_distance_m": -7.043879734569085e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.837753443035624e-05,
+          "reward": -4.545325378519582e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.545325378519582e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.7200000000000005,
+          "fingertip_button_center_distance_m": 0.025766734484396803,
+          "fingertip_local_button_xyz_m": [
+            -0.013911972765829493,
+            -0.01839007881113286,
+            0.011497244064233142
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014972440642331414,
+          "geom_distance_m": -7.039016190562536e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.835114640212561e-05,
+          "reward": -4.545344959309575e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.545344959309575e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.7300000000000005,
+          "fingertip_button_center_distance_m": 0.025766584658880386,
+          "fingertip_local_button_xyz_m": [
+            -0.013911893560847466,
+            -0.018389901644493334,
+            0.011497287507963019
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014972875079630188,
+          "geom_distance_m": -7.03485896576267e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.832853396476459e-05,
+          "reward": -4.545361520416697e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.545361520416697e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.7400000000000005,
+          "fingertip_button_center_distance_m": 0.025766440833652936,
+          "fingertip_local_button_xyz_m": [
+            -0.013911820904230992,
+            -0.018389731850720403,
+            0.011497324681043784
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014973246810437834,
+          "geom_distance_m": -7.031304108660627e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.830914375512889e-05,
+          "reward": -4.545375514568988e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.545375514568988e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.7500000000000006,
+          "fingertip_button_center_distance_m": 0.025766302843918395,
+          "fingertip_local_button_xyz_m": [
+            -0.01391175405797982,
+            -0.01838956918148721,
+            0.011497356504609877
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014973565046098765,
+          "geom_distance_m": -7.028263027315007e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.829250419718593e-05,
+          "reward": -4.545387327150841e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.545387327150841e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.7600000000000006,
+          "fingertip_button_center_distance_m": 0.02576617051694535,
+          "fingertip_local_button_xyz_m": [
+            -0.013911692383030803,
+            -0.018389413387515596,
+            0.011497383763765075
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014973837637650752,
+          "geom_distance_m": -7.025660217672859e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.82782133611084e-05,
+          "reward": -4.545397286196216e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.545397286196216e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.7700000000000006,
+          "fingertip_button_center_distance_m": 0.025766043674675963,
+          "fingertip_local_button_xyz_m": [
+            -0.013911635325063123,
+            -0.018389264220404877,
+            0.011497407127691976
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.001497407127691976,
+          "geom_distance_m": -7.023431328459364e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.826592862954147e-05,
+          "reward": -4.545405670903161e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.545405670903161e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.7800000000000006,
+          "fingertip_button_center_distance_m": 0.02576592213589203,
+          "fingertip_local_button_xyz_m": [
+            -0.013911582402385301,
+            -0.018389121434117084,
+            0.011497427166796505
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014974271667965045,
+          "geom_distance_m": -7.02152151187843e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.825535790400888e-05,
+          "reward": -4.545412718886699e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.545412718886699e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.7900000000000006,
+          "fingertip_button_center_distance_m": 0.025765805717997137,
+          "fingertip_local_button_xyz_m": [
+            -0.013911533195601226,
+            -0.018388984786165463,
+            0.011497444367311987
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.001497444367311987,
+          "geom_distance_m": -7.019884017895382e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.824625212173432e-05,
+          "reward": -4.545418632355711e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.545418632355711e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.8000000000000006,
+          "fingertip_button_center_distance_m": 0.025765694238481553,
+          "fingertip_local_button_xyz_m": [
+            -0.013911487338786513,
+            -0.018388854038562497,
+            0.01149745914374771
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014974591437477095,
+          "geom_distance_m": -7.018478996490307e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.823839888637267e-05,
+          "reward": -4.545423583372534e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.545423583372534e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.8100000000000006,
+          "fingertip_button_center_distance_m": 0.02576558751611334,
+          "fingertip_local_button_xyz_m": [
+            -0.013911444511956035,
+            -0.0183887289585562,
+            0.01149747184949894
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014974718494989402,
+          "geom_distance_m": -7.017272476907851e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.823161704545502e-05,
+          "reward": -4.545427718331182e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.545427718331182e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.8200000000000006,
+          "fingertip_button_center_distance_m": 0.025765485371900584,
+          "fingertip_local_button_xyz_m": [
+            -0.013911404434628717,
+            -0.018388609319199223,
+            0.01149748278588296
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.001497482785882959,
+          "geom_distance_m": -7.016235498103431e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.822575207253202e-05,
+          "reward": -4.545431161770427e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.545431161770427e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.8300000000000006,
+          "fingertip_button_center_distance_m": 0.0257653876298596,
+          "fingertip_local_button_xyz_m": [
+            -0.013911366860331969,
+            -0.018388494899770125,
+            0.01149749220983896
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.00149749220983896,
+          "geom_distance_m": -7.015343367571927e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.822067213383225e-05,
+          "reward": -4.545434019620242e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.545434019620242e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.8400000000000006,
+          "fingertip_button_center_distance_m": 0.0257652941176205,
+          "fingertip_local_button_xyz_m": [
+            -0.013911331571899962,
+            -0.018388385486075576,
+            0.01149750034049289
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014975003404928897,
+          "geom_distance_m": -7.014575030469544e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.821626473725847e-05,
+          "reward": -4.5454363819662955e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5454363819662955e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.8500000000000006,
+          "fingertip_button_center_distance_m": 0.02576520466689697,
+          "fingertip_local_button_xyz_m": [
+            -0.013911298377458617,
+            -0.018388280870655416,
+            0.011497507364741925
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014975073647419245,
+          "geom_distance_m": -7.013912531436114e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.821243387712813e-05,
+          "reward": -4.545438325404051e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.545438325404051e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.8600000000000007,
+          "fingertip_button_center_distance_m": 0.02576511911383898,
+          "fingertip_local_button_xyz_m": [
+            -0.013911267106985464,
+            -0.018388180852900615,
+            0.011497513442020161
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014975134420201607,
+          "geom_distance_m": -7.013340556634337e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.820909760123941e-05,
+          "reward": -4.545439915043471e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.545439915043471e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.8700000000000007,
+          "fingertip_button_center_distance_m": 0.025765037299292946,
+          "fingertip_local_button_xyz_m": [
+            -0.013911237609368961,
+            -0.018388085239106677,
+            0.011497518708355404
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014975187083554036,
+          "geom_distance_m": -7.012846043461996e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.820618593757834e-05,
+          "reward": -4.5454412062164105e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5454412062164105e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.8800000000000007,
+          "fingertip_button_center_distance_m": 0.025764959068981186,
+          "fingertip_local_button_xyz_m": [
+            -0.013911209749888593,
+            -0.018387993842472583,
+            0.011497523279822959
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014975232798229588,
+          "geom_distance_m": -7.012417847751905e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.820363912761999e-05,
+          "reward": -4.5454422459306855e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5454422459306855e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.8900000000000007,
+          "fingertip_button_center_distance_m": 0.02576488427361538,
+          "fingertip_local_button_xyz_m": [
+            -0.013911183408056114,
+            -0.018387906483050054,
+            0.011497527255493818
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014975272554938173,
+          "geom_distance_m": -7.012046460724532e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.82014061207885e-05,
+          "reward": -4.545443074108493e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.545443074108493e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.9000000000000007,
+          "fingertip_button_center_distance_m": 0.02576481276895644,
+          "fingertip_local_button_xyz_m": [
+            -0.013911158475762133,
+            -0.01838782298766095,
+            0.011497530719944164
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014975307199441637,
+          "geom_distance_m": -7.011723767288636e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.819944329147333e-05,
+          "reward": -4.545443724641182e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.545443724641182e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.9100000000000007,
+          "fingertip_button_center_distance_m": 0.02576474441582919,
+          "fingertip_local_button_xyz_m": [
+            -0.013911134855690024,
+            -0.018387743189782924,
+            0.011497533745390755
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014975337453907549,
+          "geom_distance_m": -7.011442840406943e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.819771334570826e-05,
+          "reward": -4.5454442262875565e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5454442262875565e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.9200000000000007,
+          "fingertip_button_center_distance_m": 0.02576467908010161,
+          "fingertip_local_button_xyz_m": [
+            -0.013911112459950095,
+            -0.01838766692941296,
+            0.011497536393515785
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.001497536393515785,
+          "geom_distance_m": -7.011197765996078e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.819618438945615e-05,
+          "reward": -4.545444603438918e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.545444603438918e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.9300000000000007,
+          "fingertip_button_center_distance_m": 0.02576461663263374,
+          "fingertip_local_button_xyz_m": [
+            -0.013911091208907258,
+            -0.01838759405291268,
+            0.011497538717018554
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014975387170185536,
+          "geom_distance_m": -7.010983493309773e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.819482913462354e-05,
+          "reward": -4.545444876770618e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.545444876770618e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.9400000000000007,
+          "fingertip_button_center_distance_m": 0.025764556949203415,
+          "fingertip_local_button_xyz_m": [
+            -0.013911071030170283,
+            -0.01838752441284197,
+            0.011497540760938564
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014975407609385642,
+          "geom_distance_m": -7.010795707841039e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.819362422234088e-05,
+          "reward": -4.54544506379687e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.54544506379687e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.9500000000000007,
+          "fingertip_button_center_distance_m": 0.02576449991041312,
+          "fingertip_local_button_xyz_m": [
+            -0.013911051857724841,
+            -0.01838745786777979,
+            0.011497542563782534
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014975425637825338,
+          "geom_distance_m": -7.010630722735926e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.819254964622917e-05,
+          "reward": -4.545445179343252e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.545445179343252e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.9600000000000007,
+          "fingertip_button_center_distance_m": 0.02576444540158257,
+          "fingertip_local_button_xyz_m": [
+            -0.013911033631181886,
+            -0.01838739428214098,
+            0.011497544158486415
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.001497544158486415,
+          "geom_distance_m": -7.010485386487532e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.819158826084151e-05,
+          "reward": -4.545445235948999e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.545445235948999e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.9700000000000008,
+          "fingertip_button_center_distance_m": 0.025764393312629856,
+          "fingertip_local_button_xyz_m": [
+            -0.013911016295131886,
+            -0.01838733352598687,
+            0.011497545573233466
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014975455732334653,
+          "geom_distance_m": -7.010357003965293e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.819072536267336e-05,
+          "reward": -4.545445244209643e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.545445244209643e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.9800000000000008,
+          "fingertip_button_center_distance_m": 0.025764343537944594,
+          "fingertip_local_button_xyz_m": [
+            -0.01391099979858266,
+            -0.018387275474835485,
+            0.011497546832153977
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014975468321539766,
+          "geom_distance_m": -7.01024326958314e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.818994833291722e-05,
+          "reward": -4.54544521306856e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.54544521306856e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.9900000000000008,
+          "fingertip_button_center_distance_m": 0.02576429597625329,
+          "fingertip_local_button_xyz_m": [
+            -0.013910984094477385,
+            -0.018387220009468075,
+            0.011497547955916315
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.001497547955916315,
+          "geom_distance_m": -7.010142209833107e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.818924633301592e-05,
+          "reward": -4.545445150065377e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.545445150065377e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.0000000000000007,
+          "fingertip_button_center_distance_m": 0.025764250530484353,
+          "fingertip_local_button_xyz_m": [
+            -0.013910969139271213,
+            -0.018387167015740613,
+            0.011497548962238325
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.001497548962238325,
+          "geom_distance_m": -7.010052134687345e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.818861004506231e-05,
+          "reward": -4.5454450615473396e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5454450615473396e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.0100000000000007,
+          "fingertip_button_center_distance_m": 0.025764207107627675,
+          "fingertip_local_button_xyz_m": [
+            -0.013910954892568123,
+            -0.018387116384393554,
+            0.011497549866316455
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0014975498663164551,
+          "geom_distance_m": -7.009971595850367e-05,
+          "contact_loaded": true,
+          "slider_position_m": 7.818803145045382e-05,
+          "reward": -4.545444952849181e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.545444952849181e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.0200000000000007,
+          "fingertip_button_center_distance_m": 0.025767496264883637,
+          "fingertip_local_button_xyz_m": [
+            -0.013898999458881614,
+            -0.01839251048268714,
+            0.01151074436980704
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0015107443698070405,
+          "geom_distance_m": -5.0765850684996755e-05,
+          "contact_loaded": true,
+          "slider_position_m": 5.645591968144732e-05,
+          "reward": -5.0223789575779435e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -5.0223789575779435e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.0300000000000007,
+          "fingertip_button_center_distance_m": 0.025780405997041674,
+          "fingertip_local_button_xyz_m": [
+            -0.013863498891482551,
+            -0.018408783915236593,
+            0.011556357844074012
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0015563578440740116,
+          "geom_distance_m": 2.945994591179844e-06,
+          "contact_loaded": false,
+          "slider_position_m": 1.8074691362152345e-05,
+          "reward": -4.892226220991648e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.892226220991648e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.0400000000000007,
+          "fingertip_button_center_distance_m": 0.02581272547082596,
+          "fingertip_local_button_xyz_m": [
+            -0.013812049127262239,
+            -0.01843199363198539,
+            0.011652712383336839
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0016527123833368386,
+          "geom_distance_m": 0.0001094459779461713,
+          "contact_loaded": false,
+          "slider_position_m": -1.963405250620893e-06,
+          "reward": -4.805394744369726e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.805394744369726e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.0480000000000007,
+          "fingertip_button_center_distance_m": 0.02585372500616122,
+          "fingertip_local_button_xyz_m": [
+            -0.013762856333160794,
+            -0.018453885295059813,
+            0.011766605277808762
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0017666052778087613,
+          "geom_distance_m": 0.0002287244003205551,
+          "contact_loaded": false,
+          "slider_position_m": -1.1872541928062097e-06,
+          "reward": 9.999996199307743,
+          "reward_components": {
+            "press": 0.0,
+            "release": 10.0,
+            "effort": -3.8006922567048167e-06,
+            "fault": 0.0
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "pressed",
+          "time_s": 0.2760000000000002
+        },
+        {
+          "event": "released",
+          "time_s": 1.0480000000000007
+        }
+      ],
+      "success": true,
+      "total_return": 10.9995219553023,
+      "steps": 105,
+      "terminated": true,
+      "truncated": false
+    },
+    "ppo_smoke": {
+      "policy": "ppo_smoke",
+      "seed": 2700,
+      "rows": [
+        {
+          "time_s": 0.0,
+          "fingertip_button_center_distance_m": 0.02601771552083623,
+          "fingertip_local_button_xyz_m": [
+            -0.012298891479264088,
+            -0.017782747219988904,
+            0.014471789475197065
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.004471789475197064,
+          "geom_distance_m": 0.002890150529356851,
+          "contact_loaded": false,
+          "slider_position_m": 0.0
+        },
+        {
+          "time_s": 0.01,
+          "fingertip_button_center_distance_m": 0.026055291916962903,
+          "fingertip_local_button_xyz_m": [
+            -0.012441471137216515,
+            -0.017921173874990093,
+            0.014244983670132215
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.004244983670132214,
+          "geom_distance_m": 0.002559633824347504,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -1.7821956537015123e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -1.7821956537015123e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.020000000000000004,
+          "fingertip_button_center_distance_m": 0.02614427295338413,
+          "fingertip_local_button_xyz_m": [
+            -0.012729941704327022,
+            -0.018201801518746674,
+            0.013790069395678905
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0037900693956789046,
+          "geom_distance_m": 0.0021405287778370483,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -5.805319893748763e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -5.805319893748763e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.030000000000000013,
+          "fingertip_button_center_distance_m": 0.026216666090392166,
+          "fingertip_local_button_xyz_m": [
+            -0.012929164611406255,
+            -0.018396358084694475,
+            0.013480515293043324
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003480515293043324,
+          "geom_distance_m": 0.00185549041805657,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -5.406070499265686e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -5.406070499265686e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.04000000000000002,
+          "fingertip_button_center_distance_m": 0.026271695221246196,
+          "fingertip_local_button_xyz_m": [
+            -0.013065738641058719,
+            -0.018530339628487824,
+            0.013270831052141729
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0032708310521417285,
+          "geom_distance_m": 0.0016627479901872488,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -5.147385998152424e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -5.147385998152424e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.05000000000000003,
+          "fingertip_button_center_distance_m": 0.026311821092024974,
+          "fingertip_local_button_xyz_m": [
+            -0.013158273701591849,
+            -0.018621746247623694,
+            0.013130206741016663
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003130206741016663,
+          "geom_distance_m": 0.0015338112538022793,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.972166891259994e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.972166891259994e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.06000000000000004,
+          "fingertip_button_center_distance_m": 0.026340129808818113,
+          "fingertip_local_button_xyz_m": [
+            -0.01321997555588572,
+            -0.0186832607315795,
+            0.013037271688623826
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030372716886238257,
+          "geom_distance_m": 0.0014489180794484307,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.852611422795958e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.852611422795958e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.07000000000000005,
+          "fingertip_button_center_distance_m": 0.02635947564479161,
+          "fingertip_local_button_xyz_m": [
+            -0.013260187686236144,
+            -0.018723828849690316,
+            0.012977195845083719
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0029771958450837185,
+          "geom_distance_m": 0.001394353640886727,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.770565910077452e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.770565910077452e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.08000000000000006,
+          "fingertip_button_center_distance_m": 0.026372214284323393,
+          "fingertip_local_button_xyz_m": [
+            -0.013285503756096198,
+            -0.018749764540278047,
+            0.012939683376696539
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0029396833766965388,
+          "geom_distance_m": 0.0,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.714035035138825e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.714035035138825e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.09000000000000007,
+          "fingertip_button_center_distance_m": 0.02638018174375187,
+          "fingertip_local_button_xyz_m": [
+            -0.013300564313025022,
+            -0.01876552528987996,
+            0.012917586399298454
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0029175863992984535,
+          "geom_distance_m": 0.0013410367143327105,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.674982658908848e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.674982658908848e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.10000000000000007,
+          "fingertip_button_center_distance_m": 0.026384762096772603,
+          "fingertip_local_button_xyz_m": [
+            -0.013308625712682669,
+            -0.018774257210269152,
+            0.01290594509308275
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.00290594509308275,
+          "geom_distance_m": 0.0013310891270949057,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.6479669371067745e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.6479669371067745e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.11000000000000008,
+          "fingertip_button_center_distance_m": 0.02638697660561756,
+          "fingertip_local_button_xyz_m": [
+            -0.013311965451485757,
+            -0.018778178987787386,
+            0.012901321796873306
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0029013217968733053,
+          "geom_distance_m": 0.0013275765502423014,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.629272215204913e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.629272215204913e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.12000000000000009,
+          "fingertip_button_center_distance_m": 0.02638756760372186,
+          "fingertip_local_button_xyz_m": [
+            -0.013312170355623452,
+            -0.018778852852789907,
+            0.012901338302560555
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0029013383025605546,
+          "geom_distance_m": 0.0,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.616345411647775e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.616345411647775e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.1300000000000001,
+          "fingertip_button_center_distance_m": 0.02638706850737857,
+          "fingertip_local_button_xyz_m": [
+            -0.01331034107503409,
+            -0.01877737614495978,
+            0.012904353916025617
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0029043539160256166,
+          "geom_distance_m": 0.0013317513550040916,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.607423838274238e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.607423838274238e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.1400000000000001,
+          "fingertip_button_center_distance_m": 0.02638585888956171,
+          "fingertip_local_button_xyz_m": [
+            -0.013307236896884931,
+            -0.01877451694444715,
+            0.012909241225289496
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0029092412252894953,
+          "geom_distance_m": 0.001336884543591819,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.60128615285834e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.60128615285834e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.1500000000000001,
+          "fingertip_button_center_distance_m": 0.026384206364341776,
+          "fingertip_local_button_xyz_m": [
+            -0.01330337808027746,
+            -0.018770810215695766,
+            0.012915229807312675
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.002915229807312675,
+          "geom_distance_m": 0.0013429921875561914,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.5970839186519535e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5970839186519535e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.16000000000000011,
+          "fingertip_button_center_distance_m": 0.02638229777838757,
+          "fingertip_local_button_xyz_m": [
+            -0.013299118013805735,
+            -0.018766626019799948,
+            0.012921797241690068
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0029217972416900675,
+          "geom_distance_m": 0.0013495940822412943,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.5942266587481104e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5942266587481104e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.17000000000000012,
+          "fingertip_button_center_distance_m": 0.026380262118611476,
+          "fingertip_local_button_xyz_m": [
+            -0.013294693977074694,
+            -0.01876221793497035,
+            0.012928593104559308
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0029285931045593076,
+          "geom_distance_m": 0.0013563689836465893,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.592303012082188e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.592303012082188e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.18000000000000013,
+          "fingertip_button_center_distance_m": 0.02637818717265648,
+          "fingertip_local_button_xyz_m": [
+            -0.013290262765115864,
+            -0.018757757432516065,
+            0.012935385972314938
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0029353859723149373,
+          "geom_distance_m": 0.0013631055632066702,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.591026153876497e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.591026153876497e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.19000000000000014,
+          "fingertip_button_center_distance_m": 0.026376131559355965,
+          "fingertip_local_button_xyz_m": [
+            -0.013285925629082889,
+            -0.018753358277197152,
+            0.012942026485137998
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.002942026485137998,
+          "geom_distance_m": 0.001369668232401025,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590196136551938e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590196136551938e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.20000000000000015,
+          "fingertip_button_center_distance_m": 0.026374133368160867,
+          "fingertip_local_button_xyz_m": [
+            -0.013281745688919362,
+            -0.018749093834785013,
+            0.01294842163164434
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.002948421631644339,
+          "geom_distance_m": 0.001375973355739807,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.5896736520023564e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5896736520023564e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.21000000000000016,
+          "fingertip_button_center_distance_m": 0.02637221633479038,
+          "fingertip_local_button_xyz_m": [
+            -0.013277760059928952,
+            -0.018745009337243268,
+            0.01295451686272409
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.002954516862724089,
+          "geom_distance_m": 0.001381972707318038,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.58936161743925e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.58936161743925e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.22000000000000017,
+          "fingertip_button_center_distance_m": 0.026370394237021914,
+          "fingertip_local_button_xyz_m": [
+            -0.013273988274033772,
+            -0.018741130561030772,
+            0.012960283670165983
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.002960283670165983,
+          "geom_distance_m": 0.001387641990418726,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.5891925907859505e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5891925907859505e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.23000000000000018,
+          "fingertip_button_center_distance_m": 0.02636867401229335,
+          "fingertip_local_button_xyz_m": [
+            -0.013270438106846538,
+            -0.018737469954470676,
+            0.012965710984140384
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0029657109841403836,
+          "geom_distance_m": 0.0013929728881694105,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.589119729877823e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.589119729877823e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.24000000000000019,
+          "fingertip_button_center_distance_m": 0.026367057960605813,
+          "fingertip_local_button_xyz_m": [
+            -0.013267109598867571,
+            -0.018734030955118608,
+            0.012970799226040016
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0029707992260400162,
+          "geom_distance_m": 0.0013979675716545147,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.58911058985789e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.58911058985789e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.25000000000000017,
+          "fingertip_button_center_distance_m": 0.02636554529342153,
+          "fingertip_local_button_xyz_m": [
+            -0.013263997817192294,
+            -0.01873081101948998,
+            0.012975556214557168
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.002975556214557168,
+          "geom_distance_m": 0.001402634923836977,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.589142810021749e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.589142810021749e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.2600000000000002,
+          "fingertip_button_center_distance_m": 0.026364133218778136,
+          "fingertip_local_button_xyz_m": [
+            -0.013261094743050972,
+            -0.018727803741616422,
+            0.012979994360892639
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0029799943608926384,
+          "geom_distance_m": 0.001406987953820899,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.5892009986465916e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5892009986465916e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.2700000000000002,
+          "fingertip_button_center_distance_m": 0.026362817696926354,
+          "fingertip_local_button_xyz_m": [
+            -0.013258390554993515,
+            -0.01872500032684543,
+            0.01298412875676573
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.002984128756765729,
+          "geom_distance_m": 0.0014110420376199197,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.589274649112688e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.589274649112688e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.2800000000000002,
+          "fingertip_button_center_distance_m": 0.026361593961756656,
+          "fingertip_local_button_xyz_m": [
+            -0.013255874493138864,
+            -0.018722390608292616,
+            0.012987975882992388
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.002987975882992388,
+          "geom_distance_m": 0.001414813731796851,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.589356629717184e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.589356629717184e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.2900000000000002,
+          "fingertip_button_center_distance_m": 0.026360456878602702,
+          "fingertip_local_button_xyz_m": [
+            -0.01325353543578235,
+            -0.01871996374316881,
+            0.012991552746133903
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0029915527461339027,
+          "geom_distance_m": 0.0014183199826584985,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.589442150654421e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.589442150654421e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.3000000000000002,
+          "fingertip_button_center_distance_m": 0.02635940118650974,
+          "fingertip_local_button_xyz_m": [
+            -0.013251362277133657,
+            -0.01871770868297573,
+            0.01299487631225419
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.00299487631225419,
+          "geom_distance_m": 0.0014215776104701727,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.589528069479578e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.589528069479578e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.3100000000000002,
+          "fingertip_button_center_distance_m": 0.026358421658507446,
+          "fingertip_local_button_xyz_m": [
+            -0.013249344169072521,
+            -0.01871561448438913,
+            0.012997963143849203
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0029979631438492027,
+          "geom_distance_m": 0.001424602979469802,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.58961232696422e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.58961232696422e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.32000000000000023,
+          "fingertip_button_center_distance_m": 0.026357513206254266,
+          "fingertip_local_button_xyz_m": [
+            -0.013247470671921592,
+            -0.018713670511587843,
+            0.013000829173486321
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003000829173486321,
+          "geom_distance_m": 0.0014274117947028844,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.5896936352779346e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5896936352779346e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.33000000000000024,
+          "fingertip_button_center_distance_m": 0.02635667094447828,
+          "fingertip_local_button_xyz_m": [
+            -0.01324573184170147,
+            -0.018711866560653156,
+            0.0130034895727859
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030034895727859,
+          "geom_distance_m": 0.0014300189866923697,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.589771237230627e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.589771237230627e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.34000000000000025,
+          "fingertip_button_center_distance_m": 0.02635589022856645,
+          "fingertip_local_button_xyz_m": [
+            -0.013244118274745269,
+            -0.018710192931208236,
+            0.013005958685993442
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003005958685993442,
+          "geom_distance_m": 0.0014324386554026994,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.589844732128385e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.589844732128385e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.35000000000000026,
+          "fingertip_button_center_distance_m": 0.02635516667430477,
+          "fingertip_local_button_xyz_m": [
+            -0.0132426211244696,
+            -0.018708640462861137,
+            0.013008250005882089
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030082500058820887,
+          "geom_distance_m": 0.0014346840525820532,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.589913948988913e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.589913948988913e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.36000000000000026,
+          "fingertip_button_center_distance_m": 0.026354496164519042,
+          "fingertip_local_button_xyz_m": [
+            -0.013241232099889538,
+            -0.01870720054683911,
+            0.013010376176838487
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003010376176838487,
+          "geom_distance_m": 0.0014367675890547067,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.589978872775535e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.589978872775535e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.3700000000000003,
+          "fingertip_button_center_distance_m": 0.026353874847466784,
+          "fingertip_local_button_xyz_m": [
+            -0.0132399434526226,
+            -0.018705865121748155,
+            0.013012349015234115
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030123490152341153,
+          "geom_distance_m": 0.0014387008574064176,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.5900395808435534e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5900395808435534e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.3800000000000003,
+          "fingertip_button_center_distance_m": 0.026353299129200855,
+          "fingertip_local_button_xyz_m": [
+            -0.013238747956452116,
+            -0.018704626658189172,
+            0.013014179540656128
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003014179540656128,
+          "geom_distance_m": 0.0014404946648761165,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590096223795079e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590096223795079e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.3900000000000003,
+          "fingertip_button_center_distance_m": 0.026352765663704515,
+          "fingertip_local_button_xyz_m": [
+            -0.0132376388817081,
+            -0.018703478137523433,
+            0.013015878015823469
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003015878015823469,
+          "geom_distance_m": 0.0014421590746650657,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590149011611713e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590149011611713e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.4000000000000003,
+          "fingertip_button_center_distance_m": 0.026352271341430204,
+          "fingertip_local_button_xyz_m": [
+            -0.013236609968292963,
+            -0.01870241302771447,
+            0.013017453988412142
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003017453988412142,
+          "geom_distance_m": 0.0014437034463181554,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590198123195032e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590198123195032e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.4100000000000003,
+          "fingertip_button_center_distance_m": 0.02635181327469797,
+          "fingertip_local_button_xyz_m": [
+            -0.013235655398493563,
+            -0.018701425255433002,
+            0.013018916331720127
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003018916331720127,
+          "geom_distance_m": 0.001445136477257538,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590243779540854e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590243779540854e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.4200000000000003,
+          "fingertip_button_center_distance_m": 0.02635138878467806,
+          "fingertip_local_button_xyz_m": [
+            -0.013234769768733444,
+            -0.018700509178830316,
+            0.013020273288313079
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030202732883130787,
+          "geom_distance_m": 0.0014464662461418222,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.5902862048213e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5902862048213e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.4300000000000003,
+          "fingertip_button_center_distance_m": 0.026350995388409473,
+          "fingertip_local_button_xyz_m": [
+            -0.013233948062278936,
+            -0.01869965956060804,
+            0.01302153251204486
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.00302153251204486,
+          "geom_distance_m": 0.001447700253995721,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.59032560696179e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.59032560696179e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.44000000000000034,
+          "fingertip_button_center_distance_m": 0.026350630784841178,
+          "fingertip_local_button_xyz_m": [
+            -0.013233185623729524,
+            -0.018698871540871298,
+            0.013022701106334711
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003022701106334711,
+          "geom_distance_m": 0.0014488454614451998,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590362169953534e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590362169953534e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.45000000000000034,
+          "fingertip_button_center_distance_m": 0.026350292842292726,
+          "fingertip_local_button_xyz_m": [
+            -0.013232478134327944,
+            -0.018698140611696445,
+            0.013023785661793743
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030237856617937424,
+          "geom_distance_m": 0.0014499083269498608,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590396108542883e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590396108542883e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.46000000000000035,
+          "fingertip_button_center_distance_m": 0.02634997958708627,
+          "fingertip_local_button_xyz_m": [
+            -0.01323182158763173,
+            -0.018697462592942804,
+            0.013024792293869821
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003024792293869821,
+          "geom_distance_m": 0.001450894843201107,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.59042760745637e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.59042760745637e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.47000000000000036,
+          "fingertip_button_center_distance_m": 0.02634968919187498,
+          "fingertip_local_button_xyz_m": [
+            -0.013231212267939517,
+            -0.01869683360916885,
+            0.01302572667532196
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030257266753219592,
+          "geom_distance_m": 0.0014518105684211892,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590456819482489e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590456819482489e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.48000000000000037,
+          "fingertip_button_center_distance_m": 0.02634941996453598,
+          "fingertip_local_button_xyz_m": [
+            -0.013230646729558993,
+            -0.018696250067486875,
+            0.013026594067487263
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003026594067487263,
+          "geom_distance_m": 0.001452660658236756,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590483929759176e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590483929759176e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.4900000000000004,
+          "fingertip_button_center_distance_m": 0.026349170338355682,
+          "fingertip_local_button_xyz_m": [
+            -0.013230121777536512,
+            -0.018695708637458508,
+            0.013027399349620652
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003027399349620652,
+          "geom_distance_m": 0.0014534498929500098,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590509056658912e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590509056658912e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.5000000000000003,
+          "fingertip_button_center_distance_m": 0.02634893886375506,
+          "fingertip_local_button_xyz_m": [
+            -0.013229634449853379,
+            -0.018695206233281803,
+            0.0130281470464612
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030281470464611996,
+          "geom_distance_m": 0.0014541827066726722,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.59053238459942e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.59053238459942e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.5100000000000003,
+          "fingertip_button_center_distance_m": 0.026348724198704578,
+          "fingertip_local_button_xyz_m": [
+            -0.013229181999694247,
+            -0.018694739994644494,
+            0.013028841354894368
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030288413548943682,
+          "geom_distance_m": 0.0014548632111677756,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.5905540078226565e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5905540078226565e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.5200000000000004,
+          "fingertip_button_center_distance_m": 0.026348525101153503,
+          "fingertip_local_button_xyz_m": [
+            -0.013228761880850514,
+            -0.018694307271300226,
+            0.013029486166080533
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030294861660805326,
+          "geom_distance_m": 0.0014554952193109798,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590574070225789e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590574070225789e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.5300000000000004,
+          "fingertip_button_center_distance_m": 0.026348340421802098,
+          "fingertip_local_button_xyz_m": [
+            -0.01322837173295834,
+            -0.01869390560785339,
+            0.013030085088076241
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003030085088076241,
+          "geom_distance_m": 0.0014560822659000535,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590592664857984e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590592664857984e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.5400000000000004,
+          "fingertip_button_center_distance_m": 0.026348169096128658,
+          "fingertip_local_button_xyz_m": [
+            -0.013228009367660295,
+            -0.01869353272826596,
+            0.013030641466348853
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030306414663488525,
+          "geom_distance_m": 0.001456627629325932,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590609926665033e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590609926665033e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.5500000000000004,
+          "fingertip_button_center_distance_m": 0.026348010139103668,
+          "fingertip_local_button_xyz_m": [
+            -0.013227672756195552,
+            -0.01869318652384855,
+            0.013031158403224129
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030311584032241285,
+          "geom_distance_m": 0.0014571343487528353,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590625918947295e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590625918947295e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.5600000000000004,
+          "fingertip_button_center_distance_m": 0.026347862639037566,
+          "fingertip_local_button_xyz_m": [
+            -0.013227360018104041,
+            -0.018692865040956852,
+            0.013031638774829036
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030316387748290357,
+          "geom_distance_m": 0.0014576052426794844,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.5906407671283466e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5906407671283466e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.5700000000000004,
+          "fingertip_button_center_distance_m": 0.026347725752073642,
+          "fingertip_local_button_xyz_m": [
+            -0.013227069409622526,
+            -0.01869256646915113,
+            0.013032085248949209
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003032085248949209,
+          "geom_distance_m": 0.0014580429248677723,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590654533769158e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590654533769158e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.5800000000000004,
+          "fingertip_button_center_distance_m": 0.026347598697093504,
+          "fingertip_local_button_xyz_m": [
+            -0.013226799314609758,
+            -0.018692289131154727,
+            0.013032500298539688
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030325002985396882,
+          "geom_distance_m": 0.001458449818199919,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590667298433692e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590667298433692e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.5900000000000004,
+          "fingertip_button_center_distance_m": 0.026347480751048896,
+          "fingertip_local_button_xyz_m": [
+            -0.013226548235025217,
+            -0.018692031472974602,
+            0.01303288621629033
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030328862162903297,
+          "geom_distance_m": 0.0014588281690960016,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.5906791391282516e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5906791391282516e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.6000000000000004,
+          "fingertip_button_center_distance_m": 0.026347371244652678,
+          "fingertip_local_button_xyz_m": [
+            -0.013226314781972698,
+            -0.018691792054684853,
+            0.013033245128368513
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030332451283685124,
+          "geom_distance_m": 0.0014591800609063466,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590690126648206e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590690126648206e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.6100000000000004,
+          "fingertip_button_center_distance_m": 0.026347269558243472,
+          "fingertip_local_button_xyz_m": [
+            -0.013226097667869096,
+            -0.018691569541997577,
+            0.013033579006220791
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003033579006220791,
+          "geom_distance_m": 0.001459507425115667,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590700313642085e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590700313642085e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.6200000000000004,
+          "fingertip_button_center_distance_m": 0.026347175118117384,
+          "fingertip_local_button_xyz_m": [
+            -0.013225895699740517,
+            -0.018691362698920133,
+            0.013033889676598702
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003033889676598702,
+          "geom_distance_m": 0.0014598120512068378,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590709750741662e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590709750741662e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.6300000000000004,
+          "fingertip_button_center_distance_m": 0.026347087393484254,
+          "fingertip_local_button_xyz_m": [
+            -0.013225707771077991,
+            -0.01869117038022694,
+            0.013034178834559214
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030341788345592136,
+          "geom_distance_m": 0.0014600956011130996,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590718542011984e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590718542011984e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.6400000000000005,
+          "fingertip_button_center_distance_m": 0.026347005892654606,
+          "fingertip_local_button_xyz_m": [
+            -0.013225532856063139,
+            -0.018690991524474232,
+            0.013034448051712945
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003034448051712945,
+          "geom_distance_m": 0.001460359613211844,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.59072664893514e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.59072664893514e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.6500000000000005,
+          "fingertip_button_center_distance_m": 0.026346930160264032,
+          "fingertip_local_button_xyz_m": [
+            -0.013225370004689799,
+            -0.018690825148536483,
+            0.013034698783467077
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030346987834670765,
+          "geom_distance_m": 0.0014606055146370639,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590734205641767e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590734205641767e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.6600000000000005,
+          "fingertip_button_center_distance_m": 0.02634685977541567,
+          "fingertip_local_button_xyz_m": [
+            -0.013225218335418863,
+            -0.018690670341706683,
+            0.01303493238124246
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.00303493238124246,
+          "geom_distance_m": 0.0014608346289766364,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590741200074427e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590741200074427e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.6700000000000005,
+          "fingertip_button_center_distance_m": 0.026346794347891528,
+          "fingertip_local_button_xyz_m": [
+            -0.013225077031353472,
+            -0.01869052625978812,
+            0.013035150097218931
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003035150097218931,
+          "geom_distance_m": 0.0014610481834295165,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.5907476990510205e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5907476990510205e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.6800000000000005,
+          "fingertip_button_center_distance_m": 0.026346733516712628,
+          "fingertip_local_button_xyz_m": [
+            -0.01322494533524027,
+            -0.018690392120903787,
+            0.013035353092549239
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030353530925492384,
+          "geom_distance_m": 0.0014612473153608697,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590753718735804e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590753718735804e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.6900000000000005,
+          "fingertip_button_center_distance_m": 0.026346676947432833,
+          "fingertip_local_button_xyz_m": [
+            -0.013224822545348361,
+            -0.018690267200509314,
+            0.013035542443258745
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030355424432587444,
+          "geom_distance_m": 0.001461433079232858,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590759309578438e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590759309578438e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.7000000000000005,
+          "fingertip_button_center_distance_m": 0.02634662433059231,
+          "fingertip_local_button_xyz_m": [
+            -0.013224708010889723,
+            -0.018690150827316843,
+            0.013035719147642583
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003035719147642583,
+          "geom_distance_m": 0.001461606453253238,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.5907645009907775e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5907645009907775e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.7100000000000005,
+          "fingertip_button_center_distance_m": 0.026346575379628003,
+          "fingertip_local_button_xyz_m": [
+            -0.013224601128764384,
+            -0.018690042379407135,
+            0.01303588413094676
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030358841309467595,
+          "geom_distance_m": 0.0014617683437161287,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590769309101189e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590769309101189e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.7200000000000005,
+          "fingertip_button_center_distance_m": 0.026346529829459724,
+          "fingertip_local_button_xyz_m": [
+            -0.013224501339962714,
+            -0.01868994128082402,
+            0.013036038251067144
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003036038251067144,
+          "geom_distance_m": 0.0014619195915564548,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.5907737845810095e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5907737845810095e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.7300000000000005,
+          "fingertip_button_center_distance_m": 0.02634648743419,
+          "fingertip_local_button_xyz_m": [
+            -0.013224408126255983,
+            -0.01868984699743853,
+            0.01303618230320842
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030361823032084203,
+          "geom_distance_m": 0.0014620609753323,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.5907779190694815e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5907779190694815e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.7400000000000005,
+          "fingertip_button_center_distance_m": 0.02634644796610177,
+          "fingertip_local_button_xyz_m": [
+            -0.013224321007483964,
+            -0.018689759034445808,
+            0.013036317024216534
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030363170242165335,
+          "geom_distance_m": 0.0014621932175733609,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590781775774485e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590781775774485e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.7500000000000006,
+          "fingertip_button_center_distance_m": 0.02634641121479887,
+          "fingertip_local_button_xyz_m": [
+            -0.013224239538183106,
+            -0.01868967693364454,
+            0.01303644309817788
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030364430981778805,
+          "geom_distance_m": 0.0014623169882343424,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590785345164772e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590785345164772e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.7600000000000006,
+          "fingertip_button_center_distance_m": 0.02634637698557461,
+          "fingertip_local_button_xyz_m": [
+            -0.013224163305664794,
+            -0.018689600270736406,
+            0.013036561158956522
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030365611589565217,
+          "geom_distance_m": 0.00146243290860764,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590788667277942e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590788667277942e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.7700000000000006,
+          "fingertip_button_center_distance_m": 0.02634634509752839,
+          "fingertip_local_button_xyz_m": [
+            -0.013224091927094518,
+            -0.01868952865181378,
+            0.01303667179439766
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.00303667179439766,
+          "geom_distance_m": 0.0014625415544338013,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590791745204571e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590791745204571e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.7800000000000006,
+          "fingertip_button_center_distance_m": 0.026346315383362656,
+          "fingertip_local_button_xyz_m": [
+            -0.0132240250480905,
+            -0.01868946171239272,
+            0.013036775548734954
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030367755487349535,
+          "geom_distance_m": 0.001462643458883484,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590794599304597e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590794599304597e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.7900000000000006,
+          "fingertip_button_center_distance_m": 0.026346287688594587,
+          "fingertip_local_button_xyz_m": [
+            -0.013223962340173442,
+            -0.01868939911520673,
+            0.013036872926755682
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003036872926755682,
+          "geom_distance_m": 0.0014627391167399315,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590797258080329e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590797258080329e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.8000000000000006,
+          "fingertip_button_center_distance_m": 0.026346261869837403,
+          "fingertip_local_button_xyz_m": [
+            -0.013223903498457572,
+            -0.018689340547199285,
+            0.013036964396988381
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003036964396988381,
+          "geom_distance_m": 0.0014628289870613656,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590799726409082e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590799726409082e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.8100000000000006,
+          "fingertip_button_center_distance_m": 0.026346237794466664,
+          "fingertip_local_button_xyz_m": [
+            -0.013223848240497679,
+            -0.01868928571855849,
+            0.013037050393588104
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030370503935881043,
+          "geom_distance_m": 0.0014629134951304936,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590802017456992e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590802017456992e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.8200000000000006,
+          "fingertip_button_center_distance_m": 0.02634621533911954,
+          "fingertip_local_button_xyz_m": [
+            -0.013223796304610973,
+            -0.018689234360274865,
+            0.013037131318512382
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030371313185123816,
+          "geom_distance_m": 0.0014629930346527213,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590804141036715e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590804141036715e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.8300000000000006,
+          "fingertip_button_center_distance_m": 0.026346194390031892,
+          "fingertip_local_button_xyz_m": [
+            -0.013223747448289839,
+            -0.018689186223608434,
+            0.013037207544581037
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030372075445810366,
+          "geom_distance_m": 0.0014630679711649635,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.5908061228815226e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5908061228815226e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.8400000000000006,
+          "fingertip_button_center_distance_m": 0.026346174841984794,
+          "fingertip_local_button_xyz_m": [
+            -0.013223701446332827,
+            -0.018689141077990967,
+            0.013037279418254343
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003037279418254343,
+          "geom_distance_m": 0.0014631386441883568,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590807967036909e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590807967036909e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.8500000000000006,
+          "fingertip_button_center_distance_m": 0.026346156597249974,
+          "fingertip_local_button_xyz_m": [
+            -0.01322365809035259,
+            -0.018689098709699425,
+            0.013037347259906145
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030373472599061445,
+          "geom_distance_m": 0.0014632053671477668,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590809665947867e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590809665947867e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.8600000000000007,
+          "fingertip_button_center_distance_m": 0.026346139565511035,
+          "fingertip_local_button_xyz_m": [
+            -0.013223617187455773,
+            -0.01868905892104117,
+            0.01303741136617472
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030374113661747193,
+          "geom_distance_m": 0.0014632684311348745,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.5908112596216074e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5908112596216074e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.8700000000000007,
+          "fingertip_button_center_distance_m": 0.026346123663222972,
+          "fingertip_local_button_xyz_m": [
+            -0.013223578558486061,
+            -0.018689021528740912,
+            0.01303747201276551
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030374720127655103,
+          "geom_distance_m": 0.0014633281060270173,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590812734524867e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590812734524867e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.8800000000000007,
+          "fingertip_button_center_distance_m": 0.026346108812394346,
+          "fingertip_local_button_xyz_m": [
+            -0.013223542037716963,
+            -0.01868898636254196,
+            0.013037529454309053
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003037529454309053,
+          "geom_distance_m": 0.001463384641183871,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.5908141016791844e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5908141016791844e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.8900000000000007,
+          "fingertip_button_center_distance_m": 0.026346094941604135,
+          "fingertip_local_button_xyz_m": [
+            -0.01322350747108071,
+            -0.018688953265254882,
+            0.013037583928144464
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003037583928144464,
+          "geom_distance_m": 0.0014634382699240114,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.59081539949721e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.59081539949721e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.9000000000000007,
+          "fingertip_button_center_distance_m": 0.026346081984539083,
+          "fingertip_local_button_xyz_m": [
+            -0.013223474715798749,
+            -0.018688922091079918,
+            0.013037635654144928
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003037635654144928,
+          "geom_distance_m": 0.0014634892065772385,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590816571539978e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590816571539978e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.9100000000000007,
+          "fingertip_button_center_distance_m": 0.02634606987920638,
+          "fingertip_local_button_xyz_m": [
+            -0.013223443640051312,
+            -0.018688892704630422,
+            0.013037684834863282
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030376848348632815,
+          "geom_distance_m": 0.0014635376504458387,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590817690701948e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590817690701948e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.9200000000000007,
+          "fingertip_button_center_distance_m": 0.026346058568405523,
+          "fingertip_local_button_xyz_m": [
+            -0.013223414121312315,
+            -0.018688864980486886,
+            0.013037731658814848
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030377316588148483,
+          "geom_distance_m": 0.0014635837854696662,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.5908187074885275e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5908187074885275e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.9300000000000007,
+          "fingertip_button_center_distance_m": 0.026346047999460553,
+          "fingertip_local_button_xyz_m": [
+            -0.013223386046585146,
+            -0.01868883880306088,
+            0.013037776299893432
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003037776299893432,
+          "geom_distance_m": 0.001463627782624332,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590819673723141e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590819673723141e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.9400000000000007,
+          "fingertip_button_center_distance_m": 0.026346038123640243,
+          "fingertip_local_button_xyz_m": [
+            -0.013223359310420707,
+            -0.01868881406490952,
+            0.013037818920626843
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030378189206268433,
+          "geom_distance_m": 0.0014636698009953158,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590820570595278e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590820570595278e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.9500000000000007,
+          "fingertip_button_center_distance_m": 0.026346028895157726,
+          "fingertip_local_button_xyz_m": [
+            -0.013223333815006217,
+            -0.018688790665779553,
+            0.013037859671436497
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003037859671436497,
+          "geom_distance_m": 0.0014637099880524234,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.5908214091229996e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5908214091229996e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.9600000000000007,
+          "fingertip_button_center_distance_m": 0.026346020272103622,
+          "fingertip_local_button_xyz_m": [
+            -0.013223309470218667,
+            -0.01868876851358292,
+            0.01303789869107104
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030378986910710396,
+          "geom_distance_m": 0.0014637484792875087,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590822175838153e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590822175838153e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.9700000000000008,
+          "fingertip_button_center_distance_m": 0.026346012215852935,
+          "fingertip_local_button_xyz_m": [
+            -0.01322328619251895,
+            -0.01868874752318067,
+            0.013037936108273354
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030379361082733536,
+          "geom_distance_m": 0.0014637854014978341,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590822913248269e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590822913248269e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.9800000000000008,
+          "fingertip_button_center_distance_m": 0.026346004690347483,
+          "fingertip_local_button_xyz_m": [
+            -0.013223263904303353,
+            -0.01868872761530227,
+            0.013037972042537824
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003037972042537824,
+          "geom_distance_m": 0.0014638208709618877,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.5908235756217355e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5908235756217355e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 0.9900000000000008,
+          "fingertip_button_center_distance_m": 0.026345997661877178,
+          "fingertip_local_button_xyz_m": [
+            -0.01322324253395793,
+            -0.01868870871635625,
+            0.013038006603885186
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003038006603885186,
+          "geom_distance_m": 0.0014638549961750696,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.59082421718746e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.59082421718746e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.0000000000000007,
+          "fingertip_button_center_distance_m": 0.026345991099443657,
+          "fingertip_local_button_xyz_m": [
+            -0.01322322201484986,
+            -0.018688690758238535,
+            0.013038039894895393
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030380398948953932,
+          "geom_distance_m": 0.0014638878769984555,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590824795552485e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590824795552485e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.0100000000000007,
+          "fingertip_button_center_distance_m": 0.026345984974275555,
+          "fingertip_local_button_xyz_m": [
+            -0.013223202285401808,
+            -0.018688673677886403,
+            0.013038072010292535
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030380720102925352,
+          "geom_distance_m": 0.0014639196069178245,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.5908253585843325e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5908253585843325e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.0200000000000007,
+          "fingertip_button_center_distance_m": 0.026345979259991374,
+          "fingertip_local_button_xyz_m": [
+            -0.013223183288057496,
+            -0.018688657416869148,
+            0.013038103038910016
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003038103038910016,
+          "geom_distance_m": 0.0014639502725639175,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590825872195327e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590825872195327e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.0300000000000007,
+          "fingertip_button_center_distance_m": 0.02634597393191889,
+          "fingertip_local_button_xyz_m": [
+            -0.013223164970047606,
+            -0.018688641921128957,
+            0.013038133061910246
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003038133061910246,
+          "geom_distance_m": 0.0014639799534291917,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.5908263517531755e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5908263517531755e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.0400000000000007,
+          "fingertip_button_center_distance_m": 0.026345968966978276,
+          "fingertip_local_button_xyz_m": [
+            -0.013223147282517986,
+            -0.01868862714037578,
+            0.013038162154300334
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030381621543003334,
+          "geom_distance_m": 0.0014640087229315462,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590826799414353e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590826799414353e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.0500000000000007,
+          "fingertip_button_center_distance_m": 0.0263459643438976,
+          "fingertip_local_button_xyz_m": [
+            -0.013223130179732227,
+            -0.018688613027865786,
+            0.013038190386493969
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030381903864939684,
+          "geom_distance_m": 0.0014640366505770273,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.5908272354483455e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5908272354483455e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.0600000000000007,
+          "fingertip_button_center_distance_m": 0.02634596004344369,
+          "fingertip_local_button_xyz_m": [
+            -0.01322311361943451,
+            -0.01868859954083807,
+            0.013038217823784209
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030382178237842086,
+          "geom_distance_m": 0.0014640637996654459,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590827622420261e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590827622420261e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.0700000000000007,
+          "fingertip_button_center_distance_m": 0.026345956047456816,
+          "fingertip_local_button_xyz_m": [
+            -0.013223097562783049,
+            -0.01868858663950118,
+            0.013038244525913194
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003038244525913194,
+          "geom_distance_m": 0.0014640902292473656,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590828003053587e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590828003053587e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.0800000000000007,
+          "fingertip_button_center_distance_m": 0.026345952338701673,
+          "fingertip_local_button_xyz_m": [
+            -0.013223081973767013,
+            -0.018688574286561455,
+            0.013038270548038652
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003038270548038652,
+          "geom_distance_m": 0.0014641159925742426,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590828335129202e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590828335129202e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.0900000000000007,
+          "fingertip_button_center_distance_m": 0.0263459489012258,
+          "fingertip_local_button_xyz_m": [
+            -0.01322306681935344,
+            -0.018688562447662926,
+            0.013038295940678683
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030382959406786824,
+          "geom_distance_m": 0.0014641411398929644,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590828671229252e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590828671229252e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.1000000000000008,
+          "fingertip_button_center_distance_m": 0.026345945721170987,
+          "fingertip_local_button_xyz_m": [
+            -0.013223052067946104,
+            -0.018688551091356476,
+            0.013038320752958675
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003038320752958675,
+          "geom_distance_m": 0.0014641657194404574,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590828991932333e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590828991932333e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.1100000000000008,
+          "fingertip_button_center_distance_m": 0.026345942784920345,
+          "fingertip_local_button_xyz_m": [
+            -0.013223037690767634,
+            -0.018688540187995872,
+            0.013038345029047905
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030383450290479043,
+          "geom_distance_m": 0.001464189773700187,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590829267844022e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590829267844022e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.1200000000000008,
+          "fingertip_button_center_distance_m": 0.026345940079635383,
+          "fingertip_local_button_xyz_m": [
+            -0.01322302366150145,
+            -0.01868852971008167,
+            0.013038368809115108
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003038368809115108,
+          "geom_distance_m": 0.0014642133427065322,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590829550759761e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590829550759761e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.1300000000000008,
+          "fingertip_button_center_distance_m": 0.026345937593671147,
+          "fingertip_local_button_xyz_m": [
+            -0.013223009955381,
+            -0.018688519632173328,
+            0.013038392131217017
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030383921312170173,
+          "geom_distance_m": 0.0014642364632377588,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590829800822391e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590829800822391e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.1400000000000008,
+          "fingertip_button_center_distance_m": 0.02634593531615389,
+          "fingertip_local_button_xyz_m": [
+            -0.013222996549915392,
+            -0.01868850993086746,
+            0.01303841502974034
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030384150297403396,
+          "geom_distance_m": 0.0014642591692327562,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590830045491175e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590830045491175e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.1500000000000008,
+          "fingertip_button_center_distance_m": 0.026345933237208314,
+          "fingertip_local_button_xyz_m": [
+            -0.013222983423876235,
+            -0.01868850058446425,
+            0.013038437537366646
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030384375373666457,
+          "geom_distance_m": 0.00146428149276619,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590830278852617e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590830278852617e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.1600000000000008,
+          "fingertip_button_center_distance_m": 0.02634593134767254,
+          "fingertip_local_button_xyz_m": [
+            -0.013222970557324406,
+            -0.018688491572696253,
+            0.013038459684858013
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030384596848580126,
+          "geom_distance_m": 0.0014643034641317004,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.5908305053874025e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5908305053874025e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.1700000000000008,
+          "fingertip_button_center_distance_m": 0.026345929638731225,
+          "fingertip_local_button_xyz_m": [
+            -0.013222957932316343,
+            -0.01868848287675179,
+            0.013038481499565963
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030384814995659624,
+          "geom_distance_m": 0.001464325109367021,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590830694714898e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590830694714898e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.1800000000000008,
+          "fingertip_button_center_distance_m": 0.026345928102237987,
+          "fingertip_local_button_xyz_m": [
+            -0.013222945532445855,
+            -0.01868847447934152,
+            0.013038503006452241
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003038503006452241,
+          "geom_distance_m": 0.00146434645374579,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590830901969367e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590830901969367e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.1900000000000008,
+          "fingertip_button_center_distance_m": 0.026345926730958973,
+          "fingertip_local_button_xyz_m": [
+            -0.013222933341822127,
+            -0.018688466364381096,
+            0.01303852423007235
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003038524230072349,
+          "geom_distance_m": 0.0014643675209213987,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590831085437862e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590831085437862e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.2000000000000008,
+          "fingertip_button_center_distance_m": 0.026345925517876283,
+          "fingertip_local_button_xyz_m": [
+            -0.01322292134630852,
+            -0.018688458516975204,
+            0.013038545191934574
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030385451919345743,
+          "geom_distance_m": 0.0014643883319044042,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.5908312583182225e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5908312583182225e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.2100000000000009,
+          "fingertip_button_center_distance_m": 0.026345924456565004,
+          "fingertip_local_button_xyz_m": [
+            -0.01322290953266187,
+            -0.018688450923319944,
+            0.013038565912274706
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030385659122747054,
+          "geom_distance_m": 0.0014644089067436584,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.59083143039872e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.59083143039872e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.2200000000000009,
+          "fingertip_button_center_distance_m": 0.026345923540919833,
+          "fingertip_local_button_xyz_m": [
+            -0.013222897888519129,
+            -0.018688443570420377,
+            0.013038586409922035
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003038586409922035,
+          "geom_distance_m": 0.0014644292636272964,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590831586766733e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590831586766733e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.2300000000000009,
+          "fingertip_button_center_distance_m": 0.026345922765215118,
+          "fingertip_local_button_xyz_m": [
+            -0.013222886402507043,
+            -0.018688436446210543,
+            0.01303860670213747
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003038606702137469,
+          "geom_distance_m": 0.0014644494197168293,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.5908317437621185e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5908317437621185e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.2400000000000009,
+          "fingertip_button_center_distance_m": 0.02634592212421042,
+          "fingertip_local_button_xyz_m": [
+            -0.013222875064186873,
+            -0.018688429539632956,
+            0.01303862680476896
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003038626804768959,
+          "geom_distance_m": 0.0014644693901345457,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.5908318816854005e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5908318816854005e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.2500000000000009,
+          "fingertip_button_center_distance_m": 0.02634592161295637,
+          "fingertip_local_button_xyz_m": [
+            -0.013222863863839007,
+            -0.018688422840320018,
+            0.013038646732534302
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030386467325343013,
+          "geom_distance_m": 0.001464489189847833,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590832031104587e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590832031104587e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.260000000000001,
+          "fingertip_button_center_distance_m": 0.026345921227228137,
+          "fingertip_local_button_xyz_m": [
+            -0.013222852792249575,
+            -0.01868841633891416,
+            0.013038666499654562
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030386664996545614,
+          "geom_distance_m": 0.0014645088323417261,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590832160714675e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590832160714675e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.270000000000001,
+          "fingertip_button_center_distance_m": 0.026345920962204533,
+          "fingertip_local_button_xyz_m": [
+            -0.013222841841315619,
+            -0.01868841002607141,
+            0.013038686117999574
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003038686117999574,
+          "geom_distance_m": 0.0014645283292093235,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590832284067745e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590832284067745e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.280000000000001,
+          "fingertip_button_center_distance_m": 0.02634592081430726,
+          "fingertip_local_button_xyz_m": [
+            -0.013222831003261293,
+            -0.018688403893881267,
+            0.013038705599564092
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003038705599564092,
+          "geom_distance_m": 0.0014645476927224051,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590832419214962e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590832419214962e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.290000000000001,
+          "fingertip_button_center_distance_m": 0.026345920780153423,
+          "fingertip_local_button_xyz_m": [
+            -0.013222820270774222,
+            -0.018688397934888634,
+            0.013038724955614816
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003038724955614816,
+          "geom_distance_m": 0.0014645669333033188,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590832530581871e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590832530581871e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.300000000000001,
+          "fingertip_button_center_distance_m": 0.026345920855555153,
+          "fingertip_local_button_xyz_m": [
+            -0.013222809637671173,
+            -0.018688392141449517,
+            0.01303874419491748
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003038744194917479,
+          "geom_distance_m": 0.0014645860595509184,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590832637890563e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590832637890563e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.310000000000001,
+          "fingertip_button_center_distance_m": 0.02634592103742593,
+          "fingertip_local_button_xyz_m": [
+            -0.013222799097748327,
+            -0.01868838650701865,
+            0.013038763326909177
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030387633269091767,
+          "geom_distance_m": 0.0014646050813220729,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590832762306709e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590832762306709e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.320000000000001,
+          "fingertip_button_center_distance_m": 0.026345921323054602,
+          "fingertip_local_button_xyz_m": [
+            -0.013222788645012614,
+            -0.018688381025545042,
+            0.013038782360863184
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030387823608631834,
+          "geom_distance_m": 0.0014646240071441103,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590832863867271e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590832863867271e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.330000000000001,
+          "fingertip_button_center_distance_m": 0.026345921709503076,
+          "fingertip_local_button_xyz_m": [
+            -0.013222778274404224,
+            -0.018688375691268688,
+            0.013038801304230647
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030388013042306466,
+          "geom_distance_m": 0.0014646428445082074,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590832969509118e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590832969509118e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.340000000000001,
+          "fingertip_button_center_distance_m": 0.026345922193987095,
+          "fingertip_local_button_xyz_m": [
+            -0.013222767981435356,
+            -0.018688370498899487,
+            0.013038820163519904
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030388201635199036,
+          "geom_distance_m": 0.0014646615993449015,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590833056451448e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590833056451448e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.350000000000001,
+          "fingertip_button_center_distance_m": 0.026345922774031527,
+          "fingertip_local_button_xyz_m": [
+            -0.013222757761807214,
+            -0.018688365443562116,
+            0.01303883894507765
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.00303883894507765,
+          "geom_distance_m": 0.0014646802786109697,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.5908331671044085e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.5908331671044085e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.360000000000001,
+          "fingertip_button_center_distance_m": 0.026345923447185664,
+          "fingertip_local_button_xyz_m": [
+            -0.013222747610976701,
+            -0.018688360520269676,
+            0.013038857655707541
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003038857655707541,
+          "geom_distance_m": 0.0,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590833256025207e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590833256025207e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.370000000000001,
+          "fingertip_button_center_distance_m": 0.026345924211221113,
+          "fingertip_local_button_xyz_m": [
+            -0.013222737525189885,
+            -0.018688355724697847,
+            0.013038876300912416
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003038876300912416,
+          "geom_distance_m": 0.0014647174345297522,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590833354261971e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590833354261971e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.380000000000001,
+          "fingertip_button_center_distance_m": 0.026345925064096967,
+          "fingertip_local_button_xyz_m": [
+            -0.013222727501036941,
+            -0.018688351052903784,
+            0.013038894885678167
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030388948856781665,
+          "geom_distance_m": 0.0014647359212961095,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.59083343320224e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.59083343320224e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.390000000000001,
+          "fingertip_button_center_distance_m": 0.02634592600380298,
+          "fingertip_local_button_xyz_m": [
+            -0.01322271753566566,
+            -0.01868834650128226,
+            0.01303891341400322
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030389134140032196,
+          "geom_distance_m": 0.001464754352999642,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590833523119838e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590833523119838e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.400000000000001,
+          "fingertip_button_center_distance_m": 0.02634592702839105,
+          "fingertip_local_button_xyz_m": [
+            -0.013222707625832811,
+            -0.018688342066070618,
+            0.013038931890633697
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003038931890633697,
+          "geom_distance_m": 0.001464772734318684,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590833611996522e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590833611996522e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.410000000000001,
+          "fingertip_button_center_distance_m": 0.026345928136114086,
+          "fingertip_local_button_xyz_m": [
+            -0.013222697768771153,
+            -0.01868833774397799,
+            0.013038950319562915
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030389503195629147,
+          "geom_distance_m": 0.0014647910689335967,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590833691161198e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590833691161198e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.420000000000001,
+          "fingertip_button_center_distance_m": 0.02634592932545836,
+          "fingertip_local_button_xyz_m": [
+            -0.01322268796192705,
+            -0.01868833353206284,
+            0.013038968704538403
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003038968704538403,
+          "geom_distance_m": 0.001464809360843841,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590833780032202e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590833780032202e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.430000000000001,
+          "fingertip_button_center_distance_m": 0.02634593059478383,
+          "fingertip_local_button_xyz_m": [
+            -0.013222678202974973,
+            -0.018688329427385686,
+            0.013038987048818151
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003038987048818151,
+          "geom_distance_m": 0.001464827612702392,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590833849590401e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590833849590401e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.440000000000001,
+          "fingertip_button_center_distance_m": 0.026345931942348993,
+          "fingertip_local_button_xyz_m": [
+            -0.01322266849006409,
+            -0.018688325427165198,
+            0.013039005354747037
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030390053547470364,
+          "geom_distance_m": 0.0014648458271931406,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590833931012829e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590833931012829e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.450000000000001,
+          "fingertip_button_center_distance_m": 0.026345933366908467,
+          "fingertip_local_button_xyz_m": [
+            -0.013222658820991733,
+            -0.018688321528925245,
+            0.013039023625591749
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030390236255917486,
+          "geom_distance_m": 0.0014648640075261826,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590834011664194e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590834011664194e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.460000000000001,
+          "fingertip_button_center_distance_m": 0.026345934867127774,
+          "fingertip_local_button_xyz_m": [
+            -0.013222649193915562,
+            -0.018688317730300552,
+            0.013039041863914585
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003039041863914585,
+          "geom_distance_m": 0.0014648821559753269,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590834083068956e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590834083068956e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.470000000000001,
+          "fingertip_button_center_distance_m": 0.02634593644182805,
+          "fingertip_local_button_xyz_m": [
+            -0.013222639607274645,
+            -0.018688314029238595,
+            0.01303906007185867
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030390600718586697,
+          "geom_distance_m": 0.0014649002748393842,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590834160384207e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590834160384207e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.480000000000001,
+          "fingertip_button_center_distance_m": 0.0263459380896407,
+          "fingertip_local_button_xyz_m": [
+            -0.01322263005939202,
+            -0.018688310423430277,
+            0.013039078251669115
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003039078251669115,
+          "geom_distance_m": 0.0014649183661776134,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.59083423271504e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.59083423271504e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.490000000000001,
+          "fingertip_button_center_distance_m": 0.026345939808863558,
+          "fingertip_local_button_xyz_m": [
+            -0.013222620549151496,
+            -0.018688306910539854,
+            0.013039096404386559
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.0030390964043865588,
+          "geom_distance_m": 0.0014649364306924381,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590834293246205e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590834293246205e-06,
+            "fault": 0.0
+          }
+        },
+        {
+          "time_s": 1.500000000000001,
+          "fingertip_button_center_distance_m": 0.026345941598740433,
+          "fingertip_local_button_xyz_m": [
+            -0.013222611075206857,
+            -0.018688303489059643,
+            0.013039114532009444
+          ],
+          "fingertip_site_to_box_signed_distance_m": 0.003039114532009444,
+          "geom_distance_m": 0.001464954471252668,
+          "contact_loaded": false,
+          "slider_position_m": 0.0,
+          "reward": -4.590834383523955e-06,
+          "reward_components": {
+            "press": 0.0,
+            "release": 0.0,
+            "effort": -4.590834383523955e-06,
+            "fault": 0.0
+          }
+        }
+      ],
+      "events": [],
+      "success": false,
+      "total_return": -0.0006895575791807243,
+      "steps": 150,
+      "terminated": false,
+      "truncated": true
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "purpose": "Candidate trajectory precheck; not dynamic control or button press validation.",
+  "steps_per_trajectory": 101,
+  "joint_order": [
+    "elv_angle",
+    "shoulder_elv",
+    "shoulder_rot",
+    "elbow_flexion"
+  ],
+  "results": {
+    "0": {
+      "target_joint_values_rad": [
+        -0.03463437950646764,
+        0.7964403162799989,
+        0.21124887305309414,
+        1.7798651390088502
+      ],
+      "initial_joint_values_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "min_distance_m": -0.014019984226571133,
+      "first_nonpositive_distance_step": 97,
+      "nonpositive_distance_samples": 4,
+      "finite_state_all_steps": true,
+      "trajectory_type": "direct qpos interpolation; kinematic reachability check only"
+    },
+    "1": {
+      "target_joint_values_rad": [
+        0.2574501539689589,
+        0.6393045326858757,
+        0.11562621271044038,
+        1.7531248111844695
+      ],
+      "initial_joint_values_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "min_distance_m": -0.01367642116172027,
+      "first_nonpositive_distance_step": 98,
+      "nonpositive_distance_samples": 3,
+      "finite_state_all_steps": true,
+      "trajectory_type": "direct qpos interpolation; kinematic reachability check only"
+    },
+    "2": {
+      "target_joint_values_rad": [
+        0.46232994695878715,
+        0.9659105226395469,
+        -0.2706886852709982,
+        1.4725474462173502
+      ],
+      "initial_joint_values_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "min_distance_m": -0.015267625880844318,
+      "first_nonpositive_distance_step": 98,
+      "nonpositive_distance_samples": 3,
+      "finite_state_all_steps": true,
+      "trajectory_type": "direct qpos interpolation; kinematic reachability check only"
+    },
+    "3": {
+      "target_joint_values_rad": [
+        1.232688090595478,
+        0.5274009255932814,
+        -0.9559592849504241,
+        1.486069356129656
+      ],
+      "initial_joint_values_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "min_distance_m": -0.013329071189488109,
+      "first_nonpositive_distance_step": 97,
+      "nonpositive_distance_samples": 3,
+      "finite_state_all_steps": true,
+      "trajectory_type": "direct qpos interpolation; kinematic reachability check only"
+    }
+  },
+  "limitations": "Formal model has no slider actuator in this check; contact distance is geometric and qpos is directly assigned."
+}

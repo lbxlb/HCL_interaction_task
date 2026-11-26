@@ -1,0 +1,1405 @@
+{
+  "method": "static FK grid; non-controlled qpos held at reset values; no mj_step",
+  "model_changes": "temporary XML only: same five internal body exclusions and candidate equalities",
+  "target_button": 0,
+  "grid": {
+    "shoulder_rot_range_deg": [
+      -14.668436573709863,
+      -13.468436573709846
+    ],
+    "elbow_flexion_range_deg": [
+      102.89026383740313,
+      104.69026383740302
+    ],
+    "resolution_deg": 0.05,
+    "shape": [
+      25,
+      37
+    ],
+    "points": 925
+  },
+  "geometry": {
+    "button_half_size_m": [
+      0.025,
+      0.025,
+      0.01
+    ],
+    "combined_geom_margin_mm": 1.0,
+    "site_tangent_reference_local_mm": [
+      -14.60512452181327,
+      -18.43468737850951
+    ]
+  },
+  "source_poses": {
+    "dynamic_actual": {
+      "shoulder_rot_deg": -14.068436573709864,
+      "elbow_flexion_deg": 103.79026383740313
+    },
+    "press_target": {
+      "shoulder_rot_deg": -13.963659824308545,
+      "elbow_flexion_deg": 103.30852096906807
+    }
+  },
+  "candidate_count": 77,
+  "fingertip_site_outside_candidates_count": 77,
+  "fingertip_site_on_or_behind_face_candidates_count": 0,
+  "candidate_definition": "matching finger-button contact exists; contact.dist >= 0; contact.dist <= combined geom margins",
+  "closest_surface_candidate": {
+    "shoulder_rot_deg": -13.71843657370985,
+    "elbow_flexion_deg": 103.69026383740308,
+    "geom_distance_mm": 0.0019873068334608406,
+    "contact_pair_distance_mm": 0.0020056685776067076,
+    "fingertip_site_front_offset_mm": 1.573232256237728,
+    "fingertip_site_tangent_error_from_reference_mm": 2.416779902507055,
+    "fingertip_button_local_m": [
+      -0.013302013720682892,
+      -0.016399318287376563,
+      0.011573232256237728
+    ],
+    "matching_contact_count": 1,
+    "distance_disagreement": false
+  },
+  "selected_candidate_by_tangential_alignment_within_0_2_to_0_4mm_clearance": {
+    "shoulder_rot_deg": -14.018436573709854,
+    "elbow_flexion_deg": 103.69026383740308,
+    "geom_distance_mm": 0.2927553398001615,
+    "contact_pair_distance_mm": 0.2927798326014874,
+    "fingertip_site_front_offset_mm": 1.862246899032107,
+    "fingertip_site_tangent_error_from_reference_mm": 0.8974939580526731,
+    "fingertip_button_local_m": [
+      -0.013707852788184998,
+      -0.018454658376801214,
+      0.011862246899032107
+    ],
+    "matching_contact_count": 1,
+    "distance_disagreement": false
+  },
+  "selected_clearance_band_mm": [
+    0.2,
+    0.4
+  ],
+  "clearance_band_is_only_a_diagnostic_ranking_cutoff": true,
+  "top_candidates": [
+    {
+      "shoulder_rot_deg": -13.71843657370985,
+      "elbow_flexion_deg": 103.69026383740308,
+      "geom_distance_mm": 0.0019873068334608406,
+      "contact_pair_distance_mm": 0.0020056685776067076,
+      "fingertip_site_front_offset_mm": 1.573232256237728,
+      "fingertip_site_tangent_error_from_reference_mm": 2.416779902507055,
+      "fingertip_button_local_m": [
+        -0.013302013720682892,
+        -0.016399318287376563,
+        0.011573232256237728
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.068436573709855,
+      "elbow_flexion_deg": 103.64026383740308,
+      "geom_distance_mm": 0.01714121908405547,
+      "contact_pair_distance_mm": 0.01716588960766377,
+      "fingertip_site_front_offset_mm": 1.584883058573317,
+      "fingertip_site_tangent_error_from_reference_mm": 0.7742639147938984,
+      "fingertip_button_local_m": [
+        -0.01394145539150034,
+        -0.018833470396229235,
+        0.011584883058573317
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.41843657370986,
+      "elbow_flexion_deg": 103.59026383740309,
+      "geom_distance_mm": 0.043396534051397206,
+      "contact_pair_distance_mm": 0.043433559805465274,
+      "fingertip_site_front_offset_mm": 1.6076390480652836,
+      "fingertip_site_tangent_error_from_reference_mm": 2.8307937529184426,
+      "fingertip_button_local_m": [
+        -0.014591818254709366,
+        -0.021265449857916396,
+        0.011607639048065284
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -13.76843657370985,
+      "elbow_flexion_deg": 103.69026383740308,
+      "geom_distance_mm": 0.04990951834978688,
+      "contact_pair_distance_mm": 0.04992806572826536,
+      "fingertip_site_front_offset_mm": 1.620862126865746,
+      "fingertip_site_tangent_error_from_reference_mm": 2.09587267068013,
+      "fingertip_button_local_m": [
+        -0.013369134948269813,
+        -0.016742052738135005,
+        0.011620862126865746
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.118436573709856,
+      "elbow_flexion_deg": 103.64026383740308,
+      "geom_distance_mm": 0.06660121989623595,
+      "contact_pair_distance_mm": 0.06662610131395655,
+      "fingertip_site_front_offset_mm": 1.634051225170418,
+      "fingertip_site_tangent_error_from_reference_mm": 0.9504503237872886,
+      "fingertip_button_local_m": [
+        -0.014010062541415852,
+        -0.019175806166203402,
+        0.011634051225170418
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -13.468436573709846,
+      "elbow_flexion_deg": 103.74026383740308,
+      "geom_distance_mm": 0.09092124900054704,
+      "contact_pair_distance_mm": 0.09114434465273748,
+      "fingertip_site_front_offset_mm": 1.6650872495196176,
+      "fingertip_site_tangent_error_from_reference_mm": 4.191653040628516,
+      "fingertip_button_local_m": [
+        -0.01280497789940895,
+        -0.014649264370329762,
+        0.011665087249519618
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.46843657370986,
+      "elbow_flexion_deg": 103.59026383740309,
+      "geom_distance_mm": 0.09439334554441578,
+      "contact_pair_distance_mm": 0.09443013034725442,
+      "fingertip_site_front_offset_mm": 1.658344558466713,
+      "fingertip_site_tangent_error_from_reference_mm": 3.173194121216021,
+      "fingertip_button_local_m": [
+        -0.014661909585115915,
+        -0.02160737336793639,
+        0.011658344558466713
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -13.818436573709851,
+      "elbow_flexion_deg": 103.69026383740308,
+      "geom_distance_mm": 0.09804742983375224,
+      "contact_pair_distance_mm": 0.0980660106941172,
+      "fingertip_site_front_offset_mm": 1.6687077408417996,
+      "fingertip_site_tangent_error_from_reference_mm": 1.785550251688534,
+      "fingertip_button_local_m": [
+        -0.013436463691178303,
+        -0.017084716429101865,
+        0.0116687077408418
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.168436573709856,
+      "elbow_flexion_deg": 103.64026383740308,
+      "geom_distance_mm": 0.11627672431591791,
+      "contact_pair_distance_mm": 0.11630129662083116,
+      "fingertip_site_front_offset_mm": 1.683434941418007,
+      "fingertip_site_tangent_error_from_reference_mm": 1.2044305571316565,
+      "fingertip_button_local_m": [
+        -0.014078876905700078,
+        -0.019518069311849573,
+        0.011683434941418007
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -13.518436573709847,
+      "elbow_flexion_deg": 103.74026383740308,
+      "geom_distance_mm": 0.13773649569642785,
+      "contact_pair_distance_mm": 0.1379549340421915,
+      "fingertip_site_front_offset_mm": 1.7116097567894377,
+      "fingertip_site_tangent_error_from_reference_mm": 3.8545424461075752,
+      "fingertip_button_local_m": [
+        -0.012871027090046226,
+        -0.014992245866154663,
+        0.011711609756789438
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    }
+  ],
+  "actual_grid_sample": {
+    "geom_distance_mm": 0.9920478248801291,
+    "contact_pair_distance_mm": 0.9920674184985142,
+    "site_front_offset_mm": 2.56415889632405,
+    "site_tangent_error_mm": 1.1940533982279276
+  },
+  "target_grid_sample": {
+    "geom_distance_mm": -2.351428635743463,
+    "contact_pair_distance_mm": -2.351399412767823,
+    "site_front_offset_mm": -0.7933436335921372,
+    "site_tangent_error_mm": 0.36541358413519626
+  },
+  "mj_geomDistance_contact_disagreement_count": 2,
+  "candidates": [
+    {
+      "shoulder_rot_deg": -13.71843657370985,
+      "elbow_flexion_deg": 103.69026383740308,
+      "geom_distance_mm": 0.0019873068334608406,
+      "contact_pair_distance_mm": 0.0020056685776067076,
+      "fingertip_site_front_offset_mm": 1.573232256237728,
+      "fingertip_site_tangent_error_from_reference_mm": 2.416779902507055,
+      "fingertip_button_local_m": [
+        -0.013302013720682892,
+        -0.016399318287376563,
+        0.011573232256237728
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.068436573709855,
+      "elbow_flexion_deg": 103.64026383740308,
+      "geom_distance_mm": 0.01714121908405547,
+      "contact_pair_distance_mm": 0.01716588960766377,
+      "fingertip_site_front_offset_mm": 1.584883058573317,
+      "fingertip_site_tangent_error_from_reference_mm": 0.7742639147938984,
+      "fingertip_button_local_m": [
+        -0.01394145539150034,
+        -0.018833470396229235,
+        0.011584883058573317
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.41843657370986,
+      "elbow_flexion_deg": 103.59026383740309,
+      "geom_distance_mm": 0.043396534051397206,
+      "contact_pair_distance_mm": 0.043433559805465274,
+      "fingertip_site_front_offset_mm": 1.6076390480652836,
+      "fingertip_site_tangent_error_from_reference_mm": 2.8307937529184426,
+      "fingertip_button_local_m": [
+        -0.014591818254709366,
+        -0.021265449857916396,
+        0.011607639048065284
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -13.76843657370985,
+      "elbow_flexion_deg": 103.69026383740308,
+      "geom_distance_mm": 0.04990951834978688,
+      "contact_pair_distance_mm": 0.04992806572826536,
+      "fingertip_site_front_offset_mm": 1.620862126865746,
+      "fingertip_site_tangent_error_from_reference_mm": 2.09587267068013,
+      "fingertip_button_local_m": [
+        -0.013369134948269813,
+        -0.016742052738135005,
+        0.011620862126865746
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.118436573709856,
+      "elbow_flexion_deg": 103.64026383740308,
+      "geom_distance_mm": 0.06660121989623595,
+      "contact_pair_distance_mm": 0.06662610131395655,
+      "fingertip_site_front_offset_mm": 1.634051225170418,
+      "fingertip_site_tangent_error_from_reference_mm": 0.9504503237872886,
+      "fingertip_button_local_m": [
+        -0.014010062541415852,
+        -0.019175806166203402,
+        0.011634051225170418
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -13.468436573709846,
+      "elbow_flexion_deg": 103.74026383740308,
+      "geom_distance_mm": 0.09092124900054704,
+      "contact_pair_distance_mm": 0.09114434465273748,
+      "fingertip_site_front_offset_mm": 1.6650872495196176,
+      "fingertip_site_tangent_error_from_reference_mm": 4.191653040628516,
+      "fingertip_button_local_m": [
+        -0.01280497789940895,
+        -0.014649264370329762,
+        0.011665087249519618
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.46843657370986,
+      "elbow_flexion_deg": 103.59026383740309,
+      "geom_distance_mm": 0.09439334554441578,
+      "contact_pair_distance_mm": 0.09443013034725442,
+      "fingertip_site_front_offset_mm": 1.658344558466713,
+      "fingertip_site_tangent_error_from_reference_mm": 3.173194121216021,
+      "fingertip_button_local_m": [
+        -0.014661909585115915,
+        -0.02160737336793639,
+        0.011658344558466713
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -13.818436573709851,
+      "elbow_flexion_deg": 103.69026383740308,
+      "geom_distance_mm": 0.09804742983375224,
+      "contact_pair_distance_mm": 0.0980660106941172,
+      "fingertip_site_front_offset_mm": 1.6687077408417996,
+      "fingertip_site_tangent_error_from_reference_mm": 1.785550251688534,
+      "fingertip_button_local_m": [
+        -0.013436463691178303,
+        -0.017084716429101865,
+        0.0116687077408418
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.168436573709856,
+      "elbow_flexion_deg": 103.64026383740308,
+      "geom_distance_mm": 0.11627672431591791,
+      "contact_pair_distance_mm": 0.11630129662083116,
+      "fingertip_site_front_offset_mm": 1.683434941418007,
+      "fingertip_site_tangent_error_from_reference_mm": 1.2044305571316565,
+      "fingertip_button_local_m": [
+        -0.014078876905700078,
+        -0.019518069311849573,
+        0.011683434941418007
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -13.518436573709847,
+      "elbow_flexion_deg": 103.74026383740308,
+      "geom_distance_mm": 0.13773649569642785,
+      "contact_pair_distance_mm": 0.1379549340421915,
+      "fingertip_site_front_offset_mm": 1.7116097567894377,
+      "fingertip_site_tangent_error_from_reference_mm": 3.8545424461075752,
+      "fingertip_button_local_m": [
+        -0.012871027090046226,
+        -0.014992245866154663,
+        0.011711609756789438
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.518436573709861,
+      "elbow_flexion_deg": 103.59026383740309,
+      "geom_distance_mm": 0.1456054557740943,
+      "contact_pair_distance_mm": 0.14564200041329317,
+      "fingertip_site_front_offset_mm": 1.7092654163066174,
+      "fingertip_site_tangent_error_from_reference_mm": 3.5168318863915315,
+      "fingertip_button_local_m": [
+        -0.014732207820681128,
+        -0.02194922239075353,
+        0.011709265416306618
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -13.868436573709852,
+      "elbow_flexion_deg": 103.69026383740308,
+      "geom_distance_mm": 0.1464010046262378,
+      "contact_pair_distance_mm": 0.14641977225168465,
+      "fingertip_site_front_offset_mm": 1.7167690617292606,
+      "fingertip_site_tangent_error_from_reference_mm": 1.4924096067251515,
+      "fingertip_button_local_m": [
+        -0.013503999898134882,
+        -0.01742730909932405,
+        0.01171676906172926
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.218436573709857,
+      "elbow_flexion_deg": 103.64026383740308,
+      "geom_distance_mm": 0.16616769451273747,
+      "contact_pair_distance_mm": 0.16620577029670813,
+      "fingertip_site_front_offset_mm": 1.7330341697080076,
+      "fingertip_site_tangent_error_from_reference_mm": 1.4971011247034154,
+      "fingertip_button_local_m": [
+        -0.014147898431947584,
+        -0.019860259572519467,
+        0.011733034169708008
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -13.568436573709848,
+      "elbow_flexion_deg": 103.74026383740308,
+      "geom_distance_mm": 0.0,
+      "contact_pair_distance_mm": 0.18493717869694237,
+      "fingertip_site_front_offset_mm": 1.7583481218947146,
+      "fingertip_site_tangent_error_from_reference_mm": 3.519769132941704,
+      "fingertip_button_local_m": [
+        -0.012937283988253577,
+        -0.015335157945865818,
+        0.011758348121894715
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": true
+    },
+    {
+      "shoulder_rot_deg": -13.918436573709853,
+      "elbow_flexion_deg": 103.69026383740308,
+      "geom_distance_mm": 0.19497020590375133,
+      "contact_pair_distance_mm": 0.19498916147571854,
+      "fingertip_site_front_offset_mm": 1.765046052927599,
+      "fingertip_site_tangent_error_from_reference_mm": 1.2287843523720654,
+      "fingertip_button_local_m": [
+        -0.013571743517707572,
+        -0.01776983048790226,
+        0.0117650460529276
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.568436573709862,
+      "elbow_flexion_deg": 103.59026383740309,
+      "geom_distance_mm": 0.1970328257405995,
+      "contact_pair_distance_mm": 0.19706913098130005,
+      "fingertip_site_front_offset_mm": 1.7604015828072157,
+      "fingertip_site_tangent_error_from_reference_mm": 3.8613679559653584,
+      "fingertip_button_local_m": [
+        -0.014802712907869957,
+        -0.022290996666034513,
+        0.011760401582807216
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.268436573709858,
+      "elbow_flexion_deg": 103.64026383740308,
+      "geom_distance_mm": 0.21627409249305896,
+      "contact_pair_distance_mm": 0.21631192200052526,
+      "fingertip_site_front_offset_mm": 1.78284887226904,
+      "fingertip_site_tangent_error_from_reference_mm": 1.8097700179922838,
+      "fingertip_button_local_m": [
+        -0.014217127067595654,
+        -0.02020237668762026,
+        0.01178284887226904
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -13.618436573709849,
+      "elbow_flexion_deg": 103.74026383740308,
+      "geom_distance_mm": 0.2320144032982295,
+      "contact_pair_distance_mm": 0.2321791099840171,
+      "fingertip_site_front_offset_mm": 1.8053023092418388,
+      "fingertip_site_tangent_error_from_reference_mm": 3.1880602889672027,
+      "fingertip_button_local_m": [
+        -0.01300374854357422,
+        -0.015678000348321175,
+        0.011805302309241839
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -13.968436573709853,
+      "elbow_flexion_deg": 103.69026383740308,
+      "geom_distance_mm": 0.24375499667913572,
+      "contact_pair_distance_mm": 0.24377414127636202,
+      "fingertip_site_front_offset_mm": 1.813538677671679,
+      "fingertip_site_tangent_error_from_reference_mm": 1.0178415557652671,
+      "fingertip_button_local_m": [
+        -0.01363969449830678,
+        -0.01811228033399137,
+        0.01181353867767168
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.618436573709863,
+      "elbow_flexion_deg": 103.59026383740309,
+      "geom_distance_mm": 0.24867541627948617,
+      "contact_pair_distance_mm": 0.2487114828670896,
+      "fingertip_site_front_offset_mm": 1.8117530190258098,
+      "fingertip_site_tangent_error_from_reference_mm": 4.206573530002335,
+      "fingertip_button_local_m": [
+        -0.014873424792989575,
+        -0.022632695933503533,
+        0.01181175301902581
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.318436573709858,
+      "elbow_flexion_deg": 103.64026383740308,
+      "geom_distance_mm": 0.26659588009801477,
+      "contact_pair_distance_mm": 0.26663346430454843,
+      "fingertip_site_front_offset_mm": 1.8328790111643671,
+      "fingertip_site_tangent_error_from_reference_mm": 2.1336482849389045,
+      "fingertip_button_local_m": [
+        -0.014286562759923828,
+        -0.020544420396615026,
+        0.011832879011164367
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -13.66843657370985,
+      "elbow_flexion_deg": 103.74026383740308,
+      "geom_distance_mm": 0.2794769924074151,
+      "contact_pair_distance_mm": 0.2796369957965975,
+      "fingertip_site_front_offset_mm": 1.8524722830734925,
+      "fingertip_site_tangent_error_from_reference_mm": 2.860471873041834,
+      "fingertip_button_local_m": [
+        -0.013070420705392136,
+        -0.016020772812431028,
+        0.011852472283073493
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.018436573709854,
+      "elbow_flexion_deg": 103.69026383740308,
+      "geom_distance_mm": 0.2927553398001615,
+      "contact_pair_distance_mm": 0.2927798326014874,
+      "fingertip_site_front_offset_mm": 1.862246899032107,
+      "fingertip_site_tangent_error_from_reference_mm": 0.8974939580526731,
+      "fingertip_button_local_m": [
+        -0.013707852788184998,
+        -0.018454658376801214,
+        0.011862246899032107
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.668436573709863,
+      "elbow_flexion_deg": 103.59026383740309,
+      "geom_distance_mm": 0.3005331880626131,
+      "contact_pair_distance_mm": 0.3005690167247552,
+      "fingertip_site_front_offset_mm": 1.8633196858557128,
+      "fingertip_site_tangent_error_from_reference_mm": 4.552288786053946,
+      "fingertip_button_local_m": [
+        -0.014944343422189676,
+        -0.022974319932941634,
+        0.011863319685855713
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.36843657370986,
+      "elbow_flexion_deg": 103.64026383740308,
+      "geom_distance_mm": 0.3171330190060503,
+      "contact_pair_distance_mm": 0.3171703588403524,
+      "fingertip_site_front_offset_mm": 1.8831245482944168,
+      "fingertip_site_tangent_error_from_reference_mm": 2.46430692046006,
+      "fingertip_button_local_m": [
+        -0.014356205456053425,
+        -0.020886390439022462,
+        0.011883124548294417
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -13.71843657370985,
+      "elbow_flexion_deg": 103.74026383740308,
+      "geom_distance_mm": 0.3271552902504902,
+      "contact_pair_distance_mm": 0.32717366137933546,
+      "fingertip_site_front_offset_mm": 1.8998580074675153,
+      "fingertip_site_tangent_error_from_reference_mm": 2.5385877929503144,
+      "fingertip_button_local_m": [
+        -0.013137300422933446,
+        -0.016363475077159406,
+        0.011899858007467515
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.068436573709855,
+      "elbow_flexion_deg": 103.69026383740308,
+      "geom_distance_mm": 0.3419711979512409,
+      "contact_pair_distance_mm": 0.3419959030278221,
+      "fingertip_site_front_offset_mm": 1.9111706799155945,
+      "fingertip_site_tangent_error_from_reference_mm": 0.9046159814754634,
+      "fingertip_button_local_m": [
+        -0.013776218335436385,
+        -0.018796964355596024,
+        0.011911170679915595
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.41843657370986,
+      "elbow_flexion_deg": 103.64026383740308,
+      "geom_distance_mm": 0.36788547073034555,
+      "contact_pair_distance_mm": 0.36792256708193644,
+      "fingertip_site_front_offset_mm": 1.9335854453946515,
+      "fingertip_site_tangent_error_from_reference_mm": 2.799332458356239,
+      "fingertip_button_local_m": [
+        -0.014426055102949038,
+        -0.021228286554417608,
+        0.011933585445394652
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -13.76843657370985,
+      "elbow_flexion_deg": 103.74026383740308,
+      "geom_distance_mm": 0.3750492605181581,
+      "contact_pair_distance_mm": 0.3750678179005437,
+      "fingertip_site_front_offset_mm": 1.9474594463376511,
+      "fingertip_site_tangent_error_from_reference_mm": 2.22487175627672,
+      "fingertip_button_local_m": [
+        -0.013204387645266671,
+        -0.01670610688152352,
+        0.011947459446337651
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.118436573709856,
+      "elbow_flexion_deg": 103.69026383740308,
+      "geom_distance_mm": 0.3914025336523836,
+      "contact_pair_distance_mm": 0.39142745092957176,
+      "fingertip_site_front_offset_mm": 1.9603099830646735,
+      "fingertip_site_tangent_error_from_reference_mm": 1.0365530184367644,
+      "fingertip_button_local_m": [
+        -0.013844791087997903,
+        -0.019139198009694658,
+        0.011960309983064674
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -13.468436573709846,
+      "elbow_flexion_deg": 103.79026383740307,
+      "geom_distance_mm": 0.41636847500985763,
+      "contact_pair_distance_mm": 0.4165913054736534,
+      "fingertip_site_front_offset_mm": 1.9919919456817587,
+      "fingertip_site_tangent_error_from_reference_mm": 4.296211653280543,
+      "fingertip_button_local_m": [
+        -0.01264071870847006,
+        -0.01461388322620244,
+        0.011991991945681759
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.46843657370986,
+      "elbow_flexion_deg": 103.64026383740308,
+      "geom_distance_mm": 0.41885319662115644,
+      "contact_pair_distance_mm": 0.4188900503455905,
+      "fingertip_site_front_offset_mm": 1.9842616640371509,
+      "fingertip_site_tangent_error_from_reference_mm": 3.137315620989461,
+      "fingertip_button_local_m": [
+        -0.014496111647416333,
+        -0.021570108482431627,
+        0.011984261664037151
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -13.818436573709851,
+      "elbow_flexion_deg": 103.74026383740308,
+      "geom_distance_mm": 0.423158866737258,
+      "contact_pair_distance_mm": 0.42317745853019956,
+      "fingertip_site_front_offset_mm": 1.995276563433313,
+      "fingertip_site_tangent_error_from_reference_mm": 1.923309106164351,
+      "fingertip_button_local_m": [
+        -0.013271682321301737,
+        -0.017048667964594366,
+        0.011995276563433313
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.168436573709856,
+      "elbow_flexion_deg": 103.69026383740308,
+      "geom_distance_mm": 0.44104930925929936,
+      "contact_pair_distance_mm": 0.44108786068097533,
+      "fingertip_site_front_offset_mm": 2.009664771057433,
+      "fingertip_site_tangent_error_from_reference_mm": 1.254499075256057,
+      "fingertip_button_local_m": [
+        -0.013913570993648258,
+        -0.01948135907847126,
+        0.012009664771057433
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -13.518436573709847,
+      "elbow_flexion_deg": 103.79026383740307,
+      "geom_distance_mm": 0.46315577903973293,
+      "contact_pair_distance_mm": 0.4633738961444787,
+      "fingertip_site_front_offset_mm": 2.0384863253969185,
+      "fingertip_site_tangent_error_from_reference_mm": 3.9623040638884377,
+      "fingertip_button_local_m": [
+        -0.012706734165566414,
+        -0.014956761624555615,
+        0.012038486325396919
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.518436573709861,
+      "elbow_flexion_deg": 103.64026383740308,
+      "geom_distance_mm": 0.4700361578641369,
+      "contact_pair_distance_mm": 0.47007276978808155,
+      "fingertip_site_front_offset_mm": 2.0351531656296604,
+      "fingertip_site_tangent_error_from_reference_mm": 3.4773844892228554,
+      "fingertip_button_local_m": [
+        -0.01456637503610488,
+        -0.021911855962752302,
+        0.01203515316562966
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -13.868436573709852,
+      "elbow_flexion_deg": 103.74026383740308,
+      "geom_distance_mm": 0.4714840722701429,
+      "contact_pair_distance_mm": 0.4715028515495463,
+      "fingertip_site_front_offset_mm": 2.0433093223395753,
+      "fingertip_site_tangent_error_from_reference_mm": 1.6405967876544842,
+      "fingertip_button_local_m": [
+        -0.013339184399791043,
+        -0.017391158065496903,
+        0.012043309322339575
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.218436573709857,
+      "elbow_flexion_deg": 103.69026383740308,
+      "geom_distance_mm": 0.4909114869635729,
+      "contact_pair_distance_mm": 0.49094979038621595,
+      "fingertip_site_front_offset_mm": 2.059235006307862,
+      "fingertip_site_tangent_error_from_reference_mm": 1.5219208906428585,
+      "fingertip_button_local_m": [
+        -0.013982558000008718,
+        -0.019823447301355546,
+        0.012059235006307862
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -13.568436573709848,
+      "elbow_flexion_deg": 103.79026383740307,
+      "geom_distance_mm": 0.5101588354588754,
+      "contact_pair_distance_mm": 0.5103290798133888,
+      "fingertip_site_front_offset_mm": 2.0851964975541915,
+      "fingertip_site_tangent_error_from_reference_mm": 3.6312248316328666,
+      "fingertip_button_local_m": [
+        -0.012772957268326475,
+        -0.015299570644938365,
+        0.012085196497554192
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -13.918436573709853,
+      "elbow_flexion_deg": 103.74026383740308,
+      "geom_distance_mm": 0.5200248403149897,
+      "contact_pair_distance_mm": 0.5200438083465808,
+      "fingertip_site_front_offset_mm": 2.0915576864773864,
+      "fingertip_site_tangent_error_from_reference_mm": 1.388276868157804,
+      "fingertip_button_local_m": [
+        -0.013406893829328742,
+        -0.01773357692340982,
+        0.012091557686477386
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.568436573709862,
+      "elbow_flexion_deg": 103.64026383740308,
+      "geom_distance_mm": 0.5214343154810446,
+      "contact_pair_distance_mm": 0.5214706864052615,
+      "fingertip_site_front_offset_mm": 2.0862599114159184,
+      "fingertip_site_tangent_error_from_reference_mm": 3.81897309618665,
+      "fingertip_button_local_m": [
+        -0.01463684521550595,
+        -0.022253528735123984,
+        0.012086259911415919
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.268436573709858,
+      "elbow_flexion_deg": 103.69026383740308,
+      "geom_distance_mm": 0.5409890287939019,
+      "contact_pair_distance_mm": 0.5410269313518288,
+      "fingertip_site_front_offset_mm": 2.109020651066832,
+      "fingertip_site_tangent_error_from_reference_mm": 1.8170864933394426,
+      "fingertip_button_local_m": [
+        -0.014051752054542215,
+        -0.020165462417832347,
+        0.012109020651066832
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -13.618436573709849,
+      "elbow_flexion_deg": 103.79026383740307,
+      "geom_distance_mm": 0.5573776084721026,
+      "contact_pair_distance_mm": 0.5575435058097135,
+      "fingertip_site_front_offset_mm": 2.1321224265816,
+      "fingertip_site_tangent_error_from_reference_mm": 3.3038155003897693,
+      "fingertip_button_local_m": [
+        -0.012839387966318647,
+        -0.01564231002628691,
+        0.0121321224265816
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -13.968436573709853,
+      "elbow_flexion_deg": 103.74026383740308,
+      "geom_distance_mm": 0.5687811339060743,
+      "contact_pair_distance_mm": 0.5688002918539659,
+      "fingertip_site_front_offset_mm": 2.1400216191037447,
+      "fingertip_site_tangent_error_from_reference_mm": 1.1858838976041006,
+      "fingertip_button_local_m": [
+        -0.013474810558350763,
+        -0.018075924277566324,
+        0.012140021619103745
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.618436573709863,
+      "elbow_flexion_deg": 103.64026383740308,
+      "geom_distance_mm": 0.0,
+      "contact_pair_distance_mm": 0.5730837610332234,
+      "fingertip_site_front_offset_mm": 2.1375818624762983,
+      "fingertip_site_tangent_error_from_reference_mm": 4.161699085902424,
+      "fingertip_button_local_m": [
+        -0.014707522131953024,
+        -0.02259512653934803,
+        0.012137581862476298
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": true
+    },
+    {
+      "shoulder_rot_deg": -14.318436573709858,
+      "elbow_flexion_deg": 103.69026383740308,
+      "geom_distance_mm": 0.5912818966133632,
+      "contact_pair_distance_mm": 0.5913195523307134,
+      "fingertip_site_front_offset_mm": 2.1590216674197955,
+      "fingertip_site_tangent_error_from_reference_mm": 2.1284696896706317,
+      "fingertip_button_local_m": [
+        -0.014121153104554961,
+        -0.020507404167442234,
+        0.012159021667419796
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -13.66843657370985,
+      "elbow_flexion_deg": 103.79026383740307,
+      "geom_distance_mm": 0.6048120621202533,
+      "contact_pair_distance_mm": 0.6049737682910155,
+      "fingertip_site_front_offset_mm": 2.179264076742942,
+      "fingertip_site_tangent_error_from_reference_mm": 2.9812755205798043,
+      "fingertip_button_local_m": [
+        -0.01290602620895315,
+        -0.015984979507590147,
+        0.012179264076742942
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.018436573709854,
+      "elbow_flexion_deg": 103.74026383740308,
+      "geom_distance_mm": 0.6177529159134214,
+      "contact_pair_distance_mm": 0.6177773924706329,
+      "fingertip_site_front_offset_mm": 2.1887010833112446,
+      "fingertip_site_tangent_error_from_reference_mm": 1.0623179400841805,
+      "fingertip_button_local_m": [
+        -0.013542934535136074,
+        -0.018418199867254237,
+        0.012188701083311245
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.668436573709863,
+      "elbow_flexion_deg": 103.64026383740308,
+      "geom_distance_mm": 0.6248760631062535,
+      "contact_pair_distance_mm": 0.6249119543459962,
+      "fingertip_site_front_offset_mm": 2.1891189797267807,
+      "fingertip_site_tangent_error_from_reference_mm": 4.505295312967346,
+      "fingertip_button_local_m": [
+        -0.014778405731622934,
+        -0.02293664911528298,
+        0.012189118979726781
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.36843657370986,
+      "elbow_flexion_deg": 103.69026383740308,
+      "geom_distance_mm": 0.6417900521214099,
+      "contact_pair_distance_mm": 0.641827461938246,
+      "fingertip_site_front_offset_mm": 2.2092380172885706,
+      "fingertip_site_tangent_error_from_reference_mm": 2.449881087196894,
+      "fingertip_button_local_m": [
+        -0.014190761097195102,
+        -0.020849272289781784,
+        0.01220923801728857
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -13.71843657370985,
+      "elbow_flexion_deg": 103.79026383740307,
+      "geom_distance_mm": 0.6524621602800702,
+      "contact_pair_distance_mm": 0.6526201439609389,
+      "fingertip_site_front_offset_mm": 2.226621412138084,
+      "fingertip_site_tangent_error_from_reference_mm": 2.665362061152792,
+      "fingertip_button_local_m": [
+        -0.012972871945481827,
+        -0.016327578827890432,
+        0.012226621412138084
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.068436573709855,
+      "elbow_flexion_deg": 103.74026383740308,
+      "geom_distance_mm": 0.6669401490426461,
+      "contact_pair_distance_mm": 0.6669648390049835,
+      "fingertip_site_front_offset_mm": 2.237596042028228,
+      "fingertip_site_tangent_error_from_reference_mm": 1.0458710673706069,
+      "fingertip_button_local_m": [
+        -0.013611265707805116,
+        -0.01876040343181551,
+        0.012237596042028228
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.41843657370986,
+      "elbow_flexion_deg": 103.69026383740308,
+      "geom_distance_mm": 0.6925134568546901,
+      "contact_pair_distance_mm": 0.6925506216747477,
+      "fingertip_site_front_offset_mm": 2.2596696624317474,
+      "fingertip_site_tangent_error_from_reference_mm": 2.777830033409778,
+      "fingertip_button_local_m": [
+        -0.014260575979452954,
+        -0.021191066524503532,
+        0.012259669662431747
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -13.76843657370985,
+      "elbow_flexion_deg": 103.79026383740307,
+      "geom_distance_mm": 0.7003278666640774,
+      "contact_pair_distance_mm": 0.7003464580579964,
+      "fingertip_site_front_offset_mm": 2.274194396702119,
+      "fingertip_site_tangent_error_from_reference_mm": 2.358726457399893,
+      "fingertip_button_local_m": [
+        -0.013039925124998897,
+        -0.016670107726283467,
+        0.01227419439670212
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.118436573709856,
+      "elbow_flexion_deg": 103.74026383740308,
+      "geom_distance_mm": 0.716342795835579,
+      "contact_pair_distance_mm": 0.7163676991910077,
+      "fingertip_site_front_offset_mm": 2.2867064580190526,
+      "fingertip_site_tangent_error_from_reference_mm": 1.1411564669770065,
+      "fingertip_button_local_m": [
+        -0.013679804024320688,
+        -0.019102534710647268,
+        0.012286706458019053
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -13.468436573709846,
+      "elbow_flexion_deg": 103.84026383740307,
+      "geom_distance_mm": 0.7419544505216309,
+      "contact_pair_distance_mm": 0.7421766019436676,
+      "fingertip_site_front_offset_mm": 2.3190341566290544,
+      "fingertip_site_tangent_error_from_reference_mm": 4.404607220153542,
+      "fingertip_button_local_m": [
+        -0.012476744648365573,
+        -0.014578450368400886,
+        0.012319034156629055
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.46843657370986,
+      "elbow_flexion_deg": 103.69026383740308,
+      "geom_distance_mm": 0.7434520721848594,
+      "contact_pair_distance_mm": 0.7434889928799502,
+      "fingertip_site_front_offset_mm": 2.3103165644435437,
+      "fingertip_site_tangent_error_from_reference_mm": 3.1102385492470526,
+      "fingertip_button_local_m": [
+        -0.014330597698160811,
+        -0.021532786611316246,
+        0.012310316564443544
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -13.818436573709851,
+      "elbow_flexion_deg": 103.79026383740307,
+      "geom_distance_mm": 0.7484091448201586,
+      "contact_pair_distance_mm": 0.7484279283268147,
+      "fingertip_site_front_offset_mm": 2.3219829942062487,
+      "fingertip_site_tangent_error_from_reference_mm": 2.0654902819841747,
+      "fingertip_button_local_m": [
+        -0.013107185696440557,
+        -0.017012565941918356,
+        0.012321982994206249
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.168436573709856,
+      "elbow_flexion_deg": 103.74026383740308,
+      "geom_distance_mm": 0.7659608186700376,
+      "contact_pair_distance_mm": 0.7659859352701262,
+      "fingertip_site_front_offset_mm": 2.336032293884108,
+      "fingertip_site_tangent_error_from_reference_mm": 1.3242473874449125,
+      "fingertip_button_local_m": [
+        -0.013748549432488131,
+        -0.01944459344320182,
+        0.012336032293884108
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -13.518436573709847,
+      "elbow_flexion_deg": 103.84026383740307,
+      "geom_distance_mm": 0.7887137900865208,
+      "contact_pair_distance_mm": 0.7889318432742572,
+      "fingertip_site_front_offset_mm": 2.3655003870777462,
+      "fingertip_site_tangent_error_from_reference_mm": 4.074052194955236,
+      "fingertip_button_local_m": [
+        -0.012542726335172914,
+        -0.014921225409601613,
+        0.012365500387077746
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.518436573709861,
+      "elbow_flexion_deg": 103.69026383740308,
+      "geom_distance_mm": 0.7946058593193243,
+      "contact_pair_distance_mm": 0.7946425367327483,
+      "fingertip_site_front_offset_mm": 2.3611786847533063,
+      "fingertip_site_tangent_error_from_reference_mm": 3.4458065616515623,
+      "fingertip_button_local_m": [
+        -0.014400826199995269,
+        -0.021874432289985257,
+        0.012361178684753307
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -13.868436573709852,
+      "elbow_flexion_deg": 103.79026383740307,
+      "geom_distance_mm": 0.7967059581326452,
+      "contact_pair_distance_mm": 0.7967247800360553,
+      "fingertip_site_front_offset_mm": 2.369987168257495,
+      "fingertip_site_tangent_error_from_reference_mm": 1.7922256832232788,
+      "fingertip_button_local_m": [
+        -0.013174653608584703,
+        -0.017354953213998547,
+        0.012369987168257495
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.218436573709857,
+      "elbow_flexion_deg": 103.74026383740308,
+      "geom_distance_mm": 0.8157941797595843,
+      "contact_pair_distance_mm": 0.8158322934435261,
+      "fingertip_site_front_offset_mm": 2.3855735120593655,
+      "fingertip_site_tangent_error_from_reference_mm": 1.5645962354180347,
+      "fingertip_button_local_m": [
+        -0.013817501879954557,
+        -0.01978657936898648,
+        0.012385573512059366
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -13.568436573709848,
+      "elbow_flexion_deg": 103.84026383740307,
+      "geom_distance_mm": 0.8356888175910833,
+      "contact_pair_distance_mm": 0.8358599264417104,
+      "fingertip_site_front_offset_mm": 2.4121823444120603,
+      "fingertip_site_tangent_error_from_reference_mm": 3.7468046846784184,
+      "fingertip_button_local_m": [
+        -0.01260891560557985,
+        -0.01526393111101143,
+        0.01241218234441206
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -13.918436573709853,
+      "elbow_flexion_deg": 103.79026383740307,
+      "geom_distance_mm": 0.8452182698209927,
+      "contact_pair_distance_mm": 0.8452372837141612,
+      "fingertip_site_front_offset_mm": 2.4182068822981555,
+      "fingertip_site_tangent_error_from_reference_mm": 1.5495152794915592,
+      "fingertip_button_local_m": [
+        -0.013242328810051805,
+        -0.017697269281781225,
+        0.012418206882298156
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.568436573709862,
+      "elbow_flexion_deg": 103.69026383740308,
+      "geom_distance_mm": 0.8459747793032354,
+      "contact_pair_distance_mm": 0.8460112142531075,
+      "fingertip_site_front_offset_mm": 2.4122559846283984,
+      "fingertip_site_tangent_error_from_reference_mm": 3.7836846363811985,
+      "fingertip_button_local_m": [
+        -0.014471261431473509,
+        -0.022216003300332465,
+        0.012412255984628398
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.268436573709858,
+      "elbow_flexion_deg": 103.74026383740308,
+      "geom_distance_mm": 0.865842841154276,
+      "contact_pair_distance_mm": 0.8658809655723733,
+      "fingertip_site_front_offset_mm": 2.4353300748173723,
+      "fingertip_site_tangent_error_from_reference_mm": 1.8398815851464931,
+      "fingertip_button_local_m": [
+        -0.013886661314209688,
+        -0.020128492227564188,
+        0.012435330074817372
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -13.618436573709849,
+      "elbow_flexion_deg": 103.84026383740307,
+      "geom_distance_mm": 0.8828794972618828,
+      "contact_pair_distance_mm": 0.8830469868866614,
+      "fingertip_site_front_offset_mm": 2.459079993081797,
+      "fingertip_site_tangent_error_from_reference_mm": 3.4238046772987327,
+      "fingertip_button_local_m": [
+        -0.012675312409180272,
+        -0.015606567211644662,
+        0.012459079993081797
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -13.968436573709853,
+      "elbow_flexion_deg": 103.79026383740307,
+      "geom_distance_mm": 0.8939460429412229,
+      "contact_pair_distance_mm": 0.8939652494725142,
+      "fingertip_site_front_offset_mm": 2.4666420996072564,
+      "fingertip_site_tangent_error_from_reference_mm": 1.3538694448235882,
+      "fingertip_button_local_m": [
+        -0.013310211249303988,
+        -0.01803951388457775,
+        0.012466642099607256
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.618436573709863,
+      "elbow_flexion_deg": 103.69026383740308,
+      "geom_distance_mm": 0.8975587930164368,
+      "contact_pair_distance_mm": 0.897594986298465,
+      "fingertip_site_front_offset_mm": 2.463548425170362,
+      "fingertip_site_tangent_error_from_reference_mm": 4.123296707252248,
+      "fingertip_button_local_m": [
+        -0.014541903338956084,
+        -0.0225574993822365,
+        0.012463548425170362
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.318436573709858,
+      "elbow_flexion_deg": 103.74026383740308,
+      "geom_distance_mm": 0.9161067647394859,
+      "contact_pair_distance_mm": 0.9161446417547876,
+      "fingertip_site_front_offset_mm": 2.485301944266067,
+      "fingertip_site_tangent_error_from_reference_mm": 2.136626955904672,
+      "fingertip_button_local_m": [
+        -0.013956027682585616,
+        -0.020470331758553117,
+        0.012485301944266067
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -13.66843657370985,
+      "elbow_flexion_deg": 103.84026383740307,
+      "geom_distance_mm": 0.9302857931613838,
+      "contact_pair_distance_mm": 0.9304496854227009,
+      "fingertip_site_front_offset_mm": 2.506193297372467,
+      "fingertip_site_tangent_error_from_reference_mm": 3.1063679326616414,
+      "fingertip_button_local_m": [
+        -0.012741916695410287,
+        -0.015949133450569253,
+        0.012506193297372467
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.018436573709854,
+      "elbow_flexion_deg": 103.79026383740307,
+      "geom_distance_mm": 0.9428892403851877,
+      "contact_pair_distance_mm": 0.9429086401767455,
+      "fingertip_site_front_offset_mm": 2.5152927832992957,
+      "fingertip_site_tangent_error_from_reference_mm": 1.227967966449162,
+      "fingertip_button_local_m": [
+        -0.013378300874645992,
+        -0.018381686761753946,
+        0.012515292783299296
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.668436573709863,
+      "elbow_flexion_deg": 103.69026383740308,
+      "geom_distance_mm": 0.9493578611751877,
+      "contact_pair_distance_mm": 0.949393813564479,
+      "fingertip_site_front_offset_mm": 2.5150559673180664,
+      "fingertip_site_tangent_error_from_reference_mm": 4.464239412955618,
+      "fingertip_button_local_m": [
+        -0.014612751868646566,
+        -0.022898920275633783,
+        0.012515055967318067
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.36843657370986,
+      "elbow_flexion_deg": 103.74026383740308,
+      "geom_distance_mm": 0.9665859122373968,
+      "contact_pair_distance_mm": 0.9666235427160926,
+      "fingertip_site_front_offset_mm": 2.5354890823498892,
+      "fingertip_site_tangent_error_from_reference_mm": 2.447024199987037,
+      "fingertip_button_local_m": [
+        -0.01402560093225711,
+        -0.020812097701627952,
+        0.01253548908234989
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -13.71843657370985,
+      "elbow_flexion_deg": 103.84026383740307,
+      "geom_distance_mm": 0.9779076691872121,
+      "contact_pair_distance_mm": 0.9780682204266677,
+      "fingertip_site_front_offset_mm": 2.5535222214049336,
+      "fingertip_site_tangent_error_from_reference_mm": 2.7963790447053234,
+      "fingertip_button_local_m": [
+        -0.01280872841354755,
+        -0.016291629566905996,
+        0.012553522221404934
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    {
+      "shoulder_rot_deg": -14.068436573709855,
+      "elbow_flexion_deg": 103.79026383740307,
+      "geom_distance_mm": 0.9920478248801291,
+      "contact_pair_distance_mm": 0.9920674184985142,
+      "fingertip_site_front_offset_mm": 2.56415889632405,
+      "fingertip_site_tangent_error_from_reference_mm": 1.1940533982279276,
+      "fingertip_button_local_m": [
+        -0.01344659763422496,
+        -0.018723787652730417,
+        0.01256415889632405
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    }
+  ],
+  "interpretation": "Closest-surface ranking uses contact-pair distance. The selected candidate minimizes tangential error within a diagnostic 0.2 to 0.4 mm clearance band. Site front offset is positive outside. Grid samples near the old target are rounded poses, not the exact target. These are static pairwise candidates, not full-body collision-free or dynamically validated targets."
+}

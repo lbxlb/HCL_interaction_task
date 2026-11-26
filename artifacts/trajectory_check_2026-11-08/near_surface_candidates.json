@@ -1,0 +1,54 @@
+{
+  "purpose": "Near-surface geometric candidate selection; no dynamic or task-success claim.",
+  "samples": 300000,
+  "joint_order": [
+    "elv_angle",
+    "shoulder_elv",
+    "shoulder_rot",
+    "elbow_flexion"
+  ],
+  "candidates": {
+    "0": {
+      "score": 0.0,
+      "distance_m": 0.0,
+      "joint_values_rad": [
+        1.439782405567054,
+        0.0996176858877463,
+        -1.1538473932311886,
+        1.6777343224688812
+      ]
+    },
+    "1": {
+      "score": 0.0,
+      "distance_m": 0.0,
+      "joint_values_rad": [
+        0.18713067448902554,
+        2.990157408644136,
+        0.1010962174127139,
+        1.8183855119457317
+      ]
+    },
+    "2": {
+      "score": 0.0,
+      "distance_m": 0.0,
+      "joint_values_rad": [
+        0.2887090162215875,
+        1.5640886960187916,
+        0.17398169522043894,
+        0.9271255648067659
+      ]
+    },
+    "3": {
+      "score": 0.0,
+      "distance_m": 0.0,
+      "joint_values_rad": [
+        0.04917719016691202,
+        2.1692464954838138,
+        -1.234306820284249,
+        1.8081071309290886
+      ]
+    }
+  },
+  "selection": "minimize absolute distance while penalizing penetration by 20 mm",
+  "limitations": "Random search resolution and geom distance do not establish a valid force-free approach trajectory."
+}

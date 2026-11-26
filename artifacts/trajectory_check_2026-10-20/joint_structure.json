@@ -1,0 +1,578 @@
+{
+  "description": "本地模型对照，不代表已核实上游原始设计；未修改模型",
+  "panel_neq": 0,
+  "local_pointing_joint_equalities": 12,
+  "independent_candidates_if_restored": [
+    "head_rot",
+    "elv_angle",
+    "shoulder_elv",
+    "shoulder_rot",
+    "elbow_flexion",
+    "pro_sup"
+  ],
+  "joints": [
+    {
+      "name": "head_rot",
+      "body": "head",
+      "parent_body": "world",
+      "joint_type": 3,
+      "qpos_adr": 0,
+      "dof_adr": 0,
+      "limited": true,
+      "configured_range": [
+        -1.57,
+        1.57
+      ],
+      "reset_rad": 0.0,
+      "demo_driven": false,
+      "matching_joint_attributes_in_local_pointing": false,
+      "local_pointing_constraints": []
+    },
+    {
+      "name": "r_z",
+      "body": "thorax",
+      "parent_body": "world",
+      "joint_type": 3,
+      "qpos_adr": 1,
+      "dof_adr": 1,
+      "limited": true,
+      "configured_range": [
+        -6.28319,
+        6.28319
+      ],
+      "reset_rad": 0.0,
+      "demo_driven": false,
+      "matching_joint_attributes_in_local_pointing": true,
+      "local_pointing_constraints": [
+        {
+          "name": "r_z_constraint",
+          "joint1": "r_z",
+          "polycoef": "0 0 0 0 0"
+        }
+      ]
+    },
+    {
+      "name": "sternoclavicular_r2",
+      "body": "clavicle",
+      "parent_body": "thorax",
+      "joint_type": 3,
+      "qpos_adr": 2,
+      "dof_adr": 2,
+      "limited": false,
+      "configured_range": [
+        -99999.9,
+        99999.9
+      ],
+      "reset_rad": 0.0,
+      "demo_driven": false,
+      "matching_joint_attributes_in_local_pointing": true,
+      "local_pointing_constraints": [
+        {
+          "name": "sternoclavicular_r2_con",
+          "joint1": "sternoclavicular_r2",
+          "joint2": "shoulder_elv",
+          "polycoef": "0 -0.242001 0 0 0",
+          "solimp": "0.9999 0.9999 0.001 0.5 2"
+        }
+      ]
+    },
+    {
+      "name": "sternoclavicular_r3",
+      "body": "clavicle",
+      "parent_body": "thorax",
+      "joint_type": 3,
+      "qpos_adr": 3,
+      "dof_adr": 3,
+      "limited": false,
+      "configured_range": [
+        -99999.9,
+        99999.9
+      ],
+      "reset_rad": 0.0,
+      "demo_driven": false,
+      "matching_joint_attributes_in_local_pointing": true,
+      "local_pointing_constraints": [
+        {
+          "name": "sternoclavicular_r3_con",
+          "joint1": "sternoclavicular_r3",
+          "joint2": "shoulder_elv",
+          "polycoef": "0 0.1025 0 0 0",
+          "solimp": "0.9999 0.9999 0.001 0.5 2"
+        }
+      ]
+    },
+    {
+      "name": "unrotscap_r3",
+      "body": "clavphant",
+      "parent_body": "clavicle",
+      "joint_type": 3,
+      "qpos_adr": 4,
+      "dof_adr": 4,
+      "limited": false,
+      "configured_range": [
+        -99999.9,
+        99999.9
+      ],
+      "reset_rad": 0.0,
+      "demo_driven": false,
+      "matching_joint_attributes_in_local_pointing": true,
+      "local_pointing_constraints": [
+        {
+          "name": "unrotscap_r3_con",
+          "joint1": "unrotscap_r3",
+          "joint2": "shoulder_elv",
+          "polycoef": "0 -0.1025 0 0 0",
+          "solimp": "0.9999 0.9999 0.001 0.5 2"
+        }
+      ]
+    },
+    {
+      "name": "unrotscap_r2",
+      "body": "clavphant",
+      "parent_body": "clavicle",
+      "joint_type": 3,
+      "qpos_adr": 5,
+      "dof_adr": 5,
+      "limited": false,
+      "configured_range": [
+        -99999.9,
+        99999.9
+      ],
+      "reset_rad": 0.0,
+      "demo_driven": false,
+      "matching_joint_attributes_in_local_pointing": true,
+      "local_pointing_constraints": [
+        {
+          "name": "unrotscap_r2_con",
+          "joint1": "unrotscap_r2",
+          "joint2": "shoulder_elv",
+          "polycoef": "0 0.242001 0 0 0",
+          "solimp": "0.9999 0.9999 0.001 0.5 2"
+        }
+      ]
+    },
+    {
+      "name": "acromioclavicular_r2",
+      "body": "scapula",
+      "parent_body": "clavphant",
+      "joint_type": 3,
+      "qpos_adr": 6,
+      "dof_adr": 6,
+      "limited": false,
+      "configured_range": [
+        -99999.9,
+        99999.9
+      ],
+      "reset_rad": 0.0,
+      "demo_driven": false,
+      "matching_joint_attributes_in_local_pointing": true,
+      "local_pointing_constraints": [
+        {
+          "name": "acromioclavicular_r2_con",
+          "joint1": "acromioclavicular_r2",
+          "joint2": "shoulder_elv",
+          "polycoef": "0 -0.0490002 0 0 0",
+          "solimp": "0.9999 0.9999 0.001 0.5 2"
+        }
+      ]
+    },
+    {
+      "name": "acromioclavicular_r3",
+      "body": "scapula",
+      "parent_body": "clavphant",
+      "joint_type": 3,
+      "qpos_adr": 7,
+      "dof_adr": 7,
+      "limited": false,
+      "configured_range": [
+        -99999.9,
+        99999.9
+      ],
+      "reset_rad": 0.0,
+      "demo_driven": false,
+      "matching_joint_attributes_in_local_pointing": true,
+      "local_pointing_constraints": [
+        {
+          "name": "acromioclavicular_r3_con",
+          "joint1": "acromioclavicular_r3",
+          "joint2": "shoulder_elv",
+          "polycoef": "0 0.396002 0 0 0",
+          "solimp": "0.9999 0.9999 0.001 0.5 2"
+        }
+      ]
+    },
+    {
+      "name": "acromioclavicular_r1",
+      "body": "scapula",
+      "parent_body": "clavphant",
+      "joint_type": 3,
+      "qpos_adr": 8,
+      "dof_adr": 8,
+      "limited": false,
+      "configured_range": [
+        -99999.9,
+        99999.9
+      ],
+      "reset_rad": 0.0,
+      "demo_driven": false,
+      "matching_joint_attributes_in_local_pointing": true,
+      "local_pointing_constraints": [
+        {
+          "name": "acromioclavicular_r1_con",
+          "joint1": "acromioclavicular_r1",
+          "joint2": "shoulder_elv",
+          "polycoef": "0 0.178 0 0 0",
+          "solimp": "0.9999 0.9999 0.001 0.5 2"
+        }
+      ]
+    },
+    {
+      "name": "unrothum_r1",
+      "body": "scapphant",
+      "parent_body": "scapula",
+      "joint_type": 3,
+      "qpos_adr": 9,
+      "dof_adr": 9,
+      "limited": false,
+      "configured_range": [
+        -99999.9,
+        99999.9
+      ],
+      "reset_rad": 0.0,
+      "demo_driven": false,
+      "matching_joint_attributes_in_local_pointing": true,
+      "local_pointing_constraints": [
+        {
+          "name": "unrothum_r1_con",
+          "joint1": "unrothum_r1",
+          "joint2": "shoulder_elv",
+          "polycoef": "0 -0.178 0 0 0",
+          "solimp": "0.9999 0.9999 0.001 0.5 2"
+        }
+      ]
+    },
+    {
+      "name": "unrothum_r3",
+      "body": "scapphant",
+      "parent_body": "scapula",
+      "joint_type": 3,
+      "qpos_adr": 10,
+      "dof_adr": 10,
+      "limited": false,
+      "configured_range": [
+        -99999.9,
+        99999.9
+      ],
+      "reset_rad": 0.0,
+      "demo_driven": false,
+      "matching_joint_attributes_in_local_pointing": true,
+      "local_pointing_constraints": [
+        {
+          "name": "unrothum_r3_con",
+          "joint1": "unrothum_r3",
+          "joint2": "shoulder_elv",
+          "polycoef": "0 -0.396002 0 0 0",
+          "solimp": "0.9999 0.9999 0.001 0.5 2"
+        }
+      ]
+    },
+    {
+      "name": "unrothum_r2",
+      "body": "scapphant",
+      "parent_body": "scapula",
+      "joint_type": 3,
+      "qpos_adr": 11,
+      "dof_adr": 11,
+      "limited": false,
+      "configured_range": [
+        -99999.9,
+        99999.9
+      ],
+      "reset_rad": 0.0,
+      "demo_driven": false,
+      "matching_joint_attributes_in_local_pointing": true,
+      "local_pointing_constraints": [
+        {
+          "name": "unrothum_r2_con",
+          "joint1": "unrothum_r2",
+          "joint2": "shoulder_elv",
+          "polycoef": "0 0.0490002 0 0 0",
+          "solimp": "0.9999 0.9999 0.001 0.5 2"
+        }
+      ]
+    },
+    {
+      "name": "elv_angle",
+      "body": "humphant",
+      "parent_body": "scapphant",
+      "joint_type": 3,
+      "qpos_adr": 12,
+      "dof_adr": 12,
+      "limited": true,
+      "configured_range": [
+        -1.5708,
+        2.26893
+      ],
+      "reset_rad": 0.0,
+      "demo_driven": false,
+      "matching_joint_attributes_in_local_pointing": true,
+      "local_pointing_constraints": [
+        {
+          "name": "shoulder1_r2_con",
+          "joint1": "shoulder1_r2",
+          "joint2": "elv_angle",
+          "polycoef": "0 -1 0 0 0",
+          "solimp": "0.9999 0.9999 0.001 0.5 2"
+        }
+      ]
+    },
+    {
+      "name": "shoulder_elv",
+      "body": "humphant1",
+      "parent_body": "humphant",
+      "joint_type": 3,
+      "qpos_adr": 13,
+      "dof_adr": 13,
+      "limited": true,
+      "configured_range": [
+        0.0,
+        3.14159
+      ],
+      "reset_rad": 0.0,
+      "demo_driven": false,
+      "matching_joint_attributes_in_local_pointing": true,
+      "local_pointing_constraints": [
+        {
+          "name": "sternoclavicular_r2_con",
+          "joint1": "sternoclavicular_r2",
+          "joint2": "shoulder_elv",
+          "polycoef": "0 -0.242001 0 0 0",
+          "solimp": "0.9999 0.9999 0.001 0.5 2"
+        },
+        {
+          "name": "sternoclavicular_r3_con",
+          "joint1": "sternoclavicular_r3",
+          "joint2": "shoulder_elv",
+          "polycoef": "0 0.1025 0 0 0",
+          "solimp": "0.9999 0.9999 0.001 0.5 2"
+        },
+        {
+          "name": "unrotscap_r2_con",
+          "joint1": "unrotscap_r2",
+          "joint2": "shoulder_elv",
+          "polycoef": "0 0.242001 0 0 0",
+          "solimp": "0.9999 0.9999 0.001 0.5 2"
+        },
+        {
+          "name": "unrotscap_r3_con",
+          "joint1": "unrotscap_r3",
+          "joint2": "shoulder_elv",
+          "polycoef": "0 -0.1025 0 0 0",
+          "solimp": "0.9999 0.9999 0.001 0.5 2"
+        },
+        {
+          "name": "acromioclavicular_r1_con",
+          "joint1": "acromioclavicular_r1",
+          "joint2": "shoulder_elv",
+          "polycoef": "0 0.178 0 0 0",
+          "solimp": "0.9999 0.9999 0.001 0.5 2"
+        },
+        {
+          "name": "acromioclavicular_r2_con",
+          "joint1": "acromioclavicular_r2",
+          "joint2": "shoulder_elv",
+          "polycoef": "0 -0.0490002 0 0 0",
+          "solimp": "0.9999 0.9999 0.001 0.5 2"
+        },
+        {
+          "name": "acromioclavicular_r3_con",
+          "joint1": "acromioclavicular_r3",
+          "joint2": "shoulder_elv",
+          "polycoef": "0 0.396002 0 0 0",
+          "solimp": "0.9999 0.9999 0.001 0.5 2"
+        },
+        {
+          "name": "unrothum_r1_con",
+          "joint1": "unrothum_r1",
+          "joint2": "shoulder_elv",
+          "polycoef": "0 -0.178 0 0 0",
+          "solimp": "0.9999 0.9999 0.001 0.5 2"
+        },
+        {
+          "name": "unrothum_r2_con",
+          "joint1": "unrothum_r2",
+          "joint2": "shoulder_elv",
+          "polycoef": "0 0.0490002 0 0 0",
+          "solimp": "0.9999 0.9999 0.001 0.5 2"
+        },
+        {
+          "name": "unrothum_r3_con",
+          "joint1": "unrothum_r3",
+          "joint2": "shoulder_elv",
+          "polycoef": "0 -0.396002 0 0 0",
+          "solimp": "0.9999 0.9999 0.001 0.5 2"
+        }
+      ]
+    },
+    {
+      "name": "shoulder1_r2",
+      "body": "humphant1",
+      "parent_body": "humphant",
+      "joint_type": 3,
+      "qpos_adr": 14,
+      "dof_adr": 14,
+      "limited": false,
+      "configured_range": [
+        -99999.9,
+        99999.9
+      ],
+      "reset_rad": 0.0,
+      "demo_driven": false,
+      "matching_joint_attributes_in_local_pointing": true,
+      "local_pointing_constraints": [
+        {
+          "name": "shoulder1_r2_con",
+          "joint1": "shoulder1_r2",
+          "joint2": "elv_angle",
+          "polycoef": "0 -1 0 0 0",
+          "solimp": "0.9999 0.9999 0.001 0.5 2"
+        }
+      ]
+    },
+    {
+      "name": "shoulder_rot",
+      "body": "humerus",
+      "parent_body": "humphant1",
+      "joint_type": 3,
+      "qpos_adr": 15,
+      "dof_adr": 15,
+      "limited": true,
+      "configured_range": [
+        -1.57,
+        0.349066
+      ],
+      "reset_rad": -0.6104670000000001,
+      "demo_driven": true,
+      "matching_joint_attributes_in_local_pointing": true,
+      "local_pointing_constraints": []
+    },
+    {
+      "name": "elbow_flexion",
+      "body": "ulna",
+      "parent_body": "humerus",
+      "joint_type": 3,
+      "qpos_adr": 16,
+      "dof_adr": 16,
+      "limited": true,
+      "configured_range": [
+        0.0,
+        2.26893
+      ],
+      "reset_rad": 1.134465,
+      "demo_driven": true,
+      "matching_joint_attributes_in_local_pointing": true,
+      "local_pointing_constraints": []
+    },
+    {
+      "name": "pro_sup",
+      "body": "radius",
+      "parent_body": "ulna",
+      "joint_type": 3,
+      "qpos_adr": 17,
+      "dof_adr": 17,
+      "limited": true,
+      "configured_range": [
+        -1.5708,
+        1.5708
+      ],
+      "reset_rad": 0.0,
+      "demo_driven": true,
+      "matching_joint_attributes_in_local_pointing": true,
+      "local_pointing_constraints": []
+    }
+  ],
+  "candidate_constraints": [
+    {
+      "name": "sternoclavicular_r2_con",
+      "joint1": "sternoclavicular_r2",
+      "joint2": "shoulder_elv",
+      "polycoef": "0 -0.242001 0 0 0",
+      "solimp": "0.9999 0.9999 0.001 0.5 2"
+    },
+    {
+      "name": "sternoclavicular_r3_con",
+      "joint1": "sternoclavicular_r3",
+      "joint2": "shoulder_elv",
+      "polycoef": "0 0.1025 0 0 0",
+      "solimp": "0.9999 0.9999 0.001 0.5 2"
+    },
+    {
+      "name": "unrotscap_r2_con",
+      "joint1": "unrotscap_r2",
+      "joint2": "shoulder_elv",
+      "polycoef": "0 0.242001 0 0 0",
+      "solimp": "0.9999 0.9999 0.001 0.5 2"
+    },
+    {
+      "name": "unrotscap_r3_con",
+      "joint1": "unrotscap_r3",
+      "joint2": "shoulder_elv",
+      "polycoef": "0 -0.1025 0 0 0",
+      "solimp": "0.9999 0.9999 0.001 0.5 2"
+    },
+    {
+      "name": "acromioclavicular_r1_con",
+      "joint1": "acromioclavicular_r1",
+      "joint2": "shoulder_elv",
+      "polycoef": "0 0.178 0 0 0",
+      "solimp": "0.9999 0.9999 0.001 0.5 2"
+    },
+    {
+      "name": "acromioclavicular_r2_con",
+      "joint1": "acromioclavicular_r2",
+      "joint2": "shoulder_elv",
+      "polycoef": "0 -0.0490002 0 0 0",
+      "solimp": "0.9999 0.9999 0.001 0.5 2"
+    },
+    {
+      "name": "acromioclavicular_r3_con",
+      "joint1": "acromioclavicular_r3",
+      "joint2": "shoulder_elv",
+      "polycoef": "0 0.396002 0 0 0",
+      "solimp": "0.9999 0.9999 0.001 0.5 2"
+    },
+    {
+      "name": "unrothum_r1_con",
+      "joint1": "unrothum_r1",
+      "joint2": "shoulder_elv",
+      "polycoef": "0 -0.178 0 0 0",
+      "solimp": "0.9999 0.9999 0.001 0.5 2"
+    },
+    {
+      "name": "unrothum_r2_con",
+      "joint1": "unrothum_r2",
+      "joint2": "shoulder_elv",
+      "polycoef": "0 0.0490002 0 0 0",
+      "solimp": "0.9999 0.9999 0.001 0.5 2"
+    },
+    {
+      "name": "unrothum_r3_con",
+      "joint1": "unrothum_r3",
+      "joint2": "shoulder_elv",
+      "polycoef": "0 -0.396002 0 0 0",
+      "solimp": "0.9999 0.9999 0.001 0.5 2"
+    },
+    {
+      "name": "shoulder1_r2_con",
+      "joint1": "shoulder1_r2",
+      "joint2": "elv_angle",
+      "polycoef": "0 -1 0 0 0",
+      "solimp": "0.9999 0.9999 0.001 0.5 2"
+    },
+    {
+      "name": "r_z_constraint",
+      "joint1": "r_z",
+      "polycoef": "0 0 0 0 0"
+    }
+  ]
+}

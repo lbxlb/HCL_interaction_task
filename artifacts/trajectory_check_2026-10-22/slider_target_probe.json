@@ -1,0 +1,111 @@
+{
+  "method": "static FK only; slider held at q=0; no mj_step",
+  "mujoco_version": "3.3.7",
+  "target_button": "button-0",
+  "source_nq": 18,
+  "temporary_nq": 19,
+  "initial_state_mapping": "joint names and full qpos blocks",
+  "internal_exclusions": [
+    [
+      "thorax",
+      "scapula"
+    ],
+    [
+      "thorax",
+      "humerus"
+    ],
+    [
+      "clavicle",
+      "scapula"
+    ],
+    [
+      "scapula",
+      "humerus"
+    ],
+    [
+      "humerus",
+      "radius"
+    ]
+  ],
+  "finger_margin_original_m": 0.001,
+  "finger_margin_probe_m": 0,
+  "slider": {
+    "axis_local": [
+      0,
+      0,
+      -1
+    ],
+    "range_m": [
+      0,
+      0.005
+    ],
+    "stiffness_N_m": 1000,
+    "damping_Ns_m": 10,
+    "inferred_mass_kg": 0.05000000000000001
+  },
+  "samples": [
+    {
+      "inward_site_offset_requested_mm": 0,
+      "joint_delta_deg": [
+        0.0,
+        0.0
+      ],
+      "geom_distance_mm": 0.2927553398001615,
+      "matching_contact_distance_mm": []
+    },
+    {
+      "inward_site_offset_requested_mm": 0.3,
+      "joint_delta_deg": [
+        0.008200461826282635,
+        -0.036712150182284305
+      ],
+      "geom_distance_mm": 0.04616190029403535,
+      "matching_contact_distance_mm": []
+    },
+    {
+      "inward_site_offset_requested_mm": 0.8,
+      "joint_delta_deg": [
+        0.021867898203420368,
+        -0.09789906715275816
+      ],
+      "geom_distance_mm": -0.36466276540513726,
+      "matching_contact_distance_mm": [
+        -0.3646627654051366
+      ]
+    },
+    {
+      "inward_site_offset_requested_mm": 1.0,
+      "joint_delta_deg": [
+        0.027334872754275475,
+        -0.12237383394094768
+      ],
+      "geom_distance_mm": -0.5289349982359592,
+      "matching_contact_distance_mm": [
+        -0.5289349982359572
+      ]
+    },
+    {
+      "inward_site_offset_requested_mm": 1.5,
+      "joint_delta_deg": [
+        0.04100230913141322,
+        -0.1835607509114216
+      ],
+      "geom_distance_mm": -0.9394712166234785,
+      "matching_contact_distance_mm": [
+        -0.9394712166234785
+      ]
+    },
+    {
+      "inward_site_offset_requested_mm": 2.0,
+      "joint_delta_deg": [
+        0.05466974550855095,
+        -0.24474766788189536
+      ],
+      "geom_distance_mm": -1.3498008012787024,
+      "matching_contact_distance_mm": [
+        -1.3498008012787017
+      ]
+    }
+  ],
+  "limitations": "Spring/damping/travel are provisional, not calibrated. Negative distances are deliberately imposed FK overlap at q_slide=0; no dynamic press, return, or success threshold has been validated."
+}

@@ -1,0 +1,45 @@
+{
+  "initial_state_and_parameters_identical": true,
+  "first_20_steps_identical": true,
+  "hold_target_constant": true,
+  "cases": {
+    "press": {
+      "first_task_contact_time_s": 0.10200000000000001,
+      "peak_normal_force_N": 10.286393859605955,
+      "final_normal_force_N": 1.4962997436390124,
+      "first_geometric_touch": null,
+      "min_contact_pair_distance_m": 0.0005326999521065513,
+      "final_tracking_error_deg": [
+        -0.10513447823457903,
+        0.47709522736857707
+      ],
+      "final_joint_drift_deg": [
+        0.08030930362471772,
+        -0.353147538501079
+      ],
+      "max_abs_joint_drift_deg": [
+        0.09675942350862209,
+        0.4159976568109509
+      ]
+    },
+    "hold-only": {
+      "first_task_contact_time_s": null,
+      "peak_normal_force_N": 0.0,
+      "final_normal_force_N": 0.0,
+      "first_geometric_touch": null,
+      "min_contact_pair_distance_m": null,
+      "final_tracking_error_deg": [
+        -1.818652126734216e-05,
+        -4.028558652672977e-05
+      ],
+      "final_joint_drift_deg": [
+        -1.818652126734216e-05,
+        -4.028558652672977e-05
+      ],
+      "max_abs_joint_drift_deg": [
+        6.383531673737766e-05,
+        0.00014681289959221386
+      ]
+    }
+  }
+}

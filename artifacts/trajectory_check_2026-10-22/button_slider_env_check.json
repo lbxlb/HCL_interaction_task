@@ -1,0 +1,73 @@
+{
+  "checks": {
+    "gymnasium_checker": true,
+    "finite_observation_bounds": true,
+    "reset_repeatable": true,
+    "invalid_action_rejected_before_physics": true,
+    "scripted_press_and_release_success": true,
+    "events_once_and_in_order": true,
+    "finite_reward": true,
+    "no_warning": true,
+    "step_after_done_rejected": true,
+    "outside_hold_times_out": true
+  },
+  "events": [
+    {
+      "event": "pressed",
+      "time_s": 0.2600000000000002
+    },
+    {
+      "event": "released",
+      "time_s": 1.0620000000000007
+    }
+  ],
+  "scripted_final_info": {
+    "time_s": 1.0620000000000007,
+    "phase": "ready",
+    "events": [
+      {
+        "event": "released",
+        "time_s": 1.0620000000000007
+      }
+    ],
+    "press_count": 1,
+    "release_count": 1,
+    "slider_position_m": -5.839248524540985e-07,
+    "joint_position_rad": [
+      -0.2446111643243307,
+      1.809413653527868
+    ],
+    "joint_velocity_rad_s": [
+      -0.010731077161492155,
+      0.036325813916235385
+    ],
+    "slider_velocity_m_s": 8.199030581746947e-05,
+    "last_valid_observation_time_s": 1.0620000000000007,
+    "peak_normal_force_N_this_step": 0.0,
+    "saturated_motor_channels_this_step": 0,
+    "peak_normal_force_N_episode": 0.2835611527169474,
+    "max_slider_position_m_episode": 0.0002902466619030046,
+    "saturated_physics_samples_episode": 0,
+    "saturated_motor_channels_episode": 0,
+    "failure_reason": null,
+    "failure_details": null,
+    "reward_components": {
+      "press": 0.0,
+      "release": 10.0,
+      "effort": -9.767659300693163e-07,
+      "fault": 0.0
+    },
+    "is_success": true
+  },
+  "scripted_return": 10.999516539281945,
+  "sampled_peak_position_m": 0.0002895887388660326,
+  "action_shape": [
+    2
+  ],
+  "observation_shape": [
+    15
+  ],
+  "physics_dt_s": 0.002,
+  "policy_dt_s": 0.01,
+  "limitations": "Fixed temporary model, scripted demonstration; no trained policy."
+}

@@ -1,0 +1,529 @@
+{
+  "description": "仅恢复十二条关节关系；未加入碰撞过滤、执行器或 inactive weld",
+  "original_xml_sha256": "b1c821634acd7de3b80413919c15c3d82bc3210ddc69026565469444ee64695d",
+  "donor_xml_sha256": "3c233de2828f37379de466a3107dc57d6ba506d41e3f68e5e02ad560292477c6",
+  "candidate_constraints": [
+    {
+      "name": "sternoclavicular_r2_con",
+      "joint1": "sternoclavicular_r2",
+      "joint2": "shoulder_elv",
+      "polycoef": "0 -0.242001 0 0 0",
+      "solimp": "0.9999 0.9999 0.001 0.5 2"
+    },
+    {
+      "name": "sternoclavicular_r3_con",
+      "joint1": "sternoclavicular_r3",
+      "joint2": "shoulder_elv",
+      "polycoef": "0 0.1025 0 0 0",
+      "solimp": "0.9999 0.9999 0.001 0.5 2"
+    },
+    {
+      "name": "unrotscap_r2_con",
+      "joint1": "unrotscap_r2",
+      "joint2": "shoulder_elv",
+      "polycoef": "0 0.242001 0 0 0",
+      "solimp": "0.9999 0.9999 0.001 0.5 2"
+    },
+    {
+      "name": "unrotscap_r3_con",
+      "joint1": "unrotscap_r3",
+      "joint2": "shoulder_elv",
+      "polycoef": "0 -0.1025 0 0 0",
+      "solimp": "0.9999 0.9999 0.001 0.5 2"
+    },
+    {
+      "name": "acromioclavicular_r1_con",
+      "joint1": "acromioclavicular_r1",
+      "joint2": "shoulder_elv",
+      "polycoef": "0 0.178 0 0 0",
+      "solimp": "0.9999 0.9999 0.001 0.5 2"
+    },
+    {
+      "name": "acromioclavicular_r2_con",
+      "joint1": "acromioclavicular_r2",
+      "joint2": "shoulder_elv",
+      "polycoef": "0 -0.0490002 0 0 0",
+      "solimp": "0.9999 0.9999 0.001 0.5 2"
+    },
+    {
+      "name": "acromioclavicular_r3_con",
+      "joint1": "acromioclavicular_r3",
+      "joint2": "shoulder_elv",
+      "polycoef": "0 0.396002 0 0 0",
+      "solimp": "0.9999 0.9999 0.001 0.5 2"
+    },
+    {
+      "name": "unrothum_r1_con",
+      "joint1": "unrothum_r1",
+      "joint2": "shoulder_elv",
+      "polycoef": "0 -0.178 0 0 0",
+      "solimp": "0.9999 0.9999 0.001 0.5 2"
+    },
+    {
+      "name": "unrothum_r2_con",
+      "joint1": "unrothum_r2",
+      "joint2": "shoulder_elv",
+      "polycoef": "0 0.0490002 0 0 0",
+      "solimp": "0.9999 0.9999 0.001 0.5 2"
+    },
+    {
+      "name": "unrothum_r3_con",
+      "joint1": "unrothum_r3",
+      "joint2": "shoulder_elv",
+      "polycoef": "0 -0.396002 0 0 0",
+      "solimp": "0.9999 0.9999 0.001 0.5 2"
+    },
+    {
+      "name": "shoulder1_r2_con",
+      "joint1": "shoulder1_r2",
+      "joint2": "elv_angle",
+      "polycoef": "0 -1 0 0 0",
+      "solimp": "0.9999 0.9999 0.001 0.5 2"
+    },
+    {
+      "name": "r_z_constraint",
+      "joint1": "r_z",
+      "polycoef": "0 0 0 0 0"
+    }
+  ],
+  "runs": {
+    "baseline": {
+      "steps": 600,
+      "elapsed_seconds": 1.2000000000000008,
+      "all_states_finite": true,
+      "max_abs_velocity_rad_s": 5.565818576022343,
+      "actual_first_target_contact_step": null,
+      "reference_first_target_contact_step": 396,
+      "contacts": [
+        {
+          "geoms": [
+            "scapula",
+            "thorax"
+          ],
+          "first_step": 0,
+          "new_since_reset": false,
+          "min_distance_m": -0.02131550539112084
+        },
+        {
+          "geoms": [
+            "humerus",
+            "thorax"
+          ],
+          "first_step": 0,
+          "new_since_reset": false,
+          "min_distance_m": -0.00027188775145383314
+        },
+        {
+          "geoms": [
+            "clavicle",
+            "scapula"
+          ],
+          "first_step": 0,
+          "new_since_reset": false,
+          "min_distance_m": -0.013008815547789952
+        },
+        {
+          "geoms": [
+            "humerus",
+            "scapula"
+          ],
+          "first_step": 0,
+          "new_since_reset": false,
+          "min_distance_m": -0.00749172975722816
+        },
+        {
+          "geoms": [
+            "humerus",
+            "radius"
+          ],
+          "first_step": 0,
+          "new_since_reset": false,
+          "min_distance_m": -4.640782892886743e-05
+        }
+      ],
+      "warning_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "joints": {
+        "head_rot": {
+          "max_displacement_from_reset_rad": 0.0,
+          "max_reference_error_rad": 0.0,
+          "final_actual_rad": 0.0
+        },
+        "r_z": {
+          "max_displacement_from_reset_rad": 0.5060424348991407,
+          "max_reference_error_rad": 0.5060424348991407,
+          "final_actual_rad": 0.3672131311819863
+        },
+        "sternoclavicular_r2": {
+          "max_displacement_from_reset_rad": 0.28645318905121153,
+          "max_reference_error_rad": 0.28645318905121153,
+          "final_actual_rad": -0.10594352701607831
+        },
+        "sternoclavicular_r3": {
+          "max_displacement_from_reset_rad": 0.5984650997860096,
+          "max_reference_error_rad": 0.5984650997860096,
+          "final_actual_rad": -0.5821046576910208
+        },
+        "unrotscap_r3": {
+          "max_displacement_from_reset_rad": 0.7606590414782785,
+          "max_reference_error_rad": 0.7606590414782785,
+          "final_actual_rad": 0.5896268706963381
+        },
+        "unrotscap_r2": {
+          "max_displacement_from_reset_rad": 0.5649115871975053,
+          "max_reference_error_rad": 0.5649115871975053,
+          "final_actual_rad": 0.5649115871975053
+        },
+        "acromioclavicular_r2": {
+          "max_displacement_from_reset_rad": 0.6502884466349957,
+          "max_reference_error_rad": 0.6502884466349957,
+          "final_actual_rad": 0.30834221296172765
+        },
+        "acromioclavicular_r3": {
+          "max_displacement_from_reset_rad": 0.6747801909930409,
+          "max_reference_error_rad": 0.6747801909930409,
+          "final_actual_rad": 0.08325664855788935
+        },
+        "acromioclavicular_r1": {
+          "max_displacement_from_reset_rad": 0.41092222271647916,
+          "max_reference_error_rad": 0.41092222271647916,
+          "final_actual_rad": -0.41092222271647916
+        },
+        "unrothum_r1": {
+          "max_displacement_from_reset_rad": 0.3717482330817738,
+          "max_reference_error_rad": 0.3717482330817738,
+          "final_actual_rad": 0.200093910556446
+        },
+        "unrothum_r3": {
+          "max_displacement_from_reset_rad": 0.6495360819888086,
+          "max_reference_error_rad": 0.6495360819888086,
+          "final_actual_rad": -0.44094577557596315
+        },
+        "unrothum_r2": {
+          "max_displacement_from_reset_rad": 0.5931979778974286,
+          "max_reference_error_rad": 0.5931979778974286,
+          "final_actual_rad": 0.03255129352310158
+        },
+        "elv_angle": {
+          "max_displacement_from_reset_rad": 0.34658708942185945,
+          "max_reference_error_rad": 0.34658708942185945,
+          "final_actual_rad": -0.34658708942185945
+        },
+        "shoulder_elv": {
+          "max_displacement_from_reset_rad": 0.049532908627161636,
+          "max_reference_error_rad": 0.049532908627161636,
+          "final_actual_rad": 4.586655329380111e-06
+        },
+        "shoulder1_r2": {
+          "max_displacement_from_reset_rad": 0.28510168181580087,
+          "max_reference_error_rad": 0.28510168181580087,
+          "final_actual_rad": -0.28510168181580087
+        },
+        "shoulder_rot": {
+          "max_displacement_from_reset_rad": 0.6150740212182417,
+          "max_reference_error_rad": 0.4095651211250315,
+          "final_actual_rad": -0.1405961129621164
+        },
+        "elbow_flexion": {
+          "max_displacement_from_reset_rad": 1.1374048598345772,
+          "max_reference_error_rad": 1.877164234760428,
+          "final_actual_rad": 0.2173007652395861
+        },
+        "pro_sup": {
+          "max_displacement_from_reset_rad": 0.21073605686627217,
+          "max_reference_error_rad": 0.3087646746827267,
+          "final_actual_rad": 0.17123532531727884
+        }
+      },
+      "candidate_relation_errors": {
+        "sternoclavicular_r2_con": {
+          "max_abs_error_rad": 0.27486575405029806,
+          "initial_error_rad": 0.0,
+          "final_error_rad": -0.10594241704090195
+        },
+        "sternoclavicular_r3_con": {
+          "max_abs_error_rad": 0.5984621420630711,
+          "initial_error_rad": 0.0,
+          "final_error_rad": -0.5821051278231921
+        },
+        "unrotscap_r2_con": {
+          "max_abs_error_rad": 0.564910477222329,
+          "initial_error_rad": 0.0,
+          "final_error_rad": 0.564910477222329
+        },
+        "unrotscap_r3_con": {
+          "max_abs_error_rad": 0.7606547655898623,
+          "initial_error_rad": 0.0,
+          "final_error_rad": 0.5896273408285094
+        },
+        "acromioclavicular_r1_con": {
+          "max_abs_error_rad": 0.41092303914112777,
+          "initial_error_rad": 0.0,
+          "final_error_rad": -0.41092303914112777
+        },
+        "acromioclavicular_r2_con": {
+          "max_abs_error_rad": 0.651636110211743,
+          "initial_error_rad": 0.0,
+          "final_error_rad": 0.30834243770875613
+        },
+        "acromioclavicular_r3_con": {
+          "max_abs_error_rad": 0.6559622967832867,
+          "initial_error_rad": 0.0,
+          "final_error_rad": 0.08325483223320561
+        },
+        "unrothum_r1_con": {
+          "max_abs_error_rad": 0.3786947082073654,
+          "initial_error_rad": 0.0,
+          "final_error_rad": 0.20009472698109462
+        },
+        "unrothum_r2_con": {
+          "max_abs_error_rad": 0.5956249423154258,
+          "initial_error_rad": 0.0,
+          "final_error_rad": 0.032551068776073104
+        },
+        "unrothum_r3_con": {
+          "max_abs_error_rad": 0.6318687503740457,
+          "initial_error_rad": 0.0,
+          "final_error_rad": -0.4409439592512794
+        },
+        "shoulder1_r2_con": {
+          "max_abs_error_rad": 0.6316887712376603,
+          "initial_error_rad": 0.0,
+          "final_error_rad": -0.6316887712376603
+        },
+        "r_z_constraint": {
+          "max_abs_error_rad": 0.5060424348991407,
+          "initial_error_rad": 0.0,
+          "final_error_rad": 0.3672131311819863
+        }
+      }
+    },
+    "restored": {
+      "steps": 600,
+      "elapsed_seconds": 1.2000000000000008,
+      "all_states_finite": true,
+      "max_abs_velocity_rad_s": 10.39847679170805,
+      "actual_first_target_contact_step": null,
+      "reference_first_target_contact_step": 396,
+      "contacts": [
+        {
+          "geoms": [
+            "scapula",
+            "thorax"
+          ],
+          "first_step": 0,
+          "new_since_reset": false,
+          "min_distance_m": -0.02131550539112084
+        },
+        {
+          "geoms": [
+            "humerus",
+            "thorax"
+          ],
+          "first_step": 0,
+          "new_since_reset": false,
+          "min_distance_m": -0.00027188775145383314
+        },
+        {
+          "geoms": [
+            "clavicle",
+            "scapula"
+          ],
+          "first_step": 0,
+          "new_since_reset": false,
+          "min_distance_m": -0.013008815547789952
+        },
+        {
+          "geoms": [
+            "humerus",
+            "scapula"
+          ],
+          "first_step": 0,
+          "new_since_reset": false,
+          "min_distance_m": -0.00800402719967322
+        },
+        {
+          "geoms": [
+            "humerus",
+            "radius"
+          ],
+          "first_step": 0,
+          "new_since_reset": false,
+          "min_distance_m": -4.423793152231667e-05
+        }
+      ],
+      "warning_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "joints": {
+        "head_rot": {
+          "max_displacement_from_reset_rad": 0.0,
+          "max_reference_error_rad": 0.0,
+          "final_actual_rad": 0.0
+        },
+        "r_z": {
+          "max_displacement_from_reset_rad": 0.0003023369980857158,
+          "max_reference_error_rad": 0.0003023369980857158,
+          "final_actual_rad": 0.00010189526241318263
+        },
+        "sternoclavicular_r2": {
+          "max_displacement_from_reset_rad": 0.7676561088677994,
+          "max_reference_error_rad": 0.7676561088677994,
+          "final_actual_rad": -0.4869529886242273
+        },
+        "sternoclavicular_r3": {
+          "max_displacement_from_reset_rad": 0.3251526576918653,
+          "max_reference_error_rad": 0.3251526576918653,
+          "final_actual_rad": 0.20630418974133924
+        },
+        "unrotscap_r3": {
+          "max_displacement_from_reset_rad": 0.3250961469568375,
+          "max_reference_error_rad": 0.3250961469568375,
+          "final_actual_rad": -0.20620904575301613
+        },
+        "unrotscap_r2": {
+          "max_displacement_from_reset_rad": 0.767657660273364,
+          "max_reference_error_rad": 0.767657660273364,
+          "final_actual_rad": 0.4869902156877006
+        },
+        "acromioclavicular_r2": {
+          "max_displacement_from_reset_rad": 0.15545237473743084,
+          "max_reference_error_rad": 0.15545237473743084,
+          "final_actual_rad": -0.09858885653775137
+        },
+        "acromioclavicular_r3": {
+          "max_displacement_from_reset_rad": 1.2562167806345181,
+          "max_reference_error_rad": 1.2562167806345181,
+          "final_actual_rad": 0.7968984118517429
+        },
+        "acromioclavicular_r1": {
+          "max_displacement_from_reset_rad": 0.564626838161217,
+          "max_reference_error_rad": 0.564626838161217,
+          "final_actual_rad": 0.35815517391969215
+        },
+        "unrothum_r1": {
+          "max_displacement_from_reset_rad": 0.564648143740336,
+          "max_reference_error_rad": 0.564648143740336,
+          "final_actual_rad": -0.3581858408885633
+        },
+        "unrothum_r3": {
+          "max_displacement_from_reset_rad": 1.2561650074956874,
+          "max_reference_error_rad": 1.2561650074956874,
+          "final_actual_rad": -0.7968671009137875
+        },
+        "unrothum_r2": {
+          "max_displacement_from_reset_rad": 0.15543053414773814,
+          "max_reference_error_rad": 0.15543053414773814,
+          "final_actual_rad": 0.09859919704845131
+        },
+        "elv_angle": {
+          "max_displacement_from_reset_rad": 0.08250006395712997,
+          "max_reference_error_rad": 0.08250006395712997,
+          "final_actual_rad": 0.07477656069602438
+        },
+        "shoulder_elv": {
+          "max_displacement_from_reset_rad": 3.171877417746425,
+          "max_reference_error_rad": 3.171877417746425,
+          "final_actual_rad": 2.0122981027793605
+        },
+        "shoulder1_r2": {
+          "max_displacement_from_reset_rad": 0.08250285480695829,
+          "max_reference_error_rad": 0.08250285480695829,
+          "final_actual_rad": -0.07477905878836832
+        },
+        "shoulder_rot": {
+          "max_displacement_from_reset_rad": 0.9803299535834162,
+          "max_reference_error_rad": 0.8935951970270049,
+          "final_actual_rad": -0.2375083617269579
+        },
+        "elbow_flexion": {
+          "max_displacement_from_reset_rad": 1.137413296099708,
+          "max_reference_error_rad": 1.8155591414723486,
+          "final_actual_rad": 0.27890585852766564
+        },
+        "pro_sup": {
+          "max_displacement_from_reset_rad": 0.26105954375293594,
+          "max_reference_error_rad": 0.32816638950696436,
+          "final_actual_rad": 0.15183361049304117
+        }
+      },
+      "candidate_relation_errors": {
+        "sternoclavicular_r2_con": {
+          "max_abs_error_rad": 0.00015519864725632715,
+          "initial_error_rad": 0.0,
+          "final_error_rad": 2.5164546480715977e-05
+        },
+        "sternoclavicular_r3_con": {
+          "max_abs_error_rad": 0.00012701246586749315,
+          "initial_error_rad": 0.0,
+          "final_error_rad": 4.363420645481231e-05
+        },
+        "unrotscap_r2_con": {
+          "max_abs_error_rad": 0.00018643385962073544,
+          "initial_error_rad": 0.0,
+          "final_error_rad": 1.2062516992594752e-05
+        },
+        "unrotscap_r3_con": {
+          "max_abs_error_rad": 0.00010893025379572763,
+          "initial_error_rad": 0.0,
+          "final_error_rad": 5.1509781868297466e-05
+        },
+        "acromioclavicular_r1_con": {
+          "max_abs_error_rad": 0.00019270385602668944,
+          "initial_error_rad": 0.0,
+          "final_error_rad": -3.3888375033985785e-05
+        },
+        "acromioclavicular_r2_con": {
+          "max_abs_error_rad": 0.0003278750423350383,
+          "initial_error_rad": 0.0,
+          "final_error_rad": 1.4152958057844778e-05
+        },
+        "acromioclavicular_r3_con": {
+          "max_abs_error_rad": 0.00016847794259300386,
+          "initial_error_rad": 0.0,
+          "final_error_rad": 2.4338554910574572e-05
+        },
+        "unrothum_r1_con": {
+          "max_abs_error_rad": 6.248080620530061e-05,
+          "initial_error_rad": 0.0,
+          "final_error_rad": 3.2214061628232926e-06
+        },
+        "unrothum_r2_con": {
+          "max_abs_error_rad": 9.400534278980119e-06,
+          "initial_error_rad": 0.0,
+          "final_error_rad": -3.8124473579065343e-06
+        },
+        "unrothum_r3_con": {
+          "max_abs_error_rad": 0.00010993393129354878,
+          "initial_error_rad": 0.0,
+          "final_error_rad": 6.972383044812069e-06
+        },
+        "shoulder1_r2_con": {
+          "max_abs_error_rad": 9.399944163682346e-06,
+          "initial_error_rad": 0.0,
+          "final_error_rad": -2.4980923439416047e-06
+        },
+        "r_z_constraint": {
+          "max_abs_error_rad": 0.0003023369980857158,
+          "initial_error_rad": 0.0,
+          "final_error_rad": 0.00010189526241318263
+        }
+      }
+    }
+  }
+}

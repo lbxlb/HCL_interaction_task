@@ -1,0 +1,84 @@
+{
+  "purpose": "Four-joint PD tracking precheck; no button slider or task success claim.",
+  "joint_order": [
+    "elv_angle",
+    "shoulder_elv",
+    "shoulder_rot",
+    "elbow_flexion"
+  ],
+  "results": {
+    "0": {
+      "target_rad": [
+        -0.03463437950646764,
+        0.7964403162799989,
+        0.21124887305309414,
+        1.7798651390088502
+      ],
+      "final_rad": [
+        -0.04097232349083314,
+        0.7343358054812541,
+        0.18809165893315932,
+        1.6191000908647186
+      ],
+      "max_final_error_rad": 0.16076504814413162,
+      "max_error_rad": 1.7798076714239832,
+      "saturation_samples": 20,
+      "finite": true
+    },
+    "1": {
+      "target_rad": [
+        0.2574501539689589,
+        0.6393045326858757,
+        0.11562621271044038,
+        1.7531248111844695
+      ],
+      "final_rad": [
+        0.2387905029649324,
+        0.5954247842098752,
+        0.09671435818440857,
+        1.5989262158512796
+      ],
+      "max_final_error_rad": 0.15419859533318991,
+      "max_error_rad": 1.7530673720436978,
+      "saturation_samples": 21,
+      "finite": true
+    },
+    "2": {
+      "target_rad": [
+        0.46232994695878715,
+        0.9659105226395469,
+        -0.2706886852709982,
+        1.4725474462173502
+      ],
+      "final_rad": [
+        0.44463463981954443,
+        0.9149894918973713,
+        -0.2713408307023202,
+        1.364441704242038
+      ],
+      "max_final_error_rad": 0.1081057419753122,
+      "max_error_rad": 1.4724904949723145,
+      "saturation_samples": 23,
+      "finite": true
+    },
+    "3": {
+      "target_rad": [
+        1.232688090595478,
+        0.5274009255932814,
+        -0.9559592849504241,
+        1.486069356129656
+      ],
+      "final_rad": [
+        1.1796585792224648,
+        0.49655061427316827,
+        -0.9333980881217802,
+        1.374605653088634
+      ],
+      "max_final_error_rad": 0.11146370304102216,
+      "max_error_rad": 1.486012154392106,
+      "saturation_samples": 24,
+      "finite": true
+    }
+  },
+  "limitations": "Uses direct panel XML with four temporary motors, no equality fixtures, and no contact task."
+}

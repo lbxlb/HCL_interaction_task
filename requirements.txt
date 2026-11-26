@@ -1,5 +1,5 @@
 # 基础依赖
-python >= 3.8
+# Python 版本由 Conda 管理；当前验证环境为 mjoco_py310（Python 3.10.18）。
 numpy >= 1.21.0
 pyyaml >= 6.0.0
 
@@ -11,7 +11,7 @@ mediapipe >= 0.8.10
 mujoco >= 2.3.0
 
 # ROS 2 Python客户端
-rclpy >= 3.3.0  # 对应ROS 2 Humble版本
+# rclpy 由 ROS 2 Humble 环境提供，不通过此 pip 清单安装。
 
 # 可选：可视化工具（根据项目实际使用情况添加）
 matplotlib >= 3.5.0

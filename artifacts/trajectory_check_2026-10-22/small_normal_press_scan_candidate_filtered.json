@@ -1,0 +1,4840 @@
+{
+  "experiment": "temporary model; short PD-driven normal approach and press",
+  "mode": "press",
+  "collision_filter": {
+    "excluded_body_pairs": [
+      [
+        "thorax",
+        "scapula"
+      ],
+      [
+        "thorax",
+        "humerus"
+      ],
+      [
+        "clavicle",
+        "scapula"
+      ],
+      [
+        "scapula",
+        "humerus"
+      ],
+      [
+        "humerus",
+        "radius"
+      ]
+    ],
+    "formal_panel_audit": {
+      "nexclude": 0,
+      "pairs": [
+        [
+          {
+            "geom": "thorax",
+            "body": "thorax",
+            "parent_body": "world",
+            "contype": 1,
+            "conaffinity": 1,
+            "body_geoms": [
+              "thorax"
+            ]
+          },
+          {
+            "geom": "scapula",
+            "body": "scapula",
+            "parent_body": "clavphant",
+            "contype": 1,
+            "conaffinity": 1,
+            "body_geoms": [
+              "scapula"
+            ]
+          }
+        ],
+        [
+          {
+            "geom": "thorax",
+            "body": "thorax",
+            "parent_body": "world",
+            "contype": 1,
+            "conaffinity": 1,
+            "body_geoms": [
+              "thorax"
+            ]
+          },
+          {
+            "geom": "humerus",
+            "body": "humerus",
+            "parent_body": "humphant1",
+            "contype": 1,
+            "conaffinity": 1,
+            "body_geoms": [
+              "humerus"
+            ]
+          }
+        ],
+        [
+          {
+            "geom": "clavicle",
+            "body": "clavicle",
+            "parent_body": "thorax",
+            "contype": 1,
+            "conaffinity": 1,
+            "body_geoms": [
+              "clavicle"
+            ]
+          },
+          {
+            "geom": "scapula",
+            "body": "scapula",
+            "parent_body": "clavphant",
+            "contype": 1,
+            "conaffinity": 1,
+            "body_geoms": [
+              "scapula"
+            ]
+          }
+        ],
+        [
+          {
+            "geom": "scapula",
+            "body": "scapula",
+            "parent_body": "clavphant",
+            "contype": 1,
+            "conaffinity": 1,
+            "body_geoms": [
+              "scapula"
+            ]
+          },
+          {
+            "geom": "humerus",
+            "body": "humerus",
+            "parent_body": "humphant1",
+            "contype": 1,
+            "conaffinity": 1,
+            "body_geoms": [
+              "humerus"
+            ]
+          }
+        ],
+        [
+          {
+            "geom": "humerus",
+            "body": "humerus",
+            "parent_body": "humphant1",
+            "contype": 1,
+            "conaffinity": 1,
+            "body_geoms": [
+              "humerus"
+            ]
+          },
+          {
+            "geom": "radius",
+            "body": "radius",
+            "parent_body": "ulna",
+            "contype": 1,
+            "conaffinity": 1,
+            "body_geoms": [
+              "radius"
+            ]
+          }
+        ]
+      ]
+    },
+    "press_target_finger_button_contact_detected": true,
+    "experiment_nexclude": 5
+  },
+  "initial_state": {
+    "qpos": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -0.2469484441334319,
+      1.8175643061311306,
+      0.0
+    ],
+    "qvel": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "dynamics_diagnostics": {
+    "initial_control_note": "step 0 has zero motor controls before the first PD command",
+    "sampling": "read-only initial and post-step snapshots; no extra forward calls",
+    "joints": [
+      {
+        "name": "head_rot",
+        "qpos_address": 0,
+        "dof_address": 0
+      },
+      {
+        "name": "r_z",
+        "qpos_address": 1,
+        "dof_address": 1
+      },
+      {
+        "name": "sternoclavicular_r2",
+        "qpos_address": 2,
+        "dof_address": 2
+      },
+      {
+        "name": "sternoclavicular_r3",
+        "qpos_address": 3,
+        "dof_address": 3
+      },
+      {
+        "name": "unrotscap_r3",
+        "qpos_address": 4,
+        "dof_address": 4
+      },
+      {
+        "name": "unrotscap_r2",
+        "qpos_address": 5,
+        "dof_address": 5
+      },
+      {
+        "name": "acromioclavicular_r2",
+        "qpos_address": 6,
+        "dof_address": 6
+      },
+      {
+        "name": "acromioclavicular_r3",
+        "qpos_address": 7,
+        "dof_address": 7
+      },
+      {
+        "name": "acromioclavicular_r1",
+        "qpos_address": 8,
+        "dof_address": 8
+      },
+      {
+        "name": "unrothum_r1",
+        "qpos_address": 9,
+        "dof_address": 9
+      },
+      {
+        "name": "unrothum_r3",
+        "qpos_address": 10,
+        "dof_address": 10
+      },
+      {
+        "name": "unrothum_r2",
+        "qpos_address": 11,
+        "dof_address": 11
+      },
+      {
+        "name": "elv_angle",
+        "qpos_address": 12,
+        "dof_address": 12
+      },
+      {
+        "name": "shoulder_elv",
+        "qpos_address": 13,
+        "dof_address": 13
+      },
+      {
+        "name": "shoulder1_r2",
+        "qpos_address": 14,
+        "dof_address": 14
+      },
+      {
+        "name": "shoulder_rot",
+        "qpos_address": 15,
+        "dof_address": 15
+      },
+      {
+        "name": "elbow_flexion",
+        "qpos_address": 16,
+        "dof_address": 16
+      },
+      {
+        "name": "pro_sup",
+        "qpos_address": 17,
+        "dof_address": 17
+      }
+    ],
+    "snapshots": []
+  },
+  "source_pose_deg": {
+    "shoulder_rot": -13.985476739821403,
+    "elbow_flexion": 103.40619658858215
+  },
+  "target_source": "scan-candidate",
+  "target_pose_deg": {
+    "shoulder_rot": -14.018436573709854,
+    "elbow_flexion": 103.69026383740308
+  },
+  "selected_scan_candidate": {
+    "shoulder_rot_deg": -14.018436573709854,
+    "elbow_flexion_deg": 103.69026383740308,
+    "geom_distance_mm": 0.2927553398001615,
+    "contact_pair_distance_mm": 0.2927798326014874,
+    "fingertip_site_front_offset_mm": 1.862246899032107,
+    "fingertip_site_tangent_error_from_reference_mm": 0.8974939580526731,
+    "fingertip_button_local_m": [
+      -0.013707852788184998,
+      -0.018454658376801214,
+      0.011862246899032107
+    ],
+    "matching_contact_count": 1,
+    "distance_disagreement": false
+  },
+  "model_changes": "temporary XML only: 12 candidate equalities, four fixture equalities, two bounded test motors; five selected body-pair exclusions; formal files unchanged",
+  "timestep_s": 0.002,
+  "sampling": "mj_step then mj_forward; geometry, contacts and forces at post-step state",
+  "distance_diagnostics": {
+    "comparison_threshold_m": 1e-05,
+    "matching_pair_comparisons": 37,
+    "max_absolute_difference_m": 0.0009729665710999065,
+    "disagreements": [
+      {
+        "step": 64,
+        "geom_distance_m": 0.0,
+        "contact_distance_m": 0.0009729665710999065,
+        "absolute_difference_m": 0.0009729665710999065
+      }
+    ],
+    "interpretation": "Disagreements are diagnostic flags, not a proven cause. A zero geomDistance value alone does not establish surface touch."
+  },
+  "samples": [
+    {
+      "step": 1,
+      "time_s": 0.002,
+      "phase": "settle",
+      "geom_distance_m": 0.003341305873853003,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24694841890455335,
+        1.8175643725460464
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "q_error_rad": [
+        -2.522887854183864e-08,
+        -6.641491578918135e-08
+      ],
+      "qvel_actual_rad_s": [
+        1.2614439273118407e-05,
+        3.3207457931499336e-05
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        -1.2614439273118407e-05,
+        -3.3207457931499336e-05
+      ],
+      "applied_torque_Nm": [
+        -0.3500645087773184,
+        6.77140416187015
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 2,
+      "time_s": 0.004,
+      "phase": "settle",
+      "geom_distance_m": 0.0033412786706831397,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24694837380555837,
+        1.8175644890249025
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "q_error_rad": [
+        -7.03278735247892e-08,
+        -1.8289377190505718e-07
+      ],
+      "qvel_actual_rad_s": [
+        2.2549497489882257e-05,
+        5.823942811183462e-05
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        -2.2549497489882257e-05,
+        -5.823942811183462e-05
+      ],
+      "applied_torque_Nm": [
+        -0.35016050156618017,
+        6.771152080934784
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 3,
+      "time_s": 0.006,
+      "phase": "settle",
+      "geom_distance_m": 0.003341238357629079,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24694831374540532,
+        1.817564641863725
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "q_error_rad": [
+        -1.303880265701718e-07,
+        -3.357325943920131e-07
+      ],
+      "qvel_actual_rad_s": [
+        3.0030076518688455e-05,
+        7.641941129738579e-05
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        -3.0030076518688455e-05,
+        -7.641941129738579e-05
+      ],
+      "applied_torque_Nm": [
+        -0.3502375041967367,
+        6.770959056822603
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 4,
+      "time_s": 0.008,
+      "phase": "settle",
+      "geom_distance_m": 0.0033411855032342884,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24694824295036477,
+        1.8175648195762615
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "q_error_rad": [
+        -2.0118306712224587e-07,
+        -5.134451308563825e-07
+      ],
+      "qvel_actual_rad_s": [
+        3.5397520280124986e-05,
+        8.88562681882822e-05
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        -3.5397520280124986e-05,
+        -8.88562681882822e-05
+      ],
+      "applied_torque_Nm": [
+        -0.35029694527750144,
+        6.770815802230555
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 5,
+      "time_s": 0.01,
+      "phase": "settle",
+      "geom_distance_m": 0.0033411208082896487,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24694816503117045,
+        1.817565012608238
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "q_error_rad": [
+        -2.7910226144123307e-07,
+        -7.064771074816178e-07
+      ],
+      "qvel_actual_rad_s": [
+        3.895959715571359e-05,
+        9.651598834846151e-05
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        -3.895959715571359e-05,
+        -9.651598834846151e-05
+      ],
+      "applied_torque_Nm": [
+        -0.3503411615846258,
+        6.770714534868498
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 6,
+      "time_s": 0.012,
+      "phase": "settle",
+      "geom_distance_m": 0.0033410450710489687,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24694808304639682,
+        1.8175652130840878
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "q_error_rad": [
+        -3.610870350778672e-07,
+        -9.069529571803514e-07
+      ],
+      "qvel_actual_rad_s": [
+        4.099238682377254e-05,
+        0.00010023792483310702
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        -4.099238682377254e-05,
+        -0.00010023792483310702
+      ],
+      "applied_torque_Nm": [
+        -0.3503722695939647,
+        6.770648452782536
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 7,
+      "time_s": 0.014,
+      "phase": "settle",
+      "geom_distance_m": 0.0033409591578091283,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24694799956143013,
+        1.8175654145825513
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "q_error_rad": [
+        -4.44572001767618e-07,
+        -1.1084514206505247e-06
+      ],
+      "qvel_actual_rad_s": [
+        4.174248333797709e-05,
+        0.0001007492317000899
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        -4.174248333797709e-05,
+        -0.0001007492317000899
+      ],
+      "applied_torque_Nm": [
+        -0.3503921764702001,
+        6.770611624638191
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 8,
+      "time_s": 0.016,
+      "phase": "settle",
+      "geom_distance_m": 0.0033408639781819173,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24694791670308036,
+        1.8175656119381391
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "q_error_rad": [
+        -5.274303515323542e-07,
+        -1.3058070085225637e-06
+      ],
+      "qvel_actual_rad_s": [
+        4.14291748881463e-05,
+        9.867779396127532e-05
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        -4.14291748881463e-05,
+        -9.867779396127532e-05
+      ],
+      "applied_torque_Nm": [
+        -0.3504025936386326,
+        6.770598892105312
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 9,
+      "time_s": 0.018000000000000002,
+      "phase": "settle",
+      "geom_distance_m": 0.003340760464452883,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24694783620992386,
+        1.8175658010657352
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "q_error_rad": [
+        -6.079235080336254e-07,
+        -1.4949346045511902e-06
+      ],
+      "qvel_actual_rad_s": [
+        4.0246578255402194e-05,
+        9.456379802397e-05
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        -4.0246578255402194e-05,
+        -9.456379802397e-05
+      ],
+      "applied_torque_Nm": [
+        -0.3504050503921401,
+        6.770605782316336
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 10,
+      "time_s": 0.020000000000000004,
+      "phase": "settle",
+      "geom_distance_m": 0.0033406495545097864,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24694775947851072,
+        1.8175659788058909
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "q_error_rad": [
+        -6.846549211736441e-07,
+        -1.6726747602557879e-06
+      ],
+      "qvel_actual_rad_s": [
+        3.83657065638042e-05,
+        8.887007786761402e-05
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        -3.83657065638042e-05,
+        -8.887007786761402e-05
+      ],
+      "applied_torque_Nm": [
+        -0.3504009073654033,
+        6.770628429417125
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 11,
+      "time_s": 0.022000000000000006,
+      "phase": "settle",
+      "geom_distance_m": 0.0033405321778458936,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.2469476876056015,
+        1.817566142788609
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "q_error_rad": [
+        -7.565278303811596e-07,
+        -1.836657478326842e-06
+      ],
+      "qvel_actual_rad_s": [
+        3.593645459700942e-05,
+        8.199135898809867e-05
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        -3.593645459700942e-05,
+        -8.199135898809867e-05
+      ],
+      "applied_torque_Nm": [
+        -0.3503913697106581,
+        6.7706635043126955
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 12,
+      "time_s": 0.024000000000000007,
+      "phase": "settle",
+      "geom_distance_m": 0.0033404092442535717,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24694762142662063,
+        1.8175662913136297
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "q_error_rad": [
+        -8.227068112598435e-07,
+        -1.9851824990535505e-06
+      ],
+      "qvel_actual_rad_s": [
+        3.3089490437542135e-05,
+        7.426251031762986e-05
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        -3.3089490437542135e-05,
+        -7.426251031762986e-05
+      ],
+      "applied_torque_Nm": [
+        -0.3503774998495809,
+        6.770708151797935
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 13,
+      "time_s": 0.02600000000000001,
+      "phase": "settle",
+      "geom_distance_m": 0.0033402816348153466,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24694756155052908,
+        1.8175664232454372
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "q_error_rad": [
+        -8.82582902816953e-07,
+        -2.117114306532386e-06
+      ],
+      "qvel_actual_rad_s": [
+        2.9938045781555078e-05,
+        6.596590369609438e-05
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        -2.9938045781555078e-05,
+        -6.596590369609438e-05
+      ],
+      "applied_torque_Nm": [
+        -0.3503602297090386,
+        6.770759934341179
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 14,
+      "time_s": 0.02800000000000001,
+      "phase": "settle",
+      "geom_distance_m": 0.0,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24694750839132856,
+        1.8175665379213788
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "q_error_rad": [
+        -9.357421033306945e-07,
+        -2.2317902481638896e-06
+      ],
+      "qvel_actual_rad_s": [
+        2.657960025713293e-05,
+        5.73379708493207e-05
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        -2.657960025713293e-05,
+        -5.73379708493207e-05
+      ],
+      "applied_torque_Nm": [
+        -0.35034037237363447,
+        6.7708167818593195
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 15,
+      "time_s": 0.030000000000000013,
+      "phase": "settle",
+      "geom_distance_m": 0.0033400157287678074,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24694746219641356,
+        1.817566635071457
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "q_error_rad": [
+        -9.81937018335044e-07,
+        -2.328940326368212e-06
+      ],
+      "qvel_actual_rad_s": [
+        2.3097457508216512e-05,
+        4.857503912444452e-05
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        -2.3097457508216512e-05,
+        -4.857503912444452e-05
+      ],
+      "applied_torque_Nm": [
+        -0.3503186331104428,
+        6.770876946886331
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 16,
+      "time_s": 0.032000000000000015,
+      "phase": "settle",
+      "geom_distance_m": 0.0033398789958442626,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24694742307198803,
+        1.8175667147484957
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "q_error_rad": [
+        -1.0210614438677101e-06,
+        -2.408617365112775e-06
+      ],
+      "qvel_actual_rad_s": [
+        1.956221277244763e-05,
+        3.983851935318607e-05
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        -1.956221277244763e-05,
+        -3.983851935318607e-05
+      ],
+      "applied_torque_Nm": [
+        -0.35029561973869083,
+        6.770938964594875
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 17,
+      "time_s": 0.034000000000000016,
+      "phase": "settle",
+      "geom_distance_m": 0.003339740707931656,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24694739100576155,
+        1.81756677726752
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "q_error_rad": [
+        -1.0531276703473758e-06,
+        -2.4711363892926386e-06
+      ],
+      "qvel_actual_rad_s": [
+        1.603311324634307e-05,
+        3.12595120839268e-05
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        -1.603311324634307e-05,
+        -3.12595120839268e-05
+      ],
+      "applied_torque_Nm": [
+        -0.3502718523321883,
+        6.771001617182542
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 18,
+      "time_s": 0.03600000000000002,
+      "phase": "settle",
+      "geom_distance_m": 0.00333960152767616,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24694736588713403,
+        1.8175668231533038
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "q_error_rad": [
+        -1.078246297858687e-06,
+        -2.5170221731318776e-06
+      ],
+      "qvel_actual_rad_s": [
+        1.2559313755274846e-05,
+        2.2942891969633325e-05
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        -1.2559313755274846e-05,
+        -2.2942891969633325e-05
+      ],
+      "applied_torque_Nm": [
+        -0.35024777225376913,
+        6.771063902181739
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 19,
+      "time_s": 0.03800000000000002,
+      "phase": "settle",
+      "geom_distance_m": 0.003339462067814422,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24694734752507166,
+        1.8175668530951523
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "q_error_rad": [
+        -1.0966083602292898e-06,
+        -2.5469640216879696e-06
+      ],
+      "qvel_actual_rad_s": [
+        9.181031181537464e-06,
+        1.497092425930042e-05
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        -9.181031181537464e-06,
+        -1.497092425930042e-05
+      ],
+      "applied_torque_Nm": [
+        -0.35022375053058236,
+        6.771125004294451
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 20,
+      "time_s": 0.04000000000000002,
+      "phase": "settle",
+      "geom_distance_m": 0.0,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24694733566386806,
+        1.8175668679080765
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "q_error_rad": [
+        -1.1084695638319264e-06,
+        -2.5617769459085338e-06
+      ],
+      "qvel_actual_rad_s": [
+        5.9306017983244115e-06,
+        7.4064620576678635e-06
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        -5.9306017983244115e-06,
+        -7.4064620576678635e-06
+      ],
+      "applied_torque_Nm": [
+        -0.3502000955862278,
+        6.7711842703922684
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 21,
+      "time_s": 0.04200000000000002,
+      "phase": "ramp",
+      "geom_distance_m": 0.003339184511134973,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24694732999697577,
+        1.817566868499613
+      ],
+      "q_target_rad": [
+        -0.2469484441334319,
+        1.8175643061311306
+      ],
+      "q_error_rad": [
+        -1.1141364561206846e-06,
+        -2.562368482283972e-06
+      ],
+      "qvel_actual_rad_s": [
+        2.8334461508950442e-06,
+        2.9576823884078266e-07
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        -2.8334461508950442e-06,
+        -2.9576823884078266e-07
+      ],
+      "applied_torque_Nm": [
+        -0.35017706035134705,
+        6.771241187356786
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 22,
+      "time_s": 0.044000000000000025,
+      "phase": "ramp",
+      "geom_distance_m": 0.003338433610886372,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24694684991580715,
+        1.817565284768508
+      ],
+      "q_target_rad": [
+        -0.2469457439386227,
+        1.817555038016041
+      ],
+      "q_error_rad": [
+        1.1059771844457167e-06,
+        -1.0246752466969156e-05
+      ],
+      "qvel_actual_rad_s": [
+        0.00024004058430781384,
+        -0.0007918655524918817
+      ],
+      "qvel_target_rad_s": [
+        0.002681950249677759,
+        -0.00920549269043981
+      ],
+      "qvel_error_rad_s": [
+        0.0024419096653699453,
+        -0.008413627137947929
+      ],
+      "applied_torque_Nm": [
+        -0.32856423704061355,
+        6.697188015188894
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 23,
+      "time_s": 0.04600000000000003,
+      "phase": "ramp",
+      "geom_distance_m": 0.0033365270624321564,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.2469454713523117,
+        1.8175607262648477
+      ],
+      "q_target_rad": [
+        -0.24693778931067126,
+        1.8175277346499659
+      ],
+      "q_error_rad": [
+        7.682041640449944e-06,
+        -3.299161488179436e-05
+      ],
+      "qvel_actual_rad_s": [
+        0.0006892817477218727,
+        -0.0022792518301294837
+      ],
+      "qvel_target_rad_s": [
+        0.005254433142225814,
+        -0.018035250985351466
+      ],
+      "qvel_error_rad_s": [
+        0.004565151394503941,
+        -0.01575599915522198
+      ],
+      "applied_torque_Nm": [
+        -0.3093893694754918,
+        6.631204447398487
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 24,
+      "time_s": 0.04800000000000003,
+      "phase": "ramp",
+      "geom_distance_m": 0.003332986839011979,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24694282265218162,
+        1.8175519692321485
+      ],
+      "q_target_rad": [
+        -0.2469247991842919,
+        1.8174831475016966
+      ],
+      "q_error_rad": [
+        1.8023467889732858e-05,
+        -6.882173045186235e-05
+      ],
+      "qvel_actual_rad_s": [
+        0.0013243500650440096,
+        -0.004378516349574745
+      ],
+      "qvel_target_rad_s": [
+        0.007717448677644163,
+        -0.026489274884734963
+      ],
+      "qvel_error_rad_s": [
+        0.006393098612600154,
+        -0.022110758535160216
+      ],
+      "applied_torque_Nm": [
+        -0.29247162819771055,
+        6.5727225233323745
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 25,
+      "time_s": 0.05000000000000003,
+      "phase": "ramp",
+      "geom_distance_m": 0.0033273953064719805,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.2469385806079651,
+        1.8175379445234319
+      ],
+      "q_target_rad": [
+        -0.24690699249419878,
+        1.817422028040024
+      ],
+      "q_error_rad": [
+        3.158811376632875e-05,
+        -0.00011591648340791849
+      ],
+      "qvel_actual_rad_s": [
+        0.0021210221082482382,
+        -0.00701235435825791
+      ],
+      "qvel_target_rad_s": [
+        0.01007099685593281,
+        -0.03456756438859031
+      ],
+      "qvel_error_rad_s": [
+        0.00794997474768457,
+        -0.0275552100303324
+      ],
+      "applied_torque_Nm": [
+        -0.27764314393038164,
+        6.521214710286788
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 26,
+      "time_s": 0.05200000000000003,
+      "phase": "ramp",
+      "geom_distance_m": 0.003319390852980385,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24693246678662073,
+        1.8175177263826903
+      ],
+      "q_target_rad": [
+        -0.24688458817510622,
+        1.8173451277337391
+      ],
+      "q_error_rad": [
+        4.78786115145069e-05,
+        -0.00017259864895113886
+      ],
+      "qvel_actual_rad_s": [
+        0.0030569106721891706,
+        -0.010109070370839933
+      ],
+      "qvel_target_rad_s": [
+        0.012315077677091751,
+        -0.0422701194969175
+      ],
+      "qvel_error_rad_s": [
+        0.009258167004902581,
+        -0.03216104912607757
+      ],
+      "applied_torque_Nm": [
+        -0.26474860284422064,
+        6.4761912154923555
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 27,
+      "time_s": 0.054000000000000034,
+      "phase": "ramp",
+      "geom_distance_m": 0.0033086638320081493,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24692424412999725,
+        1.8174905220300535
+      ],
+      "q_target_rad": [
+        -0.2468578051617285,
+        1.8172531980516333
+      ],
+      "q_error_rad": [
+        6.643896826874496e-05,
+        -0.0002373239784201342
+      ],
+      "qvel_actual_rad_s": [
+        0.004111328311737138,
+        -0.013602176318401493
+      ],
+      "qvel_target_rad_s": [
+        0.014449691141120987,
+        -0.04959694020971653
+      ],
+      "qvel_error_rad_s": [
+        0.01033836282938385,
+        -0.035994763891315035
+      ],
+      "applied_torque_Nm": [
+        -0.25364432192311787,
+        6.437197288541503
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 28,
+      "time_s": 0.056000000000000036,
+      "phase": "ramp",
+      "geom_distance_m": 0.0032949527955504214,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24691371380801283,
+        1.8174556619931985
+      ],
+      "q_target_rad": [
+        -0.24682686238877982,
+        1.8171469904624973
+      ],
+      "q_error_rad": [
+        8.685141923300832e-05,
+        -0.0003086715307012433
+      ],
+      "qvel_actual_rad_s": [
+        0.005265160992209025,
+        -0.017430018427427117
+      ],
+      "qvel_target_rad_s": [
+        0.01647483724802052,
+        -0.05654802652698741
+      ],
+      "qvel_error_rad_s": [
+        0.011209676255811495,
+        -0.0391180080995603
+      ],
+      "applied_torque_Nm": [
+        -0.2441973908907654,
+        6.4038107162802955
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 29,
+      "time_s": 0.05800000000000004,
+      "phase": "ramp",
+      "geom_distance_m": 0.003278040996374868,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.2469007123058372,
+        1.8174125911316352
+      ],
+      "q_target_rad": [
+        -0.2467919787909745,
+        1.8170272564351224
+      ],
+      "q_error_rad": [
+        0.00010873351486270777,
+        -0.00038533469651280683
+      ],
+      "qvel_actual_rad_s": [
+        0.006500751087816147,
+        -0.02153543078164087
+      ],
+      "qvel_target_rad_s": [
+        0.01839051599779035,
+        -0.06312337844873013
+      ],
+      "qvel_error_rad_s": [
+        0.011889764909974204,
+        -0.04158794766708926
+      ],
+      "applied_torque_Nm": [
+        -0.23628487704405227,
+        6.375639497032563
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 30,
+      "time_s": 0.06000000000000004,
+      "phase": "ramp",
+      "geom_distance_m": 0.0032577531396826456,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.2468851087277829,
+        1.8173608603043059
+      ],
+      "q_target_rad": [
+        -0.24675337330302677,
+        1.8168947474382995
+      ],
+      "q_error_rad": [
+        0.00013173542475614086,
+        -0.00046611286600639623
+      ],
+      "qvel_actual_rad_s": [
+        0.007801789027152796,
+        -0.02586541366464165
+      ],
+      "qvel_target_rad_s": [
+        0.02019672739043047,
+        -0.0693229959749447
+      ],
+      "qvel_error_rad_s": [
+        0.012394938363277675,
+        -0.043457582310303056
+      ],
+      "applied_torque_Nm": [
+        -0.2297930883215874,
+        6.35231968134487
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 31,
+      "time_s": 0.06200000000000004,
+      "phase": "ramp",
+      "geom_distance_m": 0.003233952366096113,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.2468668023019024,
+        1.817300118634475
+      ],
+      "q_target_rad": [
+        -0.24671126485965086,
+        1.8167502149408197
+      ],
+      "q_error_rad": [
+        0.00015553744225152433,
+        -0.0005499036936553736
+      ],
+      "qvel_actual_rad_s": [
+        0.009153212940255217,
+        -0.030370834915469824
+      ],
+      "qvel_target_rad_s": [
+        0.021893471425940895,
+        -0.07514687910563113
+      ],
+      "qvel_error_rad_s": [
+        0.012740258485685678,
+        -0.044776044190161304
+      ],
+      "applied_torque_Nm": [
+        -0.22461689031980625,
+        6.333513367353398
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 32,
+      "time_s": 0.06400000000000004,
+      "phase": "ramp",
+      "geom_distance_m": 0.0032065374492426376,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24684572007047798,
+        1.8172301063291667
+      ],
+      "q_target_rad": [
+        -0.2466658723955611,
+        1.816594410411474
+      ],
+      "q_error_rad": [
+        0.00017984767491688314,
+        -0.0006356959176927468
+      ],
+      "qvel_actual_rad_s": [
+        0.010541115712201088,
+        -0.035006152654162424
+      ],
+      "qvel_target_rad_s": [
+        0.023480748104321606,
+        -0.08059502784078937
+      ],
+      "qvel_error_rad_s": [
+        0.012939632392120518,
+        -0.045588875186626944
+      ],
+      "applied_torque_Nm": [
+        -0.22065907329871692,
+        6.318906839715744
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 33,
+      "time_s": 0.06600000000000004,
+      "phase": "ramp",
+      "geom_distance_m": 0.0031754401924632292,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24682181475268958,
+        1.8171506480134654
+      ],
+      "q_target_rad": [
+        -0.24661741484547167,
+        1.8164280853190535
+      ],
+      "q_error_rad": [
+        0.0002043999072179059,
+        -0.0007225626944118435
+      ],
+      "qvel_actual_rad_s": [
+        0.011952658894195915,
+        -0.03972915785063217
+      ],
+      "qvel_target_rad_s": [
+        0.02495855742557261,
+        -0.08566744218041945
+      ],
+      "qvel_error_rad_s": [
+        0.013005898531376696,
+        -0.045938284329787284
+      ],
+      "applied_torque_Nm": [
+        -0.2178297655192724,
+        6.308208841835625
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 34,
+      "time_s": 0.06800000000000005,
+      "phase": "ramp",
+      "geom_distance_m": 0.0031406230103489126,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24679506276675936,
+        1.8170616465428284
+      ],
+      "q_target_rad": [
+        -0.24656611114409688,
+        1.8162519911323494
+      ],
+      "q_error_rad": [
+        0.00022895162266248215,
+        -0.0008096554104790599
+      ],
+      "qvel_actual_rad_s": [
+        0.013375992965110002,
+        -0.044500735318427416
+      ],
+      "qvel_target_rad_s": [
+        0.02632689938969392,
+        -0.09036412212452141
+      ],
+      "qvel_error_rad_s": [
+        0.012950906424583918,
+        -0.045863386806093996
+      ],
+      "applied_torque_Nm": [
+        -0.21604588952938336,
+        6.301148971837403
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 35,
+      "time_s": 0.07000000000000005,
+      "phase": "ramp",
+      "geom_distance_m": 0.0031020766818723494,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24676546239980954,
+        1.8169630772591971
+      ],
+      "q_target_rad": [
+        -0.24651218022615098,
+        1.8160668793201524
+      ],
+      "q_error_rad": [
+        0.0002532821736585533,
+        -0.0008961979390447183
+      ],
+      "qvel_actual_rad_s": [
+        0.014800183474914942,
+        -0.04928464181562685
+      ],
+      "qvel_target_rad_s": [
+        0.027585773996685523,
+        -0.0946850676730952
+      ],
+      "qvel_error_rad_s": [
+        0.012785590521770581,
+        -0.045400425857468354
+      ],
+      "applied_torque_Nm": [
+        -0.21523065826763627,
+        6.297476193426248
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 36,
+      "time_s": 0.07200000000000005,
+      "phase": "ramp",
+      "geom_distance_m": 0.0030598182628461383,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24673303211453596,
+        1.8168549826591396
+      ],
+      "q_target_rad": [
+        -0.2464558410263482,
+        1.815873501351254
+      ],
+      "q_error_rad": [
+        0.00027719108818774485,
+        -0.0009814813078856677
+      ],
+      "qvel_actual_rad_s": [
+        0.0162151426367848,
+        -0.05404730002880674
+      ],
+      "qvel_target_rad_s": [
+        0.028735181246547416,
+        -0.09863027882614082
+      ],
+      "qvel_error_rad_s": [
+        0.012520038609762616,
+        -0.04458297879733408
+      ],
+      "applied_torque_Nm": [
+        -0.21531310808554743,
+        6.296957453400568
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 37,
+      "time_s": 0.07400000000000005,
+      "phase": "ramp",
+      "geom_distance_m": 0.003013889146381078,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24669780898260177,
+        1.8167374674445333
+      ],
+      "q_target_rad": [
+        -0.24639731247940289,
+        1.8156726086944448
+      ],
+      "q_error_rad": [
+        0.00030049650319888266,
+        -0.0010648587500885487
+      ],
+      "qvel_actual_rad_s": [
+        0.01761156596708821,
+        -0.058757607303156115
+      ],
+      "qvel_target_rad_s": [
+        0.029775121139279607,
+        -0.10219975558365829
+      ],
+      "qvel_error_rad_s": [
+        0.012163555172191396,
+        -0.04344214828050218
+      ],
+      "applied_torque_Nm": [
+        -0.21622766600256094,
+        6.299376398170553
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 38,
+      "time_s": 0.07600000000000005,
+      "phase": "ramp",
+      "geom_distance_m": 0.002964353260814221,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24665984723539702,
+        1.8166106939284077
+      ],
+      "q_target_rad": [
+        -0.2463368135200292,
+        1.8154649528185163
+      ],
+      "q_error_rad": [
+        0.0003230337153678209,
+        -0.0011457411098914072
+      ],
+      "qvel_actual_rad_s": [
+        0.01898087360237614,
+        -0.0633867580628493
+      ],
+      "qvel_target_rad_s": [
+        0.0307055936748821,
+        -0.10539349794564765
+      ],
+      "qvel_error_rad_s": [
+        0.01172472007250596,
+        -0.04200673988279835
+      ],
+      "applied_torque_Nm": [
+        -0.21791374870490166,
+        6.3045321821821405
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 39,
+      "time_s": 0.07800000000000006,
+      "phase": "ramp",
+      "geom_distance_m": 0.0029112953953833367,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24661921692349703,
+        1.8164748777705255
+      ],
+      "q_target_rad": [
+        -0.24627456308294143,
+        1.8152512851922593
+      ],
+      "q_error_rad": [
+        0.00034465384055559767,
+        -0.0012235925782662083
+      ],
+      "qvel_actual_rad_s": [
+        0.020315155950002252,
+        -0.06790807894112888
+      ],
+      "qvel_target_rad_s": [
+        0.03152659885335488,
+        -0.1082115059121088
+      ],
+      "qvel_error_rad_s": [
+        0.01121144290335263,
+        -0.040303426970979925
+      ],
+      "applied_torque_Nm": [
+        -0.22031539098098885,
+        6.312238361653243
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 40,
+      "time_s": 0.08000000000000006,
+      "phase": "ramp",
+      "geom_distance_m": 0.002854819644603169,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.2465760026767882,
+        1.8163302840191062
+      ],
+      "q_target_rad": [
+        -0.24621078010285385,
+        1.8150323572844649
+      ],
+      "q_error_rad": [
+        0.0003652225739343429,
+        -0.0012979267346413526
+      ],
+      "qvel_actual_rad_s": [
+        0.021607123354410656,
+        -0.07229687570959084
+      ],
+      "qvel_target_rad_s": [
+        0.032238136674697965,
+        -0.11065377948304182
+      ],
+      "qvel_error_rad_s": [
+        0.010631013320287309,
+        -0.03835690377345098
+      ],
+      "applied_torque_Nm": [
+        -0.2233809014541835,
+        6.32232186750046
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 41,
+      "time_s": 0.08200000000000006,
+      "phase": "ramp",
+      "geom_distance_m": 0.0027950479629889084,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24653030255781905,
+        1.8161772234367837
+      ],
+      "q_target_rad": [
+        -0.24614568351448074,
+        1.8148089205639242
+      ],
+      "q_error_rad": [
+        0.0003846190433383079,
+        -0.0013683028728594948
+      ],
+      "qvel_actual_rad_s": [
+        0.022850059484572874,
+        -0.07653029116125853
+      ],
+      "qvel_target_rad_s": [
+        0.03284020713891134,
+        -0.11272031865844667
+      ],
+      "qvel_error_rad_s": [
+        0.009990147654338463,
+        -0.03619002749718814
+      ],
+      "applied_torque_Nm": [
+        -0.22706254362884815,
+        6.33462205177301
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 42,
+      "time_s": 0.08400000000000006,
+      "phase": "ramp",
+      "geom_distance_m": 0.0,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24648222700147962,
+        1.8160160490904587
+      ],
+      "q_target_rad": [
+        -0.2460794922525363,
+        1.8145817264994282
+      ],
+      "q_error_rad": [
+        0.00040273474894331196,
+        -0.0014343225910304902
+      ],
+      "qvel_actual_rad_s": [
+        0.024037778169719127,
+        -0.080587173162526
+      ],
+      "qvel_target_rad_s": [
+        0.03333281024599501,
+        -0.11441112343832338
+      ],
+      "qvel_error_rad_s": [
+        0.009295032076275887,
+        -0.033823950275797376
+      ],
+      "applied_torque_Nm": [
+        -0.23131624040961807,
+        6.348989802317442
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 43,
+      "time_s": 0.08600000000000006,
+      "phase": "ramp",
+      "geom_distance_m": 0.002666185964424154,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24643189783461855,
+        1.8158471531861682
+      ],
+      "q_target_rad": [
+        -0.24601242525173483,
+        1.8143515265597678
+      ],
+      "q_error_rad": [
+        0.0004194725828837176,
+        -0.0014956266264003482
+      ],
+      "qvel_actual_rad_s": [
+        0.025164583430535833,
+        -0.08444795214525155
+      ],
+      "qvel_target_rad_s": [
+        0.03371594599594897,
+        -0.11572619382267192
+      ],
+      "qvel_error_rad_s": [
+        0.00855136256541314,
+        -0.03127824167742037
+      ],
+      "applied_torque_Nm": [
+        -0.23610130038671653,
+        6.365286720775659
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 44,
+      "time_s": 0.08800000000000006,
+      "phase": "ramp",
+      "geom_distance_m": 0.002597417242303388,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24637944736967549,
+        1.8156709641314432
+      ],
+      "q_target_rad": [
+        -0.2459447014467906,
+        1.8141190722137344
+      ],
+      "q_error_rad": [
+        0.0004347459228848938,
+        -0.0015518919177088808
+      ],
+      "qvel_actual_rad_s": [
+        0.026225232471526368,
+        -0.0880945273624969
+      ],
+      "qvel_target_rad_s": [
+        0.03398961438877324,
+        -0.11666552981149232
+      ],
+      "qvel_error_rad_s": [
+        0.0077643819172468695,
+        -0.028571002448995422
+      ],
+      "applied_torque_Nm": [
+        -0.24138016430386247,
+        6.383384359369461
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 45,
+      "time_s": 0.09000000000000007,
+      "phase": "ramp",
+      "geom_distance_m": 0.002525993544210229,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24632501756684075,
+        1.8154879438088833
+      ],
+      "q_target_rad": [
+        -0.24587653977241783,
+        1.813885114930119
+      ],
+      "q_error_rad": [
+        0.000448477794422919,
+        -0.0016028288787643952
+      ],
+      "qvel_actual_rad_s": [
+        0.02721490141737483,
+        -0.09151016127990398
+      ],
+      "qvel_target_rad_s": [
+        0.034153815424467784,
+        -0.11722913140478451
+      ],
+      "qvel_error_rad_s": [
+        0.006938914007092956,
+        -0.02571897012488053
+      ],
+      "applied_torque_Nm": [
+        -0.24711817023932384,
+        6.40316351225183
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 46,
+      "time_s": 0.09200000000000007,
+      "phase": "ramp",
+      "geom_distance_m": 0.002452107794111798,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.2462687592596567,
+        1.8152985850458438
+      ],
+      "q_target_rad": [
+        -0.24580815916333082,
+        1.8136504061777123
+      ],
+      "q_error_rad": [
+        0.0004606000963258694,
+        -0.0016481788681315113
+      ],
+      "qvel_actual_rad_s": [
+        0.028129153592022893,
+        -0.09467938151974174
+      ],
+      "qvel_target_rad_s": [
+        0.03420854910303264,
+        -0.11741699860254862
+      ],
+      "qvel_error_rad_s": [
+        0.00607939551100975,
+        -0.022737617082806874
+      ],
+      "applied_torque_Nm": [
+        -0.2532833361369671,
+        6.424513557508016
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 47,
+      "time_s": 0.09400000000000007,
+      "phase": "ramp",
+      "geom_distance_m": 0.0023759640236869412,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24621083143934896,
+        1.8151034092662108
+      ],
+      "q_target_rad": [
+        -0.24573977855424378,
+        1.8134156974253057
+      ],
+      "q_error_rad": [
+        0.00047105288510518317,
+        -0.001687711840905104
+      ],
+      "qvel_actual_rad_s": [
+        0.028963910153867217,
+        -0.09758788981648175
+      ],
+      "qvel_target_rad_s": [
+        0.034153815424467784,
+        -0.11722913140478451
+      ],
+      "qvel_error_rad_s": [
+        0.005189905270600568,
+        -0.019641241588302757
+      ],
+      "applied_torque_Nm": [
+        -0.2598461584222923,
+        6.447331846171212
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 48,
+      "time_s": 0.09600000000000007,
+      "phase": "ramp",
+      "geom_distance_m": 0.0022977765107274873,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24615140059352075,
+        1.8149029643112475
+      ],
+      "q_target_rad": [
+        -0.24567161687987102,
+        1.8131817401416903
+      ],
+      "q_error_rad": [
+        0.00047978371364973404,
+        -0.0017212241695572228
+      ],
+      "qvel_actual_rad_s": [
+        0.029715422914099825,
+        -0.10022247748159868
+      ],
+      "qvel_target_rad_s": [
+        0.03398961438877324,
+        -0.11666552981149232
+      ],
+      "qvel_error_rad_s": [
+        0.004274191474673412,
+        -0.01644305232989364
+      ],
+      "applied_torque_Nm": [
+        -0.2667794255299758,
+        6.471523134878508
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 49,
+      "time_s": 0.09800000000000007,
+      "phase": "ramp",
+      "geom_distance_m": 0.00221776897936319,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.2460906400951651,
+        1.8146978224174248
+      ],
+      "q_target_rad": [
+        -0.24560389307492678,
+        1.8129492857956568
+      ],
+      "q_error_rad": [
+        0.0004867470202383206,
+        -0.0017485366217679932
+      ],
+      "qvel_actual_rad_s": [
+        0.030380249177829066,
+        -0.10257094691135006
+      ],
+      "qvel_target_rad_s": [
+        0.03371594599594897,
+        -0.11572619382267192
+      ],
+      "qvel_error_rad_s": [
+        0.0033356968181199077,
+        -0.01315524691132186
+      ],
+      "applied_torque_Nm": [
+        -0.27405804525372324,
+        6.496999059035933
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 50,
+      "time_s": 0.10000000000000007,
+      "phase": "ramp",
+      "geom_distance_m": 0.0021361738578363253,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24602872963824649,
+        1.8144885783400153
+      ],
+      "q_target_rad": [
+        -0.2455368260741253,
+        1.8127190858559965
+      ],
+      "q_error_rad": [
+        0.0004919035641211822,
+        -0.0017694924840188087
+      ],
+      "qvel_actual_rad_s": [
+        0.030955228459310348,
+        -0.10462203870476332
+      ],
+      "qvel_target_rad_s": [
+        0.033332810245995,
+        -0.11441112343832335
+      ],
+      "qvel_error_rad_s": [
+        0.0023775817866846516,
+        -0.009789084733560036
+      ],
+      "applied_torque_Nm": [
+        -0.2816588849080599,
+        6.523677643586334
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 51,
+      "time_s": 0.10200000000000008,
+      "phase": "ramp",
+      "geom_distance_m": 0.0020532315898412314,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24596585471637958,
+        1.814275847612035
+      ],
+      "q_target_rad": [
+        -0.24547063481218087,
+        1.8124918917915005
+      ],
+      "q_error_rad": [
+        0.0004952199041987071,
+        -0.0017839558205345885
+      ],
+      "qvel_actual_rad_s": [
+        0.03143746093345302,
+        -0.10636536399013458
+      ],
+      "qvel_target_rad_s": [
+        0.03284020713891132,
+        -0.11272031865844663
+      ],
+      "qvel_error_rad_s": [
+        0.0014027462054583065,
+        -0.0063549546683120545
+      ],
+      "applied_torque_Nm": [
+        -0.289560623364554,
+        6.5514828486828325
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 52,
+      "time_s": 0.10400000000000008,
+      "phase": "ramp",
+      "geom_distance_m": 0.0019691899957483237,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24590220614138794,
+        1.8140602649288606
+      ],
+      "q_target_rad": [
+        -0.24540553822380776,
+        1.8122684550709598
+      ],
+      "q_error_rad": [
+        0.0004966679175801847,
+        -0.001791809857900839
+      ],
+      "qvel_actual_rad_s": [
+        0.031824287495816776,
+        -0.10779134158718828
+      ],
+      "qvel_target_rad_s": [
+        0.03223813667469796,
+        -0.1106537794830418
+      ],
+      "qvel_error_rad_s": [
+        0.00041384917888118156,
+        -0.002862437895853512
+      ],
+      "applied_torque_Nm": [
+        -0.29774361409249295,
+        6.58034414776489
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 53,
+      "time_s": 0.10600000000000008,
+      "phase": "ramp",
+      "geom_distance_m": 0.001884303680283578,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.2458379795987627,
+        1.813842482649543
+      ],
+      "q_target_rad": [
+        -0.24534175524372018,
+        1.8120495271631654
+      ],
+      "q_error_rad": [
+        0.0004962243550425127,
+        -0.0017929554863775898
+      ],
+      "qvel_actual_rad_s": [
+        0.03211327131262647,
+        -0.10889113965881954
+      ],
+      "qvel_target_rad_s": [
+        0.031526598853354876,
+        -0.10821150591210878
+      ],
+      "qvel_error_rad_s": [
+        -0.0005866724592715963,
+        0.0006796337467107616
+      ],
+      "applied_torque_Nm": [
+        -0.3061897583969745,
+        6.610196135713833
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 54,
+      "time_s": 0.10800000000000008,
+      "phase": "ramp",
+      "geom_distance_m": 0.0017988334834605226,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24577337523726075,
+        1.8136231694064806
+      ],
+      "q_target_rad": [
+        -0.2452795048066324,
+        1.8118358595369084
+      ],
+      "q_error_rad": [
+        0.0004938704306283459,
+        -0.0017873098695722067
+      ],
+      "qvel_actual_rad_s": [
+        0.03230218075097191,
+        -0.10965662153119204
+      ],
+      "qvel_target_rad_s": [
+        0.030705593674882087,
+        -0.1053934979456476
+      ],
+      "qvel_error_rad_s": [
+        -0.001596587076089822,
+        0.00426312358554444
+      ],
+      "applied_torque_Nm": [
+        -0.3148823881057444,
+        6.640978164931868
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 55,
+      "time_s": 0.11000000000000008,
+      "phase": "ramp",
+      "geom_distance_m": 0.0017130459718285558,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.245708597290086,
+        1.8134030088157125
+      ],
+      "q_target_rad": [
+        -0.24521900584725873,
+        1.8116282036609799
+      ],
+      "q_error_rad": [
+        0.0004895914428272863,
+        -0.001774805154732606
+      ],
+      "qvel_actual_rad_s": [
+        0.032388973587369974,
+        -0.11008029538402722
+      ],
+      "qvel_target_rad_s": [
+        0.029775121139279603,
+        -0.10219975558365828
+      ],
+      "qvel_error_rad_s": [
+        -0.00261385244809037,
+        0.007880539800368944
+      ],
+      "applied_torque_Nm": [
+        -0.32380615700994353,
+        6.672634007343909
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 56,
+      "time_s": 0.11200000000000009,
+      "phase": "ramp",
+      "geom_distance_m": 0.0016272129672699638,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.2456438537252854,
+        1.8131826982806438
+      ],
+      "q_target_rad": [
+        -0.2451604773003134,
+        1.8114273110041708
+      ],
+      "q_error_rad": [
+        0.0004833764249720096,
+        -0.0017553872764730638
+      ],
+      "qvel_actual_rad_s": [
+        0.03237178240029528,
+        -0.11015526753432484
+      ],
+      "qvel_target_rad_s": [
+        0.028735181246547416,
+        -0.09863027882614082
+      ],
+      "qvel_error_rad_s": [
+        -0.0036366011537478614,
+        0.011524988708184011
+      ],
+      "applied_torque_Nm": [
+        -0.3329469404145091,
+        6.705111540465067
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 57,
+      "time_s": 0.11400000000000009,
+      "phase": "ramp",
+      "geom_distance_m": 0.0015416111107888141,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24557935592314978,
+        1.8129629478825247
+      ],
+      "q_target_rad": [
+        -0.24510413810051063,
+        1.8112339330352722
+      ],
+      "q_error_rad": [
+        0.00047521782263915124,
+        -0.001729014847252408
+      ],
+      "qvel_actual_rad_s": [
+        0.032248901067812634,
+        -0.1098751990595693
+      ],
+      "qvel_target_rad_s": [
+        0.02758577399668553,
+        -0.09468506767309523
+      ],
+      "qvel_error_rad_s": [
+        -0.004663127071127104,
+        0.01519013138647407
+      ],
+      "applied_torque_Nm": [
+        -0.3422917422004399,
+        6.7383624558104405
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 58,
+      "time_s": 0.11600000000000009,
+      "phase": "ramp",
+      "geom_distance_m": 0.0014565214589296253,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.2455153183786425,
+        1.812744479351505
+      ],
+      "q_target_rad": [
+        -0.24505020718256473,
+        1.8110488212230753
+      ],
+      "q_error_rad": [
+        0.0004651111960777554,
+        -0.0016956581284297556
+      ],
+      "qvel_actual_rad_s": [
+        0.03201877225364637,
+        -0.10923426550981662
+      ],
+      "qvel_target_rad_s": [
+        0.02632689938969392,
+        -0.09036412212452141
+      ],
+      "qvel_error_rad_s": [
+        -0.005691872863952448,
+        0.018870143385295204
+      ],
+      "applied_torque_Nm": [
+        -0.35182860891043133,
+        6.772341988070217
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 59,
+      "time_s": 0.11800000000000009,
+      "phase": "ramp",
+      "geom_distance_m": 0.001372229110596925,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24545195842694373,
+        1.812528025112501
+      ],
+      "q_target_rad": [
+        -0.24499890348118994,
+        1.8108727270363711
+      ],
+      "q_error_rad": [
+        0.00045305494575378913,
+        -0.001655298076129963
+      ],
+      "qvel_actual_rad_s": [
+        0.03167997584938555,
+        -0.1082271195019796
+      ],
+      "qvel_target_rad_s": [
+        0.02495855742557262,
+        -0.0856674421804195
+      ],
+      "qvel_error_rad_s": [
+        -0.0067214184238129256,
+        0.022559677321560098
+      ],
+      "applied_torque_Nm": [
+        -0.36154655007279524,
+        6.807008663473567
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 60,
+      "time_s": 0.12000000000000009,
+      "phase": "ramp",
+      "geom_distance_m": 0.001289022862234399,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24538949599031226,
+        1.812314327400511
+      ],
+      "q_target_rad": [
+        -0.24495044593110052,
+        1.8107064019439507
+      ],
+      "q_error_rad": [
+        0.000439050059211743,
+        -0.0016079254565601886
+      ],
+      "qvel_actual_rad_s": [
+        0.031231218315735925,
+        -0.10684885599511644
+      ],
+      "qvel_target_rad_s": [
+        0.023480748104321592,
+        -0.08059502784078933
+      ],
+      "qvel_error_rad_s": [
+        -0.007750470211414333,
+        0.026253828154327113
+      ],
+      "applied_torque_Nm": [
+        -0.3714354646114153,
+        6.842324066074083
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 61,
+      "time_s": 0.1220000000000001,
+      "phase": "ramp",
+      "geom_distance_m": 0.0012071948894640861,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24532815334473473,
+        1.8121041374404463
+      ],
+      "q_target_rad": [
+        -0.24490505346701075,
+        1.810550597414605
+      ],
+      "q_error_rad": [
+        0.00042309987772398694,
+        -0.0015535400258412935
+      ],
+      "qvel_actual_rad_s": [
+        0.030671322788769075,
+        -0.10509498003225085
+      ],
+      "qvel_target_rad_s": [
+        0.02189347142594089,
+        -0.07514687910563111
+      ],
+      "qvel_error_rad_s": [
+        -0.008777851362828184,
+        0.02994810092661973
+      ],
+      "applied_torque_Nm": [
+        -0.381486072997727,
+        6.878252620710429
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 62,
+      "time_s": 0.1240000000000001,
+      "phase": "ramp",
+      "geom_distance_m": 0.0011270404533902253,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.245268154904841,
+        1.811898214686865
+      ],
+      "q_target_rad": [
+        -0.24486294502363484,
+        1.8104060649171252
+      ],
+      "q_error_rad": [
+        0.0004052098812061533,
+        -0.00149214976973977
+      ],
+      "qvel_actual_rad_s": [
+        0.029999219946873153,
+        -0.1029613767906601
+      ],
+      "qvel_target_rad_s": [
+        0.020196727390430477,
+        -0.06932299597494472
+      ],
+      "qvel_error_rad_s": [
+        -0.009802492556442676,
+        0.03363838081571538
+      ],
+      "applied_torque_Nm": [
+        -0.39168985420650604,
+        6.914761391276682
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 63,
+      "time_s": 0.12600000000000008,
+      "phase": "ramp",
+      "geom_distance_m": 0.0010488576299274614,
+      "task_contact": false,
+      "button_normal_force_N": 0.0,
+      "q_actual_rad": [
+        -0.24520972702570445,
+        1.8116973261193225
+      ],
+      "q_target_rad": [
+        -0.2448243395356871,
+        1.8102735559203023
+      ],
+      "q_error_rad": [
+        0.00038538749001734707,
+        -0.0014237701990202911
+      ],
+      "qvel_actual_rad_s": [
+        0.02921393956827505,
+        -0.10044428377123803
+      ],
+      "qvel_target_rad_s": [
+        0.01839051599779037,
+        -0.0631233784487302
+      ],
+      "qvel_error_rad_s": [
+        -0.010823423570484679,
+        0.03732090532250783
+      ],
+      "applied_torque_Nm": [
+        -0.4020389875152586,
+        6.951819893343127
+      ],
+      "button_contacts": []
+    },
+    {
+      "step": 64,
+      "time_s": 0.12800000000000009,
+      "phase": "ramp",
+      "geom_distance_m": 0.0,
+      "task_contact": true,
+      "button_normal_force_N": 4.336261898432223,
+      "q_actual_rad": [
+        -0.24515309782024908,
+        1.811502245589374
+      ],
+      "q_target_rad": [
+        -0.2447894559378818,
+        1.8101538218929274
+      ],
+      "q_error_rad": [
+        0.00036364188236728823,
+        -0.001348423696446499
+      ],
+      "qvel_actual_rad_s": [
+        0.028314602727693167,
+        -0.097540264974318
+      ],
+      "qvel_target_rad_s": [
+        0.01647483724802053,
+        -0.05654802652698744
+      ],
+      "qvel_error_rad_s": [
+        -0.011839765479672637,
+        0.04099223844733056
+      ],
+      "applied_torque_Nm": [
+        -0.41252629868411483,
+        6.989399920067392
+      ],
+      "button_contacts": [
+        {
+          "other_geom": "hand_2distph",
+          "distance_m": 0.0009729665710999065,
+          "normal_force_N": 4.336261898432223,
+          "point_world_m": [
+            0.37432367359418306,
+            -0.25893717212395695,
+            0.8396099659099998
+          ],
+          "normal_world": [
+            -0.7103531936353052,
+            -5.720270439213257e-07,
+            0.7038453951627412
+          ]
+        }
+      ]
+    },
+    {
+      "step": 65,
+      "time_s": 0.1300000000000001,
+      "phase": "ramp",
+      "geom_distance_m": 0.0009127634619540244,
+      "task_contact": true,
+      "button_normal_force_N": 3.964370130620125,
+      "q_actual_rad": [
+        -0.24510799815886106,
+        1.8113475622669177
+      ],
+      "q_target_rad": [
+        -0.2447585131649331,
+        1.8100476143037914
+      ],
+      "q_error_rad": [
+        0.00034948499392795096,
+        -0.00129994796312638
+      ],
+      "qvel_actual_rad_s": [
+        0.022549830694016428,
+        -0.07734166122805211
+      ],
+      "qvel_target_rad_s": [
+        0.014449691141120997,
+        -0.04959694020971656
+      ],
+      "qvel_error_rad_s": [
+        -0.00810013955289543,
+        0.02774472101833555
+      ],
+      "applied_torque_Nm": [
+        -0.42314521018892237,
+        7.027475380446287
+      ],
+      "button_contacts": [
+        {
+          "other_geom": "hand_2distph",
+          "distance_m": 0.0009127829537856713,
+          "normal_force_N": 3.964370130620125,
+          "point_world_m": [
+            0.3743268208210036,
+            -0.25892591355117933,
+            0.8395703888351271
+          ],
+          "normal_world": [
+            -0.7103531930758058,
+            -5.712362198481035e-07,
+            0.7038453957274146
+          ]
+        }
+      ]
+    },
+    {
+      "step": 66,
+      "time_s": 0.1320000000000001,
+      "phase": "ramp",
+      "geom_distance_m": 0.000865617822852763,
+      "task_contact": true,
+      "button_normal_force_N": 3.938003945115356,
+      "q_actual_rad": [
+        -0.24507239362500902,
+        1.8112264286540856
+      ],
+      "q_target_rad": [
+        -0.2447317301515554,
+        1.8099556846216855
+      ],
+      "q_error_rad": [
+        0.00034066347345362846,
+        -0.0012707440324000174
+      ],
+      "qvel_actual_rad_s": [
+        0.01780226692601546,
+        -0.06056680641610153
+      ],
+      "qvel_target_rad_s": [
+        0.012315077677091751,
+        -0.0422701194969175
+      ],
+      "qvel_error_rad_s": [
+        -0.005487189248923708,
+        0.018296686919184027
+      ],
+      "applied_torque_Nm": [
+        -0.39781668879543325,
+        6.937575638291545
+      ],
+      "button_contacts": [
+        {
+          "other_geom": "hand_2distph",
+          "distance_m": 0.0008656372998923103,
+          "normal_force_N": 3.938003945115356,
+          "point_world_m": [
+            0.3743292909410205,
+            -0.2589169832964372,
+            0.8395393903367929
+          ],
+          "normal_world": [
+            -0.7103531926356522,
+            -5.706118506539172e-07,
+            0.7038453961716382
+          ]
+        }
+      ]
+    },
+    {
+      "step": 67,
+      "time_s": 0.1340000000000001,
+      "phase": "ramp",
+      "geom_distance_m": 0.0008292628297205362,
+      "task_contact": true,
+      "button_normal_force_N": 3.6829570041529136,
+      "q_actual_rad": [
+        -0.2450445990543597,
+        1.811133108409941
+      ],
+      "q_target_rad": [
+        -0.24470932583246283,
+        1.8098787843154007
+      ],
+      "q_error_rad": [
+        0.0003352732218968868,
+        -0.0012543240945401823
+      ],
+      "qvel_actual_rad_s": [
+        0.013897285324647984,
+        -0.04666012207231277
+      ],
+      "qvel_target_rad_s": [
+        0.010070996855932815,
+        -0.03456756438859033
+      ],
+      "qvel_error_rad_s": [
+        -0.0038262884687151697,
+        0.012092557683722444
+      ],
+      "applied_torque_Nm": [
+        -0.38075347314944463,
+        6.8754700154200545
+      ],
+      "button_contacts": [
+        {
+          "other_geom": "hand_2distph",
+          "distance_m": 0.0008292822952078388,
+          "normal_force_N": 3.6829570041529136,
+          "point_world_m": [
+            0.37433118942859356,
+            -0.2589099599259739,
+            0.8395154804113716
+          ],
+          "normal_world": [
+            -0.7103531922954516,
+            -5.701294940369283e-07,
+            0.7038453965149848
+          ]
+        }
+      ]
+    },
+    {
+      "step": 68,
+      "time_s": 0.1360000000000001,
+      "phase": "ramp",
+      "geom_distance_m": 0.0008019071241390897,
+      "task_contact": true,
+      "button_normal_force_N": 3.3982490701509427,
+      "q_actual_rad": [
+        -0.2450231918158841,
+        1.8110630215737842
+      ],
+      "q_target_rad": [
+        -0.24469151914236972,
+        1.809817664853728
+      ],
+      "q_error_rad": [
+        0.00033167267351438823,
+        -0.001245356720056101
+      ],
+      "qvel_actual_rad_s": [
+        0.01070361923779794,
+        -0.03504341807830904
+      ],
+      "qvel_target_rad_s": [
+        0.007717448677644165,
+        -0.02648927488473497
+      ],
+      "qvel_error_rad_s": [
+        -0.0029861705601537756,
+        0.00855414319357407
+      ],
+      "applied_torque_Nm": [
+        -0.3707389765971183,
+        6.837309586565036
+      ],
+      "button_contacts": [
+        {
+          "other_geom": "hand_2distph",
+          "distance_m": 0.0008019265807938879,
+          "normal_force_N": 3.3982490701509427,
+          "point_world_m": [
+            0.3743326151664407,
+            -0.25890447640699993,
+            0.839497486305409
+          ],
+          "normal_world": [
+            -0.7103531920385978,
+            -5.697654543998462e-07,
+            0.7038453967742138
+          ]
+        }
+      ]
+    },
+    {
+      "step": 69,
+      "time_s": 0.1380000000000001,
+      "phase": "ramp",
+      "geom_distance_m": 0.000782048657941438,
+      "task_contact": true,
+      "button_normal_force_N": 3.0987757860071636,
+      "q_actual_rad": [
+        -0.2450069953698486,
+        1.8110123187115614
+      ],
+      "q_target_rad": [
+        -0.24467852901599035,
+        1.8097730777054588
+      ],
+      "q_error_rad": [
+        0.00032846635385824774,
+        -0.0012392410061026204
+      ],
+      "qvel_actual_rad_s": [
+        0.00809822301775508,
+        -0.025351431111378164
+      ],
+      "qvel_target_rad_s": [
+        0.0052544331422258025,
+        -0.018035250985351428
+      ],
+      "qvel_error_rad_s": [
+        -0.0028437898755292778,
+        0.007316180126026736
+      ],
+      "applied_torque_Nm": [
+        -0.3668686012337335,
+        6.819019395273136
+      ],
+      "button_contacts": [
+        {
+          "other_geom": "hand_2distph",
+          "distance_m": 0.0007820681080361044,
+          "normal_force_N": 3.0987757860071636,
+          "point_world_m": [
+            0.37433365212863723,
+            -0.25890023150324537,
+            0.8394844257400267
+          ],
+          "normal_world": [
+            -0.710353191852487,
+            -5.695013104239752e-07,
+            0.7038453969620456
+          ]
+        }
+      ]
+    },
+    {
+      "step": 70,
+      "time_s": 0.1400000000000001,
+      "phase": "ramp",
+      "geom_distance_m": 0.0007684113569756226,
+      "task_contact": true,
+      "button_normal_force_N": 2.6635598105863556,
+      "q_actual_rad": [
+        -0.24499504188257537,
+        1.8109777215399123
+      ],
+      "q_target_rad": [
+        -0.2446705743880389,
+        1.8097457743393837
+      ],
+      "q_error_rad": [
+        0.0003244674945364623,
+        -0.0012319472005286602
+      ],
+      "qvel_actual_rad_s": [
+        0.0059767436366127535,
+        -0.017298585824598058
+      ],
+      "qvel_target_rad_s": [
+        0.002681950249677768,
+        -0.00920549269043984
+      ],
+      "qvel_error_rad_s": [
+        -0.0032947933869349856,
+        0.008093093134158218
+      ],
+      "applied_torque_Nm": [
+        -0.36828746080721364,
+        6.818085764823132
+      ],
+      "button_contacts": [
+        {
+          "other_geom": "hand_2distph",
+          "distance_m": 0.0007684308023977373,
+          "normal_force_N": 2.6635598105863556,
+          "point_world_m": [
+            0.3743343700244772,
+            -0.25889698187718946,
+            0.8394754625677572
+          ],
+          "normal_world": [
+            -0.7103531917254977,
+            -5.693207631731398e-07,
+            0.7038453970902093
+          ]
+        }
+      ]
+    },
+    {
+      "step": 71,
+      "time_s": 0.1420000000000001,
+      "phase": "hold",
+      "geom_distance_m": 0.0007601263939571496,
+      "task_contact": true,
+      "button_normal_force_N": 2.1994341518501797,
+      "q_actual_rad": [
+        -0.24498717891573976,
+        1.8109569040639404
+      ],
+      "q_target_rad": [
+        -0.24466787419322972,
+        1.809736506224294
+      ],
+      "q_error_rad": [
+        0.00031930472251004427,
+        -0.0012203978396463366
+      ],
+      "qvel_actual_rad_s": [
+        0.0039314834178014015,
+        -0.010408737986013689
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        -0.0039314834178014015,
+        0.010408737986013689
+      ],
+      "applied_torque_Nm": [
+        -0.3742706278299317,
+        6.8325648105292665
+      ],
+      "button_contacts": [
+        {
+          "other_geom": "hand_2distph",
+          "distance_m": 0.0007601458364329728,
+          "normal_force_N": 2.1994341518501797,
+          "point_world_m": [
+            0.37433478684643834,
+            -0.2588947644785797,
+            0.8394699977473972
+          ],
+          "normal_world": [
+            -0.7103531916481551,
+            -5.692116703071754e-07,
+            0.7038453971682671
+          ]
+        }
+      ]
+    },
+    {
+      "step": 72,
+      "time_s": 0.1440000000000001,
+      "phase": "hold",
+      "geom_distance_m": 0.0007563122436903553,
+      "task_contact": true,
+      "button_normal_force_N": 2.0142891422988827,
+      "q_actual_rad": [
+        -0.24498294909672497,
+        1.8109475578000909
+      ],
+      "q_target_rad": [
+        -0.24466787419322972,
+        1.809736506224294
+      ],
+      "q_error_rad": [
+        0.00031507490349524936,
+        -0.0012110515757968177
+      ],
+      "qvel_actual_rad_s": [
+        0.0021149095073994643,
+        -0.004673131924714786
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        -0.0021149095073994643,
+        0.004673131924714786
+      ],
+      "applied_torque_Nm": [
+        -0.35930896812553625,
+        6.781910985274134
+      ],
+      "button_contacts": [
+        {
+          "other_geom": "hand_2distph",
+          "distance_m": 0.000756331684711883,
+          "normal_force_N": 2.0142891422988827,
+          "point_world_m": [
+            0.37433494009940615,
+            -0.25889349581898213,
+            0.8394674429101637
+          ],
+          "normal_world": [
+            -0.7103531916128935,
+            -5.691619306507198e-07,
+            0.7038453972038546
+          ]
+        }
+      ]
+    },
+    {
+      "step": 73,
+      "time_s": 0.1460000000000001,
+      "phase": "hold",
+      "geom_distance_m": 0.0007561922384673157,
+      "task_contact": true,
+      "button_normal_force_N": 1.8413840590095494,
+      "q_actual_rad": [
+        -0.24498189127980782,
+        1.8109476579191397
+      ],
+      "q_target_rad": [
+        -0.24466787419322972,
+        1.809736506224294
+      ],
+      "q_error_rad": [
+        0.00031401708657810556,
+        -0.0012111516948456469
+      ],
+      "qvel_actual_rad_s": [
+        0.0005289084585776828,
+        5.005952439091424e-05
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        -0.0005289084585776828,
+        -5.005952439091424e-05
+      ],
+      "applied_torque_Nm": [
+        -0.3458883015197458,
+        6.7393522256666785
+      ],
+      "button_contacts": [
+        {
+          "other_geom": "hand_2distph",
+          "distance_m": 0.0007562116793042931,
+          "normal_force_N": 1.8413840590095494,
+          "point_world_m": [
+            0.3743348667309717,
+            -0.25889307908922254,
+            0.8394672836137902
+          ],
+          "normal_world": [
+            -0.7103531916121937,
+            -5.69160922242981e-07,
+            0.703845397204561
+          ]
+        }
+      ]
+    },
+    {
+      "step": 74,
+      "time_s": 0.1480000000000001,
+      "phase": "hold",
+      "geom_distance_m": 0.0007590852175321342,
+      "task_contact": true,
+      "button_normal_force_N": 1.6809698928308021,
+      "q_actual_rad": [
+        -0.24498355525445048,
+        1.8109554358838402
+      ],
+      "q_target_rad": [
+        -0.24466787419322972,
+        1.809736506224294
+      ],
+      "q_error_rad": [
+        0.0003156810612207628,
+        -0.0012189296595461752
+      ],
+      "qvel_actual_rad_s": [
+        -0.0008319873213340004,
+        0.003888982350308951
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        0.0008319873213340004,
+        -0.003888982350308951
+      ],
+      "applied_torque_Nm": [
+        -0.3340448882368655,
+        6.7039239490091544
+      ],
+      "button_contacts": [
+        {
+          "other_geom": "hand_2distph",
+          "distance_m": 0.0007591046592472364,
+          "normal_force_N": 1.6809698928308021,
+          "point_world_m": [
+            0.37433460217053993,
+            -0.25889341108070824,
+            0.8394690717302906
+          ],
+          "normal_world": [
+            -0.7103531916391516,
+            -5.691987112399516e-07,
+            0.7038453971773538
+          ]
+        }
+      ]
+    },
+    {
+      "step": 75,
+      "time_s": 0.1500000000000001,
+      "phase": "hold",
+      "geom_distance_m": 0.0007643968221826836,
+      "task_contact": true,
+      "button_normal_force_N": 1.5330734442526048,
+      "q_actual_rad": [
+        -0.24498751225708681,
+        1.810969354388195
+      ],
+      "q_target_rad": [
+        -0.24466787419322972,
+        1.809736506224294
+      ],
+      "q_error_rad": [
+        0.00031963806385709725,
+        -0.0012328481639010125
+      ],
+      "qvel_actual_rad_s": [
+        -0.0019785013181657833,
+        0.006959252177424318
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        0.0019785013181657833,
+        -0.006959252177424318
+      ],
+      "applied_torque_Nm": [
+        -0.3237593265319055,
+        6.674751635102479
+      ],
+      "button_contacts": [
+        {
+          "other_geom": "hand_2distph",
+          "distance_m": 0.0007644162656490613,
+          "normal_force_N": 1.5330734442526048,
+          "point_world_m": [
+            0.3743341796618518,
+            -0.25889438737542925,
+            0.8394724185885012
+          ],
+          "normal_world": [
+            -0.710353191688297,
+            -5.692686948058495e-07,
+            0.7038453971277538
+          ]
+        }
+      ]
+    },
+    {
+      "step": 76,
+      "time_s": 0.1520000000000001,
+      "phase": "hold",
+      "geom_distance_m": 0.000771611312750615,
+      "task_contact": true,
+      "button_normal_force_N": 1.397516123842627,
+      "q_actual_rad": [
+        -0.2449933620501783,
+        1.8109880841965633
+      ],
+      "q_target_rad": [
+        -0.24466787419322972,
+        1.809736506224294
+      ],
+      "q_error_rad": [
+        0.00032548785694858084,
+        -0.0012515779722692688
+      ],
+      "qvel_actual_rad_s": [
+        -0.0029248965457373643,
+        0.009364904184173005
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        0.0029248965457373643,
+        -0.009364904184173005
+      ],
+      "applied_torque_Nm": [
+        -0.314971767981697,
+        6.651043425258036
+      ],
+      "button_contacts": [
+        {
+          "other_geom": "hand_2distph",
+          "distance_m": 0.000771630758670257,
+          "normal_force_N": 1.397516123842627,
+          "point_world_m": [
+            0.374333629834088,
+            -0.258895906101986,
+            0.8394769887281411
+          ],
+          "normal_world": [
+            -0.7103531917548679,
+            -5.693627325031301e-07,
+            0.7038453970605674
+          ]
+        }
+      ]
+    },
+    {
+      "step": 77,
+      "time_s": 0.1540000000000001,
+      "phase": "hold",
+      "geom_distance_m": 0.0007802838574641819,
+      "task_contact": true,
+      "button_normal_force_N": 1.2739460070849136,
+      "q_actual_rad": [
+        -0.24500073725080257,
+        1.8110104826539797
+      ],
+      "q_target_rad": [
+        -0.24466787419322972,
+        1.809736506224294
+      ],
+      "q_error_rad": [
+        0.00033286305757285195,
+        -0.0012739764296856304
+      ],
+      "qvel_actual_rad_s": [
+        -0.0036876003121370645,
+        0.01119922870822132
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        0.0036876003121370645,
+        -0.01119922870822132
+      ],
+      "applied_torque_Nm": [
+        -0.307594442526832,
+        6.632084132994995
+      ],
+      "button_contacts": [
+        {
+          "other_geom": "hand_2distph",
+          "distance_m": 0.0007803033063871625,
+          "normal_force_N": 1.2739460070849136,
+          "point_world_m": [
+            0.3743329804639045,
+            -0.2588978705367324,
+            0.8394824941817884
+          ],
+          "normal_world": [
+            -0.7103531918343566,
+            -5.694759182630982e-07,
+            0.7038453969803437
+          ]
+        }
+      ]
+    },
+    {
+      "step": 78,
+      "time_s": 0.1560000000000001,
+      "phase": "hold",
+      "geom_distance_m": 0.000790033280200698,
+      "task_contact": true,
+      "button_normal_force_N": 1.161874937802219,
+      "q_actual_rad": [
+        -0.2450093055184595,
+        1.811035573747675
+      ],
+      "q_target_rad": [
+        -0.24466787419322972,
+        1.809736506224294
+      ],
+      "q_error_rad": [
+        0.0003414313252297907,
+        -0.0012990675233810478
+      ],
+      "qvel_actual_rad_s": [
+        -0.004284133828463262,
+        0.012545546847714884
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        0.004284133828463262,
+        -0.012545546847714884
+      ],
+      "applied_torque_Nm": [
+        -0.3015217625713171,
+        6.617230028971912
+      ],
+      "button_contacts": [
+        {
+          "other_geom": "hand_2distph",
+          "distance_m": 0.0007900527325430664,
+          "normal_force_N": 1.161874937802219,
+          "point_world_m": [
+            0.37433225638530543,
+            -0.25890019079590054,
+            0.8394886892320477
+          ],
+          "normal_world": [
+            -0.7103531919231388,
+            -5.696020614583732e-07,
+            0.7038453968907405
+          ]
+        }
+      ]
+    },
+    {
+      "step": 79,
+      "time_s": 0.1580000000000001,
+      "phase": "hold",
+      "geom_distance_m": 0.000800535271414951,
+      "task_contact": true,
+      "button_normal_force_N": 1.0607153532585063,
+      "q_actual_rad": [
+        -0.24501877012680254,
+        1.81106252965748
+      ],
+      "q_target_rad": [
+        -0.24466787419322972,
+        1.809736506224294
+      ],
+      "q_error_rad": [
+        0.0003508959335728201,
+        -0.0013260234331859966
+      ],
+      "qvel_actual_rad_s": [
+        -0.004732304171518601,
+        0.013477954902497978
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        0.004732304171518601,
+        -0.013477954902497978
+      ],
+      "applied_torque_Nm": [
+        -0.296638246526157,
+        6.605903999281921
+      ],
+      "button_contacts": [
+        {
+          "other_geom": "hand_2distph",
+          "distance_m": 0.0008005547274763902,
+          "normal_force_N": 1.0607153532585063,
+          "point_world_m": [
+            0.37433147950999124,
+            -0.25890278482851437,
+            0.8394953656092455
+          ],
+          "normal_world": [
+            -0.710353192019263,
+            -5.697377113332162e-07,
+            0.7038453967937275
+          ]
+        }
+      ]
+    },
+    {
+      "step": 80,
+      "time_s": 0.16000000000000011,
+      "phase": "hold",
+      "geom_distance_m": 0.0008115160710352394,
+      "task_contact": true,
+      "button_normal_force_N": 0.969813686238504,
+      "q_actual_rad": [
+        -0.24502886935624718,
+        1.8110906537567923
+      ],
+      "q_target_rad": [
+        -0.24466787419322972,
+        1.809736506224294
+      ],
+      "q_error_rad": [
+        0.0003609951630174635,
+        -0.0013541475324982954
+      ],
+      "qvel_actual_rad_s": [
+        -0.005049614722328014,
+        0.014062049656203732
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        0.005049614722328014,
+        -0.014062049656203732
+      ],
+      "applied_torque_Nm": [
+        -0.2928245536639599,
+        6.59759086423935
+      ],
+      "button_contacts": [
+        {
+          "other_geom": "hand_2distph",
+          "distance_m": 0.0008115355310151918,
+          "normal_force_N": 0.969813686238504,
+          "point_world_m": [
+            0.37433066892700023,
+            -0.2589055788842041,
+            0.8395023481044316
+          ],
+          "normal_world": [
+            -0.7103531921193086,
+            -5.69879175528577e-07,
+            0.7038453966927566
+          ]
+        }
+      ]
+    },
+    {
+      "step": 81,
+      "time_s": 0.16200000000000012,
+      "phase": "hold",
+      "geom_distance_m": 0.0008227466293111781,
+      "task_contact": true,
+      "button_normal_force_N": 0.8884788124710706,
+      "q_actual_rad": [
+        -0.24503937506092535,
+        1.8111193650295971
+      ],
+      "q_target_rad": [
+        -0.24466787419322972,
+        1.809736506224294
+      ],
+      "q_error_rad": [
+        0.0003715008676956344,
+        -0.0013828588053030888
+      ],
+      "qvel_actual_rad_s": [
+        -0.005252852339087327,
+        0.014355636402434781
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        0.005252852339087327,
+        -0.014355636402434781
+      ],
+      "applied_torque_Nm": [
+        -0.2899619374221587,
+        6.591832769791614
+      ],
+      "button_contacts": [
+        {
+          "other_geom": "hand_2distph",
+          "distance_m": 0.0008227660933236549,
+          "normal_force_N": 0.8884788124710706,
+          "point_world_m": [
+            0.3743298410563782,
+            -0.258908507596862,
+            0.8395094905764346
+          ],
+          "normal_world": [
+            -0.7103531922207705,
+            -5.700233441032389e-07,
+            0.7038453965903564
+          ]
+        }
+      ]
+    },
+    {
+      "step": 82,
+      "time_s": 0.16400000000000012,
+      "phase": "hold",
+      "geom_distance_m": 0.0008340372452594325,
+      "task_contact": true,
+      "button_normal_force_N": 0.8160051027297753,
+      "q_actual_rad": [
+        -0.24505009068854747,
+        1.8111481838623247
+      ],
+      "q_target_rad": [
+        -0.24466787419322972,
+        1.809736506224294
+      ],
+      "q_error_rad": [
+        0.0003822164953177498,
+        -0.0014116776380306284
+      ],
+      "qvel_actual_rad_s": [
+        -0.0053578138110558565,
+        0.014409416363797698
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        0.0053578138110558565,
+        -0.014409416363797698
+      ],
+      "applied_torque_Nm": [
+        -0.2879354127057089,
+        6.588224639126489
+      ],
+      "button_contacts": [
+        {
+          "other_geom": "hand_2distph",
+          "distance_m": 0.000834056713346761,
+          "normal_force_N": 0.8160051027297753,
+          "point_world_m": [
+            0.37432900983704104,
+            -0.2589115137957616,
+            0.8395166723327057
+          ],
+          "normal_world": [
+            -0.7103531923229442,
+            -5.701685832396194e-07,
+            0.7038453964872379
+          ]
+        }
+      ]
+    },
+    {
+      "step": 83,
+      "time_s": 0.16600000000000012,
+      "phase": "hold",
+      "geom_distance_m": 0.0008452326750347944,
+      "task_contact": true,
+      "button_normal_force_N": 0.7516902927013724,
+      "q_actual_rad": [
+        -0.2450608489674166,
+        1.8111767191585397
+      ],
+      "q_target_rad": [
+        -0.24466787419322972,
+        1.809736506224294
+      ],
+      "q_error_rad": [
+        0.00039297477418687166,
+        -0.001440212934245677
+      ],
+      "qvel_actual_rad_s": [
+        -0.005379139434563501,
+        0.014267648107528806
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        0.005379139434563501,
+        -0.014267648107528806
+      ],
+      "applied_torque_Nm": [
+        -0.286635904455739,
+        6.586409711704073
+      ],
+      "button_contacts": [
+        {
+          "other_geom": "hand_2distph",
+          "distance_m": 0.0008452521471799146,
+          "normal_force_N": 0.7516902927013724,
+          "point_world_m": [
+            0.3743281869336269,
+            -0.2589145481307974,
+            0.8395237948631529
+          ],
+          "normal_world": [
+            -0.7103531924232851,
+            -5.703113657983195e-07,
+            0.7038453963859692
+          ]
+        }
+      ]
+    },
+    {
+      "step": 84,
+      "time_s": 0.16800000000000012,
+      "phase": "hold",
+      "geom_distance_m": 0.0008562076956675245,
+      "task_contact": true,
+      "button_normal_force_N": 0.6948487937250216,
+      "q_actual_rad": [
+        -0.24507150942157252,
+        1.8112046567134634
+      ],
+      "q_target_rad": [
+        -0.24466787419322972,
+        1.809736506224294
+      ],
+      "q_error_rad": [
+        0.0004036352283428024,
+        -0.001468150489169373
+      ],
+      "qvel_actual_rad_s": [
+        -0.005330227077967854,
+        0.013968777461848542
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        0.005330227077967854,
+        -0.013968777461848542
+      ],
+      "applied_torque_Nm": [
+        -0.28596160830026407,
+        6.586075212756822
+      ],
+      "button_contacts": [
+        {
+          "other_geom": "hand_2distph",
+          "distance_m": 0.00085622717180417,
+          "normal_force_N": 0.6948487937250216,
+          "point_world_m": [
+            0.37432738195101806,
+            -0.2589175685778923,
+            0.8395307789052023
+          ],
+          "normal_world": [
+            -0.7103531925221711,
+            -5.704516702923257e-07,
+            0.7038453962861688
+          ]
+        }
+      ]
+    },
+    {
+      "step": 85,
+      "time_s": 0.17000000000000012,
+      "phase": "hold",
+      "geom_distance_m": 0.0008668631040330675,
+      "task_contact": true,
+      "button_normal_force_N": 0.6448210860261169,
+      "q_actual_rad": [
+        -0.24508195583186296,
+        1.811231748776174
+      ],
+      "q_target_rad": [
+        -0.24466787419322972,
+        1.809736506224294
+      ],
+      "q_error_rad": [
+        0.0004140816386332402,
+        -0.0014952425518799384
+      ],
+      "qvel_actual_rad_s": [
+        -0.005223205145225605,
+        0.01354603135530319
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        0.005223205145225605,
+        -0.01354603135530319
+      ],
+      "applied_torque_Nm": [
+        -0.28581875531493733,
+        6.586948197555277
+      ],
+      "button_contacts": [
+        {
+          "other_geom": "hand_2distph",
+          "distance_m": 0.0008668825840558213,
+          "normal_force_N": 0.6448210860261169,
+          "point_world_m": [
+            0.37432660264835554,
+            -0.25892053987407115,
+            0.8395375618175276
+          ],
+          "normal_world": [
+            -0.7103531926178224,
+            -5.705866472285026e-07,
+            0.7038453961896332
+          ]
+        }
+      ]
+    },
+    {
+      "step": 86,
+      "time_s": 0.17200000000000013,
+      "phase": "hold",
+      "geom_distance_m": 0.0008771221266367581,
+      "task_contact": true,
+      "button_normal_force_N": 0.6009800453902624,
+      "q_actual_rad": [
+        -0.24509209372722165,
+        1.811257804720959
+      ],
+      "q_target_rad": [
+        -0.24466787419322972,
+        1.809736506224294
+      ],
+      "q_error_rad": [
+        0.00042421953399193746,
+        -0.0015212984966650467
+      ],
+      "qvel_actual_rad_s": [
+        -0.005068947679352312,
+        0.013027972392540117
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        0.005068947679352312,
+        -0.013027972392540117
+      ],
+      "applied_torque_Nm": [
+        -0.28612193722567075,
+        6.588791608282316
+      ],
+      "button_contacts": [
+        {
+          "other_geom": "hand_2distph",
+          "distance_m": 0.000877141610409288,
+          "normal_force_N": 0.6009800453902624,
+          "point_world_m": [
+            0.37432585514677263,
+            -0.2589234329185113,
+            0.8395440952392754
+          ],
+          "normal_world": [
+            -0.7103531927098411,
+            -5.707173283833458e-07,
+            0.7038453960967633
+          ]
+        }
+      ]
+    },
+    {
+      "step": 87,
+      "time_s": 0.17400000000000013,
+      "phase": "hold",
+      "geom_distance_m": 0.0008869272131943062,
+      "task_contact": true,
+      "button_normal_force_N": 0.5627347982339495,
+      "q_actual_rad": [
+        -0.24510184796396453,
+        1.8112826827456936
+      ],
+      "q_target_rad": [
+        -0.24466787419322972,
+        1.809736506224294
+      ],
+      "q_error_rad": [
+        0.00043397377073481347,
+        -0.0015461765213995449
+      ],
+      "qvel_actual_rad_s": [
+        -0.004877118371439602,
+        0.012439012367231897
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        0.004877118371439602,
+        -0.012439012367231897
+      ],
+      "applied_torque_Nm": [
+        -0.2867941137739969,
+        6.591400571229543
+      ],
+      "button_contacts": [
+        {
+          "other_geom": "hand_2distph",
+          "distance_m": 0.0008869467005561435,
+          "normal_force_N": 0.5627347982339495,
+          "point_world_m": [
+            0.3743251441270373,
+            -0.2589262241658253,
+            0.8395503430117512
+          ],
+          "normal_world": [
+            -0.7103531927976301,
+            -5.708412614412935e-07,
+            0.7038453960081625
+          ]
+        }
+      ]
+    },
+    {
+      "step": 88,
+      "time_s": 0.17600000000000013,
+      "phase": "hold",
+      "geom_distance_m": 0.0008962371854979532,
+      "task_contact": true,
+      "button_normal_force_N": 0.5295327390258708,
+      "q_actual_rad": [
+        -0.2451111604313453,
+        1.8113062825141624
+      ],
+      "q_target_rad": [
+        -0.24466787419322972,
+        1.809736506224294
+      ],
+      "q_error_rad": [
+        0.00044328623811557,
+        -0.0015697762898683187
+      ],
+      "qvel_actual_rad_s": [
+        -0.004656233690373891,
+        0.011799884234348756
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        0.004656233690373891,
+        -0.011799884234348756
+      ],
+      "applied_torque_Nm": [
+        -0.2877663988087997,
+        6.594598951800391
+      ],
+      "button_contacts": [
+        {
+          "other_geom": "hand_2distph",
+          "distance_m": 0.0008962566762712332,
+          "normal_force_N": 0.5295327390258708,
+          "point_world_m": [
+            0.374324473014661,
+            -0.2589288950300046,
+            0.8395562793398417
+          ],
+          "normal_world": [
+            -0.7103531928801656,
+            -5.709594343375998e-07,
+            0.7038453959248637
+          ]
+        }
+      ]
+    },
+    {
+      "step": 89,
+      "time_s": 0.17800000000000013,
+      "phase": "hold",
+      "geom_distance_m": 0.0009050247126824216,
+      "task_contact": true,
+      "button_normal_force_N": 0.5008601843803697,
+      "q_actual_rad": [
+        -0.24511998790678555,
+        1.8113285386603664
+      ],
+      "q_target_rad": [
+        -0.24466787419322972,
+        1.809736506224294
+      ],
+      "q_error_rad": [
+        0.0004521137135558295,
+        -0.0015920324360723104
+      ],
+      "qvel_actual_rad_s": [
+        -0.004413737720126881,
+        0.011128073101949786
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        0.004413737720126881,
+        -0.011128073101949786
+      ],
+      "applied_torque_Nm": [
+        -0.2889776967288449,
+        6.598236174941442
+      ],
+      "button_contacts": [
+        {
+          "other_geom": "hand_2distph",
+          "distance_m": 0.0009050442066767982,
+          "normal_force_N": 0.5008601843803697,
+          "point_world_m": [
+            0.3743238441511172,
+            -0.25893143131160734,
+            0.8395618871712883
+          ],
+          "normal_world": [
+            -0.7103531929594114,
+            -5.710705451512179e-07,
+            0.7038453958448853
+          ]
+        }
+      ]
+    },
+    {
+      "step": 90,
+      "time_s": 0.18000000000000013,
+      "phase": "hold",
+      "geom_distance_m": 0.0009132740844227865,
+      "task_contact": true,
+      "button_normal_force_N": 0.47624205226578037,
+      "q_actual_rad": [
+        -0.24512830007339603,
+        1.811349415075591
+      ],
+      "q_target_rad": [
+        -0.24466787419322972,
+        1.809736506224294
+      ],
+      "q_error_rad": [
+        0.00046042588016631525,
+        -0.0016129088512970569
+      ],
+      "qvel_actual_rad_s": [
+        -0.004156083305249626,
+        0.010438207612338189
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        0.004156083305249626,
+        -0.010438207612338189
+      ],
+      "applied_torque_Nm": [
+        -0.2903742438131463,
+        6.602184310788366
+      ],
+      "button_contacts": [
+        {
+          "other_geom": "hand_2distph",
+          "distance_m": 0.0009132935814402717,
+          "normal_force_N": 0.47624205226578037,
+          "point_world_m": [
+            0.3743232589505795,
+            -0.2589338226564135,
+            0.839567156772993
+          ],
+          "normal_world": [
+            -0.7103531930332623,
+            -5.711751442328843e-07,
+            0.7038453957703515
+          ]
+        }
+      ]
+    },
+    {
+      "step": 91,
+      "time_s": 0.18200000000000013,
+      "phase": "hold",
+      "geom_distance_m": 0.0009209792546039864,
+      "task_contact": true,
+      "button_normal_force_N": 0.45524086591627644,
+      "q_actual_rad": [
+        -0.24513607770461573,
+        1.811368899902884
+      ],
+      "q_target_rad": [
+        -0.24466787419322972,
+        1.809736506224294
+      ],
+      "q_error_rad": [
+        0.00046820351138601723,
+        -0.0016323936785900273
+      ],
+      "qvel_actual_rad_s": [
+        -0.0038888156098515446,
+        0.009742413646514453
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        0.0038888156098515446,
+        -0.009742413646514453
+      ],
+      "applied_torque_Nm": [
+        -0.29190909437943763,
+        6.606335419110277
+      ],
+      "button_contacts": [
+        {
+          "other_geom": "hand_2distph",
+          "distance_m": 0.0009209987544424199,
+          "normal_force_N": 0.45524086591627644,
+          "point_world_m": [
+            0.3743227180421166,
+            -0.25893606205052466,
+            0.8395720844847834
+          ],
+          "normal_world": [
+            -0.7103531931023352,
+            -5.712724117994805e-07,
+            0.7038453957006398
+          ]
+        }
+      ]
+    },
+    {
+      "step": 92,
+      "time_s": 0.18400000000000014,
+      "phase": "hold",
+      "geom_distance_m": 0.000928142129355479,
+      "task_contact": true,
+      "button_normal_force_N": 0.43745530835697477,
+      "q_actual_rad": [
+        -0.24514331101529122,
+        1.8113870011681763
+      ],
+      "q_target_rad": [
+        -0.24466787419322972,
+        1.809736506224294
+      ],
+      "q_error_rad": [
+        0.00047543682206149795,
+        -0.0016504949438822525
+      ],
+      "qvel_actual_rad_s": [
+        -0.0036166553377456525,
+        0.009050632646149834
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        0.0036166553377456525,
+        -0.009050632646149834
+      ],
+      "applied_torque_Nm": [
+        -0.29354158078857717,
+        6.610599141720403
+      ],
+      "button_contacts": [
+        {
+          "other_geom": "hand_2distph",
+          "distance_m": 0.0009281616318119222,
+          "normal_force_N": 0.43745530835697477,
+          "point_world_m": [
+            0.374322221397692,
+            -0.25893814535455284,
+            0.8395766716324458
+          ],
+          "normal_world": [
+            -0.7103531931651405,
+            -5.713636658798927e-07,
+            0.7038453956372537
+          ]
+        }
+      ]
+    },
+    {
+      "step": 93,
+      "time_s": 0.18600000000000014,
+      "phase": "hold",
+      "geom_distance_m": 0.0009347710750011829,
+      "task_contact": true,
+      "button_normal_force_N": 0.4225184940621214,
+      "q_actual_rad": [
+        -0.245149998174721,
+        1.8114037429822623
+      ],
+      "q_target_rad": [
+        -0.24466787419322972,
+        1.809736506224294
+      ],
+      "q_error_rad": [
+        0.0004821239814912781,
+        -0.0016672367579682046
+      ],
+      "qvel_actual_rad_s": [
+        -0.0033435797148833888,
+        0.008370907043021961
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        0.0033435797148833888,
+        -0.008370907043021961
+      ],
+      "applied_torque_Nm": [
+        -0.2952367679983916,
+        6.614900529098518
+      ],
+      "button_contacts": [
+        {
+          "other_geom": "hand_2distph",
+          "distance_m": 0.0009347905798744847,
+          "normal_force_N": 0.4225184940621214,
+          "point_world_m": [
+            0.374321768446534,
+            -0.25894007087782855,
+            0.8395809235832248
+          ],
+          "normal_world": [
+            -0.71035319322455,
+            -5.714473088609244e-07,
+            0.7038453955772948
+          ]
+        }
+      ]
+    },
+    {
+      "step": 94,
+      "time_s": 0.18800000000000014,
+      "phase": "hold",
+      "geom_distance_m": 0.0009408796231757525,
+      "task_contact": true,
+      "button_normal_force_N": 0.41009607811650256,
+      "q_actual_rad": [
+        -0.2451561439746527,
+        1.8114191622529732
+      ],
+      "q_target_rad": [
+        -0.24466787419322972,
+        1.809736506224294
+      ],
+      "q_error_rad": [
+        0.00048826978142299526,
+        -0.0016826560286791192
+      ],
+      "qvel_actual_rad_s": [
+        -0.0030728999658629847,
+        0.007709635355492819
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        0.0030728999658629847,
+        -0.007709635355492819
+      ],
+      "applied_torque_Nm": [
+        -0.29696491714364737,
+        6.619178085761713
+      ],
+      "button_contacts": [
+        {
+          "other_geom": "hand_2distph",
+          "distance_m": 0.0009408991302684015,
+          "normal_force_N": 0.41009607811650256,
+          "point_world_m": [
+            0.37432135817663914,
+            -0.2589418389923597,
+            0.8395848489284025
+          ],
+          "normal_world": [
+            -0.7103531932796402,
+            -5.715244460541889e-07,
+            0.7038453955216952
+          ]
+        }
+      ]
+    },
+    {
+      "step": 95,
+      "time_s": 0.19000000000000014,
+      "phase": "hold",
+      "geom_distance_m": 0.0009464853521737751,
+      "task_contact": true,
+      "button_normal_force_N": 0.3998842879244756,
+      "q_actual_rad": [
+        -0.24516175864360895,
+        1.8114333058519545
+      ],
+      "q_target_rad": [
+        -0.24466787419322972,
+        1.809736506224294
+      ],
+      "q_error_rad": [
+        0.0004938844503792339,
+        -0.0016967996276604502
+      ],
+      "qvel_actual_rad_s": [
+        -0.0028073344781176083,
+        0.007071799490629976
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        0.0028073344781176083,
+        -0.007071799490629976
+      ],
+      "applied_torque_Nm": [
+        -0.2987009680033683,
+        6.623382018150409
+      ],
+      "button_contacts": [
+        {
+          "other_geom": "hand_2distph",
+          "distance_m": 0.0009465048612939595,
+          "normal_force_N": 0.3998842879244756,
+          "point_world_m": [
+            0.37432098922424784,
+            -0.25894345178543887,
+            0.8395884587789308
+          ],
+          "normal_world": [
+            -0.7103531933276175,
+            -5.715947512102166e-07,
+            0.7038453954732744
+          ]
+        }
+      ]
+    },
+    {
+      "step": 96,
+      "time_s": 0.19200000000000014,
+      "phase": "hold",
+      "geom_distance_m": 0.0009516089253128117,
+      "task_contact": true,
+      "button_normal_force_N": 0.39160793664399934,
+      "q_actual_rad": [
+        -0.2451668567979737,
+        1.8114462281853678
+      ],
+      "q_target_rad": [
+        -0.24466787419322972,
+        1.809736506224294
+      ],
+      "q_error_rad": [
+        0.000498982604743986,
+        -0.0017097219610737735
+      ],
+      "qvel_actual_rad_s": [
+        -0.002549077182376266,
+        0.006461166706623428
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        0.002549077182376266,
+        -0.006461166706623428
+      ],
+      "applied_torque_Nm": [
+        -0.3004240468254527,
+        6.627472668707048
+      ],
+      "button_contacts": [
+        {
+          "other_geom": "hand_2distph",
+          "distance_m": 0.0009516284362756338,
+          "normal_force_N": 0.39160793664399934,
+          "point_world_m": [
+            0.37432065995218095,
+            -0.2589449127492093,
+            0.8395917661613619
+          ],
+          "normal_world": [
+            -0.7103531933745388,
+            -5.716603041274001e-07,
+            0.7038453954259191
+          ]
+        }
+      ]
+    },
+    {
+      "step": 97,
+      "time_s": 0.19400000000000014,
+      "phase": "hold",
+      "geom_distance_m": 0.0009562732687993927,
+      "task_contact": true,
+      "button_normal_force_N": 0.38501845835209214,
+      "q_actual_rad": [
+        -0.24517145651981206,
+        1.8114579891225018
+      ],
+      "q_target_rad": [
+        -0.24466787419322972,
+        1.809736506224294
+      ],
+      "q_error_rad": [
+        0.0005035823265823469,
+        -0.0017214828982077268
+      ],
+      "qvel_actual_rad_s": [
+        -0.0022998609191808655,
+        0.005880468566968112
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        0.0022998609191808655,
+        -0.005880468566968112
+      ],
+      "applied_torque_Nm": [
+        -0.3021170035069666,
+        6.63141912021622
+      ],
+      "button_contacts": [
+        {
+          "other_geom": "hand_2distph",
+          "distance_m": 0.000956292781427624,
+          "normal_force_N": 0.38501845835209214,
+          "point_world_m": [
+            0.3743203685179567,
+            -0.25894622650515126,
+            0.8395947855025647
+          ],
+          "normal_world": [
+            -0.7103531934174173,
+            -5.717186890562777e-07,
+            0.703845395382644
+          ]
+        }
+      ]
+    },
+    {
+      "step": 98,
+      "time_s": 0.19600000000000015,
+      "phase": "hold",
+      "geom_distance_m": 0.0009605028731876902,
+      "task_contact": true,
+      "button_normal_force_N": 0.37989199164019527,
+      "q_actual_rad": [
+        -0.24517557855127806,
+        1.8114686522406447
+      ],
+      "q_target_rad": [
+        -0.24466787419322972,
+        1.809736506224294
+      ],
+      "q_error_rad": [
+        0.0005077043580483387,
+        -0.001732146016350633
+      ],
+      "qvel_actual_rad_s": [
+        -0.002061015732996693,
+        0.005331559071481497
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        0.002061015732996693,
+        -0.005331559071481497
+      ],
+      "applied_torque_Nm": [
+        -0.30376598033890945,
+        6.635197955171682
+      ],
+      "button_contacts": [
+        {
+          "other_geom": "hand_2distph",
+          "distance_m": 0.0009605223873128799,
+          "normal_force_N": 0.37989199164019527,
+          "point_world_m": [
+            0.3743201129325743,
+            -0.25894739856120996,
+            0.8395975321928206
+          ],
+          "normal_world": [
+            -0.7103531934542642,
+            -5.717741232094847e-07,
+            0.7038453953454564
+          ]
+        }
+      ]
+    },
+    {
+      "step": 99,
+      "time_s": 0.19800000000000015,
+      "phase": "hold",
+      "geom_distance_m": 0.0009643232039915569,
+      "task_contact": true,
+      "button_normal_force_N": 0.37602752898662084,
+      "q_actual_rad": [
+        -0.24517924559559137,
+        1.8114782833486298
+      ],
+      "q_target_rad": [
+        -0.24466787419322972,
+        1.809736506224294
+      ],
+      "q_error_rad": [
+        0.0005113714023616545,
+        -0.0017417771243357638
+      ],
+      "qvel_actual_rad_s": [
+        -0.001833522156652128,
+        0.004815553992518462
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        0.001833522156652128,
+        -0.004815553992518462
+      ],
+      "applied_torque_Nm": [
+        -0.3053600132397369,
+        6.638792155820569
+      ],
+      "button_contacts": [
+        {
+          "other_geom": "hand_2distph",
+          "distance_m": 0.0009643427194542368,
+          "normal_force_N": 0.37602752898662084,
+          "point_world_m": [
+            0.3743198911108477,
+            -0.25894843509918103,
+            0.8396000222179311
+          ],
+          "normal_world": [
+            -0.7103531934900202,
+            -5.718209185357285e-07,
+            0.7038453953093697
+          ]
+        }
+      ]
+    },
+    {
+      "step": 100,
+      "time_s": 0.20000000000000015,
+      "phase": "hold",
+      "geom_distance_m": 0.0009677602084421168,
+      "task_contact": true,
+      "button_normal_force_N": 0.37324514244679674,
+      "q_actual_rad": [
+        -0.24518248171485738,
+        1.8114869492552028
+      ],
+      "q_target_rad": [
+        -0.24466787419322972,
+        1.809736506224294
+      ],
+      "q_error_rad": [
+        0.000514607521627658,
+        -0.001750443030908766
+      ],
+      "qvel_actual_rad_s": [
+        -0.0016180596330026761,
+        0.004332953286537997
+      ],
+      "qvel_target_rad_s": [
+        0.0,
+        -0.0
+      ],
+      "qvel_error_rad_s": [
+        0.0016180596330026761,
+        -0.004332953286537997
+      ],
+      "applied_torque_Nm": [
+        -0.3068906654851585,
+        6.642190131512916
+      ],
+      "button_contacts": [
+        {
+          "other_geom": "hand_2distph",
+          "distance_m": 0.0009677797250922983,
+          "normal_force_N": 0.37324514244679674,
+          "point_world_m": [
+            0.3743197009141185,
+            -0.25894934278992965,
+            0.8396022718519343
+          ],
+          "normal_world": [
+            -0.7103531935174794,
+            -5.718667968739147e-07,
+            0.7038453952816566
+          ]
+        }
+      ]
+    }
+  ],
+  "press_geometry": {
+    "target_source": "scan-candidate",
+    "selected_scan_candidate": {
+      "shoulder_rot_deg": -14.018436573709854,
+      "elbow_flexion_deg": 103.69026383740308,
+      "geom_distance_mm": 0.2927553398001615,
+      "contact_pair_distance_mm": 0.2927798326014874,
+      "fingertip_site_front_offset_mm": 1.862246899032107,
+      "fingertip_site_tangent_error_from_reference_mm": 0.8974939580526731,
+      "fingertip_button_local_m": [
+        -0.013707852788184998,
+        -0.018454658376801214,
+        0.011862246899032107
+      ],
+      "matching_contact_count": 1,
+      "distance_disagreement": false
+    },
+    "button_front_normal_world": [
+      -0.7103527911197255,
+      -0.0,
+      0.7038458014000054
+    ],
+    "out_delta_rad": [
+      -0.002855827562466039,
+      0.012785708695844
+    ],
+    "in_delta_rad": [
+      -0.000575257622263875,
+      0.004957908789007481
+    ],
+    "outside_q_rad": [
+      -0.2469484441334319,
+      1.8175643061311306
+    ],
+    "press_target_q_rad": [
+      -0.24466787419322972,
+      1.809736506224294
+    ],
+    "contact_distance_at_source_m": -0.0015834543942631553,
+    "collision_distance_at_outside_start_m": 0.0033413195716494558,
+    "collision_distance_at_press_target_m": 0.0002927553398001615,
+    "geom_margin_sum_mm": 1.0,
+    "requested_outward_tip_offset_mm": 6.0,
+    "linearized_outward_tip_displacement_mm": [
+      -1.9412325162917257,
+      -0.5941325514914528,
+      5.0459832897543695
+    ],
+    "linearized_outward_normal_component_mm": 4.930554088588395,
+    "requested_inward_offset_past_source_mm": null
+  },
+  "controller": {
+    "kp": 50.0,
+    "kd": 8.0,
+    "torque_limit_Nm": 10.0,
+    "settle_steps": 20,
+    "ramp_steps": 50,
+    "hold_steps": 30,
+    "steps": 100,
+    "saturation_count": 0
+  },
+  "result": {
+    "initial_task_contact": false,
+    "initial_button_contacts": [],
+    "first_task_contact_step": 64,
+    "first_task_contact_time_s": 0.128,
+    "first_task_contact_snapshot": {
+      "step": 64,
+      "time_s": 0.128,
+      "geom_distance_m": 0.0
+    },
+    "first_geometric_touch": null,
+    "min_contact_pair_distance_m": 0.0007562116793042931,
+    "max_contact_pair_distance_m": 0.0009729665710999065,
+    "final_task_contact": true,
+    "contact_force_peak_N": 4.336261898432223,
+    "contact_force_final_N": 0.37324514244679674,
+    "contact_force_samples_N": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      4.336261898432223,
+      3.964370130620125,
+      3.938003945115356,
+      3.6829570041529136,
+      3.3982490701509427,
+      3.0987757860071636,
+      2.6635598105863556,
+      2.1994341518501797,
+      2.0142891422988827,
+      1.8413840590095494,
+      1.6809698928308021,
+      1.5330734442526048,
+      1.397516123842627,
+      1.2739460070849136,
+      1.161874937802219,
+      1.0607153532585063,
+      0.969813686238504,
+      0.8884788124710706,
+      0.8160051027297753,
+      0.7516902927013724,
+      0.6948487937250216,
+      0.6448210860261169,
+      0.6009800453902624,
+      0.5627347982339495,
+      0.5295327390258708,
+      0.5008601843803697,
+      0.47624205226578037,
+      0.45524086591627644,
+      0.43745530835697477,
+      0.4225184940621214,
+      0.41009607811650256,
+      0.3998842879244756,
+      0.39160793664399934,
+      0.38501845835209214,
+      0.37989199164019527,
+      0.37602752898662084,
+      0.37324514244679674
+    ],
+    "min_geom_distance_m": 0.0,
+    "final_geom_distance_m": 0.0009677602084421168,
+    "q_final_rad": [
+      -0.24518248171485738,
+      1.8114869492552028
+    ],
+    "max_abs_controlled_joint_drift_rad": [
+      0.0019665528536240706,
+      0.006616748331039757
+    ],
+    "max_abs_qvel_rad_s": 0.11015526753432484,
+    "final_max_abs_qvel_rad_s": 0.004332953286537997,
+    "warning_counts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "contact_during_settle": false,
+    "button_contacts_final": [
+      {
+        "other_geom": "hand_2distph",
+        "distance_m": 0.0009677797250922983,
+        "normal_force_N": 0.37324514244679674,
+        "point_world_m": [
+          0.3743197009141185,
+          -0.25894934278992965,
+          0.8396022718519343
+        ],
+        "normal_world": [
+          -0.7103531935174794,
+          -5.718667968739147e-07,
+          0.7038453952816566
+        ]
+      }
+    ]
+  },
+  "limitations": "Task contact check was queried without task.update to avoid writing episode_results.json. The temporary motors and fixture equalities do not yet establish a validated controller for the formal model."
+}
