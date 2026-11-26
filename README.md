@@ -6,22 +6,9 @@
 
 ## 方法
 
-```mermaid
-flowchart TD
-    A["上肢与四按钮面板 · MuJoCo XML"] --> B["单按钮实验 · 弹簧滑块"]
-    A --> C["多目标实验 · 四关节姿态采样"]
-    B --> D["手写轨迹或 PPO 策略给出肩肘目标"]
-    D --> E["PD 力矩控制与接触动力学 · 2 ms / 步"]
-    E --> F["观测关节状态、滑块位移与指尖受载"]
-    F --> G["状态机判定按下与释放"]
-    G --> H["回合结果、峰值力与力矩饱和"]
-    F --> I["Gymnasium 观测 · 10 ms / 策略步"]
-    I --> D
-    C --> J["筛选几何候选并核对按钮局部坐标"]
-    J --> K["逐按钮动力学试验 · 检查受载、行程与复位"]
-```
+![面板按压实验方法框图：左侧为单按钮肩肘控制与策略观测反馈，右侧为四按钮候选姿态的几何与动力学复核](docs/figures/experimental-method.png)
 
-**图 1　实验设计。** 两条路径共用面板几何。单按钮实验在模型副本中加入滑块和肩肘力矩电机。多目标实验另行扫描肩部抬升、肩旋转和肘屈曲等四个自由度。
+**图 1　面板按压实验的技术路线。** 两组实验共用上肢与面板几何。左侧检验肩肘控制能否依次触发按下与释放。右侧从几何和动力学两方面检验各按钮位置的候选姿态。[可编辑的 Visio 源图](docs/figures/experimental-method.vsdx)
 
 ![肩肘双轴运动的全景和局部同步回放](artifacts/trajectory_check_2026-10-21/shoulder_elbow_dual_motion.gif)
 
@@ -79,10 +66,8 @@ python mobl_arms_index_choice_reaction/test_button_press_state.py
 | [实验产物](artifacts/) | 按实验与日期组织的轨迹、诊断报告和策略权重 |
 | [复现实验](docs/reproduction.md) · [制图代码](scripts/) | 实验入口、环境依赖与结果图生成方式 |
 
-## 英文参考文献
+上肢交互建模参考 User-in-the-Box，项目代码沿用 Apache License 2.0。[上游项目](https://github.com/User-in-the-Box/user-in-the-box) · [许可证](LICENSE)
 
-1. Ikkala, A., et al. (2022). *Breathing Life Into Biomechanical User Models*. UIST. 该工作提出 User-in-the-Box，为本课题的上肢交互建模提供背景。[论文](https://doi.org/10.1145/3526113.3545689) · [上游项目](https://github.com/User-in-the-Box/user-in-the-box)
-2. Todorov, E., Erez, T., & Tassa, Y. (2012). *MuJoCo: A Physics Engine for Model-Based Control*. IEEE/RSJ IROS. 本课题采用其多关节动力学与接触求解器。[论文](https://doi.org/10.1109/IROS.2012.6386109)
-3. Schulman, J., Wolski, F., Dhariwal, P., Radford, A., & Klimov, O. (2017). *Proximal Policy Optimization Algorithms*. 本课题使用 PPO 训练单按钮控制策略。[论文](https://arxiv.org/abs/1707.06347)
+## 相关文献检索
 
-项目代码沿用 Apache License 2.0。[许可证](LICENSE)
+[上肢生物力学与指向交互](https://scholar.google.com/scholar?q=biomechanical+user+models+upper+limb+pointing+interaction) · [指尖接触与按钮按压力学](https://scholar.google.com/scholar?q=fingertip+contact+force+push+button+pressing+biomechanics) · [强化学习与接触控制](https://scholar.google.com/scholar?q=proximal+policy+optimization+contact-rich+manipulation+force+control)
